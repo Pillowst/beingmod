@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "beingmod:blocks/dismalgland"
+    "layer0": "beingmod:blocks/gland"
   }
 }

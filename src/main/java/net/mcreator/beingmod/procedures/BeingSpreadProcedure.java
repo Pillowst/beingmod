@@ -47,7 +47,7 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((!(((((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+		if ((!((((((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
 				|| ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == CrystalBeingBlock.block.getDefaultState()
 						.getBlock()))
 				|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == BeingstalbotBlock.block.getDefaultState()
@@ -56,7 +56,9 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 								.getDefaultState().getBlock())))
 				|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock())
 						|| ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
-								.getBlock()))))) {
+								.getBlock())))
+				|| ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == NoxiousbloomerBlock.block.getDefaultState()
+						.getBlock())))) {
 			if ((Math.random() < 0.2)) {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
@@ -83,7 +85,7 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 				}
 			}
 		}
-		if ((!(((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+		if ((!((((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
 				|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == CrystalBeingBlock.block.getDefaultState()
 						.getBlock()))
 				|| (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == BeingstalbotBlock.block.getDefaultState()
@@ -92,7 +94,9 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 								.getDefaultState().getBlock())))
 				|| (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock())
 						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
-								.getBlock()))))) {
+								.getBlock())))
+				|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == NoxiousbloomerBlock.block.getDefaultState()
+						.getBlock())))) {
 			if ((Math.random() < 0.2)) {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
@@ -119,7 +123,7 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 				}
 			}
 		}
-		if ((!(((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+		if ((!((((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
 				|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == CrystalBeingBlock.block.getDefaultState()
 						.getBlock()))
 				|| (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == BeingstalbotBlock.block.getDefaultState()
@@ -128,7 +132,9 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 								.getDefaultState().getBlock())))
 				|| (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock())
 						|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
-								.getBlock()))))) {
+								.getBlock())))
+				|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == NoxiousbloomerBlock.block.getDefaultState()
+						.getBlock())))) {
 			if ((Math.random() < 0.2)) {
 				{
 					BlockPos _bp = new BlockPos((int) (x + 1), (int) y, (int) z);
@@ -155,7 +161,7 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 				}
 			}
 		}
-		if ((!(((((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+		if ((!((((((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
 				|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == CrystalBeingBlock.block.getDefaultState()
 						.getBlock()))
 				|| (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == BeingstalbotBlock.block.getDefaultState()
@@ -164,7 +170,9 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 								.getDefaultState().getBlock())))
 				|| (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock())
 						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
-								.getBlock()))))) {
+								.getBlock())))
+				|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == NoxiousbloomerBlock.block.getDefaultState()
+						.getBlock())))) {
 			if ((Math.random() < 0.2)) {
 				{
 					BlockPos _bp = new BlockPos((int) (x - 1), (int) y, (int) z);
@@ -191,7 +199,7 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 				}
 			}
 		}
-		if ((!(((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+		if ((!((((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
 				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == CrystalBeingBlock.block.getDefaultState()
 						.getBlock()))
 				|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == BeingstalbotBlock.block.getDefaultState()
@@ -200,7 +208,9 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 								.getDefaultState().getBlock())))
 				|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock())
 						|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
-								.getBlock()))))) {
+								.getBlock())))
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == NoxiousbloomerBlock.block.getDefaultState()
+						.getBlock())))) {
 			if ((Math.random() < 0.2)) {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) (z + 1));
@@ -227,7 +237,7 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 				}
 			}
 		}
-		if ((!(((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+		if ((!((((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
 				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == CrystalBeingBlock.block.getDefaultState()
 						.getBlock()))
 				|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == BeingstalbotBlock.block.getDefaultState()
@@ -236,7 +246,9 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 								.getDefaultState().getBlock())))
 				|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock())
 						|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
-								.getBlock()))))) {
+								.getBlock())))
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == NoxiousbloomerBlock.block.getDefaultState()
+						.getBlock())))) {
 			if ((Math.random() < 0.2)) {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) (z - 1));

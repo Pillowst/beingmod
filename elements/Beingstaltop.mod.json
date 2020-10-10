@@ -45,7 +45,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 10,
+    "tickRate": 40,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "OBSIDIAN",

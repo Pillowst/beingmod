@@ -358,24 +358,6 @@
       }
     },
     {
-      "name": "Darkgland",
-      "type": "plant",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "darkgland"
-    },
-    {
-      "name": "Dismalgland",
-      "type": "plant",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dismalgland"
-    },
-    {
       "name": "DarkglandUpdateTick",
       "type": "procedure",
       "sortid": 30,
@@ -441,6 +423,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "neriumore"
+    },
+    {
+      "name": "Dismalgland1",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dismalgland_1"
+    },
+    {
+      "name": "Darkgland",
+      "type": "block",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkgland"
     }
   ],
   "variable_elements": [],
@@ -453,11 +453,11 @@
       "block.beingmod.block_orcanite": "Raw Orcanite Block",
       "block.beingmod.crystal_being": "Being Crystal",
       "item.beingmod.shard": "Being Shards",
+      "block.beingmod.dismalgland_1": "Dismal gland ",
       "item.beingmod.particle_rifle": "Particle Rifle",
       "item.beingmod.item_being": "Being",
-      "block.beingmod.darkgland": "Dark gland",
+      "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.beingstaltop": "Being Stalactite",
-      "block.beingmod.dismalgland": "Dark gland",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
       "block.beingmod.noxiousbloomer": "Noxious Bloomer",

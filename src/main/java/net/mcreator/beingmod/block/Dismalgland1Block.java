@@ -8,6 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.RayTraceResult;
@@ -17,6 +18,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
@@ -24,7 +26,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.beingmod.procedures.DarkglandUpdateTickProcedure;
+import net.mcreator.beingmod.procedures.DismalglandupdatetickProcedure;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Random;
@@ -34,11 +36,11 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @BeingmodModElements.ModElement.Tag
-public class DarkglandBlock extends BeingmodModElements.ModElement {
-	@ObjectHolder("beingmod:darkgland")
+public class Dismalgland1Block extends BeingmodModElements.ModElement {
+	@ObjectHolder("beingmod:dismalgland_1")
 	public static final Block block = null;
-	public DarkglandBlock(BeingmodModElements instance) {
-		super(instance, 35);
+	public Dismalgland1Block(BeingmodModElements instance) {
+		super(instance, 34);
 	}
 
 	@Override
@@ -55,8 +57,8 @@ public class DarkglandBlock extends BeingmodModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.OCEAN_PLANT).sound(SoundType.CROP).hardnessAndResistance(1f, 10f).lightValue(0)
-					.doesNotBlockMovement().notSolid().tickRandomly());
-			setRegistryName("darkgland");
+					.doesNotBlockMovement().notSolid());
+			setRegistryName("dismalgland_1");
 		}
 
 		@Override
@@ -88,6 +90,15 @@ public class DarkglandBlock extends BeingmodModElements.ModElement {
 		}
 
 		@Override
+		public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean moving) {
+			super.onBlockAdded(state, world, pos, oldState, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@Override
 		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
 			super.tick(state, world, pos, random);
 			int x = pos.getX();
@@ -99,7 +110,24 @@ public class DarkglandBlock extends BeingmodModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				DarkglandUpdateTickProcedure.executeProcedure($_dependencies);
+				DismalglandupdatetickProcedure.executeProcedure($_dependencies);
+			}
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@Override
+		public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+			super.onEntityCollision(state, world, pos, entity);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				DismalglandupdatetickProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

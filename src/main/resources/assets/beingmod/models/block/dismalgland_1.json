@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "beingmod:blocks/dismalgland",
+    "particle": "beingmod:blocks/dismalgland"
+  }
+}

@@ -2,7 +2,7 @@
   "_fv": 12,
   "_type": "block",
   "definition": {
-    "texture": "darkgland",
+    "texture": "dismalgland",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -22,7 +22,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "dark gland ",
+    "name": "Dismal gland ",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -46,7 +46,7 @@
       "value": "OCEAN_PLANT"
     },
     "tickRate": 40,
-    "tickRandomly": true,
+    "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
@@ -91,7 +91,10 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onTickUpdate": {
-      "name": "DarkglandUpdateTick"
+      "name": "Dismalglandupdatetick"
+    },
+    "onEntityCollides": {
+      "name": "Dismalglandupdatetick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

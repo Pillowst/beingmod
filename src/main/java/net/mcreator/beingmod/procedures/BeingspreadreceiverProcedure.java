@@ -5,6 +5,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.state.IProperty;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.beingmod.block.NeriumoreBlock;
 import net.mcreator.beingmod.block.BlockOrcaniteBlock;
 import net.mcreator.beingmod.block.BlockBeingBlock;
 import net.mcreator.beingmod.BeingmodModElements;
@@ -49,6 +50,18 @@ public class BeingspreadreceiverProcedure extends BeingmodModElements.ModElement
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 						BlockState _bs = BlockBeingBlock.block.getDefaultState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+							if (_bs.has(_property))
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+						}
+						world.setBlockState(_bp, _bs, 3);
+					}
+				} else if ((Math.random() < 0.01)) {
+					{
+						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+						BlockState _bs = NeriumoreBlock.block.getDefaultState();
 						BlockState _bso = world.getBlockState(_bp);
 						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());

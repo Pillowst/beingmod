@@ -85,7 +85,7 @@ public class BeingstaltopBlock extends BeingmodModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			return VoxelShapes.create(0.3D, 0.3D, 0.3D, 0.3D, 0.3D, 0.3D).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.create(0.3D, 0.3D, 0.3D, 0.7D, 0.7D, 0.7D).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

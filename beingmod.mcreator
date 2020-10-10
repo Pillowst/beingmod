@@ -58,18 +58,6 @@
       }
     },
     {
-      "name": "BeingDecay",
-      "type": "procedure",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "being_decay",
-      "metadata": {
-        "dependencies": []
-      }
-    },
-    {
       "name": "CrystalBeing",
       "type": "plant",
       "sortid": 9,

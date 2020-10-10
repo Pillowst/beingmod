@@ -60,6 +60,11 @@ public class CrystalBeingBlock extends BeingmodModElements.ModElement {
 			setRegistryName("crystal_being");
 		}
 
+		@Override
+		public Block.OffsetType getOffsetType() {
+			return Block.OffsetType.NONE;
+		}
+
 		@OnlyIn(Dist.CLIENT)
 		@Override
 		public boolean isEmissiveRendering(BlockState blockState) {

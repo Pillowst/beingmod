@@ -2,10 +2,10 @@
   "_fv": 12,
   "_type": "plant",
   "definition": {
-    "renderType": 13,
+    "renderType": 12,
     "texture": "dismalgland",
     "textureBottom": "",
-    "customModelName": "Crop model",
+    "customModelName": "Cross model",
     "plantType": "normal",
     "staticPlantGenerationType": "Flower",
     "growapableSpawnType": "Cave",
@@ -28,7 +28,7 @@
       "value": ""
     },
     "dropAmount": 1,
-    "forceTicking": false,
+    "forceTicking": true,
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
@@ -37,7 +37,7 @@
       "value": ""
     },
     "offsetType": "XZ",
-    "aiPathNodeType": "DEFAULT",
+    "aiPathNodeType": "OPEN",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "frequencyOnChunks": 5,

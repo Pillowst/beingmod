@@ -1,7 +1,7 @@
 {
-  "parent": "block/crop",
+  "parent": "block/cross",
   "textures": {
-    "crop": "beingmod:blocks/darkgland",
+    "cross": "beingmod:blocks/darkgland",
     "particle": "beingmod:blocks/darkgland"
   }
 }

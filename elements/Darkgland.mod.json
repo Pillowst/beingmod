@@ -2,10 +2,10 @@
   "_fv": 12,
   "_type": "plant",
   "definition": {
-    "renderType": 13,
+    "renderType": 12,
     "texture": "darkgland",
     "textureBottom": "",
-    "customModelName": "Crop model",
+    "customModelName": "Cross model",
     "plantType": "normal",
     "staticPlantGenerationType": "Flower",
     "growapableSpawnType": "Cave",
@@ -28,7 +28,7 @@
       "value": ""
     },
     "dropAmount": 1,
-    "forceTicking": false,
+    "forceTicking": true,
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,

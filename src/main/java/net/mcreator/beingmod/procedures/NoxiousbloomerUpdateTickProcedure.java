@@ -47,7 +47,7 @@ public class NoxiousbloomerUpdateTickProcedure extends BeingmodModElements.ModEl
 			world.getWorld().getServer().getCommandManager().handleCommand(
 					new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "", new StringTextComponent(""),
 							world.getWorld().getServer(), null).withFeedbackDisabled(),
-					"/summon area_effect_cloud ~ ~1 ~ {NoGravity:1b,Particle:dragonbreath,ReapplicationDelay:10,Radius:3f,RadiusPerTick:-0.1f,Duration:100,Effects:[{Id:9,Amplifier:0,Duration:100},{Id:19,Amplifier:1,Duration:100}]}");
+					"/summon area_effect_cloud ~ ~ ~ {NoGravity:1b,Particle:dragonbreath,ReapplicationDelay:10,Radius:3f,RadiusPerTick:-0.1f,Duration:100,Effects:[{Id:9,Amplifier:0,Duration:100},{Id:19,Amplifier:1,Duration:100}]}");
 		}
 	}
 }

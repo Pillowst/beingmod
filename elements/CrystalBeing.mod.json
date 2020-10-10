@@ -16,8 +16,8 @@
     "creativeTab": {
       "value": "DECORATIONS"
     },
-    "hardness": 1.0,
-    "resistance": 1.0,
+    "hardness": 3.0,
+    "resistance": 3.0,
     "luminance": 0.13,
     "unbreakable": false,
     "soundOnStep": {

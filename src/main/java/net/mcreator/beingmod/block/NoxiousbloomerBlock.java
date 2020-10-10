@@ -56,8 +56,8 @@ public class NoxiousbloomerBlock extends BeingmodModElements.ModElement {
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.PLANT)
-					.hardnessAndResistance(0f, 0f).lightValue(0));
+			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.SLIME)
+					.hardnessAndResistance(3f, 3f).lightValue(0));
 			setRegistryName("noxiousbloomer");
 		}
 

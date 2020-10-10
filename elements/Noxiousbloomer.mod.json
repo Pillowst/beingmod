@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "noxious_bloomer",
+    "texture": "noxious",
     "textureBottom": "",
     "customModelName": "Cross model",
     "plantType": "normal",
@@ -16,12 +16,12 @@
     "creativeTab": {
       "value": "DECORATIONS"
     },
-    "hardness": 0.0,
-    "resistance": 0.0,
+    "hardness": 3.0,
+    "resistance": 3.0,
     "luminance": 0.0,
     "unbreakable": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "SLIME"
     },
     "useLootTableForDrops": false,
     "customDrop": {

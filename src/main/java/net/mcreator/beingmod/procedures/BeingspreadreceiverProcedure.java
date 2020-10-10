@@ -57,7 +57,7 @@ public class BeingspreadreceiverProcedure extends BeingmodModElements.ModElement
 						}
 						world.setBlockState(_bp, _bs, 3);
 					}
-				} else if ((Math.random() < 0.2)) {
+				} else {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 						BlockState _bs = BlockOrcaniteBlock.block.getDefaultState();

@@ -34,7 +34,7 @@ public class OrcnaiteArmoredBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.ANVIL).hardnessAndResistance(1f, 10f).lightValue(0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.ANVIL).hardnessAndResistance(3f, 3f).lightValue(0));
 			setRegistryName("orcnaite_armored");
 		}
 

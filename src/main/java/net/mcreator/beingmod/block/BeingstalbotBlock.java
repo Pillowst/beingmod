@@ -7,7 +7,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.RayTraceResult;
@@ -29,7 +28,6 @@ import net.minecraft.block.Block;
 
 import net.mcreator.beingmod.procedures.StalBotBreakProcedure;
 import net.mcreator.beingmod.procedures.BeingstalbotClientDisplayRandomTickProcedure;
-import net.mcreator.beingmod.procedures.BeingStalGrowthProcedure;
 import net.mcreator.beingmod.item.ShardItem;
 import net.mcreator.beingmod.BeingmodModElements;
 
@@ -61,7 +59,7 @@ public class BeingstalbotBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1f, 10f).lightValue(15).notSolid()
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(3f, 3f).lightValue(15).notSolid()
 					.tickRandomly());
 			setRegistryName("beingstalbot");
 		}
@@ -121,22 +119,6 @@ public class BeingstalbotBlock extends BeingmodModElements.ModElement {
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				StalBotBreakProcedure.executeProcedure($_dependencies);
-			}
-		}
-
-		@Override
-		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-			super.tick(state, world, pos, random);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BeingStalGrowthProcedure.executeProcedure($_dependencies);
 			}
 		}
 

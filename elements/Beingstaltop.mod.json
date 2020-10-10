@@ -24,8 +24,8 @@
     "Mz": 1.0,
     "name": "Being Stalactite",
     "specialInfo": [],
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 3.0,
+    "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -92,6 +92,9 @@
     "fluidRestrictions": [],
     "onNeighbourBlockChanges": {
       "name": "StalBotBreak"
+    },
+    "onTickUpdate": {
+      "name": "BeingStalGrowth"
     },
     "onRandomUpdateEvent": {
       "name": "BeingstalbotClientDisplayRandomTick"

@@ -46,7 +46,7 @@
       "value": "ROCK"
     },
     "tickRate": 10,
-    "tickRandomly": true,
+    "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "OBSIDIAN",
     "creativePickItem": {

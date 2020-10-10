@@ -59,8 +59,7 @@ public class BeingstalbotBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(3f, 3f).lightValue(15).notSolid()
-					.tickRandomly());
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(3f, 3f).lightValue(15).notSolid());
 			setRegistryName("beingstalbot");
 		}
 

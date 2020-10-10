@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "beingmod:blocks/being_stalactite_top_new",
+    "particle": "beingmod:blocks/being_stalactite_top_new"
+  }
+}

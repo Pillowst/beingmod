@@ -1,0 +1,16 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "beingmod:shard"
+    },
+    {
+      "item": "beingmod:shard"
+    }
+  ],
+  "result": {
+    "item": "beingmod:crystal_being",
+    "count": 1
+  }
+}

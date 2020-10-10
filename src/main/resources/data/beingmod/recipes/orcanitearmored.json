@@ -1,0 +1,42 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:orcanite_shard"
+    },
+    "1": {
+      "item": "beingmod:orcanite_shard"
+    },
+    "2": {
+      "item": "beingmod:orcanite_shard"
+    },
+    "3": {
+      "item": "beingmod:orcanite_shard"
+    },
+    "4": {
+      "item": "beingmod:orcanite_shard"
+    },
+    "5": {
+      "item": "beingmod:orcanite_shard"
+    },
+    "6": {
+      "item": "beingmod:orcanite_shard"
+    },
+    "7": {
+      "item": "beingmod:orcanite_shard"
+    },
+    "8": {
+      "item": "beingmod:orcanite_shard"
+    }
+  },
+  "result": {
+    "item": "beingmod:orcnaite_armored",
+    "count": 1
+  }
+}

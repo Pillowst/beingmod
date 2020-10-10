@@ -1,0 +1,36 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:shard"
+    },
+    "1": {
+      "item": "beingmod:shard"
+    },
+    "2": {
+      "item": "beingmod:shard"
+    },
+    "3": {
+      "item": "beingmod:shard"
+    },
+    "4": {
+      "item": "beingmod:shard"
+    },
+    "5": {
+      "item": "beingmod:shard"
+    },
+    "7": {
+      "item": "beingmod:shard"
+    }
+  },
+  "result": {
+    "item": "beingmod:beingstaltop",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "beingmod:item_being"
+    },
+    {
+      "item": "beingmod:item_being"
+    },
+    {
+      "item": "beingmod:item_being"
+    },
+    {
+      "item": "beingmod:item_being"
+    }
+  ],
+  "result": {
+    "item": "beingmod:block_being",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+
+[[mods]]
+modId="beingmod"
+version="1.0.0"
+displayName="Being Mod"
+credits="Pillow"
+displayURL="https://mcreator.net"
+authors="Pillow"
+
+[[dependencies.beingmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

@@ -1,0 +1,34 @@
+{
+  "_fv": 12,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "plasma_cutter",
+    "customModelName": "Normal",
+    "name": "Plasma Cutter",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 10,
+    "efficiency": 10.0,
+    "attackSpeed": 10.0,
+    "enchantability": 10,
+    "damageVsEntity": 10.0,
+    "usageCount": 10000,
+    "blocksAffected": [
+      {
+        "value": "CUSTOM:BlockBeing"
+      }
+    ],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.REDSTONE"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

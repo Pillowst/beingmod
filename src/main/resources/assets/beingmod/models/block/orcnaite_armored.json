@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "beingmod:blocks/armored_orcanite",
+    "up": "beingmod:blocks/armored_orcanite",
+    "north": "beingmod:blocks/armored_orcanite",
+    "east": "beingmod:blocks/armored_orcanite",
+    "south": "beingmod:blocks/armored_orcanite",
+    "west": "beingmod:blocks/armored_orcanite",
+    "particle": "beingmod:blocks/armored_orcanite"
+  }
+}

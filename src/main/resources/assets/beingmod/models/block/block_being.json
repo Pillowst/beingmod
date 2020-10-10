@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "beingmod:blocks/being",
+    "up": "beingmod:blocks/being",
+    "north": "beingmod:blocks/being",
+    "east": "beingmod:blocks/being",
+    "south": "beingmod:blocks/being",
+    "west": "beingmod:blocks/being",
+    "particle": "beingmod:blocks/being"
+  }
+}

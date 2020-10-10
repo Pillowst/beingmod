@@ -1,0 +1,342 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "ItemBeing",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "item_being"
+    },
+    {
+      "name": "BlockOrcanite",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_orcanite"
+    },
+    {
+      "name": "BlockBeing",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_being"
+    },
+    {
+      "name": "BeingSpread",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "being_spread",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BeingDecay",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "being_decay",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "PlasmaCutter",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plasma_cutter"
+    },
+    {
+      "name": "CrystalBeing",
+      "type": "plant",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystal_being"
+    },
+    {
+      "name": "Shard",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shard"
+    },
+    {
+      "name": "Blockrecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blockrecipe"
+    },
+    {
+      "name": "Crystalrecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystalrecipe"
+    },
+    {
+      "name": "Beingstaltop",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingstaltop"
+    },
+    {
+      "name": "Beingstalbot",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingstalbot"
+    },
+    {
+      "name": "BeingStalGrowth",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "being_stal_growth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stalgrowth",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stalgrowth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StalBotBreak",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stal_bot_break",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stalrecipe",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stalrecipe"
+    },
+    {
+      "name": "Shardcook",
+      "type": "recipe",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shardcook"
+    },
+    {
+      "name": "OrcaniteShard",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orcanite_shard"
+    },
+    {
+      "name": "OrcnaiteArmored",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orcnaite_armored"
+    },
+    {
+      "name": "Orcanitearmored",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orcanitearmored"
+    },
+    {
+      "name": "Beingget",
+      "type": "achievement",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingget"
+    },
+    {
+      "name": "Crystaldecay",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crystaldecay",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.beingmod.block_being": "Being",
+      "block.beingmod.beingstalbot": "Being Stalactite End",
+      "advancements.beingget.title": "Obtain Being",
+      "block.beingmod.block_orcanite": "Raw Orcanite Block",
+      "block.beingmod.crystal_being": "Being Crystal",
+      "item.beingmod.shard": "Being Shards",
+      "item.beingmod.item_being": "Being",
+      "block.beingmod.beingstaltop": "Being Stalactite",
+      "item.beingmod.orcanite_shard": "Orcanite Shards",
+      "item.beingmod.plasma_cutter": "Plasma Cutter",
+      "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
+      "block.beingmod.orcnaite_armored": "Armored Orcanite"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "beingmod",
+    "modName": "Being Mod",
+    "version": "1.0.0",
+    "author": "Pillow",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "credits": "Pillow",
+    "modElementsPackage": "net.mcreator.beingmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000539514
+}

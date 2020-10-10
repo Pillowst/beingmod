@@ -18,7 +18,7 @@
     },
     "hardness": 3.0,
     "resistance": 3.0,
-    "luminance": 0.13,
+    "luminance": 0.4,
     "unbreakable": false,
     "soundOnStep": {
       "value": "GLASS"

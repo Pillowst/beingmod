@@ -56,7 +56,7 @@ public class CrystalBeingBlock extends BeingmodModElements.ModElement {
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
 			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS, MaterialColor.OBSIDIAN).tickRandomly().doesNotBlockMovement()
-					.sound(SoundType.GLASS).hardnessAndResistance(3f, 3f).lightValue(2));
+					.sound(SoundType.GLASS).hardnessAndResistance(3f, 3f).lightValue(6));
 			setRegistryName("crystal_being");
 		}
 

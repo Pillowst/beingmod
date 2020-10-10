@@ -2,27 +2,27 @@
   "_fv": 12,
   "_type": "block",
   "definition": {
-    "texture": "being_stalactite_top_new",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 12,
-    "customModelName": "Cross model",
+    "texture": "neriumore",
+    "textureTop": "being",
+    "textureLeft": "being",
+    "textureFront": "neriumore",
+    "textureRight": "being",
+    "textureBack": "being",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": true,
     "itemTexture": "",
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
-    "mx": 0.30000000000000004,
-    "my": 0.30000000000000004,
-    "mz": 0.30000000000000004,
-    "Mx": 0.30000000000000004,
-    "My": 0.30000000000000004,
-    "Mz": 0.30000000000000004,
-    "name": "Being Stalactite",
+    "mx": 0.0,
+    "my": 0.0,
+    "mz": 0.0,
+    "Mx": 1.0,
+    "My": 1.0,
+    "Mz": 1.0,
+    "name": "nerium ore",
     "specialInfo": [],
     "hardness": 3.0,
     "resistance": 3.0,
@@ -33,7 +33,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Shard"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -41,12 +41,12 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 0,
+    "lightOpacity": 255,
     "material": {
       "value": "ROCK"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "colorOnMap": "OBSIDIAN",
     "creativePickItem": {
@@ -58,13 +58,13 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "reactionToPushing": "DESTROY",
+    "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "WET_GRASS"
     },
     "luminance": 1.0,
-    "unbreakable": false,
+    "unbreakable": true,
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
@@ -90,11 +90,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onNeighbourBlockChanges": {
-      "name": "StalBotBreak"
-    },
-    "onRandomUpdateEvent": {
-      "name": "BeingstalbotClientDisplayRandomTick"
+    "onTickUpdate": {
+      "name": "BeingSpread"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

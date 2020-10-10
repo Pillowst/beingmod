@@ -29,11 +29,11 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @BeingmodModElements.ModElement.Tag
-public class BlockBeingBlock extends BeingmodModElements.ModElement {
-	@ObjectHolder("beingmod:block_being")
+public class NeriumoreBlock extends BeingmodModElements.ModElement {
+	@ObjectHolder("beingmod:neriumore")
 	public static final Block block = null;
-	public BlockBeingBlock(BeingmodModElements instance) {
-		super(instance, 4);
+	public NeriumoreBlock(BeingmodModElements instance) {
+		super(instance, 33);
 	}
 
 	@Override
@@ -44,8 +44,8 @@ public class BlockBeingBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.SLIME).hardnessAndResistance(-1, 3600000).lightValue(3).tickRandomly());
-			setRegistryName("block_being");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.WET_GRASS).hardnessAndResistance(-1, 3600000).lightValue(15).tickRandomly());
+			setRegistryName("neriumore");
 		}
 
 		@OnlyIn(Dist.CLIENT)

@@ -11,7 +11,7 @@
     "growapableSpawnType": "Cave",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
-    "name": "Darkgland",
+    "name": "Dark gland",
     "specialInfo": [],
     "creativeTab": {
       "value": "DECORATIONS"
@@ -43,7 +43,16 @@
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
+    "onNeighbourBlockChanges": {
+      "name": "Dismalglandupdatetick"
+    },
     "onTickUpdate": {
+      "name": "Dismalglandupdatetick"
+    },
+    "onStartToDestroy": {
+      "name": "Dismalglandupdatetick"
+    },
+    "onEntityCollides": {
       "name": "Dismalglandupdatetick"
     }
   }

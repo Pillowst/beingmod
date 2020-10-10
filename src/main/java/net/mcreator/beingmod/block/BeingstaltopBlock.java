@@ -8,8 +8,11 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
-import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
@@ -59,7 +62,7 @@ public class BeingstaltopBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(3f, 3f).lightValue(15).notSolid());
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(3f, 3f).lightValue(15).notSolid());
 			setRegistryName("beingstaltop");
 		}
 
@@ -80,8 +83,9 @@ public class BeingstaltopBlock extends BeingmodModElements.ModElement {
 		}
 
 		@Override
-		public int tickRate(IWorldReader world) {
-			return 40;
+		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
+			Vec3d offset = state.getOffset(world, pos);
+			return VoxelShapes.create(0.3D, 0.3D, 0.3D, 0.3D, 0.3D, 0.3D).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

@@ -16,12 +16,12 @@
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
-    "mx": 0.0,
-    "my": 0.0,
-    "mz": 0.0,
-    "Mx": 1.0,
-    "My": 1.0,
-    "Mz": 1.0,
+    "mx": 0.30000000000000004,
+    "my": 0.30000000000000004,
+    "mz": 0.30000000000000004,
+    "Mx": 0.30000000000000004,
+    "My": 0.30000000000000004,
+    "Mz": 0.30000000000000004,
     "name": "Being Stalactite End",
     "specialInfo": [],
     "hardness": 3.0,
@@ -45,8 +45,8 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 40,
-    "tickRandomly": false,
+    "tickRate": 10,
+    "tickRandomly": true,
     "isReplaceable": false,
     "colorOnMap": "OBSIDIAN",
     "creativePickItem": {
@@ -61,7 +61,7 @@
     "reactionToPushing": "DESTROY",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GLASS"
+      "value": "METAL"
     },
     "luminance": 1.0,
     "unbreakable": false,

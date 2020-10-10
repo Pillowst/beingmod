@@ -113,9 +113,9 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 		if ((!((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
 				|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == CrystalBeingBlock.block.getDefaultState()
 						.getBlock()))
-				|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == BeingstalbotBlock.block.getDefaultState()
+				|| (((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == BeingstalbotBlock.block.getDefaultState()
 						.getBlock())
-						|| ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == BeingstaltopBlock.block
+						|| ((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == BeingstaltopBlock.block
 								.getDefaultState().getBlock()))))) {
 			if ((Math.random() < 0.2)) {
 				{
@@ -146,9 +146,9 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 		if ((!((((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
 				|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == CrystalBeingBlock.block.getDefaultState()
 						.getBlock()))
-				|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == BeingstalbotBlock.block.getDefaultState()
+				|| (((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == BeingstalbotBlock.block.getDefaultState()
 						.getBlock())
-						|| ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == BeingstaltopBlock.block
+						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == BeingstaltopBlock.block
 								.getDefaultState().getBlock()))))) {
 			if ((Math.random() < 0.2)) {
 				{
@@ -179,9 +179,9 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 		if ((!((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
 				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == CrystalBeingBlock.block.getDefaultState()
 						.getBlock()))
-				|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == BeingstalbotBlock.block.getDefaultState()
+				|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == BeingstalbotBlock.block.getDefaultState()
 						.getBlock())
-						|| ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == BeingstaltopBlock.block
+						|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == BeingstaltopBlock.block
 								.getDefaultState().getBlock()))))) {
 			if ((Math.random() < 0.2)) {
 				{
@@ -212,9 +212,9 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 		if ((!((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
 				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == CrystalBeingBlock.block.getDefaultState()
 						.getBlock()))
-				|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == BeingstalbotBlock.block.getDefaultState()
+				|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == BeingstalbotBlock.block.getDefaultState()
 						.getBlock())
-						|| ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == BeingstaltopBlock.block
+						|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == BeingstaltopBlock.block
 								.getDefaultState().getBlock()))))) {
 			if ((Math.random() < 0.2)) {
 				{

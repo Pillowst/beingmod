@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.beingmod.block.DismalglandBlock;
+import net.mcreator.beingmod.block.Dismalgland1Block;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
@@ -53,7 +53,7 @@ public class DarkglandUpdateTickProcedure extends BeingmodModElements.ModElement
 				.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)) != null)) {
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = DismalglandBlock.block.getDefaultState();
+				BlockState _bs = Dismalgland1Block.block.getDefaultState();
 				world.setBlockState(_bp, _bs, 3);
 			}
 			if (!world.getWorld().isRemote) {

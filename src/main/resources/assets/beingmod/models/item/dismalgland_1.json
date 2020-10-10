@@ -1,5 +1,5 @@
 {
-  "parent": "beingmod:block/darkgland",
+  "parent": "beingmod:block/dismalgland_1",
   "display": {
     "thirdperson": {
       "rotation": [

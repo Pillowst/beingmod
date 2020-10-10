@@ -68,11 +68,11 @@
     "breakHarvestLevel": 1,
     "spawnParticles": true,
     "particleToSpawn": {
-      "value": "SQUID_INK"
+      "value": "DRAGON_BREATH"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.3,
-    "particleAmount": 8,
+    "particleAmount": 4,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

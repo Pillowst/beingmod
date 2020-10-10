@@ -138,7 +138,7 @@ public class BeingstalbotBlock extends BeingmodModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			if (true)
-				for (int l = 0; l < 8; ++l) {
+				for (int l = 0; l < 4; ++l) {
 					double d0 = (x + random.nextFloat());
 					double d1 = (y + random.nextFloat());
 					double d2 = (z + random.nextFloat());
@@ -146,7 +146,7 @@ public class BeingstalbotBlock extends BeingmodModElements.ModElement {
 					double d3 = (random.nextFloat() - 0.5D) * 0.3D;
 					double d4 = (random.nextFloat() - 0.5D) * 0.3D;
 					double d5 = (random.nextFloat() - 0.5D) * 0.3D;
-					world.addParticle(ParticleTypes.SQUID_INK, d0, d1, d2, d3, d4, d5);
+					world.addParticle(ParticleTypes.DRAGON_BREATH, d0, d1, d2, d3, d4, d5);
 				}
 		}
 	}

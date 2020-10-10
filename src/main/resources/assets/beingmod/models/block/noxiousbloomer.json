@@ -1,7 +1,7 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "beingmod:blocks/noxious",
-    "particle": "beingmod:blocks/noxious"
+    "cross": "beingmod:blocks/noxious_bloomer",
+    "particle": "beingmod:blocks/noxious_bloomer"
   }
 }

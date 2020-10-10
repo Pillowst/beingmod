@@ -7,7 +7,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
@@ -45,7 +44,7 @@ public class BlockBeingBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.SLIME).hardnessAndResistance(-1, 3600000).lightValue(15));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.SLIME).hardnessAndResistance(-1, 3600000).lightValue(15).tickRandomly());
 			setRegistryName("block_being");
 		}
 
@@ -69,15 +68,6 @@ public class BlockBeingBlock extends BeingmodModElements.ModElement {
 		}
 
 		@Override
-		public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean moving) {
-			super.onBlockAdded(state, world, pos, oldState, moving);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
-		}
-
-		@Override
 		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
 			super.tick(state, world, pos, random);
 			int x = pos.getX();
@@ -91,7 +81,6 @@ public class BlockBeingBlock extends BeingmodModElements.ModElement {
 				$_dependencies.put("world", world);
 				BeingSpreadProcedure.executeProcedure($_dependencies);
 			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
 		}
 	}
 }

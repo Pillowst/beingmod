@@ -356,6 +356,82 @@
           }
         ]
       }
+    },
+    {
+      "name": "Darkgland",
+      "type": "plant",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkgland"
+    },
+    {
+      "name": "Dismalgland",
+      "type": "plant",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dismalgland"
+    },
+    {
+      "name": "DarkglandUpdateTick",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkgland_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dismalglandupdatetick",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dismalglandupdatetick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -370,7 +446,9 @@
       "item.beingmod.shard": "Being Shards",
       "item.beingmod.particle_rifle": "Particle Rifle",
       "item.beingmod.item_being": "Being",
+      "block.beingmod.darkgland": "Darkgland",
       "block.beingmod.beingstaltop": "Being Stalactite",
+      "block.beingmod.dismalgland": "Darkgland",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",

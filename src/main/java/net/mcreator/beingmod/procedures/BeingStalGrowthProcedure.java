@@ -48,7 +48,7 @@ public class BeingStalGrowthProcedure extends BeingmodModElements.ModElement {
 			if ((Math.random() < 0.2)) {
 				if ((Math.random() < 0.2)) {
 					{
-						BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
+						BlockPos _bp = new BlockPos((int) x, (int) (y - 0), (int) z);
 						BlockState _bs = BeingstaltopBlock.block.getDefaultState();
 						BlockState _bso = world.getBlockState(_bp);
 						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {

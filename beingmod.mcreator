@@ -70,15 +70,6 @@
       }
     },
     {
-      "name": "PlasmaCutter",
-      "type": "tool",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "plasma_cutter"
-    },
-    {
       "name": "CrystalBeing",
       "type": "plant",
       "sortid": 9,
@@ -301,6 +292,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "ParticleRifle",
+      "type": "item",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_rifle"
     }
   ],
   "variable_elements": [],
@@ -313,10 +313,10 @@
       "block.beingmod.block_orcanite": "Raw Orcanite Block",
       "block.beingmod.crystal_being": "Being Crystal",
       "item.beingmod.shard": "Being Shards",
+      "item.beingmod.particle_rifle": "Particle Rifle",
       "item.beingmod.item_being": "Being",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
-      "item.beingmod.plasma_cutter": "Plasma Cutter",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
       "block.beingmod.orcnaite_armored": "Armored Orcanite"
     }

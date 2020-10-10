@@ -42,6 +42,9 @@
     "fireSpreadSpeed": 0,
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
-    "restrictionBiomes": []
+    "restrictionBiomes": [],
+    "onTickUpdate": {
+      "name": "DarkglandUpdateTick"
+    }
   }
 }

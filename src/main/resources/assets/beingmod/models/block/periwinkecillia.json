@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "beingmod:blocks/periwinkecillia",
+    "particle": "beingmod:blocks/periwinkecillia"
+  }
+}

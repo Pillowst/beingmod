@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=1": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=2": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=3": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=4": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=5": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=6": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=7": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=8": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=9": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=10": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=11": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=12": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=13": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=14": {
+      "model": "beingmod:block/periwinkecillia"
+    },
+    "age=15": {
+      "model": "beingmod:block/periwinkecillia"
+    }
+  }
+}

@@ -6,6 +6,7 @@ import net.minecraft.state.IProperty;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.beingmod.block.PeriwinkecilliaBlock;
 import net.mcreator.beingmod.block.NoxiousbloomerBlock;
 import net.mcreator.beingmod.block.DarkglandBlock;
 import net.mcreator.beingmod.block.CrystalBeingBlock;
@@ -127,10 +128,10 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 						}
 						world.setBlockState(_bp, _bs, 3);
 					}
-				} else if ((Math.random() < 0.1)) {
+				} else if ((Math.random() < 0.6)) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
-						BlockState _bs = NoxiousbloomerBlock.block.getDefaultState();
+						BlockState _bs = PeriwinkecilliaBlock.block.getDefaultState();
 						BlockState _bso = world.getBlockState(_bp);
 						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
@@ -143,6 +144,18 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
 						BlockState _bs = DarkglandBlock.block.getDefaultState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+							if (_bs.has(_property))
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+						}
+						world.setBlockState(_bp, _bs, 3);
+					}
+				} else if ((Math.random() < 0.1)) {
+					{
+						BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
+						BlockState _bs = NoxiousbloomerBlock.block.getDefaultState();
 						BlockState _bso = world.getBlockState(_bp);
 						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());

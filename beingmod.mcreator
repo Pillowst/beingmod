@@ -441,6 +441,32 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "darkgland"
+    },
+    {
+      "name": "Periwinkecillia",
+      "type": "plant",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "periwinkecillia"
+    },
+    {
+      "name": "PeriwinkecilliaMobplayerCollidesWithPlant",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "periwinkecillia_mobplayer_collides_with_plant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -458,6 +484,7 @@
       "item.beingmod.item_being": "Being",
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.beingstaltop": "Being Stalactite",
+      "block.beingmod.periwinkecillia": "Periwinkle cillia",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
       "block.beingmod.noxiousbloomer": "Noxious Bloomer",

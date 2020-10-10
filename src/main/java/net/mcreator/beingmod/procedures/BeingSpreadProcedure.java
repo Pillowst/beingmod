@@ -8,7 +8,7 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.beingmod.block.NoxiousbloomerBlock;
 import net.mcreator.beingmod.block.CrystalBeingBlock;
-import net.mcreator.beingmod.block.BeingstaltopBlock;
+import net.mcreator.beingmod.block.BeingstalbotBlock;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
@@ -45,15 +45,26 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
-				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock()))
-				|| ((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
-						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState()
+		if ((((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock()))
+				|| ((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock())
+						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
 								.getBlock()))
-						|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState()
+						|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
 								.getBlock())
-								|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState()
-										.getBlock()))))) {
+								|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.CAVE_AIR
+										.getDefaultState().getBlock()))))
+				|| ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+						|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.AIR.getDefaultState()
+								.getBlock()))
+						|| ((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState()
+								.getBlock())
+								|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState()
+										.getBlock()))
+								|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState()
+										.getBlock())
+										|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.AIR
+												.getDefaultState().getBlock())))))) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("world", world);
@@ -102,7 +113,7 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 				$_dependencies.put("z", (z + 1));
 				BeingspreadreceiverProcedure.executeProcedure($_dependencies);
 			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())) {
+			if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).isSolid())) {
 				if ((Math.random() < 0.2)) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
@@ -129,11 +140,11 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 					}
 				}
 			}
-			if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())) {
+			if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).isSolid())) {
 				if ((Math.random() < 0.2)) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
-						BlockState _bs = BeingstaltopBlock.block.getDefaultState();
+						BlockState _bs = BeingstalbotBlock.block.getDefaultState();
 						BlockState _bso = world.getBlockState(_bp);
 						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());

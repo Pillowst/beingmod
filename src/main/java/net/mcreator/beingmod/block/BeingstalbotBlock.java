@@ -29,6 +29,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.beingmod.procedures.StalBotBreakProcedure;
 import net.mcreator.beingmod.procedures.BeingstalbotClientDisplayRandomTickProcedure;
+import net.mcreator.beingmod.procedures.BeingStalGrowthProcedure;
 import net.mcreator.beingmod.item.ShardItem;
 import net.mcreator.beingmod.BeingmodModElements;
 
@@ -60,7 +61,8 @@ public class BeingstalbotBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1f, 10f).lightValue(15).notSolid());
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1f, 10f).lightValue(15).notSolid()
+					.tickRandomly());
 			setRegistryName("beingstalbot");
 		}
 
@@ -104,12 +106,22 @@ public class BeingstalbotBlock extends BeingmodModElements.ModElement {
 		}
 
 		@Override
-		public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean moving) {
-			super.onBlockAdded(state, world, pos, oldState, moving);
+		public void neighborChanged(BlockState state, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+			super.neighborChanged(state, world, pos, neighborBlock, fromPos, moving);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
+			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
+			} else {
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				StalBotBreakProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override
@@ -124,9 +136,8 @@ public class BeingstalbotBlock extends BeingmodModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				StalBotBreakProcedure.executeProcedure($_dependencies);
+				BeingStalGrowthProcedure.executeProcedure($_dependencies);
 			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
 		}
 
 		@OnlyIn(Dist.CLIENT)

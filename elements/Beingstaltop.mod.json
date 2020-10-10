@@ -2,7 +2,7 @@
   "_fv": 12,
   "_type": "block",
   "definition": {
-    "texture": "being_stalactite_top_newest",
+    "texture": "being_stalactite_top_new",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -90,8 +90,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "Stalgrowth"
+    "onNeighbourBlockChanges": {
+      "name": "StalBotBreak"
     },
     "onRandomUpdateEvent": {
       "name": "BeingstalbotClientDisplayRandomTick"

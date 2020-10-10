@@ -141,35 +141,6 @@
       }
     },
     {
-      "name": "Stalgrowth",
-      "type": "procedure",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "stalgrowth",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "StalBotBreak",
       "type": "procedure",
       "sortid": 17,
@@ -329,13 +300,13 @@
       "registry_name": "noxiousbloomer"
     },
     {
-      "name": "BeingstalbotClientDisplayRandomTick",
+      "name": "Beingspreadreceiver",
       "type": "procedure",
-      "sortid": 27,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "beingstalbot_client_display_random_tick",
+      "registry_name": "beingspreadreceiver",
       "metadata": {
         "dependencies": [
           {
@@ -358,13 +329,13 @@
       }
     },
     {
-      "name": "Beingspreadreceiver",
+      "name": "BeingstalbotClientDisplayRandomTick",
       "type": "procedure",
-      "sortid": 28,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "beingspreadreceiver",
+      "registry_name": "beingstalbot_client_display_random_tick",
       "metadata": {
         "dependencies": [
           {

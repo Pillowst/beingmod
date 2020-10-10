@@ -2,7 +2,7 @@
   "_fv": 12,
   "_type": "block",
   "definition": {
-    "texture": "being_stalactite_bottom_newest",
+    "texture": "being_stalactite_bottom_new",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -46,7 +46,7 @@
       "value": "ROCK"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "colorOnMap": "OBSIDIAN",
     "creativePickItem": {
@@ -90,8 +90,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
+    "onNeighbourBlockChanges": {
       "name": "StalBotBreak"
+    },
+    "onTickUpdate": {
+      "name": "BeingStalGrowth"
     },
     "onRandomUpdateEvent": {
       "name": "BeingstalbotClientDisplayRandomTick"

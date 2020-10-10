@@ -10,7 +10,7 @@ import java.util.Map;
 @BeingmodModElements.ModElement.Tag
 public class BeingstalbotClientDisplayRandomTickProcedure extends BeingmodModElements.ModElement {
 	public BeingstalbotClientDisplayRandomTickProcedure(BeingmodModElements instance) {
-		super(instance, 27);
+		super(instance, 29);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -39,8 +39,6 @@ public class BeingstalbotClientDisplayRandomTickProcedure extends BeingmodModEle
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		world.addParticle(ParticleTypes.DRAGON_BREATH, (x + (Math.random() - 0.5)), (y + (Math.random() - 0.5)), (z + (Math.random() - 0.5)), 0,
-				(-0.1), 0);
-		world.addParticle(ParticleTypes.DRAGON_BREATH, (x + (Math.random() - 0.5)), (y + (Math.random() - 0.5)), (z + (Math.random() - 0.5)), 0,
-				(-0.1), 0);
+				(-0.02), 0);
 	}
 }

@@ -8,7 +8,7 @@
     "customModelName": "Cross model",
     "plantType": "normal",
     "staticPlantGenerationType": "Flower",
-    "growapableSpawnType": "Nether",
+    "growapableSpawnType": "Cave",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
     "name": "Noxious bloomer",

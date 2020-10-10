@@ -82,7 +82,7 @@ public class NoxiousbloomerBlock extends BeingmodModElements.ModElement {
 
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
-			return PlantType.Nether;
+			return PlantType.Cave;
 		}
 
 		@Override

@@ -12,7 +12,6 @@ import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -29,6 +28,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.beingmod.procedures.StalBotBreakProcedure;
+import net.mcreator.beingmod.procedures.BeingstalbotClientDisplayRandomTickProcedure;
 import net.mcreator.beingmod.item.ShardItem;
 import net.mcreator.beingmod.BeingmodModElements;
 
@@ -137,17 +137,14 @@ public class BeingstalbotBlock extends BeingmodModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			if (true)
-				for (int l = 0; l < 4; ++l) {
-					double d0 = (x + random.nextFloat());
-					double d1 = (y + random.nextFloat());
-					double d2 = (z + random.nextFloat());
-					int i1 = random.nextInt(2) * 2 - 1;
-					double d3 = (random.nextFloat() - 0.5D) * 0.3D;
-					double d4 = (random.nextFloat() - 0.5D) * 0.3D;
-					double d5 = (random.nextFloat() - 0.5D) * 0.3D;
-					world.addParticle(ParticleTypes.DRAGON_BREATH, d0, d1, d2, d3, d4, d5);
-				}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				BeingstalbotClientDisplayRandomTickProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

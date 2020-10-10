@@ -93,6 +93,9 @@
     "onTickUpdate": {
       "name": "Stalgrowth"
     },
+    "onRandomUpdateEvent": {
+      "name": "BeingstalbotClientDisplayRandomTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

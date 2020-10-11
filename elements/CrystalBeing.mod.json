@@ -42,9 +42,6 @@
     "fireSpreadSpeed": 0,
     "frequencyOnChunks": 0,
     "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "onNeighbourBlockChanges": {
-      "name": "Crystaldecay"
-    }
+    "restrictionBiomes": []
   }
 }

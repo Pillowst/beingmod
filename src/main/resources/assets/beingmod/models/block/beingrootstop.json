@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "beingmod:blocks/being_roots",
+    "particle": "beingmod:blocks/being_roots"
+  }
+}

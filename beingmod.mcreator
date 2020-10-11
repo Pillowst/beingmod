@@ -514,6 +514,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "warmedfollicles"
+    },
+    {
+      "name": "Malevolentpotion",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "malevolentpotion"
     }
   ],
   "variable_elements": [],
@@ -532,6 +541,7 @@
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
+      "item.beingmod.malevolentpotion": "Malevolentpotion",
       "block.beingmod.warmedfollicles": "Warmedfollicles",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "block.beingmod.stalstop": "Being Stalactite End",

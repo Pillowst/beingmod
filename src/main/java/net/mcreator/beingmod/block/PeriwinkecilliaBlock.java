@@ -24,12 +24,14 @@ import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -41,6 +43,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.beingmod.procedures.PeriwinkecilliaMobplayerCollidesWithPlantProcedure;
+import net.mcreator.beingmod.item.PeriwinklecilliaitemItem;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Random;
@@ -124,11 +127,16 @@ public class PeriwinkecilliaBlock extends BeingmodModElements.ModElement {
 		}
 
 		@Override
+		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
+			return new ItemStack(PeriwinklecilliaitemItem.block, (int) (1));
+		}
+
+		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(PeriwinklecilliaitemItem.block, (int) (1)));
 		}
 
 		@Override

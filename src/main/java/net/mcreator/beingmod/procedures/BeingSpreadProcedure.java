@@ -116,7 +116,7 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 				BeingspreadreceiverProcedure.executeProcedure($_dependencies);
 			}
 			if ((!(world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)).isSolid()))) {
-				if (((y > 35) && (Math.random() < 0.2))) {
+				if (((y < 50) && (Math.random() < 0.2))) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
 						BlockState _bs = CrystalBeingBlock.block.getDefaultState();

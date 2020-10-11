@@ -2,8 +2,8 @@
   "mappings": {
     "default": {
       "map": {
-        "1": "texture1",
-        "2": "armored_orcanite"
+        "1": "texture2",
+        "2": "texture1"
       },
       "name": "default"
     }

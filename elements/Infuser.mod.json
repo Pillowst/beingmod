@@ -19,6 +19,9 @@
           "id": 0,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "Infuserrecipes"
+          },
           "name": "Slot #0",
           "x": 186,
           "y": 53
@@ -33,6 +36,9 @@
           "id": 1,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "Infuserrecipes"
+          },
           "name": "Slot #1",
           "x": 222,
           "y": 53
@@ -47,6 +53,9 @@
           "id": 2,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "Infuserrecipes"
+          },
           "name": "Slot #2",
           "x": 204,
           "y": 89

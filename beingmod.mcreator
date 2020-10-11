@@ -672,34 +672,77 @@
           }
         ]
       }
+    },
+    {
+      "name": "InfusingtableOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infusingtable_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Infusingtable",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infusingtable"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.beingmod.block_being": "Being",
-      "block.beingmod.beingstalbot": "Being Stalactite End",
       "advancements.beingget.title": "Obtain Being",
-      "block.beingmod.block_orcanite": "Raw Orcanite Block",
       "block.beingmod.crystal_being": "Being Crystal",
       "item.beingmod.shard": "Being Shards",
-      "block.beingmod.dismalgland_1": "Dismal gland ",
-      "item.beingmod.particle_rifle": "Particle Rifle",
       "item.beingmod.item_being": "Being",
-      "item.beingmod.periwinklecilliaitem": "Periwinkle cillia",
-      "block.beingmod.beingrootsbot": "Being Stalactite End",
       "block.beingmod.darkgland": "dark gland ",
-      "block.beingmod.beingstaltop": "Being Stalactite",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
-      "item.beingmod.malevolentpotion": "Malevolentpotion",
       "block.beingmod.warmedfollicles": "Warmed follicles",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "block.beingmod.stalstop": "Being Stalactite End",
-      "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",
-      "block.beingmod.orcnaite_armored": "Armored Orcanite",
       "block.beingmod.neriumore": "nerium ore",
+      "block.beingmod.orcnaite_armored": "Armored Orcanite",
+      "block.beingmod.block_being": "Being",
+      "block.beingmod.beingstalbot": "Being Stalactite End",
+      "block.beingmod.infusingtable": "Infusing table",
+      "block.beingmod.block_orcanite": "Raw Orcanite Block",
+      "block.beingmod.dismalgland_1": "Dismal gland ",
+      "item.beingmod.particle_rifle": "Particle Rifle",
+      "item.beingmod.periwinklecilliaitem": "Periwinkle cillia",
+      "block.beingmod.beingrootsbot": "Being Stalactite End",
+      "block.beingmod.beingstaltop": "Being Stalactite",
+      "item.beingmod.malevolentpotion": "Malevolentpotion",
+      "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
       "block.beingmod.beingrootstop": "Being Stalactite"
     }
   },

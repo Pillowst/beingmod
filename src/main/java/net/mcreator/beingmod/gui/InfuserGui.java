@@ -34,6 +34,7 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.beingmod.procedures.InfuserrecipesProcedure;
 import net.mcreator.beingmod.BeingmodModElements;
 import net.mcreator.beingmod.BeingmodMod;
 
@@ -120,10 +121,25 @@ public class InfuserGui extends BeingmodModElements.ModElement {
 				}
 			}
 			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 61, 17) {
+				@Override
+				public void onSlotChanged() {
+					super.onSlotChanged();
+					GuiContainerMod.this.slotChanged(0, 0, 0);
+				}
 			}));
 			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 97, 17) {
+				@Override
+				public void onSlotChanged() {
+					super.onSlotChanged();
+					GuiContainerMod.this.slotChanged(1, 0, 0);
+				}
 			}));
 			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 79, 53) {
+				@Override
+				public void onSlotChanged() {
+					super.onSlotChanged();
+					GuiContainerMod.this.slotChanged(2, 0, 0);
+				}
 			}));
 			int si;
 			int sj;
@@ -442,5 +458,26 @@ public class InfuserGui extends BeingmodModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (slotID == 0 && changeType == 0) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				InfuserrecipesProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 1 && changeType == 0) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				InfuserrecipesProcedure.executeProcedure($_dependencies);
+			}
+		}
+		if (slotID == 2 && changeType == 0) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				InfuserrecipesProcedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 }

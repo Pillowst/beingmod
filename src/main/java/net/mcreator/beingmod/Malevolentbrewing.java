@@ -43,7 +43,7 @@ public class Malevolentbrewing extends BeingmodModElements.ModElement {
 	public void init(FMLCommonSetupEvent event) {
 		try {
 			Class clazz = net.minecraft.potion.PotionBrewing.class;
-			Method mth = ObfuscationReflectionHelper.findMethod(clazz, "func_193357_a", Potion.class, Item.class, Potion.class);
+			Method mth = ObfuscationReflectionHelper.findMethod(clazz, "func_193357_a", Potion.class, Item.class, Item.class);
 			mth.invoke(null, Potions.AWKWARD, PeriwinklecilliaitemItem.block, MalevolentpotionItem.block);
 			// To add more recipes, you can copy the line above, for ex.
 			// mth.invoke(null, potion2, item2, potion3);

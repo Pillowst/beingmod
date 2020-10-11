@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "noxious_bloomer",
+    "texture": "noxious2",
     "textureBottom": "",
     "customModelName": "Cross model",
     "plantType": "normal",

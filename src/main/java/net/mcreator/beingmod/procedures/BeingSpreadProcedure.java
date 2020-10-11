@@ -11,6 +11,7 @@ import net.mcreator.beingmod.block.PeriwinkecilliaBlock;
 import net.mcreator.beingmod.block.NoxiousbloomerBlock;
 import net.mcreator.beingmod.block.DarkglandBlock;
 import net.mcreator.beingmod.block.CrystalBeingBlock;
+import net.mcreator.beingmod.block.BlockOrcaniteBlock;
 import net.mcreator.beingmod.block.BeingstalbotBlock;
 import net.mcreator.beingmod.block.BeingrootstopBlock;
 import net.mcreator.beingmod.block.BeingrootsbotBlock;
@@ -50,26 +51,44 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock())
-				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock()))
-				|| ((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock())
-						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+		if ((((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.LAVA.getDefaultState().getBlock())
+				|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.LAVA.getDefaultState().getBlock()))
+				|| ((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.LAVA.getDefaultState().getBlock())
+						|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.LAVA.getDefaultState()
 								.getBlock()))
-						|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
+						|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.LAVA.getDefaultState()
 								.getBlock())
-								|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.CAVE_AIR
-										.getDefaultState().getBlock()))))
-				|| ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
-						|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.AIR.getDefaultState()
+								|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.LAVA.getDefaultState()
+										.getBlock()))))
+				|| (((((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z + 1)))).getBlock() == Blocks.WATER.getDefaultState().getBlock())
+						|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) (z - 1)))).getBlock() == Blocks.WATER.getDefaultState()
 								.getBlock()))
-						|| ((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState()
+						|| ((((world.getBlockState(new BlockPos((int) (x + 1), (int) y, (int) z))).getBlock() == Blocks.WATER.getDefaultState()
 								.getBlock())
-								|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState()
+								|| ((world.getBlockState(new BlockPos((int) (x - 1), (int) y, (int) z))).getBlock() == Blocks.WATER.getDefaultState()
 										.getBlock()))
-								|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState()
+								|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.WATER.getDefaultState()
 										.getBlock())
-										|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.AIR
-												.getDefaultState().getBlock())))))) {
+										|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.WATER
+												.getDefaultState().getBlock()))))
+						|| (((world.getBlockState(new BlockPos((int) (x - 1), (int) (y - 0), (int) (z - 0))).isSolid())
+								|| (world.getBlockState(new BlockPos((int) (x + 1), (int) (y - 0), (int) (z - 0))).isSolid()))
+								|| (((world.getBlockState(new BlockPos((int) (x + 0), (int) (y - 1), (int) (z - 0))).isSolid())
+										|| (world.getBlockState(new BlockPos((int) (x + 0), (int) (y + 1), (int) (z - 0))).isSolid()))
+										|| ((world.getBlockState(new BlockPos((int) (x + 0), (int) (y + 0), (int) (z - 1))).isSolid())
+												|| (world.getBlockState(new BlockPos((int) (x + 0), (int) (y + 0), (int) (z + 1))).isSolid()))))))) {
+			{
+				BlockPos _bp = new BlockPos((int) x, (int) (y + 0), (int) z);
+				BlockState _bs = BlockOrcaniteBlock.block.getDefaultState();
+				BlockState _bso = world.getBlockState(_bp);
+				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+					if (_bs.has(_property))
+						_bs = _bs.with(_property, (Comparable) entry.getValue());
+				}
+				world.setBlockState(_bp, _bs, 3);
+			}
+		} else {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("world", world);

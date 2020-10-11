@@ -22,7 +22,7 @@
     "Mx": 0.6,
     "My": 0.6,
     "Mz": 0.6,
-    "name": "Being Stalactite End",
+    "name": "Being Stalactite",
     "specialInfo": [],
     "hardness": 3.0,
     "resistance": 3.0,
@@ -50,7 +50,7 @@
     "isReplaceable": false,
     "colorOnMap": "OBSIDIAN",
     "creativePickItem": {
-      "value": "CUSTOM:Beingstaltop"
+      "value": "CUSTOM:Beingstalbot"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

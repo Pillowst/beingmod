@@ -2,7 +2,7 @@
   "_fv": 12,
   "_type": "block",
   "definition": {
-    "texture": "being_stalactite_top_newest",
+    "texture": "being_stalactite_bottom_newest",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -19,10 +19,10 @@
     "mx": 0.30000000000000004,
     "my": 0.30000000000000004,
     "mz": 0.30000000000000004,
-    "Mx": 0.7,
-    "My": 0.7,
-    "Mz": 0.7,
-    "name": "Being Stalactite",
+    "Mx": 0.6,
+    "My": 0.6,
+    "Mz": 0.6,
+    "name": "Being Stalactite End",
     "specialInfo": [],
     "hardness": 3.0,
     "resistance": 3.0,
@@ -46,7 +46,7 @@
       "value": "ROCK"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "colorOnMap": "OBSIDIAN",
     "creativePickItem": {
@@ -68,10 +68,10 @@
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "DRAGON_BREATH"
     },
     "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
+    "particleSpawningRadious": 0.3,
     "particleAmount": 4,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -90,9 +90,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onNeighbourBlockChanges": {
-      "name": "StalBotBreak"
-    },
     "onRandomUpdateEvent": {
       "name": "BeingstalbotClientDisplayRandomTick"
     },

@@ -1,6 +1,6 @@
 {
   "block.beingmod.block_being": "Being",
-  "block.beingmod.beingstalbot": "Being Stalactite End",
+  "block.beingmod.beingstalbot": "Being Stalactite",
   "advancements.beingget.title": "Obtain Being",
   "block.beingmod.block_orcanite": "Raw Orcanite Block",
   "block.beingmod.crystal_being": "Being Crystal",
@@ -12,6 +12,7 @@
   "block.beingmod.beingstaltop": "Being Stalactite",
   "block.beingmod.periwinkecillia": "Periwinkle cillia",
   "item.beingmod.orcanite_shard": "Orcanite Shards",
+  "block.beingmod.stalstop": "Being Stalactite End",
   "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
   "block.beingmod.noxiousbloomer": "Noxious bloomer",
   "block.beingmod.orcnaite_armored": "Armored Orcanite",

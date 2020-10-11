@@ -30,7 +30,6 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.beingmod.procedures.StalBotBreakProcedure;
 import net.mcreator.beingmod.procedures.BeingstalbotClientDisplayRandomTickProcedure;
 import net.mcreator.beingmod.item.ShardItem;
 import net.mcreator.beingmod.BeingmodModElements;
@@ -42,11 +41,11 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @BeingmodModElements.ModElement.Tag
-public class BeingstaltopBlock extends BeingmodModElements.ModElement {
-	@ObjectHolder("beingmod:beingstaltop")
+public class StalstopBlock extends BeingmodModElements.ModElement {
+	@ObjectHolder("beingmod:stalstop")
 	public static final Block block = null;
-	public BeingstaltopBlock(BeingmodModElements instance) {
-		super(instance, 13);
+	public StalstopBlock(BeingmodModElements instance) {
+		super(instance, 38);
 	}
 
 	@Override
@@ -63,8 +62,9 @@ public class BeingstaltopBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(3f, 3f).lightValue(15).notSolid());
-			setRegistryName("beingstaltop");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(3f, 3f).lightValue(15).notSolid()
+					.tickRandomly());
+			setRegistryName("stalstop");
 		}
 
 		@OnlyIn(Dist.CLIENT)
@@ -86,7 +86,7 @@ public class BeingstaltopBlock extends BeingmodModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			return VoxelShapes.create(0.3D, 0.3D, 0.3D, 0.7D, 0.7D, 0.7D).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.create(0.3D, 0.3D, 0.3D, 0.6D, 0.6D, 0.6D).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override
@@ -110,25 +110,6 @@ public class BeingstaltopBlock extends BeingmodModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(ShardItem.block, (int) (1)));
-		}
-
-		@Override
-		public void neighborChanged(BlockState state, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
-			super.neighborChanged(state, world, pos, neighborBlock, fromPos, moving);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
-			} else {
-			}
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				StalBotBreakProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@OnlyIn(Dist.CLIENT)

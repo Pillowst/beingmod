@@ -25,7 +25,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": "CUSTOM:Periwinklecilliaitem"
+      "value": ""
     },
     "dropAmount": 1,
     "forceTicking": true,
@@ -34,7 +34,7 @@
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": "CUSTOM:Periwinklecilliaitem"
+      "value": ""
     },
     "offsetType": "NONE",
     "aiPathNodeType": "STICKY_HONEY",

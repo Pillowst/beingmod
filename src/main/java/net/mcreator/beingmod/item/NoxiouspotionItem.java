@@ -93,7 +93,8 @@ public class NoxiouspotionItem extends BeingmodModElements.ModElement {
 		}
 
 		@Override
-		public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entityLiving, int timeLeft) {
+		public void onUsingTick(ItemStack itemstack, LivingEntity entityLiving, int count) {
+			World world = entityLiving.world;
 			if (!world.isRemote && entityLiving instanceof ServerPlayerEntity) {
 				ServerPlayerEntity entity = (ServerPlayerEntity) entityLiving;
 				double x = entity.getPosX();
@@ -103,6 +104,7 @@ public class NoxiouspotionItem extends BeingmodModElements.ModElement {
 					ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.9f, 1, 1);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
+					entity.stopActiveHand();
 				}
 			}
 		}

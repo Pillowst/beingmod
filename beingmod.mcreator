@@ -516,15 +516,6 @@
       "registry_name": "warmedfollicles"
     },
     {
-      "name": "Periwinklecilliaitem",
-      "type": "item",
-      "sortid": 43,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "periwinklecilliaitem"
-    },
-    {
       "name": "PeriwinklecilliaitemRightClickedOnBlock",
       "type": "procedure",
       "sortid": 44,
@@ -788,6 +779,35 @@
           }
         ]
       }
+    },
+    {
+      "name": "BeingrootsbotBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingrootsbot_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -813,7 +833,6 @@
       "block.beingmod.block_orcanite": "Raw Orcanite Block",
       "block.beingmod.dismalgland_1": "Dismal gland ",
       "item.beingmod.particle_rifle": "Particle Rifle",
-      "item.beingmod.periwinklecilliaitem": "Periwinkle cillia",
       "block.beingmod.beingrootsbot": "Being Stalactite End",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "item.beingmod.noxiouspotion": "Noxious potion",

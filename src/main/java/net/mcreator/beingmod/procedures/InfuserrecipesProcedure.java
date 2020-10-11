@@ -13,10 +13,11 @@ import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
 
 import net.mcreator.beingmod.item.WebpotionItem;
-import net.mcreator.beingmod.item.PeriwinklecilliaitemItem;
 import net.mcreator.beingmod.item.NoxiouspotionItem;
+import net.mcreator.beingmod.block.PeriwinkecilliaBlock;
 import net.mcreator.beingmod.block.NoxiousbloomerBlock;
 import net.mcreator.beingmod.block.DarkglandBlock;
 import net.mcreator.beingmod.BeingmodModElements;
@@ -76,7 +77,7 @@ public class InfuserrecipesProcedure extends BeingmodModElements.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(PeriwinklecilliaitemItem.block, (int) (1)).getItem()) || ((new Object() {
+		}.getItemStack((int) (0))).getItem() == new ItemStack(PeriwinkecilliaBlock.block, (int) (1)).getItem()) || ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -90,7 +91,7 @@ public class InfuserrecipesProcedure extends BeingmodModElements.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(PeriwinklecilliaitemItem.block, (int) (1)).getItem())) && ((((new Object() {
+		}.getItemStack((int) (1))).getItem() == new ItemStack(PeriwinkecilliaBlock.block, (int) (1)).getItem())) && ((((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -104,7 +105,7 @@ public class InfuserrecipesProcedure extends BeingmodModElements.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(Items.STRING, (int) (1)).getItem()) || ((new Object() {
+		}.getItemStack((int) (1))).getItem() == new ItemStack(Blocks.COBWEB, (int) (1)).getItem()) || ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -118,7 +119,7 @@ public class InfuserrecipesProcedure extends BeingmodModElements.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(Items.STRING, (int) (1)).getItem())) && ((new Object() {
+		}.getItemStack((int) (0))).getItem() == new ItemStack(Blocks.COBWEB, (int) (1)).getItem())) && ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {

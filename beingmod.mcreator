@@ -570,6 +570,53 @@
           }
         ]
       }
+    },
+    {
+      "name": "Beingrootstop",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingrootstop"
+    },
+    {
+      "name": "Beingrootsbot",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingrootsbot"
+    },
+    {
+      "name": "BeingrootstopBlockAdded",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingrootstop_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -586,6 +633,7 @@
       "item.beingmod.particle_rifle": "Particle Rifle",
       "item.beingmod.item_being": "Being",
       "item.beingmod.periwinklecilliaitem": "Periwinkle cillia",
+      "block.beingmod.beingrootsbot": "Being Stalactite End",
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
@@ -596,7 +644,8 @@
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",
       "block.beingmod.orcnaite_armored": "Armored Orcanite",
-      "block.beingmod.neriumore": "nerium ore"
+      "block.beingmod.neriumore": "nerium ore",
+      "block.beingmod.beingrootstop": "Being Stalactite"
     }
   },
   "workspaceSettings": {

@@ -9,6 +9,7 @@
   "item.beingmod.particle_rifle": "Particle Rifle",
   "item.beingmod.item_being": "Being",
   "item.beingmod.periwinklecilliaitem": "Periwinkle cillia",
+  "block.beingmod.beingrootsbot": "Being Stalactite End",
   "block.beingmod.darkgland": "dark gland ",
   "block.beingmod.beingstaltop": "Being Stalactite",
   "block.beingmod.periwinkecillia": "Periwinkle cillia",
@@ -19,5 +20,6 @@
   "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
   "block.beingmod.noxiousbloomer": "Noxious bloomer",
   "block.beingmod.orcnaite_armored": "Armored Orcanite",
-  "block.beingmod.neriumore": "nerium ore"
+  "block.beingmod.neriumore": "nerium ore",
+  "block.beingmod.beingrootstop": "Being Stalactite"
 }

@@ -33,7 +33,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.beingmod.procedures.WebpotionBulletHitsLivingEntityProcedure;
+import net.mcreator.beingmod.procedures.NoxiouspotionhitslivingentityProcedure;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Random;
@@ -159,7 +159,7 @@ public class NoxiouspotionItem extends BeingmodModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				WebpotionBulletHitsLivingEntityProcedure.executeProcedure($_dependencies);
+				NoxiouspotionhitslivingentityProcedure.executeProcedure($_dependencies);
 			}
 		}
 
@@ -178,7 +178,7 @@ public class NoxiouspotionItem extends BeingmodModElements.ModElement {
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
-					WebpotionBulletHitsLivingEntityProcedure.executeProcedure($_dependencies);
+					NoxiouspotionhitslivingentityProcedure.executeProcedure($_dependencies);
 				}
 				this.remove();
 			}

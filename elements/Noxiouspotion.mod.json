@@ -34,10 +34,10 @@
     "bulletModel": "Default",
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
-      "name": "WebpotionBulletHitsLivingEntity"
+      "name": "Noxiouspotionhitslivingentity"
     },
     "onBulletHitsEntity": {
-      "name": "WebpotionBulletHitsLivingEntity"
+      "name": "Noxiouspotionhitslivingentity"
     }
   }
 }

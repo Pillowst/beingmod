@@ -1,4 +1,5 @@
 {
+  "item.beingmod.webpotion": "Web potion",
   "advancements.beingget.title": "Obtain Being",
   "block.beingmod.crystal_being": "Being Crystal",
   "item.beingmod.shard": "Being Shards",
@@ -9,8 +10,8 @@
   "item.beingmod.orcanite_shard": "Orcanite Shards",
   "block.beingmod.stalstop": "Being Stalactite End",
   "block.beingmod.noxiousbloomer": "Noxious bloomer",
-  "block.beingmod.orcnaite_armored": "Armored Orcanite",
   "block.beingmod.neriumore": "nerium ore",
+  "block.beingmod.orcnaite_armored": "Armored Orcanite",
   "block.beingmod.block_being": "Being",
   "block.beingmod.beingstalbot": "Being Stalactite End",
   "block.beingmod.infusingtable": "Infusing table",
@@ -20,7 +21,6 @@
   "item.beingmod.periwinklecilliaitem": "Periwinkle cillia",
   "block.beingmod.beingrootsbot": "Being Stalactite End",
   "block.beingmod.beingstaltop": "Being Stalactite",
-  "item.beingmod.malevolentpotion": "Malevolentpotion",
   "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
   "block.beingmod.beingrootstop": "Being Stalactite"
 }

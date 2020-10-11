@@ -1,0 +1,40 @@
+{
+  "_fv": 12,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "malevolentpotion",
+    "customModelName": "Normal",
+    "name": "Web potion",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "BREWING"
+    },
+    "stackSize": 8,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": true,
+    "animation": "spear",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 0.9,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Webpotion"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsEntity": {
+      "name": "WebpotionBulletHitsLivingEntity"
+    }
+  }
+}

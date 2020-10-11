@@ -516,24 +516,6 @@
       "registry_name": "warmedfollicles"
     },
     {
-      "name": "Malevolentpotion",
-      "type": "item",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "malevolentpotion"
-    },
-    {
-      "name": "Malevolentbrewing",
-      "type": "code",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "malevolentbrewing"
-    },
-    {
       "name": "Periwinklecilliaitem",
       "type": "item",
       "sortid": 43,
@@ -730,12 +712,51 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "infusingtable"
+    },
+    {
+      "name": "WebpotionBulletHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "webpotion_bullet_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Webpotion",
+      "type": "gun",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "webpotion"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.beingmod.webpotion": "Web potion",
       "advancements.beingget.title": "Obtain Being",
       "block.beingmod.crystal_being": "Being Crystal",
       "item.beingmod.shard": "Being Shards",
@@ -746,8 +767,8 @@
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "block.beingmod.stalstop": "Being Stalactite End",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",
-      "block.beingmod.orcnaite_armored": "Armored Orcanite",
       "block.beingmod.neriumore": "nerium ore",
+      "block.beingmod.orcnaite_armored": "Armored Orcanite",
       "block.beingmod.block_being": "Being",
       "block.beingmod.beingstalbot": "Being Stalactite End",
       "block.beingmod.infusingtable": "Infusing table",
@@ -757,7 +778,6 @@
       "item.beingmod.periwinklecilliaitem": "Periwinkle cillia",
       "block.beingmod.beingrootsbot": "Being Stalactite End",
       "block.beingmod.beingstaltop": "Being Stalactite",
-      "item.beingmod.malevolentpotion": "Malevolentpotion",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
       "block.beingmod.beingrootstop": "Being Stalactite"
     }

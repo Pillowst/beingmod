@@ -38,7 +38,6 @@ public class BeingstalbotClientDisplayRandomTickProcedure extends BeingmodModEle
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		world.addParticle(ParticleTypes.DRAGON_BREATH, (x + (Math.random() - 0.5)), (y + (Math.random() - 0.5)), (z + (Math.random() - 0.5)), 0,
-				(-0.02), 0);
+		world.addParticle(ParticleTypes.DRAGON_BREATH, ((x + Math.random()) - 0.5), (y - 1), ((z + Math.random()) - 0.5), 0, (-0.02), 0);
 	}
 }

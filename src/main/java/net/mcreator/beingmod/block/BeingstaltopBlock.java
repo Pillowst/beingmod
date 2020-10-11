@@ -19,10 +19,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.Minecraft;
 import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
@@ -32,7 +30,6 @@ import net.minecraft.block.Block;
 
 import net.mcreator.beingmod.procedures.StalBotBreakProcedure;
 import net.mcreator.beingmod.procedures.BeingstaltopUpdateProcedure;
-import net.mcreator.beingmod.procedures.BeingstalbotClientDisplayRandomTickProcedure;
 import net.mcreator.beingmod.item.ShardItem;
 import net.mcreator.beingmod.BeingmodModElements;
 
@@ -87,7 +84,7 @@ public class BeingstaltopBlock extends BeingmodModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			return VoxelShapes.create(0.3D, 0.3D, 0.3D, 0.7D, 0.7D, 0.7D).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.create(0.3D, 0D, 0.3D, 0.7D, 1D, 0.7D).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override
@@ -151,24 +148,6 @@ public class BeingstaltopBlock extends BeingmodModElements.ModElement {
 				BeingstaltopUpdateProcedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
-		}
-
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public void animateTick(BlockState state, World world, BlockPos pos, Random random) {
-			super.animateTick(state, world, pos, random);
-			PlayerEntity entity = Minecraft.getInstance().player;
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BeingstalbotClientDisplayRandomTickProcedure.executeProcedure($_dependencies);
-			}
 		}
 	}
 }

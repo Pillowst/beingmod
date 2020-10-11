@@ -93,6 +93,9 @@
     "onTickUpdate": {
       "name": "BeingSpread"
     },
+    "onRandomUpdateEvent": {
+      "name": "BeingstalbotClientDisplayRandomTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

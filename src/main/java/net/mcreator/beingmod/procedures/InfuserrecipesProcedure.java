@@ -102,7 +102,7 @@ public class InfuserrecipesProcedure extends BeingmodModElements.ModElement {
 				return ItemStack.EMPTY;
 			}
 		}.getItemStack((int) (0))).getItem() == new ItemStack(PeriwinklecilliaitemItem.block, (int) (1)).getItem())))) {
-			amount = (double) Math.min((new Object() {
+			amount = (double) Math.min(8, Math.min((new Object() {
 				public int getAmount(int sltid) {
 					if (entity instanceof ServerPlayerEntity) {
 						Container _current = ((ServerPlayerEntity) entity).openContainer;
@@ -132,7 +132,7 @@ public class InfuserrecipesProcedure extends BeingmodModElements.ModElement {
 					}
 					return 0;
 				}
-			}.getAmount((int) (0))));
+			}.getAmount((int) (0)))));
 			{
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -175,7 +175,7 @@ public class InfuserrecipesProcedure extends BeingmodModElements.ModElement {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
 						ItemStack _setstack = new ItemStack(WebpotionItem.block, (int) (1));
-						_setstack.setCount((int) 1);
+						_setstack.setCount((int) (amount));
 						((Slot) ((Map) invobj).get((int) (2))).putStack(_setstack);
 						_current.detectAndSendChanges();
 					}

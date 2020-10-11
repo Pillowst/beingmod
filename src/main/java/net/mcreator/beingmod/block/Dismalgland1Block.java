@@ -16,6 +16,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
@@ -74,6 +75,11 @@ public class Dismalgland1Block extends BeingmodModElements.ModElement {
 		@Override
 		public int tickRate(IWorldReader world) {
 			return 40;
+		}
+
+		@Override
+		public boolean isReplaceable(BlockState state, BlockItemUseContext context) {
+			return true;
 		}
 
 		@Override

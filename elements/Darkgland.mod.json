@@ -47,7 +47,7 @@
     },
     "tickRate": 40,
     "tickRandomly": true,
-    "isReplaceable": false,
+    "isReplaceable": true,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": "CUSTOM:Darkgland"

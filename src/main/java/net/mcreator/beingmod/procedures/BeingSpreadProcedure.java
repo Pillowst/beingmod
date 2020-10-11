@@ -12,6 +12,7 @@ import net.mcreator.beingmod.block.NoxiousbloomerBlock;
 import net.mcreator.beingmod.block.DarkglandBlock;
 import net.mcreator.beingmod.block.CrystalBeingBlock;
 import net.mcreator.beingmod.block.BeingstalbotBlock;
+import net.mcreator.beingmod.block.BeingrootstopBlock;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
@@ -188,7 +189,24 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 							.getBlock())
 							|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
 									.getBlock())))) {
-				if ((Math.random() < 0.2)) {
+				if (((Math.random() < 0.2) && (((world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == Blocks.AIR
+						.getDefaultState().getBlock())
+						|| (((world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+								.getBlock())
+								|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == Blocks.CAVE_AIR
+										.getDefaultState().getBlock()))))) {
+					{
+						BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
+						BlockState _bs = BeingrootstopBlock.block.getDefaultState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+							if (_bs.has(_property))
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+						}
+						world.setBlockState(_bp, _bs, 3);
+					}
+				} else if ((Math.random() < 0.2)) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
 						BlockState _bs = BeingstalbotBlock.block.getDefaultState();

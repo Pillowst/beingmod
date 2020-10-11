@@ -93,9 +93,6 @@
     "onNeighbourBlockChanges": {
       "name": "StalBotBreak"
     },
-    "onTickUpdate": {
-      "name": "BeingstaltopUpdate"
-    },
     "onRandomUpdateEvent": {
       "name": "BeingstalbotClientDisplayRandomTick"
     },

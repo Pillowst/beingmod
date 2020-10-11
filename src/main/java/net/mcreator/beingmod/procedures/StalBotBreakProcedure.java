@@ -2,13 +2,7 @@ package net.mcreator.beingmod.procedures;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.state.IProperty;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.BlockState;
 
-import net.mcreator.beingmod.block.StalstopBlock;
-import net.mcreator.beingmod.block.BeingstaltopBlock;
-import net.mcreator.beingmod.block.BeingstalbotBlock;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
@@ -44,29 +38,8 @@ public class StalBotBreakProcedure extends BeingmodModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock())
-				|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState().getBlock())
-						|| ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState()
-								.getBlock())))) {
+		if ((!(world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)).isSolid()))) {
 			world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
-		}
-		if (((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == BeingstalbotBlock.block.getDefaultState()
-				.getBlock())
-				|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == BeingstaltopBlock.block.getDefaultState()
-						.getBlock()))
-				|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == StalstopBlock.block.getDefaultState()
-						.getBlock()))) {
-			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = BeingstaltopBlock.block.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
-				}
-				world.setBlockState(_bp, _bs, 3);
-			}
 		}
 	}
 }

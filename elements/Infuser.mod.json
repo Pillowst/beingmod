@@ -60,6 +60,36 @@
           "x": 204,
           "y": 89
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bottle_icon.png",
+          "use1Xscale": false,
+          "name": "bottle_icon.png",
+          "x": 205,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gem_icon.png",
+          "use1Xscale": false,
+          "name": "gem_icon.png",
+          "x": 187,
+          "y": 54
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gem_icon.png",
+          "use1Xscale": false,
+          "name": "gem_icon.png",
+          "x": 223,
+          "y": 54
+        }
       }
     ]
   }

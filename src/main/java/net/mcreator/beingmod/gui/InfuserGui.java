@@ -332,6 +332,12 @@ public class InfuserGui extends BeingmodModElements.ModElement {
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
 			this.blit(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("beingmod:textures/bottle_icon.png"));
+			this.blit(this.guiLeft + 79, this.guiTop + 53, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("beingmod:textures/gem_icon.png"));
+			this.blit(this.guiLeft + 61, this.guiTop + 17, 0, 0, 16, 16, 16, 16);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("beingmod:textures/gem_icon.png"));
+			this.blit(this.guiLeft + 97, this.guiTop + 17, 0, 0, 16, 16, 16, 16);
 		}
 
 		@Override
@@ -462,6 +468,10 @@ public class InfuserGui extends BeingmodModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
 				InfuserrecipesProcedure.executeProcedure($_dependencies);
 			}
 		}
@@ -469,6 +479,10 @@ public class InfuserGui extends BeingmodModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
 				InfuserrecipesProcedure.executeProcedure($_dependencies);
 			}
 		}
@@ -476,6 +490,10 @@ public class InfuserGui extends BeingmodModElements.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
 				InfuserrecipesProcedure.executeProcedure($_dependencies);
 			}
 		}

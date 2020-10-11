@@ -16,6 +16,9 @@ import net.minecraft.entity.Entity;
 
 import net.mcreator.beingmod.item.WebpotionItem;
 import net.mcreator.beingmod.item.PeriwinklecilliaitemItem;
+import net.mcreator.beingmod.item.NoxiouspotionItem;
+import net.mcreator.beingmod.block.NoxiousbloomerBlock;
+import net.mcreator.beingmod.block.DarkglandBlock;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.function.Supplier;
@@ -59,7 +62,7 @@ public class InfuserrecipesProcedure extends BeingmodModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		double amount = 0;
-		if ((((new Object() {
+		if (((((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -73,7 +76,7 @@ public class InfuserrecipesProcedure extends BeingmodModElements.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (1))).getItem() == new ItemStack(Items.STRING, (int) (1)).getItem()) && (((new Object() {
+		}.getItemStack((int) (0))).getItem() == new ItemStack(PeriwinklecilliaitemItem.block, (int) (1)).getItem()) || ((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -87,7 +90,7 @@ public class InfuserrecipesProcedure extends BeingmodModElements.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (2))).getItem() == new ItemStack(Items.POTION, (int) (1)).getItem()) && ((new Object() {
+		}.getItemStack((int) (1))).getItem() == new ItemStack(PeriwinklecilliaitemItem.block, (int) (1)).getItem())) && ((((new Object() {
 			public ItemStack getItemStack(int sltid) {
 				Entity _ent = entity;
 				if (_ent instanceof ServerPlayerEntity) {
@@ -101,7 +104,35 @@ public class InfuserrecipesProcedure extends BeingmodModElements.ModElement {
 				}
 				return ItemStack.EMPTY;
 			}
-		}.getItemStack((int) (0))).getItem() == new ItemStack(PeriwinklecilliaitemItem.block, (int) (1)).getItem())))) {
+		}.getItemStack((int) (1))).getItem() == new ItemStack(Items.STRING, (int) (1)).getItem()) || ((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				Entity _ent = entity;
+				if (_ent instanceof ServerPlayerEntity) {
+					Container _current = ((ServerPlayerEntity) _ent).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (0))).getItem() == new ItemStack(Items.STRING, (int) (1)).getItem())) && ((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				Entity _ent = entity;
+				if (_ent instanceof ServerPlayerEntity) {
+					Container _current = ((ServerPlayerEntity) _ent).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (2))).getItem() == new ItemStack(Items.POTION, (int) (1)).getItem())))) {
 			amount = (double) Math.min(8, Math.min((new Object() {
 				public int getAmount(int sltid) {
 					if (entity instanceof ServerPlayerEntity) {
@@ -175,6 +206,166 @@ public class InfuserrecipesProcedure extends BeingmodModElements.ModElement {
 					Object invobj = ((Supplier) _current).get();
 					if (invobj instanceof Map) {
 						ItemStack _setstack = new ItemStack(WebpotionItem.block, (int) (1));
+						_setstack.setCount((int) (amount));
+						((Slot) ((Map) invobj).get((int) (2))).putStack(_setstack);
+						_current.detectAndSendChanges();
+					}
+				}
+			}
+			if (!world.getWorld().isRemote) {
+				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.brewing_stand.brew")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1);
+			} else {
+				world.getWorld().playSound(x, y, z,
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.brewing_stand.brew")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+			}
+		}
+		if (((((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				Entity _ent = entity;
+				if (_ent instanceof ServerPlayerEntity) {
+					Container _current = ((ServerPlayerEntity) _ent).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (0))).getItem() == new ItemStack(NoxiousbloomerBlock.block, (int) (1)).getItem()) || ((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				Entity _ent = entity;
+				if (_ent instanceof ServerPlayerEntity) {
+					Container _current = ((ServerPlayerEntity) _ent).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (1))).getItem() == new ItemStack(NoxiousbloomerBlock.block, (int) (1)).getItem())) && ((((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				Entity _ent = entity;
+				if (_ent instanceof ServerPlayerEntity) {
+					Container _current = ((ServerPlayerEntity) _ent).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (1))).getItem() == new ItemStack(DarkglandBlock.block, (int) (1)).getItem()) || ((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				Entity _ent = entity;
+				if (_ent instanceof ServerPlayerEntity) {
+					Container _current = ((ServerPlayerEntity) _ent).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (0))).getItem() == new ItemStack(DarkglandBlock.block, (int) (1)).getItem())) && ((new Object() {
+			public ItemStack getItemStack(int sltid) {
+				Entity _ent = entity;
+				if (_ent instanceof ServerPlayerEntity) {
+					Container _current = ((ServerPlayerEntity) _ent).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							return ((Slot) ((Map) invobj).get(sltid)).getStack();
+						}
+					}
+				}
+				return ItemStack.EMPTY;
+			}
+		}.getItemStack((int) (2))).getItem() == new ItemStack(Items.POTION, (int) (1)).getItem())))) {
+			amount = (double) Math.min(8, Math.min((new Object() {
+				public int getAmount(int sltid) {
+					if (entity instanceof ServerPlayerEntity) {
+						Container _current = ((ServerPlayerEntity) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+								if (stack != null)
+									return stack.getCount();
+							}
+						}
+					}
+					return 0;
+				}
+			}.getAmount((int) (1))), (new Object() {
+				public int getAmount(int sltid) {
+					if (entity instanceof ServerPlayerEntity) {
+						Container _current = ((ServerPlayerEntity) entity).openContainer;
+						if (_current instanceof Supplier) {
+							Object invobj = ((Supplier) _current).get();
+							if (invobj instanceof Map) {
+								ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
+								if (stack != null)
+									return stack.getCount();
+							}
+						}
+					}
+					return 0;
+				}
+			}.getAmount((int) (0)))));
+			{
+				Entity _ent = entity;
+				if (_ent instanceof ServerPlayerEntity) {
+					Container _current = ((ServerPlayerEntity) _ent).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							((Slot) ((Map) invobj).get((int) (0))).decrStackSize((int) ((amount)));
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+			}
+			{
+				Entity _ent = entity;
+				if (_ent instanceof ServerPlayerEntity) {
+					Container _current = ((ServerPlayerEntity) _ent).openContainer;
+					if (_current instanceof Supplier) {
+						Object invobj = ((Supplier) _current).get();
+						if (invobj instanceof Map) {
+							((Slot) ((Map) invobj).get((int) (1))).decrStackSize((int) ((amount)));
+							_current.detectAndSendChanges();
+						}
+					}
+				}
+			}
+			if (entity instanceof ServerPlayerEntity) {
+				Container _current = ((ServerPlayerEntity) entity).openContainer;
+				if (_current instanceof Supplier) {
+					Object invobj = ((Supplier) _current).get();
+					if (invobj instanceof Map) {
+						((Slot) ((Map) invobj).get((int) (2))).putStack(ItemStack.EMPTY);
+						_current.detectAndSendChanges();
+					}
+				}
+			}
+			if (entity instanceof PlayerEntity) {
+				Container _current = ((PlayerEntity) entity).openContainer;
+				if (_current instanceof Supplier) {
+					Object invobj = ((Supplier) _current).get();
+					if (invobj instanceof Map) {
+						ItemStack _setstack = new ItemStack(NoxiouspotionItem.block, (int) (1));
 						_setstack.setCount((int) (amount));
 						((Slot) ((Map) invobj).get((int) (2))).putStack(_setstack);
 						_current.detectAndSendChanges();

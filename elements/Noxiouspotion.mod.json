@@ -3,9 +3,9 @@
   "_type": "gun",
   "definition": {
     "renderType": 0,
-    "texture": "malevolentpotion",
+    "texture": "noxiouspotion",
     "customModelName": "Normal",
-    "name": "Web potion",
+    "name": "Noxious potion",
     "specialInfo": [],
     "creativeTab": {
       "value": "BREWING"
@@ -17,7 +17,7 @@
     "shootConstantly": false,
     "usageCount": 0,
     "actionSound": {
-      "value": "entity.arrow.shoot"
+      "value": ""
     },
     "hasGlow": true,
     "animation": "spear",

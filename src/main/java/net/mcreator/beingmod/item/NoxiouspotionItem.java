@@ -41,13 +41,13 @@ import java.util.Map;
 import java.util.HashMap;
 
 @BeingmodModElements.ModElement.Tag
-public class WebpotionItem extends BeingmodModElements.ModElement {
-	@ObjectHolder("beingmod:webpotion")
+public class NoxiouspotionItem extends BeingmodModElements.ModElement {
+	@ObjectHolder("beingmod:noxiouspotion")
 	public static final Item block = null;
-	@ObjectHolder("beingmod:entitybulletwebpotion")
+	@ObjectHolder("beingmod:entitybulletnoxiouspotion")
 	public static final EntityType arrow = null;
-	public WebpotionItem(BeingmodModElements instance) {
-		super(instance, 51);
+	public NoxiouspotionItem(BeingmodModElements instance) {
+		super(instance, 52);
 	}
 
 	@Override
@@ -55,7 +55,7 @@ public class WebpotionItem extends BeingmodModElements.ModElement {
 		elements.items.add(() -> new ItemRanged());
 		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletwebpotion").setRegistryName("entitybulletwebpotion"));
+				.size(0.5f, 0.5f)).build("entitybulletnoxiouspotion").setRegistryName("entitybulletnoxiouspotion"));
 	}
 
 	@Override
@@ -67,7 +67,7 @@ public class WebpotionItem extends BeingmodModElements.ModElement {
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
 			super(new Item.Properties().group(ItemGroup.BREWING).maxStackSize(8));
-			setRegistryName("webpotion");
+			setRegistryName("noxiouspotion");
 		}
 
 		@Override
@@ -194,8 +194,8 @@ public class WebpotionItem extends BeingmodModElements.ModElement {
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
-				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("")), SoundCategory.PLAYERS, 1,
+				1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
@@ -214,8 +214,8 @@ public class WebpotionItem extends BeingmodModElements.ModElement {
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
-				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("")), SoundCategory.PLAYERS, 1,
+				1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

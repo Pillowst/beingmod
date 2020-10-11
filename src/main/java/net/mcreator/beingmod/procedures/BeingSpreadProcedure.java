@@ -166,11 +166,16 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 					}
 				}
 			}
-			if ((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+			if (((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
 					|| (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState()
 							.getBlock())
 							|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
-									.getBlock())))) {
+									.getBlock())))
+					&& (((world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
+							|| (((world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState()
+									.getBlock())
+									|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == Blocks.CAVE_AIR
+											.getDefaultState().getBlock()))))) {
 				if ((Math.random() < 0.2)) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);

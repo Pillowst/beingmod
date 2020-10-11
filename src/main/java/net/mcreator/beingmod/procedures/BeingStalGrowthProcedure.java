@@ -88,22 +88,5 @@ public class BeingStalGrowthProcedure extends BeingmodModElements.ModElement {
 				}
 			}
 		}
-		if ((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == StalstopBlock.block.getDefaultState().getBlock())
-				|| (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == BeingstalbotBlock.block.getDefaultState()
-						.getBlock())
-						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == BeingstaltopBlock.block
-								.getDefaultState().getBlock())))) {
-			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = BeingstaltopBlock.block.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
-				}
-				world.setBlockState(_bp, _bs, 3);
-			}
-		}
 	}
 }

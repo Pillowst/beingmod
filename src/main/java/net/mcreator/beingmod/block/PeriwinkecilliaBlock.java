@@ -85,8 +85,8 @@ public class PeriwinkecilliaBlock extends BeingmodModElements.ModElement {
 					BlockPos blockpos = pos.add(random.nextInt(4) - random.nextInt(4), 0, random.nextInt(4) - random.nextInt(4));
 					if (world.isAirBlock(blockpos)) {
 						BlockPos blockpos1 = blockpos.down();
-						int k = 1 + random.nextInt(random.nextInt(4) + 1);
-						k = Math.min(4, k);
+						int k = 1 + random.nextInt(random.nextInt(6) + 1);
+						k = Math.min(6, k);
 						for (int l = 0; l < k; ++l) {
 							if (block.getDefaultState().isValidPosition(world, blockpos)) {
 								world.setBlockState(blockpos.up(l), block.getDefaultState(), 2);
@@ -143,7 +143,7 @@ public class PeriwinkecilliaBlock extends BeingmodModElements.ModElement {
 			} else if (world.isAirBlock(pos.up())) {
 				int i = 1;
 				for (; world.getBlockState(pos.down(i)).getBlock() == this; ++i);
-				if (i < 4) {
+				if (i < 6) {
 					int j = state.get(AGE);
 					if (j == 15) {
 						world.setBlockState(pos.up(), getDefaultState());

@@ -512,7 +512,7 @@
   "language_map": {
     "en_us": {
       "block.beingmod.block_being": "Being",
-      "block.beingmod.beingstalbot": "Being Stalactite",
+      "block.beingmod.beingstalbot": "Being Stalactite End",
       "advancements.beingget.title": "Obtain Being",
       "block.beingmod.block_orcanite": "Raw Orcanite Block",
       "block.beingmod.crystal_being": "Being Crystal",

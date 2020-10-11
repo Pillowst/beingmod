@@ -94,7 +94,7 @@ public class BeingstalbotBlock extends BeingmodModElements.ModElement {
 
 		@Override
 		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
-			return new ItemStack(BeingstalbotBlock.block, (int) (1));
+			return new ItemStack(BeingstaltopBlock.block, (int) (1));
 		}
 
 		@Override

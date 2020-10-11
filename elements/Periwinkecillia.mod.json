@@ -9,7 +9,7 @@
     "plantType": "growapable",
     "staticPlantGenerationType": "Flower",
     "growapableSpawnType": "Cave",
-    "growapableMaxHeight": 4,
+    "growapableMaxHeight": 6,
     "doublePlantGenerationType": "Flower",
     "name": "Periwinkle cillia",
     "specialInfo": [],

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "texture1",
+        "2": "armored_orcanite"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -646,6 +646,32 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "beingrootstop"
+    },
+    {
+      "name": "Infuser",
+      "type": "gui",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infuser"
+    },
+    {
+      "name": "Infuserrecipes",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infuserrecipes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

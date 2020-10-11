@@ -43,8 +43,7 @@ public class BeingStalGrowthProcedure extends BeingmodModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((!((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z)).isSolid())
-				&& (world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z)).isSolid())))) {
+		if ((!(world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z)).isSolid()))) {
 			if ((!((world.getBlockState(new BlockPos((int) x, (int) (y + 10), (int) z))).getBlock() == BeingstaltopBlock.block.getDefaultState()
 					.getBlock()))) {
 				if ((Math.random() < 0.2)) {

@@ -1014,6 +1014,7 @@
       "block.beingmod.crystal_being": "Being Crystal",
       "item.beingmod.shard": "Being Shards",
       "item.beingmod.item_being": "Being",
+      "block.beingmod.reversestalk": "Dripping roots",
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
       "block.beingmod.warmedfollicles": "Warmedfollicles",

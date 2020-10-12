@@ -7,6 +7,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.beingmod.block.WarmedfolliclesBlock;
+import net.mcreator.beingmod.block.ReversestalkBlock;
 import net.mcreator.beingmod.block.PeriwinkecilliaBlock;
 import net.mcreator.beingmod.block.NoxiousbloomerBlock;
 import net.mcreator.beingmod.block.DrippingleavesBlock;
@@ -267,7 +268,19 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 							.getBlock())
 							|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
 									.getBlock())))) {
-				if (((Math.random() < 0.1) && (((world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == Blocks.AIR
+				if ((Math.random() < 0.2)) {
+					{
+						BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
+						BlockState _bs = ReversestalkBlock.block.getDefaultState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+							if (_bs.has(_property))
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+						}
+						world.setBlockState(_bp, _bs, 3);
+					}
+				} else if (((Math.random() < 0.1) && (((world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == Blocks.AIR
 						.getDefaultState().getBlock())
 						|| (((world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState()
 								.getBlock())

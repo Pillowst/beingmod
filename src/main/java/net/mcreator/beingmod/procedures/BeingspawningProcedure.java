@@ -1,11 +1,17 @@
 package net.mcreator.beingmod.procedures;
 
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+
+import net.mcreator.beingmod.block.BlockBeingBlock;
+import net.mcreator.beingmod.BeingmodModElements;
+
+import java.util.Map;
+
 @BeingmodModElements.ModElement.Tag
 public class BeingspawningProcedure extends BeingmodModElements.ModElement {
-
 	public BeingspawningProcedure(BeingmodModElements instance) {
 		super(instance, 57);
-
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
@@ -29,12 +35,10 @@ public class BeingspawningProcedure extends BeingmodModElements.ModElement {
 				System.err.println("Failed to load dependency world for procedure Beingspawning!");
 			return false;
 		}
-
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		boolean t = false;
 		double BX = 0;
 		double BY = 0;
@@ -57,7 +61,5 @@ public class BeingspawningProcedure extends BeingmodModElements.ModElement {
 			BX = (double) ((BX) + 1);
 		}
 		return (t);
-
 	}
-
 }

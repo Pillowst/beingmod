@@ -63,7 +63,7 @@
     "soundOnStep": {
       "value": "WET_GRASS"
     },
-    "luminance": 1.0,
+    "luminance": 0.55,
     "unbreakable": true,
     "breakHarvestLevel": 1,
     "spawnParticles": false,

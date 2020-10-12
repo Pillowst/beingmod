@@ -65,12 +65,6 @@ public class StalstopBlock extends BeingmodModElements.ModElement {
 			setRegistryName("stalstop");
 		}
 
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public boolean isEmissiveRendering(BlockState blockState) {
-			return true;
-		}
-
 		@Override
 		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			return false;

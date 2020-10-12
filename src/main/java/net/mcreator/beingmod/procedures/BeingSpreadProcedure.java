@@ -117,6 +117,70 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 				$_dependencies.put("z", (z + 1));
 				BeingspreadreceiverProcedure.executeProcedure($_dependencies);
 			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("world", world);
+				$_dependencies.put("x", (x - 1));
+				$_dependencies.put("y", (y - 1));
+				$_dependencies.put("z", (z - 1));
+				BeingspreadreceiverProcedure.executeProcedure($_dependencies);
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("world", world);
+				$_dependencies.put("x", (x - 1));
+				$_dependencies.put("y", (y - 1));
+				$_dependencies.put("z", (z + 1));
+				BeingspreadreceiverProcedure.executeProcedure($_dependencies);
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("world", world);
+				$_dependencies.put("x", (x - 1));
+				$_dependencies.put("y", (y + 1));
+				$_dependencies.put("z", (z + 1));
+				BeingspreadreceiverProcedure.executeProcedure($_dependencies);
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("world", world);
+				$_dependencies.put("x", (x + 1));
+				$_dependencies.put("y", (y + 1));
+				$_dependencies.put("z", (z + 1));
+				BeingspreadreceiverProcedure.executeProcedure($_dependencies);
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("world", world);
+				$_dependencies.put("x", (x - 1));
+				$_dependencies.put("y", (y + 1));
+				$_dependencies.put("z", (z + 1));
+				BeingspreadreceiverProcedure.executeProcedure($_dependencies);
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("world", world);
+				$_dependencies.put("x", (x - 1));
+				$_dependencies.put("y", (y - 1));
+				$_dependencies.put("z", (z + 1));
+				BeingspreadreceiverProcedure.executeProcedure($_dependencies);
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("world", world);
+				$_dependencies.put("x", (x - 1));
+				$_dependencies.put("y", (y + 1));
+				$_dependencies.put("z", (z - 1));
+				BeingspreadreceiverProcedure.executeProcedure($_dependencies);
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("world", world);
+				$_dependencies.put("x", (x + 1));
+				$_dependencies.put("y", (y - 1));
+				$_dependencies.put("z", (z + 1));
+				BeingspreadreceiverProcedure.executeProcedure($_dependencies);
+			}
 			if ((((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())
 					|| (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState()
 							.getBlock())
@@ -189,7 +253,7 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 							.getBlock())
 							|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
 									.getBlock())))) {
-				if (((Math.random() < 0.2) && (((world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == Blocks.AIR
+				if (((Math.random() < 0.1) && (((world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == Blocks.AIR
 						.getDefaultState().getBlock())
 						|| (((world.getBlockState(new BlockPos((int) x, (int) (y - 2), (int) z))).getBlock() == Blocks.VOID_AIR.getDefaultState()
 								.getBlock())

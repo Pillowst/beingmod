@@ -837,6 +837,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Indelicate",
+      "type": "mob",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indelicate"
     }
   ],
   "variable_elements": [],
@@ -845,6 +854,7 @@
     "en_us": {
       "item.beingmod.webpotion": "Web potion",
       "advancements.beingget.title": "Obtain Being",
+      "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
       "block.beingmod.crystal_being": "Being Crystal",
       "item.beingmod.shard": "Being Shards",
       "item.beingmod.item_being": "Being",
@@ -854,8 +864,8 @@
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "block.beingmod.stalstop": "Being Stalactite End",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",
-      "block.beingmod.orcnaite_armored": "Armored Orcanite",
       "block.beingmod.neriumore": "nerium ore",
+      "block.beingmod.orcnaite_armored": "Armored Orcanite",
       "block.beingmod.block_being": "Being",
       "block.beingmod.beingstalbot": "Being Stalactite End",
       "block.beingmod.infusingtable": "Infusing table",
@@ -863,6 +873,7 @@
       "block.beingmod.dismalgland_1": "Dismal gland ",
       "item.beingmod.particle_rifle": "Particle Rifle",
       "block.beingmod.beingrootsbot": "Being Stalactite End",
+      "entity.beingmod.indelicate": "Indelicate",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "item.beingmod.noxiouspotion": "Noxious potion",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",

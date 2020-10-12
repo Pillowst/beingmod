@@ -6,6 +6,13 @@
         "2": "texture1"
       },
       "name": "default"
+    },
+    "dripping_roots": {
+      "map": {
+        "1": "",
+        "2": ""
+      },
+      "name": "dripping_roots"
     }
   }
 }

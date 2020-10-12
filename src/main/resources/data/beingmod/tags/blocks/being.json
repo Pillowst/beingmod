@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "beingmod:beingemerald",
+    "beingmod:beinglapis",
+    "beingmod:beingredstone",
+    "beingmod:beingcoal",
+    "beingmod:beingiron",
+    "beingmod:beinggold",
+    "beingmod:beingdiamond",
+    "beingmod:neriumore"
+  ]
+}

@@ -957,6 +957,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "beingredstone"
+    },
+    {
+      "name": "Being",
+      "type": "tag",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "being"
     }
   ],
   "variable_elements": [],

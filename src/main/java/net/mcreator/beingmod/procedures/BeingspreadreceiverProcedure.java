@@ -2,6 +2,8 @@ package net.mcreator.beingmod.procedures;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.state.IProperty;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
@@ -52,144 +54,151 @@ public class BeingspreadreceiverProcedure extends BeingmodModElements.ModElement
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).isSolid())) {
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).getBlockHardness(world,
-					new BlockPos((int) x, (int) y, (int) z))) < 2)) {
-				if ((Math.random() < 0.2)) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BlockBeingBlock.block.getDefaultState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-							if (_bs.has(_property))
-								_bs = _bs.with(_property, (Comparable) entry.getValue());
+			if ((!(BlockTags.getCollection().getOrCreate(new ResourceLocation(("Being_Mod:Being").toLowerCase(java.util.Locale.ENGLISH)))
+					.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock())))) {
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)).getBlockHardness(world,
+						new BlockPos((int) x, (int) y, (int) z))) < 2)) {
+					if ((Math.random() < 0.2)) {
+						{
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockState _bs = BlockBeingBlock.block.getDefaultState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+								if (_bs.has(_property))
+									_bs = _bs.with(_property, (Comparable) entry.getValue());
+							}
+							world.setBlockState(_bp, _bs, 3);
 						}
-						world.setBlockState(_bp, _bs, 3);
+					} else if ((Math.random() < 0.01)) {
+						{
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockState _bs = NeriumoreBlock.block.getDefaultState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+								if (_bs.has(_property))
+									_bs = _bs.with(_property, (Comparable) entry.getValue());
+							}
+							world.setBlockState(_bp, _bs, 3);
+						}
+					} else {
+						{
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockState _bs = BlockOrcaniteBlock.block.getDefaultState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+								if (_bs.has(_property))
+									_bs = _bs.with(_property, (Comparable) entry.getValue());
+							}
+							world.setBlockState(_bp, _bs, 3);
+						}
 					}
-				} else if ((Math.random() < 0.01)) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = NeriumoreBlock.block.getDefaultState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-							if (_bs.has(_property))
-								_bs = _bs.with(_property, (Comparable) entry.getValue());
+				} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.COAL_ORE.getDefaultState()
+						.getBlock())) {
+					if ((Math.random() < 0.2)) {
+						{
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockState _bs = BeingcoalBlock.block.getDefaultState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+								if (_bs.has(_property))
+									_bs = _bs.with(_property, (Comparable) entry.getValue());
+							}
+							world.setBlockState(_bp, _bs, 3);
 						}
-						world.setBlockState(_bp, _bs, 3);
 					}
-				} else {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BlockOrcaniteBlock.block.getDefaultState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-							if (_bs.has(_property))
-								_bs = _bs.with(_property, (Comparable) entry.getValue());
+				} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.IRON_ORE.getDefaultState()
+						.getBlock())) {
+					if ((Math.random() < 0.2)) {
+						{
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockState _bs = BeingironBlock.block.getDefaultState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+								if (_bs.has(_property))
+									_bs = _bs.with(_property, (Comparable) entry.getValue());
+							}
+							world.setBlockState(_bp, _bs, 3);
 						}
-						world.setBlockState(_bp, _bs, 3);
 					}
-				}
-			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.COAL_ORE.getDefaultState().getBlock())) {
-				if ((Math.random() < 0.2)) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BeingcoalBlock.block.getDefaultState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-							if (_bs.has(_property))
-								_bs = _bs.with(_property, (Comparable) entry.getValue());
+				} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GOLD_ORE.getDefaultState()
+						.getBlock())) {
+					if ((Math.random() < 0.2)) {
+						{
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockState _bs = BeinggoldBlock.block.getDefaultState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+								if (_bs.has(_property))
+									_bs = _bs.with(_property, (Comparable) entry.getValue());
+							}
+							world.setBlockState(_bp, _bs, 3);
 						}
-						world.setBlockState(_bp, _bs, 3);
 					}
-				}
-			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.IRON_ORE.getDefaultState().getBlock())) {
-				if ((Math.random() < 0.2)) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BeingironBlock.block.getDefaultState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-							if (_bs.has(_property))
-								_bs = _bs.with(_property, (Comparable) entry.getValue());
+				} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.DIAMOND_ORE.getDefaultState()
+						.getBlock())) {
+					if ((Math.random() < 0.2)) {
+						{
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockState _bs = BeingdiamondBlock.block.getDefaultState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+								if (_bs.has(_property))
+									_bs = _bs.with(_property, (Comparable) entry.getValue());
+							}
+							world.setBlockState(_bp, _bs, 3);
 						}
-						world.setBlockState(_bp, _bs, 3);
 					}
-				}
-			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GOLD_ORE.getDefaultState().getBlock())) {
-				if ((Math.random() < 0.2)) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BeinggoldBlock.block.getDefaultState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-							if (_bs.has(_property))
-								_bs = _bs.with(_property, (Comparable) entry.getValue());
+				} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.EMERALD_ORE.getDefaultState()
+						.getBlock())) {
+					if ((Math.random() < 0.2)) {
+						{
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockState _bs = BeingemeraldBlock.block.getDefaultState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+								if (_bs.has(_property))
+									_bs = _bs.with(_property, (Comparable) entry.getValue());
+							}
+							world.setBlockState(_bp, _bs, 3);
 						}
-						world.setBlockState(_bp, _bs, 3);
 					}
-				}
-			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.DIAMOND_ORE.getDefaultState()
-					.getBlock())) {
-				if ((Math.random() < 0.2)) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BeingdiamondBlock.block.getDefaultState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-							if (_bs.has(_property))
-								_bs = _bs.with(_property, (Comparable) entry.getValue());
+				} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.LAPIS_ORE.getDefaultState()
+						.getBlock())) {
+					if ((Math.random() < 0.2)) {
+						{
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockState _bs = BeinglapisBlock.block.getDefaultState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+								if (_bs.has(_property))
+									_bs = _bs.with(_property, (Comparable) entry.getValue());
+							}
+							world.setBlockState(_bp, _bs, 3);
 						}
-						world.setBlockState(_bp, _bs, 3);
 					}
-				}
-			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.EMERALD_ORE.getDefaultState()
-					.getBlock())) {
-				if ((Math.random() < 0.2)) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BeingemeraldBlock.block.getDefaultState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-							if (_bs.has(_property))
-								_bs = _bs.with(_property, (Comparable) entry.getValue());
+				} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.REDSTONE_ORE.getDefaultState()
+						.getBlock())) {
+					if ((Math.random() < 0.2)) {
+						{
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							BlockState _bs = BeingredstoneBlock.block.getDefaultState();
+							BlockState _bso = world.getBlockState(_bp);
+							for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+								IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+								if (_bs.has(_property))
+									_bs = _bs.with(_property, (Comparable) entry.getValue());
+							}
+							world.setBlockState(_bp, _bs, 3);
 						}
-						world.setBlockState(_bp, _bs, 3);
-					}
-				}
-			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.LAPIS_ORE.getDefaultState().getBlock())) {
-				if ((Math.random() < 0.2)) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BeinglapisBlock.block.getDefaultState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-							if (_bs.has(_property))
-								_bs = _bs.with(_property, (Comparable) entry.getValue());
-						}
-						world.setBlockState(_bp, _bs, 3);
-					}
-				}
-			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.REDSTONE_ORE.getDefaultState()
-					.getBlock())) {
-				if ((Math.random() < 0.2)) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BeingredstoneBlock.block.getDefaultState();
-						BlockState _bso = world.getBlockState(_bp);
-						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-							if (_bs.has(_property))
-								_bs = _bs.with(_property, (Comparable) entry.getValue());
-						}
-						world.setBlockState(_bp, _bs, 3);
 					}
 				}
 			}

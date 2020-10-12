@@ -1,0 +1,37 @@
+{
+  "_fv": 12,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Beingemerald"
+      },
+      {
+        "value": "CUSTOM:Beinglapis"
+      },
+      {
+        "value": "CUSTOM:Beingredstone"
+      },
+      {
+        "value": "CUSTOM:Beingcoal"
+      },
+      {
+        "value": "CUSTOM:Beingiron"
+      },
+      {
+        "value": "CUSTOM:Beinggold"
+      },
+      {
+        "value": "CUSTOM:Beingdiamond"
+      },
+      {
+        "value": "CUSTOM:Neriumore"
+      }
+    ],
+    "functions": [],
+    "name": "being",
+    "namespace": "mod"
+  }
+}

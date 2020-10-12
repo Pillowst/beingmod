@@ -2,6 +2,7 @@ package net.mcreator.beingmod.procedures;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.beingmod.block.StalstopBlock;
@@ -43,29 +44,34 @@ public class BeingStalGrowthProcedure extends BeingmodModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((!(world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z)).isSolid()))) {
-			if ((!((world.getBlockState(new BlockPos((int) x, (int) (y + 6), (int) z))).getBlock() == BeingstaltopBlock.block.getDefaultState()
-					.getBlock()))) {
-				if ((Math.random() < 0.2)) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BeingstaltopBlock.block.getDefaultState();
-						world.setBlockState(_bp, _bs, 3);
-					}
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
-						BlockState _bs = BeingstalbotBlock.block.getDefaultState();
-						world.setBlockState(_bp, _bs, 3);
-					}
-				} else if ((Math.random() < 0.2)) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BeingstaltopBlock.block.getDefaultState();
-						world.setBlockState(_bp, _bs, 3);
-					}
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
-						BlockState _bs = StalstopBlock.block.getDefaultState();
-						world.setBlockState(_bp, _bs, 3);
+			if ((!((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.LAVA.getDefaultState().getBlock()))) {
+				if ((!((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.WATER.getDefaultState()
+						.getBlock()))) {
+					if ((!((world.getBlockState(new BlockPos((int) x, (int) (y + 6), (int) z))).getBlock() == BeingstaltopBlock.block
+							.getDefaultState().getBlock()))) {
+						if ((Math.random() < 0.2)) {
+							{
+								BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+								BlockState _bs = BeingstaltopBlock.block.getDefaultState();
+								world.setBlockState(_bp, _bs, 3);
+							}
+							{
+								BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
+								BlockState _bs = BeingstalbotBlock.block.getDefaultState();
+								world.setBlockState(_bp, _bs, 3);
+							}
+						} else if ((Math.random() < 0.2)) {
+							{
+								BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+								BlockState _bs = BeingstaltopBlock.block.getDefaultState();
+								world.setBlockState(_bp, _bs, 3);
+							}
+							{
+								BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
+								BlockState _bs = StalstopBlock.block.getDefaultState();
+								world.setBlockState(_bp, _bs, 3);
+							}
+						}
 					}
 				}
 			}

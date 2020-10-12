@@ -847,11 +847,8 @@
       "ids": {},
       "registry_name": "beingspawning",
       "metadata": {
+        "return_type": "LOGIC",
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "number"

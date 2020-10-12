@@ -9,8 +9,8 @@
     },
     "dripping_roots": {
       "map": {
-        "1": "",
-        "2": ""
+        "1": "driptexture2",
+        "2": "driptexture1"
       },
       "name": "dripping_roots"
     }

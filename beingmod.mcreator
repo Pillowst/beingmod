@@ -984,6 +984,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "drippingleaves"
+    },
+    {
+      "name": "Synthabandoned",
+      "type": "structure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "synthabandoned"
     }
   ],
   "variable_elements": [],

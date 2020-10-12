@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "beingmod:blocks/lapis_ore",
+    "up": "beingmod:blocks/lapis_ore",
+    "north": "beingmod:blocks/lapis_ore",
+    "east": "beingmod:blocks/lapis_ore",
+    "south": "beingmod:blocks/lapis_ore",
+    "west": "beingmod:blocks/lapis_ore",
+    "particle": "beingmod:blocks/lapis_ore"
+  }
+}

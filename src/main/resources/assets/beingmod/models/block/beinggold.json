@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "beingmod:blocks/gold_ore",
+    "up": "beingmod:blocks/gold_ore",
+    "north": "beingmod:blocks/gold_ore",
+    "east": "beingmod:blocks/gold_ore",
+    "south": "beingmod:blocks/gold_ore",
+    "west": "beingmod:blocks/gold_ore",
+    "particle": "beingmod:blocks/gold_ore"
+  }
+}

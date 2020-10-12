@@ -8,6 +8,7 @@
   "block.beingmod.darkgland": "dark gland ",
   "block.beingmod.periwinkecillia": "Periwinkle cillia",
   "block.beingmod.warmedfollicles": "Warmedfollicles",
+  "block.beingmod.beinggold": "Beingcoal",
   "item.beingmod.orcanite_shard": "Orcanite Shards",
   "block.beingmod.stalstop": "Being Stalactite End",
   "block.beingmod.noxiousbloomer": "Noxious bloomer",
@@ -21,8 +22,14 @@
   "item.beingmod.particle_rifle": "Particle Rifle",
   "block.beingmod.beingrootsbot": "Being Stalactite End",
   "entity.beingmod.indelicate": "Indelicate",
+  "block.beingmod.beingcoal": "Beingcoal",
   "block.beingmod.beingstaltop": "Being Stalactite",
   "item.beingmod.noxiouspotion": "Noxious potion",
+  "block.beingmod.beingemerald": "Beingcoal",
+  "block.beingmod.beingdiamond": "Beingcoal",
+  "block.beingmod.beingiron": "Beingcoal",
+  "block.beingmod.beingredstone": "Beingcoal",
   "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
+  "block.beingmod.beinglapis": "Beingcoal",
   "block.beingmod.beingrootstop": "Being Stalactite"
 }

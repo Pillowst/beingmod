@@ -876,6 +876,87 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "warmedfollicles"
+    },
+    {
+      "name": "Beingcoal",
+      "type": "block",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingcoal"
+    },
+    {
+      "name": "Beingiron",
+      "type": "block",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingiron"
+    },
+    {
+      "name": "Beingironrecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingironrecipe"
+    },
+    {
+      "name": "Beinggold",
+      "type": "block",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beinggold"
+    },
+    {
+      "name": "Beinggoldrecipe",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beinggoldrecipe"
+    },
+    {
+      "name": "Beingdiamond",
+      "type": "block",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingdiamond"
+    },
+    {
+      "name": "Beingemerald",
+      "type": "block",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingemerald"
+    },
+    {
+      "name": "Beinglapis",
+      "type": "block",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beinglapis"
+    },
+    {
+      "name": "Beingredstone",
+      "type": "block",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingredstone"
     }
   ],
   "variable_elements": [],
@@ -891,6 +972,7 @@
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
       "block.beingmod.warmedfollicles": "Warmedfollicles",
+      "block.beingmod.beinggold": "Beingcoal",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "block.beingmod.stalstop": "Being Stalactite End",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",
@@ -904,9 +986,15 @@
       "item.beingmod.particle_rifle": "Particle Rifle",
       "block.beingmod.beingrootsbot": "Being Stalactite End",
       "entity.beingmod.indelicate": "Indelicate",
+      "block.beingmod.beingcoal": "Beingcoal",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "item.beingmod.noxiouspotion": "Noxious potion",
+      "block.beingmod.beingemerald": "Beingcoal",
+      "block.beingmod.beingdiamond": "Beingcoal",
+      "block.beingmod.beingiron": "Beingcoal",
+      "block.beingmod.beingredstone": "Beingcoal",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
+      "block.beingmod.beinglapis": "Beingcoal",
       "block.beingmod.beingrootstop": "Being Stalactite"
     }
   },

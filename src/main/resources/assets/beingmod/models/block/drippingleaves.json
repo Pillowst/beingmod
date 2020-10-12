@@ -1,9 +1,9 @@
 {
   "parent": "beingmod:custom/infuser",
   "textures": {
-    "all": "beingmod:blocks/driptexture1",
-    "particle": "beingmod:blocks/driptexture1",
-    "1": "beingmod:blocks/",
-    "2": "beingmod:blocks/"
+    "all": "beingmod:blocks/driptexture2",
+    "particle": "beingmod:blocks/driptexture2",
+    "1": "beingmod:blocks/driptexture2",
+    "2": "beingmod:blocks/driptexture1"
   }
 }

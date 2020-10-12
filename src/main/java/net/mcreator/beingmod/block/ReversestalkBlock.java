@@ -9,27 +9,26 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.Explosion;
+import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
-import net.minecraft.fluid.IFluidState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.Minecraft;
-import net.minecraft.block.material.PushReaction;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.beingmod.procedures.StalBotBreakProcedure;
-import net.mcreator.beingmod.procedures.BeingstalbotClientDisplayRandomTickProcedure;
-import net.mcreator.beingmod.procedures.BeingrootsbotBlockDestroyedByPlayerProcedure;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Random;
@@ -39,11 +38,11 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @BeingmodModElements.ModElement.Tag
-public class BeingrootsbotBlock extends BeingmodModElements.ModElement {
-	@ObjectHolder("beingmod:beingrootsbot")
+public class ReversestalkBlock extends BeingmodModElements.ModElement {
+	@ObjectHolder("beingmod:reversestalk")
 	public static final Block block = null;
-	public BeingrootsbotBlock(BeingmodModElements instance) {
-		super(instance, 46);
+	public ReversestalkBlock(BeingmodModElements instance) {
+		super(instance, 71);
 	}
 
 	@Override
@@ -59,15 +58,9 @@ public class BeingrootsbotBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.PLANTS).sound(SoundType.PLANT).hardnessAndResistance(1f, 3f).lightValue(8).doesNotBlockMovement()
-					.notSolid().tickRandomly());
-			setRegistryName("beingrootsbot");
-		}
-
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public boolean isEmissiveRendering(BlockState blockState) {
-			return true;
+			super(Block.Properties.create(Material.LEAVES).sound(SoundType.SWEET_BERRY_BUSH).hardnessAndResistance(1f, 10f).lightValue(0)
+					.doesNotBlockMovement().notSolid());
+			setRegistryName("reversestalk");
 		}
 
 		@Override
@@ -81,13 +74,9 @@ public class BeingrootsbotBlock extends BeingmodModElements.ModElement {
 		}
 
 		@Override
-		public MaterialColor getMaterialColor(BlockState state, IBlockReader blockAccess, BlockPos pos) {
-			return MaterialColor.OBSIDIAN;
-		}
-
-		@Override
-		public PushReaction getPushReaction(BlockState state) {
-			return PushReaction.DESTROY;
+		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
+			Vec3d offset = state.getOffset(world, pos);
+			return VoxelShapes.create(0D, 0D, 0D, 1D, 0.2D, 1D).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override
@@ -95,7 +84,7 @@ public class BeingrootsbotBlock extends BeingmodModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 0));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 
 		@Override
@@ -125,47 +114,13 @@ public class BeingrootsbotBlock extends BeingmodModElements.ModElement {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BeingstalbotClientDisplayRandomTickProcedure.executeProcedure($_dependencies);
-			}
-		}
-
-		@Override
-		public boolean removedByPlayer(BlockState state, World world, BlockPos pos, PlayerEntity entity, boolean willHarvest, IFluidState fluid) {
-			boolean retval = super.removedByPlayer(state, world, pos, entity, willHarvest, fluid);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BeingrootsbotBlockDestroyedByPlayerProcedure.executeProcedure($_dependencies);
-			}
-			return retval;
-		}
-
-		@Override
-		public void onExplosionDestroy(World world, BlockPos pos, Explosion e) {
-			super.onExplosionDestroy(world, pos, e);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				BeingrootsbotBlockDestroyedByPlayerProcedure.executeProcedure($_dependencies);
-			}
+			if (true)
+				for (int l = 0; l < 1; ++l) {
+					double d0 = (double) ((float) x + 0.5) + (double) (random.nextFloat() - 0.5) * 0.5D;
+					double d1 = ((double) ((float) y + 0.7) + (double) (random.nextFloat() - 0.5) * 0.5D) + 0.5;
+					double d2 = (double) ((float) z + 0.5) + (double) (random.nextFloat() - 0.5) * 0.5D;
+					world.addParticle(ParticleTypes.FALLING_WATER, d0, d1, d2, 0, 0, 0);
+				}
 		}
 	}
 }

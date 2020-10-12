@@ -2,34 +2,34 @@
   "_fv": 12,
   "_type": "block",
   "definition": {
-    "texture": "gold_ore",
+    "texture": "reversebeingstalk",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 13,
+    "customModelName": "Crop model",
     "rotationMode": 0,
     "emissiveRendering": false,
     "itemTexture": "",
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
     "my": 0.0,
     "mz": 0.0,
     "Mx": 1.0,
-    "My": 1.0,
+    "My": 0.19999999999999998,
     "Mz": 1.0,
-    "name": "Being gold ore",
+    "name": "Dripping roots",
     "specialInfo": [],
-    "hardness": 2.0,
+    "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "DECORATIONS"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -41,9 +41,9 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 255,
+    "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "LEAVES"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -59,20 +59,20 @@
     "isLadder": false,
     "slipperiness": 0.6,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "SWEET_BERRY_BUSH"
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 2,
-    "spawnParticles": false,
+    "breakHarvestLevel": 1,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "WATER_DROP"
     },
-    "particleSpawningShape": "Spread",
+    "particleSpawningShape": "Top",
     "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "particleAmount": 1,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
@@ -90,6 +90,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "StalBotBreak"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

@@ -9,6 +9,7 @@ import net.minecraft.block.BlockState;
 import net.mcreator.beingmod.block.WarmedfolliclesBlock;
 import net.mcreator.beingmod.block.PeriwinkecilliaBlock;
 import net.mcreator.beingmod.block.NoxiousbloomerBlock;
+import net.mcreator.beingmod.block.DrippingleavesBlock;
 import net.mcreator.beingmod.block.DarkglandBlock;
 import net.mcreator.beingmod.block.CrystalBeingBlock;
 import net.mcreator.beingmod.block.BlockOrcaniteBlock;
@@ -287,6 +288,18 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
 						BlockState _bs = BeingrootsbotBlock.block.getDefaultState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+							if (_bs.has(_property))
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+						}
+						world.setBlockState(_bp, _bs, 3);
+					}
+				} else if ((Math.random() < 0.2)) {
+					{
+						BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
+						BlockState _bs = DrippingleavesBlock.block.getDefaultState();
 						BlockState _bso = world.getBlockState(_bp);
 						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());

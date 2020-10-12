@@ -975,6 +975,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "beingstalk"
+    },
+    {
+      "name": "Drippingleaves",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drippingleaves"
     }
   ],
   "variable_elements": [],
@@ -1014,7 +1023,8 @@
       "block.beingmod.beingredstone": "Beingcoal",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
       "block.beingmod.beinglapis": "Beingcoal",
-      "block.beingmod.beingrootstop": "Being Stalactite"
+      "block.beingmod.beingrootstop": "Being Stalactite",
+      "block.beingmod.drippingleaves": "Dripping roots"
     }
   },
   "workspaceSettings": {

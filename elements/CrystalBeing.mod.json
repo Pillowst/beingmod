@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "being_crystal",
+    "texture": "crystal_being_new",
     "textureBottom": "",
     "customModelName": "Cross model",
     "plantType": "normal",

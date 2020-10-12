@@ -966,6 +966,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "being"
+    },
+    {
+      "name": "Beingstalk",
+      "type": "plant",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingstalk"
     }
   ],
   "variable_elements": [],
@@ -997,6 +1006,7 @@
       "entity.beingmod.indelicate": "Indelicate",
       "block.beingmod.beingcoal": "Beingcoal",
       "block.beingmod.beingstaltop": "Being Stalactite",
+      "block.beingmod.beingstalk": "Beingstalk",
       "item.beingmod.noxiouspotion": "Noxious potion",
       "block.beingmod.beingemerald": "Beingcoal",
       "block.beingmod.beingdiamond": "Beingcoal",

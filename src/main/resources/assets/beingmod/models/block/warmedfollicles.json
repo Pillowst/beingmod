@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "beingmod:blocks/gland",
-    "particle": "beingmod:blocks/gland"
-  }
-}

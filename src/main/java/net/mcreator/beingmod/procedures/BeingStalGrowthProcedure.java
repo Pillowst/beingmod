@@ -43,7 +43,7 @@ public class BeingStalGrowthProcedure extends BeingmodModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((!(world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z)).isSolid()))) {
-			if ((!((world.getBlockState(new BlockPos((int) x, (int) (y + 10), (int) z))).getBlock() == BeingstaltopBlock.block.getDefaultState()
+			if ((!((world.getBlockState(new BlockPos((int) x, (int) (y + 6), (int) z))).getBlock() == BeingstaltopBlock.block.getDefaultState()
 					.getBlock()))) {
 				if ((Math.random() < 0.2)) {
 					{
@@ -68,19 +68,6 @@ public class BeingStalGrowthProcedure extends BeingmodModElements.ModElement {
 						world.setBlockState(_bp, _bs, 3);
 					}
 				}
-			}
-		}
-		if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z)).isSolid())
-				|| (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == StalstopBlock.block.getDefaultState()
-						.getBlock())
-						|| (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == BeingstalbotBlock.block
-								.getDefaultState().getBlock())
-								|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == BeingstaltopBlock.block
-										.getDefaultState().getBlock()))))) {
-			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = BeingstaltopBlock.block.getDefaultState();
-				world.setBlockState(_bp, _bs, 3);
 			}
 		}
 	}

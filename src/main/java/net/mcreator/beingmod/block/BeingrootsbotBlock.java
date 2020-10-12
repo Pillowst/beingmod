@@ -10,7 +10,6 @@ import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.Explosion;
-import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
@@ -31,7 +30,6 @@ import net.minecraft.block.Block;
 import net.mcreator.beingmod.procedures.StalBotBreakProcedure;
 import net.mcreator.beingmod.procedures.BeingstalbotClientDisplayRandomTickProcedure;
 import net.mcreator.beingmod.procedures.BeingrootsbotBlockDestroyedByPlayerProcedure;
-import net.mcreator.beingmod.item.ShardItem;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Random;
@@ -62,7 +60,7 @@ public class BeingrootsbotBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(3f, 3f).lightValue(15).doesNotBlockMovement()
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(3f, 3f).lightValue(8).doesNotBlockMovement()
 					.notSolid().tickRandomly());
 			setRegistryName("beingrootsbot");
 		}
@@ -84,11 +82,6 @@ public class BeingrootsbotBlock extends BeingmodModElements.ModElement {
 		}
 
 		@Override
-		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
-			return new ItemStack(BeingstaltopBlock.block, (int) (1));
-		}
-
-		@Override
 		public MaterialColor getMaterialColor(BlockState state, IBlockReader blockAccess, BlockPos pos) {
 			return MaterialColor.OBSIDIAN;
 		}
@@ -103,7 +96,7 @@ public class BeingrootsbotBlock extends BeingmodModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(ShardItem.block, (int) (1)));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 
 		@Override

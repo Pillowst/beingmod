@@ -33,7 +33,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Shard"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -50,7 +50,7 @@
     "isReplaceable": false,
     "colorOnMap": "OBSIDIAN",
     "creativePickItem": {
-      "value": "CUSTOM:Beingstaltop"
+      "value": ""
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -63,7 +63,7 @@
     "soundOnStep": {
       "value": "METAL"
     },
-    "luminance": 1.0,
+    "luminance": 0.5,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "spawnParticles": false,

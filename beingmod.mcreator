@@ -32,7 +32,7 @@
       "name": "BeingSpread",
       "type": "procedure",
       "sortid": 6,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "being_spread",
@@ -870,6 +870,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Warmedfollicles",
+      "type": "plant",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "warmedfollicles"
     }
   ],
   "variable_elements": [],
@@ -884,6 +893,7 @@
       "item.beingmod.item_being": "Being",
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
+      "block.beingmod.warmedfollicles": "Warmedfollicles",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "block.beingmod.stalstop": "Being Stalactite End",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",

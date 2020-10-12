@@ -13,7 +13,7 @@
     "rotationMode": 0,
     "emissiveRendering": true,
     "itemTexture": "",
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
@@ -33,7 +33,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Shard"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -63,7 +63,7 @@
     "soundOnStep": {
       "value": "METAL"
     },
-    "luminance": 1.0,
+    "luminance": 0.5,
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "spawnParticles": false,

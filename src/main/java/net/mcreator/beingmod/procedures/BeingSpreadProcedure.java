@@ -6,6 +6,7 @@ import net.minecraft.state.IProperty;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.beingmod.block.WarmedfolliclesBlock;
 import net.mcreator.beingmod.block.PeriwinkecilliaBlock;
 import net.mcreator.beingmod.block.NoxiousbloomerBlock;
 import net.mcreator.beingmod.block.DarkglandBlock;
@@ -136,7 +137,7 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 				} else if ((Math.random() < 0.4)) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
-						BlockState _bs = WarmedfolliclesItem.block.getDefaultState();
+						BlockState _bs = WarmedfolliclesBlock.block.getDefaultState();
 						BlockState _bso = world.getBlockState(_bp);
 						for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 							IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());

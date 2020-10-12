@@ -60,7 +60,7 @@ public class StalstopBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(3f, 3f).lightValue(15).notSolid()
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(3f, 3f).lightValue(0).notSolid()
 					.tickRandomly());
 			setRegistryName("stalstop");
 		}

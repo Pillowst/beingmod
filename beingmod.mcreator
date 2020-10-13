@@ -1002,6 +1002,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "abandoned_synth"
+    },
+    {
+      "name": "Synthabandonedloot",
+      "type": "loottable",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "synthabandonedloot"
     }
   ],
   "variable_elements": [],

@@ -1277,6 +1277,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "quantum_reactor_block"
+    },
+    {
+      "name": "N48Alloy",
+      "type": "block",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "n_48_alloy"
     }
   ],
   "variable_elements": [],
@@ -1316,6 +1325,7 @@
       "block.beingmod.beingrootsbot": "Being Stalactite End",
       "entity.beingmod.indelicate": "Indelicate",
       "block.beingmod.beingcoal": "Being coal ore",
+      "block.beingmod.n_48_alloy": "N 4 8 Alloy",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "block.beingmod.beingstalk": "Beingstalk",
       "item.beingmod.noxiouspotion": "Noxious potion",

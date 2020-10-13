@@ -1177,6 +1177,44 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "beingsuppressor"
+    },
+    {
+      "name": "Nerium",
+      "type": "item",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nerium"
+    },
+    {
+      "name": "DarkglandNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "darkgland_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1197,6 +1235,7 @@
       "block.beingmod.beinggold": "Being gold ore",
       "block.beingmod.dessicatedbeing": "dessicated being",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
+      "item.beingmod.nerium": "Nerium",
       "block.beingmod.n_48ore": "Unknown Ore",
       "block.beingmod.stalstop": "Being Stalactite End",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",

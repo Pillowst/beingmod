@@ -28,6 +28,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.beingmod.procedures.DismalglandupdatetickProcedure;
+import net.mcreator.beingmod.procedures.DarkglandNeighbourBlockChangesProcedure;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Random;
@@ -102,6 +103,25 @@ public class Dismalgland1Block extends BeingmodModElements.ModElement {
 			int y = pos.getY();
 			int z = pos.getZ();
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@Override
+		public void neighborChanged(BlockState state, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+			super.neighborChanged(state, world, pos, neighborBlock, fromPos, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
+			} else {
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				DarkglandNeighbourBlockChangesProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

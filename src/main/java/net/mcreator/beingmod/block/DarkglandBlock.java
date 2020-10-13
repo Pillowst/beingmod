@@ -8,6 +8,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.RayTraceResult;
@@ -26,6 +27,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.beingmod.procedures.DarkglandUpdateTickProcedure;
+import net.mcreator.beingmod.procedures.DarkglandNeighbourBlockChangesProcedure;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Random;
@@ -91,6 +93,25 @@ public class DarkglandBlock extends BeingmodModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(DarkglandBlock.block, (int) (1)));
+		}
+
+		@Override
+		public void neighborChanged(BlockState state, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+			super.neighborChanged(state, world, pos, neighborBlock, fromPos, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
+			} else {
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				DarkglandNeighbourBlockChangesProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

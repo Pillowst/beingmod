@@ -1,12 +1,21 @@
 
 package net.mcreator.beingmod.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.item.IItemTier;
+
+import net.mcreator.beingmod.BeingmodModElements;
+
 @BeingmodModElements.ModElement.Tag
 public class N48pickaxeItem extends BeingmodModElements.ModElement {
-
 	@ObjectHolder("beingmod:n_48pickaxe")
 	public static final Item block = null;
-
 	public N48pickaxeItem(BeingmodModElements instance) {
 		super(instance, 93);
 	}
@@ -38,8 +47,6 @@ public class N48pickaxeItem extends BeingmodModElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(N48chunkItem.block, (int) (1)));
 			}
 		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
-
 		}.setRegistryName("n_48pickaxe"));
 	}
-
 }

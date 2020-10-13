@@ -1,11 +1,13 @@
 package net.mcreator.beingmod.procedures;
 
+import net.mcreator.beingmod.BeingmodModElements;
+
+import java.util.Map;
+
 @BeingmodModElements.ModElement.Tag
 public class KjaldarcrystalAdditionalGenerationConditionProcedure extends BeingmodModElements.ModElement {
-
 	public KjaldarcrystalAdditionalGenerationConditionProcedure(BeingmodModElements instance) {
 		super(instance, 91);
-
 	}
 
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
@@ -14,9 +16,7 @@ public class KjaldarcrystalAdditionalGenerationConditionProcedure extends Beingm
 				System.err.println("Failed to load dependency y for procedure KjaldarcrystalAdditionalGenerationCondition!");
 			return false;
 		}
-
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
-
 		boolean T = false;
 		if ((y <= 10)) {
 			T = (boolean) (true);
@@ -24,7 +24,5 @@ public class KjaldarcrystalAdditionalGenerationConditionProcedure extends Beingm
 			T = (boolean) (false);
 		}
 		return (T);
-
 	}
-
 }

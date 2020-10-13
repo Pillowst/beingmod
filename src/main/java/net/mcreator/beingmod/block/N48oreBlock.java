@@ -13,6 +13,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.beingmod.item.N48chunkItem;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.List;
@@ -43,7 +44,7 @@ public class N48oreBlock extends BeingmodModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(N48chunkItem.block, (int) (2)));
 		}
 	}
 }

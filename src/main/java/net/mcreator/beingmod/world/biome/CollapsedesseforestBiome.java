@@ -49,8 +49,8 @@ public class CollapsedesseforestBiome extends BeingmodModElements.ModElement {
 	}
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
-			super(new Biome.Builder().downfall(0f).depth(-0.9f).scale(0.3f).temperature(1f).precipitation(Biome.RainType.NONE)
-					.category(Biome.Category.NONE).waterColor(-13382656).waterFogColor(-13382656)
+			super(new Biome.Builder().downfall(0f).depth(-0.2f).scale(0.3f).temperature(1f).precipitation(Biome.RainType.NONE)
+					.category(Biome.Category.DESERT).waterColor(-13382656).waterFogColor(-13382656)
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(DessicatedbeingBlock.block.getDefaultState(),
 							DessicatedbeingBlock.block.getDefaultState(), DessicatedbeingBlock.block.getDefaultState())));
 			setRegistryName("collapsedesseforest");

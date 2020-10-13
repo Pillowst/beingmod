@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "beingmod:blocks/dessicatedstalk",
+    "particle": "beingmod:blocks/dessicatedstalk"
+  }
+}

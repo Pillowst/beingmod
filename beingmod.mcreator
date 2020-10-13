@@ -1100,6 +1100,45 @@
           }
         ]
       }
+    },
+    {
+      "name": "Dessicatedstalk",
+      "type": "plant",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dessicatedstalk"
+    },
+    {
+      "name": "DessicatedstalkAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dessicatedstalk_additional_generation_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1139,6 +1178,7 @@
       "item.beingmod.noxiouspotion": "Noxious potion",
       "block.beingmod.beingemerald": "Being emerald ore",
       "block.beingmod.beingdiamond": "Being diamond ore",
+      "block.beingmod.dessicatedstalk": "Beingstalk",
       "block.beingmod.beingiron": "Being iron ore",
       "block.beingmod.beingredstone": "Being redstone ore",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",

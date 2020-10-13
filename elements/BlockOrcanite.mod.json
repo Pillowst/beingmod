@@ -61,7 +61,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "STONE"
     },
     "luminance": 0.0,
     "unbreakable": true,
@@ -90,15 +90,21 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Collapsedesseforest"
+      }
+    ],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyPerChunks": 18,
+    "frequencyOnChunk": 32,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64
   }

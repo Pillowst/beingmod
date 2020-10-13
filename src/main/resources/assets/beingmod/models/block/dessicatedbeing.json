@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "beingmod:blocks/dessicated_being",
+    "particle": "beingmod:blocks/dessicated_being"
+  }
+}

@@ -1020,6 +1020,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "n_48ore"
+    },
+    {
+      "name": "Dessicatedbeing",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dessicatedbeing"
+    },
+    {
+      "name": "Collapsedesseforest",
+      "type": "biome",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "collapsedesseforest"
     }
   ],
   "variable_elements": [],
@@ -1032,11 +1050,13 @@
       "block.beingmod.crystal_being": "Being Crystal",
       "item.beingmod.shard": "Being Shards",
       "item.beingmod.item_being": "Being",
+      "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
       "block.beingmod.reversestalk": "Dripping roots",
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
       "block.beingmod.warmedfollicles": "Warmedfollicles",
       "block.beingmod.beinggold": "Beingcoal",
+      "block.beingmod.dessicatedbeing": "Raw Orcanite Block",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "block.beingmod.n_48ore": "Unknown Ore",
       "block.beingmod.stalstop": "Being Stalactite End",

@@ -12,7 +12,7 @@
     "customModelName": "suppresor:default",
     "rotationMode": 0,
     "emissiveRendering": false,
-    "itemTexture": "",
+    "itemTexture": "suppresor_item",
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",

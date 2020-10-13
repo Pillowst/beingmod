@@ -24,8 +24,8 @@
     "Mz": 1.0,
     "name": "dessicated being",
     "specialInfo": [],
-    "hardness": 100.0,
-    "resistance": 1000.0,
+    "hardness": 2.0,
+    "resistance": 2.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -65,7 +65,7 @@
     },
     "luminance": 0.0,
     "unbreakable": true,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 3,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

@@ -24,14 +24,14 @@
     "Mz": 1.0,
     "name": "Raw Orcanite Block",
     "specialInfo": [],
-    "hardness": 100.0,
-    "resistance": 1000.0,
+    "hardness": 3.0,
+    "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "BUILDING_BLOCKS"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -65,7 +65,7 @@
     },
     "luminance": 0.0,
     "unbreakable": true,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 5,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

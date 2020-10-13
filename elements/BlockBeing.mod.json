@@ -31,7 +31,7 @@
     "creativeTab": {
       "value": "BUILDING_BLOCKS"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -65,7 +65,7 @@
     },
     "luminance": 0.16999999999999998,
     "unbreakable": true,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 4,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

@@ -88,9 +88,9 @@ public class BeingsuppressorUpdateTickProcedure extends BeingmodModElements.ModE
 							}
 							break;
 						}
-						BZ = (double) ((BX) + 1);
+						BZ = (double) ((BZ) + 1);
 					}
-					BY = (double) ((BX) + 1);
+					BY = (double) ((BY) + 1);
 				}
 				BX = (double) ((BX) + 1);
 			}

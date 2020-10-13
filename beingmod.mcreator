@@ -1286,6 +1286,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "n_48_alloy"
+    },
+    {
+      "name": "N48chunk",
+      "type": "item",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "n_48chunk"
     }
   ],
   "variable_elements": [],
@@ -1293,9 +1302,10 @@
   "language_map": {
     "en_us": {
       "item.beingmod.webpotion": "Web potion",
-      "advancements.beingget.title": "Obtain Being",
       "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
+      "advancements.beingget.title": "Obtain Being",
       "item.beingmod.pricklysword": "Pricklysword",
+      "item.beingmod.n_48chunk": "N 4 8chunk",
       "block.beingmod.crystal_being": "Being Crystal",
       "item.beingmod.shard": "Being Shards",
       "item.beingmod.item_being": "Being",

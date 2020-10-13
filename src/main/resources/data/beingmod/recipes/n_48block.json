@@ -1,0 +1,42 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:n_48chunk"
+    },
+    "1": {
+      "item": "beingmod:n_48chunk"
+    },
+    "2": {
+      "item": "beingmod:n_48chunk"
+    },
+    "3": {
+      "item": "beingmod:n_48chunk"
+    },
+    "4": {
+      "item": "beingmod:n_48chunk"
+    },
+    "5": {
+      "item": "beingmod:n_48chunk"
+    },
+    "6": {
+      "item": "beingmod:n_48chunk"
+    },
+    "7": {
+      "item": "beingmod:n_48chunk"
+    },
+    "8": {
+      "item": "beingmod:n_48chunk"
+    }
+  },
+  "result": {
+    "item": "beingmod:n_48_alloy",
+    "count": 1
+  }
+}

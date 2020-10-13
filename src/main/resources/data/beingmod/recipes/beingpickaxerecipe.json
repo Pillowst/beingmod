@@ -1,0 +1,19 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "beingmod:item_being"
+    },
+    {
+      "item": "beingmod:n_48pickaxe"
+    },
+    {
+      "item": "beingmod:item_being"
+    }
+  ],
+  "result": {
+    "item": "beingmod:godpickaxe",
+    "count": 1
+  }
+}

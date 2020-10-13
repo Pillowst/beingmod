@@ -3,13 +3,19 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "beingmod:item_being"
+      "item": "beingmod:block_being"
     },
     {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:nerium"
     },
     {
-      "item": "beingmod:item_being"
+      "item": "beingmod:block_being"
+    },
+    {
+      "item": "minecraft:blaze_rod"
+    },
+    {
+      "item": "minecraft:blaze_rod"
     }
   ],
   "result": {

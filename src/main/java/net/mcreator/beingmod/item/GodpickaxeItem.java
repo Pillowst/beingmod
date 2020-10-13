@@ -2,6 +2,8 @@
 package net.mcreator.beingmod.item;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.PickaxeItem;
@@ -47,6 +49,11 @@ public class GodpickaxeItem extends BeingmodModElements.ModElement {
 				return Ingredient.fromStacks(new ItemStack(ItemBeingItem.block, (int) (1)));
 			}
 		}, 1, -2f, new Item.Properties().group(ItemGroup.TOOLS)) {
+			@Override
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasEffect(ItemStack itemstack) {
+				return true;
+			}
 		}.setRegistryName("godpickaxe"));
 	}
 }

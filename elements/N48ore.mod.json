@@ -8,8 +8,8 @@
     "textureFront": "n-48block",
     "textureRight": "n-48block",
     "textureBack": "n-48block",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "itemTexture": "",
@@ -90,16 +90,18 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "End"
+    ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "Blocks.END_STONE"
       }
     ],
-    "frequencyPerChunks": 20,
-    "frequencyOnChunk": 20,
-    "minGenerateHeight": 10,
-    "maxGenerateHeight": 48
+    "frequencyPerChunks": 4,
+    "frequencyOnChunk": 3,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 128
   }
 }

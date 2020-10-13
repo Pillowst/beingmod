@@ -10,28 +10,28 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
+        "value": "CUSTOM:BlockBeing"
+      },
+      {
+        "value": "CUSTOM:Nerium"
+      },
+      {
+        "value": "CUSTOM:BlockBeing"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.BLAZE_ROD"
+      },
+      {
         "value": ""
       },
       {
         "value": ""
       },
       {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:ItemBeing"
-      },
-      {
-        "value": "CUSTOM:N48pickaxe"
-      },
-      {
-        "value": "CUSTOM:ItemBeing"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "Items.BLAZE_ROD"
       },
       {
         "value": ""

@@ -1,7 +1,7 @@
 {
   "item.beingmod.webpotion": "Web potion",
-  "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
   "advancements.beingget.title": "Obtain Being",
+  "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
   "item.beingmod.pricklysword": "Pricklysword",
   "block.beingmod.crystal_being": "Being Crystal",
   "item.beingmod.shard": "Being Shards",
@@ -9,6 +9,7 @@
   "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
   "block.beingmod.reversestalk": "Dripping roots",
   "block.beingmod.darkgland": "dark gland ",
+  "block.beingmod.quantum_reactor_block": "Quantum Reactor Block",
   "block.beingmod.periwinkecillia": "Periwinkle cillia",
   "block.beingmod.warmedfollicles": "Warmedfollicles",
   "block.beingmod.beinggold": "Being gold ore",

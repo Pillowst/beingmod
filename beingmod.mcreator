@@ -995,13 +995,13 @@
       "registry_name": "reversestalk"
     },
     {
-      "name": "Synthabandoned",
+      "name": "AbandonedSynth",
       "type": "structure",
-      "sortid": 71,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "synthabandoned"
+      "registry_name": "abandoned_synth"
     }
   ],
   "variable_elements": [],

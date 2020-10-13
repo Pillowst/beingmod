@@ -29,9 +29,9 @@ import net.mcreator.beingmod.BeingmodModElements;
 import java.util.Random;
 
 @BeingmodModElements.ModElement.Tag
-public class SynthabandonedStructure extends BeingmodModElements.ModElement {
-	public SynthabandonedStructure(BeingmodModElements instance) {
-		super(instance, 71);
+public class AbandonedSynthStructure extends BeingmodModElements.ModElement {
+	public AbandonedSynthStructure(BeingmodModElements instance) {
+		super(instance, 72);
 	}
 
 	@Override
@@ -56,12 +56,12 @@ public class SynthabandonedStructure extends BeingmodModElements.ModElement {
 						j = Math.abs(random.nextInt(Math.max(1, j)) - 24);
 						Rotation rotation = Rotation.values()[random.nextInt(3)];
 						Mirror mirror = Mirror.values()[random.nextInt(2)];
-						BlockPos spawnTo = new BlockPos(i, j + 5, k);
+						BlockPos spawnTo = new BlockPos(i, j + 10, k);
 						int x = spawnTo.getX();
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("beingmod", "synthabandon"));
+								.getTemplateDefaulted(new ResourceLocation("beingmod", "synth"));
 						if (template == null)
 							return false;
 						template.addBlocksToWorld(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)

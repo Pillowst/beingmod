@@ -2,14 +2,14 @@
   "_fv": 12,
   "_type": "structure",
   "definition": {
-    "structure": "synthabandon",
+    "structure": "synth",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 100,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Underground",
-    "spawnHeightOffset": 5,
+    "spawnHeightOffset": 10,
     "spawnWorldTypes": [
       "Surface"
     ],

@@ -1,0 +1,29 @@
+{
+  "_fv": 12,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "pricklysword",
+    "customModelName": "Normal",
+    "name": "Pricklysword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 4,
+    "damageVsEntity": 9.0,
+    "usageCount": 90,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "PricklyswordLivingEntityIsHitWithTool"
+    }
+  }
+}

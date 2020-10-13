@@ -1215,6 +1215,50 @@
           }
         ]
       }
+    },
+    {
+      "name": "Indelicatetooth",
+      "type": "item",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indelicatetooth"
+    },
+    {
+      "name": "PricklyswordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pricklysword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pricklysword",
+      "type": "tool",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pricklysword"
+    },
+    {
+      "name": "Supressorrecipe",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "supressorrecipe"
     }
   ],
   "variable_elements": [],
@@ -1224,6 +1268,7 @@
       "item.beingmod.webpotion": "Web potion",
       "advancements.beingget.title": "Obtain Being",
       "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
+      "item.beingmod.pricklysword": "Pricklysword",
       "block.beingmod.crystal_being": "Being Crystal",
       "item.beingmod.shard": "Being Shards",
       "item.beingmod.item_being": "Being",
@@ -1237,6 +1282,7 @@
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "item.beingmod.nerium": "Nerium",
       "block.beingmod.n_48ore": "Unknown Ore",
+      "item.beingmod.indelicatetooth": "Indelicate tooth",
       "block.beingmod.stalstop": "Being Stalactite End",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",
       "block.beingmod.neriumore": "nerium ore",

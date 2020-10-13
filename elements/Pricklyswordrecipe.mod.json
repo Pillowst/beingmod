@@ -1,0 +1,46 @@
+{
+  "_fv": 12,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Indelicatetooth"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Indelicatetooth"
+      },
+      {
+        "value": "Items.DIAMOND_SWORD"
+      },
+      {
+        "value": "CUSTOM:Indelicatetooth"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Noxiousbloomer"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Pricklysword"
+    },
+    "name": "pricklyswordrecipe",
+    "namespace": "mod"
+  }
+}

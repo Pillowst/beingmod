@@ -1259,6 +1259,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "supressorrecipe"
+    },
+    {
+      "name": "Pricklyswordrecipe",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pricklyswordrecipe"
     }
   ],
   "variable_elements": [],
@@ -1266,8 +1275,8 @@
   "language_map": {
     "en_us": {
       "item.beingmod.webpotion": "Web potion",
-      "advancements.beingget.title": "Obtain Being",
       "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
+      "advancements.beingget.title": "Obtain Being",
       "item.beingmod.pricklysword": "Pricklysword",
       "block.beingmod.crystal_being": "Being Crystal",
       "item.beingmod.shard": "Being Shards",

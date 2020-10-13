@@ -1,0 +1,30 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "beingmod:indelicatetooth"
+    },
+    "3": {
+      "item": "beingmod:indelicatetooth"
+    },
+    "4": {
+      "item": "minecraft:diamond_sword"
+    },
+    "5": {
+      "item": "beingmod:indelicatetooth"
+    },
+    "7": {
+      "item": "beingmod:noxiousbloomer"
+    }
+  },
+  "result": {
+    "item": "beingmod:pricklysword",
+    "count": 1
+  }
+}

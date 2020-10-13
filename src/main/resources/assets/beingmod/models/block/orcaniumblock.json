@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "beingmod:blocks/orcanium",
+    "up": "beingmod:blocks/orcanium",
+    "north": "beingmod:blocks/orcanium",
+    "east": "beingmod:blocks/orcanium",
+    "south": "beingmod:blocks/orcanium",
+    "west": "beingmod:blocks/orcanium",
+    "particle": "beingmod:blocks/orcanium"
+  }
+}

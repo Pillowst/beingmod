@@ -2,12 +2,12 @@
   "_fv": 12,
   "_type": "block",
   "definition": {
-    "texture": "n-48block",
-    "textureTop": "n-48block",
-    "textureLeft": "n-48block",
-    "textureFront": "n-48block",
-    "textureRight": "n-48block",
-    "textureBack": "n-48block",
+    "texture": "ore",
+    "textureTop": "ore",
+    "textureLeft": "ore",
+    "textureFront": "ore",
+    "textureRight": "ore",
+    "textureBack": "ore",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -22,9 +22,9 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Unknown Ore",
+    "name": "N 4 8 Alloy",
     "specialInfo": [],
-    "hardness": 3.0,
+    "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -46,7 +46,7 @@
       "value": "ROCK"
     },
     "tickRate": 10,
-    "tickRandomly": true,
+    "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
@@ -97,9 +97,9 @@
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 20,
-    "frequencyOnChunk": 20,
-    "minGenerateHeight": 10,
-    "maxGenerateHeight": 48
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }

@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "beingmod:blocks/ore",
-    "up": "beingmod:blocks/ore",
-    "north": "beingmod:blocks/ore",
-    "east": "beingmod:blocks/ore",
-    "south": "beingmod:blocks/ore",
-    "west": "beingmod:blocks/ore",
-    "particle": "beingmod:blocks/ore"
+    "down": "beingmod:blocks/n-48block",
+    "up": "beingmod:blocks/n-48block",
+    "north": "beingmod:blocks/n-48block",
+    "east": "beingmod:blocks/n-48block",
+    "south": "beingmod:blocks/n-48block",
+    "west": "beingmod:blocks/n-48block",
+    "particle": "beingmod:blocks/n-48block"
   }
 }

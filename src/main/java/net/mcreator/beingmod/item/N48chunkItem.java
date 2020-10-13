@@ -2,12 +2,12 @@
 package net.mcreator.beingmod.item;
 
 @BeingmodModElements.ModElement.Tag
-public class KjaldarshardItem extends BeingmodModElements.ModElement {
+public class N48chunkItem extends BeingmodModElements.ModElement {
 
-	@ObjectHolder("beingmod:kjaldarshard")
+	@ObjectHolder("beingmod:n_48chunk")
 	public static final Item block = null;
 
-	public KjaldarshardItem(BeingmodModElements instance) {
+	public N48chunkItem(BeingmodModElements instance) {
 		super(instance, 90);
 
 	}
@@ -20,8 +20,8 @@ public class KjaldarshardItem extends BeingmodModElements.ModElement {
 	public static class ItemCustom extends Item {
 
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.UNCOMMON));
-			setRegistryName("kjaldarshard");
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
+			setRegistryName("n_48chunk");
 		}
 
 		@Override

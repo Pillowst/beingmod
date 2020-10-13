@@ -1,0 +1,30 @@
+{
+  "_fv": 12,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "god_pickaxe",
+    "customModelName": "Normal",
+    "name": "Being Infused Pickaxe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 4,
+    "efficiency": 8.0,
+    "attackSpeed": 2.0,
+    "enchantability": 20,
+    "damageVsEntity": 8.0,
+    "usageCount": 3000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:ItemBeing"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

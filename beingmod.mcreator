@@ -1270,15 +1270,6 @@
       "registry_name": "pricklyswordrecipe"
     },
     {
-      "name": "Forcefieldgenerator",
-      "type": "item",
-      "sortid": 88,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "forcefieldgenerator"
-    },
-    {
       "name": "Kjaldarcrystal",
       "type": "plant",
       "sortid": 89,
@@ -1286,6 +1277,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "kjaldarcrystal"
+    },
+    {
+      "name": "Forcefieldgeneratorrecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "forcefieldgeneratorrecipe"
+    },
+    {
+      "name": "Forcefieldgenerator",
+      "type": "item",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "forcefieldgenerator"
     },
     {
       "name": "Kjaldarshard",
@@ -1315,66 +1324,136 @@
       }
     },
     {
-      "name": "Forcefieldgeneratorrecipe",
+      "name": "Npickaxerecipe",
       "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "npickaxerecipe"
+    },
+    {
+      "name": "N48chunk",
+      "type": "item",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "n_48chunk"
+    },
+    {
+      "name": "Orcaniumblock",
+      "type": "block",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orcaniumblock"
+    },
+    {
+      "name": "N48Alloy",
+      "type": "block",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "n_48_alloy"
+    },
+    {
+      "name": "Godpickaxe",
+      "type": "tool",
       "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "forcefieldgeneratorrecipe"
+      "registry_name": "godpickaxe"
+    },
+    {
+      "name": "N48block",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "n_48block"
+    },
+    {
+      "name": "QuantumReactorBlock",
+      "type": "block",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quantum_reactor_block"
+    },
+    {
+      "name": "Beingpickaxerecipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingpickaxerecipe"
+    },
+    {
+      "name": "N48pickaxe",
+      "type": "tool",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "n_48pickaxe"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.beingmod.webpotion": "Web potion",
-      "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
       "advancements.beingget.title": "Obtain Being",
       "item.beingmod.pricklysword": "Pricklysword",
       "block.beingmod.crystal_being": "Being Crystal",
-      "item.beingmod.shard": "Being Shards",
-      "item.beingmod.item_being": "Being",
-      "item.beingmod.forcefieldgenerator": "Force field generator",
-      "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
       "block.beingmod.reversestalk": "Dripping roots",
-      "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
       "block.beingmod.warmedfollicles": "Warmedfollicles",
       "block.beingmod.kjaldarcrystal": "Kjaldar_crystal",
-      "block.beingmod.beinggold": "Being gold ore",
       "block.beingmod.dessicatedbeing": "dessicated being",
-      "item.beingmod.orcanite_shard": "Orcanite Shards",
-      "item.beingmod.nerium": "Nerium",
-      "block.beingmod.n_48ore": "Unknown Ore",
-      "item.beingmod.indelicatetooth": "Indelicate tooth",
       "block.beingmod.stalstop": "Being Stalactite End",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",
       "block.beingmod.neriumore": "nerium ore",
       "block.beingmod.orcnaite_armored": "Armored Orcanite",
       "block.beingmod.block_being": "Being",
+      "block.beingmod.beingrootsbot": "Being Stalactite End",
+      "entity.beingmod.indelicate": "Indelicate",
+      "item.beingmod.noxiouspotion": "Noxious potion",
+      "block.beingmod.beingemerald": "Being emerald ore",
+      "block.beingmod.beingiron": "Being iron ore",
+      "block.beingmod.beingrootstop": "Being Stalactite",
+      "block.beingmod.drippingleaves": "Dripping roots",
+      "item.beingmod.webpotion": "Web potion",
+      "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
+      "item.beingmod.shard": "Being Shards",
+      "item.beingmod.item_being": "Being",
+      "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
+      "block.beingmod.darkgland": "dark gland ",
+      "block.beingmod.beinggold": "Being gold ore",
+      "item.beingmod.orcanite_shard": "Orcanite Shards",
+      "item.beingmod.nerium": "Nerium",
+      "block.beingmod.n_48ore": "Unknown Ore",
+      "item.beingmod.indelicatetooth": "Indelicate tooth",
       "block.beingmod.beingstalbot": "Being Stalactite End",
       "block.beingmod.infusingtable": "Infusing table",
       "block.beingmod.block_orcanite": "Raw Orcanite Block",
       "block.beingmod.beingsuppressor": "Beingsuppressor",
       "block.beingmod.dismalgland_1": "Dismal gland ",
-      "item.beingmod.kjaldarshard": "Kjaldar shard",
       "item.beingmod.particle_rifle": "Particle Rifle",
-      "block.beingmod.beingrootsbot": "Being Stalactite End",
-      "entity.beingmod.indelicate": "Indelicate",
       "block.beingmod.beingcoal": "Being coal ore",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "block.beingmod.beingstalk": "Beingstalk",
-      "item.beingmod.noxiouspotion": "Noxious potion",
-      "block.beingmod.beingemerald": "Being emerald ore",
       "block.beingmod.beingdiamond": "Being diamond ore",
       "block.beingmod.dessicatedstalk": "Beingstalk",
-      "block.beingmod.beingiron": "Being iron ore",
       "block.beingmod.beingredstone": "Being redstone ore",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
-      "block.beingmod.beinglapis": "Being lapis ore",
-      "block.beingmod.beingrootstop": "Being Stalactite",
-      "block.beingmod.drippingleaves": "Dripping roots"
+      "block.beingmod.beinglapis": "Being lapis ore"
     }
   },
   "workspaceSettings": {

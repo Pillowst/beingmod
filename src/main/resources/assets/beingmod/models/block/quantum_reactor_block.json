@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "beingmod:blocks/quantum_reactor_top",
+    "up": "beingmod:blocks/quantum_reactor_top",
+    "north": "beingmod:blocks/quantum_reactor_side2",
+    "east": "beingmod:blocks/quantum_reactor_side1",
+    "south": "beingmod:blocks/quantum_reactor_side1",
+    "west": "beingmod:blocks/quantum_reactor_side1",
+    "particle": "beingmod:blocks/quantum_reactor_top"
+  }
+}

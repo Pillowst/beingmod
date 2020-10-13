@@ -6,11 +6,11 @@
   ],
   "key": {
     "0": {
-      "item": "beingmod:kjaldarshard"
+      "item": "beingmod:unknown_element"
     }
   },
   "result": {
-    "item": "beingmod:forcefieldgenerator",
+    "item": "beingmod:unknown_element",
     "count": 1
   }
 }

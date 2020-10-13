@@ -1270,60 +1270,6 @@
       "registry_name": "pricklyswordrecipe"
     },
     {
-      "name": "Kjaldarcrystal",
-      "type": "plant",
-      "sortid": 89,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "kjaldarcrystal"
-    },
-    {
-      "name": "Forcefieldgeneratorrecipe",
-      "type": "recipe",
-      "sortid": 92,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "forcefieldgeneratorrecipe"
-    },
-    {
-      "name": "Forcefieldgenerator",
-      "type": "item",
-      "sortid": 88,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "forcefieldgenerator"
-    },
-    {
-      "name": "Kjaldarshard",
-      "type": "item",
-      "sortid": 90,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "kjaldarshard"
-    },
-    {
-      "name": "KjaldarcrystalAdditionalGenerationCondition",
-      "type": "procedure",
-      "sortid": 91,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "kjaldarcrystal_additional_generation_condition",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "y",
-            "type": "number"
-          }
-        ]
-      }
-    },
-    {
       "name": "Npickaxerecipe",
       "type": "recipe",
       "sortid": 94,

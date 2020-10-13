@@ -6,13 +6,16 @@
     "items": [],
     "blocks": [
       {
-        "value": "CUSTOM:Beingemerald"
+        "value": "CUSTOM:Dessicatedbeing"
+      },
+      {
+        "value": "CUSTOM:Beingredstone"
       },
       {
         "value": "CUSTOM:Beinglapis"
       },
       {
-        "value": "CUSTOM:Beingredstone"
+        "value": "CUSTOM:Beingemerald"
       },
       {
         "value": "CUSTOM:Beingcoal"
@@ -25,12 +28,6 @@
       },
       {
         "value": "CUSTOM:Beingdiamond"
-      },
-      {
-        "value": "CUSTOM:Neriumore"
-      },
-      {
-        "value": "CUSTOM:Dessicatedbeing"
       }
     ],
     "functions": [],

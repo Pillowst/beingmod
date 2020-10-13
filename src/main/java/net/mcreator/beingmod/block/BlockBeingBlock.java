@@ -35,6 +35,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.beingmod.procedures.BlockBeingNeighbourBlockChangesProcedure;
 import net.mcreator.beingmod.procedures.BeingstalbotClientDisplayRandomTickProcedure;
 import net.mcreator.beingmod.procedures.BeingSpreadProcedure;
 import net.mcreator.beingmod.BeingmodModElements;
@@ -82,6 +83,25 @@ public class BlockBeingBlock extends BeingmodModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
+		}
+
+		@Override
+		public void neighborChanged(BlockState state, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+			super.neighborChanged(state, world, pos, neighborBlock, fromPos, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
+			} else {
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				BlockBeingNeighbourBlockChangesProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override
@@ -142,7 +162,7 @@ public class BlockBeingBlock extends BeingmodModElements.ModElement {
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 4)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(32, 0, 0, 64))));
+			}), block.getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(64, 0, 0, 50))));
 		}
 	}
 }

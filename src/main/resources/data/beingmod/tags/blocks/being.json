@@ -1,14 +1,13 @@
 {
   "replace": false,
   "values": [
-    "beingmod:beingemerald",
-    "beingmod:beinglapis",
+    "beingmod:dessicatedbeing",
     "beingmod:beingredstone",
+    "beingmod:beinglapis",
+    "beingmod:beingemerald",
     "beingmod:beingcoal",
     "beingmod:beingiron",
     "beingmod:beinggold",
-    "beingmod:beingdiamond",
-    "beingmod:neriumore",
-    "beingmod:dessicatedbeing"
+    "beingmod:beingdiamond"
   ]
 }

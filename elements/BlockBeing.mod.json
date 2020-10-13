@@ -90,6 +90,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "BlockBeingNeighbourBlockChanges"
+    },
     "onTickUpdate": {
       "name": "BeingSpread"
     },
@@ -109,9 +112,9 @@
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 32,
-    "frequencyOnChunk": 4,
+    "frequencyPerChunks": 64,
+    "frequencyOnChunk": 8,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 50
   }
 }

@@ -959,15 +959,6 @@
       "registry_name": "beingredstone"
     },
     {
-      "name": "Being",
-      "type": "tag",
-      "sortid": 68,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "being"
-    },
-    {
       "name": "Beingstalk",
       "type": "plant",
       "sortid": 69,
@@ -1071,6 +1062,44 @@
           }
         ]
       }
+    },
+    {
+      "name": "Being",
+      "type": "tag",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "being"
+    },
+    {
+      "name": "BlockBeingNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "block_being_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1088,8 +1117,8 @@
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
       "block.beingmod.warmedfollicles": "Warmedfollicles",
-      "block.beingmod.beinggold": "Beingcoal",
-      "block.beingmod.dessicatedbeing": "Raw Orcanite Block",
+      "block.beingmod.beinggold": "Being gold ore",
+      "block.beingmod.dessicatedbeing": "dessicated being",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "block.beingmod.n_48ore": "Unknown Ore",
       "block.beingmod.stalstop": "Being Stalactite End",
@@ -1104,16 +1133,16 @@
       "item.beingmod.particle_rifle": "Particle Rifle",
       "block.beingmod.beingrootsbot": "Being Stalactite End",
       "entity.beingmod.indelicate": "Indelicate",
-      "block.beingmod.beingcoal": "Beingcoal",
+      "block.beingmod.beingcoal": "Being coal ore",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "block.beingmod.beingstalk": "Beingstalk",
       "item.beingmod.noxiouspotion": "Noxious potion",
-      "block.beingmod.beingemerald": "Beingcoal",
-      "block.beingmod.beingdiamond": "Beingcoal",
-      "block.beingmod.beingiron": "Beingcoal",
-      "block.beingmod.beingredstone": "Beingcoal",
+      "block.beingmod.beingemerald": "Being emerald ore",
+      "block.beingmod.beingdiamond": "Being diamond ore",
+      "block.beingmod.beingiron": "Being iron ore",
+      "block.beingmod.beingredstone": "Being redstone ore",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
-      "block.beingmod.beinglapis": "Beingcoal",
+      "block.beingmod.beinglapis": "Being lapis ore",
       "block.beingmod.beingrootstop": "Being Stalactite",
       "block.beingmod.drippingleaves": "Dripping roots"
     }

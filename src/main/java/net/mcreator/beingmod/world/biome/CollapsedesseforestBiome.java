@@ -50,7 +50,7 @@ public class CollapsedesseforestBiome extends BeingmodModElements.ModElement {
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
 			super(new Biome.Builder().downfall(0f).depth(-0.2f).scale(0.3f).temperature(1f).precipitation(Biome.RainType.NONE)
-					.category(Biome.Category.DESERT).waterColor(-13382656).waterFogColor(-13382656)
+					.category(Biome.Category.DESERT).waterColor(-14791154).waterFogColor(-15843022)
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(DessicatedbeingBlock.block.getDefaultState(),
 							DessicatedbeingBlock.block.getDefaultState(), DessicatedbeingBlock.block.getDefaultState())));
 			setRegistryName("collapsedesseforest");
@@ -69,7 +69,7 @@ public class CollapsedesseforestBiome extends BeingmodModElements.ModElement {
 					Feature.DISK
 							.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), 7, 2,
 									Lists.newArrayList(DessicatedbeingBlock.block.getDefaultState(), DessicatedbeingBlock.block.getDefaultState())))
-							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(5))));
+							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(8))));
 			addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
 					Feature.DISK
 							.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), 6, 2,
@@ -95,7 +95,7 @@ public class CollapsedesseforestBiome extends BeingmodModElements.ModElement {
 		@OnlyIn(Dist.CLIENT)
 		@Override
 		public int getSkyColor() {
-			return -154;
+			return -9737416;
 		}
 	}
 }

@@ -90,6 +90,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "BlockBeingNeighbourBlockChanges"
+    },
+    "onTickUpdate": {
+      "name": "BlockBeingNeighbourBlockChanges"
+    },
     "spawnWorldTypes": [
       "Surface"
     ],
@@ -103,9 +109,9 @@
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 18,
-    "frequencyOnChunk": 32,
+    "frequencyPerChunks": 32,
+    "frequencyOnChunk": 39,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "maxGenerateHeight": 50
   }
 }

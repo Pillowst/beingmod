@@ -1139,6 +1139,44 @@
           }
         ]
       }
+    },
+    {
+      "name": "BeingsuppressorUpdateTick",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingsuppressor_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Beingsuppressor",
+      "type": "block",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingsuppressor"
     }
   ],
   "variable_elements": [],
@@ -1168,6 +1206,7 @@
       "block.beingmod.beingstalbot": "Being Stalactite End",
       "block.beingmod.infusingtable": "Infusing table",
       "block.beingmod.block_orcanite": "Raw Orcanite Block",
+      "block.beingmod.beingsuppressor": "Beingsuppressor",
       "block.beingmod.dismalgland_1": "Dismal gland ",
       "item.beingmod.particle_rifle": "Particle Rifle",
       "block.beingmod.beingrootsbot": "Being Stalactite End",

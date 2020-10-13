@@ -1,0 +1,8 @@
+{
+  "parent": "beingmod:custom/suppresor",
+  "textures": {
+    "all": "beingmod:blocks/suppresser_texture",
+    "particle": "beingmod:blocks/suppresser_texture",
+    "0": "beingmod:blocks/suppresser_texture"
+  }
+}

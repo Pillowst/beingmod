@@ -1011,6 +1011,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "synthabandonedloot"
+    },
+    {
+      "name": "N48ore",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "n_48ore"
     }
   ],
   "variable_elements": [],
@@ -1029,6 +1038,7 @@
       "block.beingmod.warmedfollicles": "Warmedfollicles",
       "block.beingmod.beinggold": "Beingcoal",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
+      "block.beingmod.n_48ore": "Unknown Ore",
       "block.beingmod.stalstop": "Being Stalactite End",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",
       "block.beingmod.neriumore": "nerium ore",

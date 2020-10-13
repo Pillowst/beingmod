@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "pricklysword",
+    "texture": "prickysword",
     "customModelName": "Normal",
     "name": "Pricklysword",
     "specialInfo": [],

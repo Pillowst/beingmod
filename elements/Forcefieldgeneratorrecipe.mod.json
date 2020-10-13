@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.IRON_INGOT"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Forcefieldgenerator"
+        "value": ""
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": ""
       },
       {
-        "value": "Blocks.SMOOTH_STONE"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Nerium"
+        "value": "CUSTOM:Kjaldarshard"
       },
       {
-        "value": "Blocks.SMOOTH_STONE"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Forcefieldgenerator"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Beingsuppressor"
+      "value": "CUSTOM:Forcefieldgenerator"
     },
-    "name": "supressorrecipe",
+    "name": "forcefieldgeneratorrecipe",
     "namespace": "mod"
   }
 }

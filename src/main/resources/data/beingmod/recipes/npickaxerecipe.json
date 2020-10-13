@@ -8,23 +8,23 @@
   ],
   "key": {
     "0": {
-      "item": "beingmod:n_48_alloy"
+      "item": "beingmod:unknown_element"
     },
     "1": {
-      "item": "beingmod:n_48_alloy"
+      "item": "beingmod:unknown_element"
     },
     "2": {
-      "item": "beingmod:n_48_alloy"
+      "item": "beingmod:unknown_element"
     },
     "4": {
-      "item": "beingmod:n_48chunk"
+      "item": "beingmod:unknown_element"
     },
     "7": {
-      "item": "beingmod:n_48chunk"
+      "item": "beingmod:unknown_element"
     }
   },
   "result": {
-    "item": "beingmod:n_48pickaxe",
+    "item": "beingmod:unknown_element",
     "count": 1
   }
 }

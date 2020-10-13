@@ -2,13 +2,16 @@
   "group": "beingmod",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "0 2",
+    "012",
     "345",
-    "6 8"
+    "678"
   ],
   "key": {
     "0": {
       "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "beingmod:forcefieldgenerator"
     },
     "2": {
       "item": "minecraft:iron_ingot"
@@ -24,6 +27,9 @@
     },
     "6": {
       "item": "minecraft:iron_block"
+    },
+    "7": {
+      "item": "beingmod:forcefieldgenerator"
     },
     "8": {
       "item": "minecraft:iron_block"

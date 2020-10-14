@@ -50,7 +50,7 @@ public class QuantumReactorBlockBlock extends BeingmodModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(1)
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(5)
 					.harvestTool(ToolType.PICKAXE));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("quantum_reactor_block");
@@ -71,8 +71,8 @@ public class QuantumReactorBlockBlock extends BeingmodModElements.ModElement {
 
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
-			;
-			return this.getDefaultState().with(FACING, context.getNearestLookingDirection().getOpposite());
+			Direction facing = context.getFace();;
+			return this.getDefaultState().with(FACING, facing);
 		}
 
 		@Override

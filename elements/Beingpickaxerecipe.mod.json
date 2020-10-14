@@ -10,13 +10,13 @@
     "recipeShapeless": true,
     "recipeSlots": [
       {
-        "value": "CUSTOM:BlockBeing"
+        "value": "CUSTOM:BlockOrcanite"
       },
       {
         "value": "CUSTOM:Nerium"
       },
       {
-        "value": "CUSTOM:BlockBeing"
+        "value": "CUSTOM:BlockOrcanite"
       },
       {
         "value": ""

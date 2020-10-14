@@ -3,13 +3,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "beingmod:block_being"
+      "item": "beingmod:block_orcanite"
     },
     {
       "item": "beingmod:nerium"
     },
     {
-      "item": "beingmod:block_being"
+      "item": "beingmod:block_orcanite"
     },
     {
       "item": "minecraft:diamond_pickaxe"

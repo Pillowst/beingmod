@@ -1512,6 +1512,39 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "orcaniumblockrecipe"
+    },
+    {
+      "name": "PlasmacutterRightClickedInAir",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plasmacutter_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

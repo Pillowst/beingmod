@@ -1,0 +1,30 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "4 "
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:webpotion"
+    },
+    "1": {
+      "item": "beingmod:indelicatetooth"
+    },
+    "2": {
+      "item": "beingmod:indelicatetooth"
+    },
+    "3": {
+      "item": "beingmod:plasmacutter"
+    },
+    "4": {
+      "item": "beingmod:n_48chunk"
+    }
+  },
+  "result": {
+    "item": "beingmod:webgun",
+    "count": 1
+  }
+}

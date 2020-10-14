@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "particle_rifle",
+    "texture": "webgun",
     "customModelName": "Normal",
-    "name": "Diamondfire raygun",
-    "rarity": "RARE",
+    "name": "web gun",
+    "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "COMBAT"
     },
     "stackSize": 1,
     "enchantability": 0,
@@ -29,7 +29,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "Diamondfireraygunrightclickonairprocedure"
+      "name": "Webgunonrightclickprocedure"
     }
   }
 }

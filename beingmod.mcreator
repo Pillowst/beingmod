@@ -1650,6 +1650,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Webgunrecipe",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "webgunrecipe"
     }
   ],
   "variable_elements": [],
@@ -1684,7 +1693,7 @@
       "block.beingmod.neriumore": "nerium ore",
       "block.beingmod.block_being": "Being",
       "item.beingmod.kjaldarshard": "Kjaldar shard",
-      "item.beingmod.webgun": "Diamondfire raygun",
+      "item.beingmod.webgun": "web gun",
       "item.beingmod.n_48sword": "N48 Alloy Sword",
       "block.beingmod.beingrootsbot": "Being Stalactite End",
       "entity.beingmod.indelicate": "Indelicate",

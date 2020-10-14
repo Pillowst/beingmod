@@ -52,7 +52,7 @@ public class PlasmacutterItem extends BeingmodModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(QuantumbatteryItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(ForceFieldGenITEMItem.block, (int) (1)));
 			}
 		}, 1, -2f, new Item.Properties().group(ItemGroup.TOOLS)) {
 			@Override

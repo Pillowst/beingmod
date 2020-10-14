@@ -2,24 +2,24 @@
   "group": "beingmod",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "  2",
-    " 45",
-    "67 "
+    "01",
+    "23",
+    " 5"
   ],
   "key": {
-    "2": {
+    "0": {
       "item": "beingmod:kjaldar_crystal_item"
     },
-    "4": {
+    "1": {
+      "item": "beingmod:n_48chunk"
+    },
+    "2": {
+      "item": "beingmod:n_48chunk"
+    },
+    "3": {
       "item": "beingmod:quantumbattery"
     },
     "5": {
-      "item": "beingmod:n_48chunk"
-    },
-    "6": {
-      "item": "beingmod:n_48chunk"
-    },
-    "7": {
       "item": "beingmod:orcanite_shard"
     }
   },

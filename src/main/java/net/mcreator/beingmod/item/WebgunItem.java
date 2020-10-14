@@ -13,7 +13,7 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.beingmod.procedures.DiamondfireraygunrightclickonairprocedureProcedure;
+import net.mcreator.beingmod.procedures.WebgunonrightclickprocedureProcedure;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
@@ -33,7 +33,7 @@ public class WebgunItem extends BeingmodModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(1).rarity(Rarity.RARE));
+			super(new Item.Properties().group(ItemGroup.COMBAT).maxStackSize(1).rarity(Rarity.UNCOMMON));
 			setRegistryName("webgun");
 		}
 
@@ -67,7 +67,7 @@ public class WebgunItem extends BeingmodModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				DiamondfireraygunrightclickonairprocedureProcedure.executeProcedure($_dependencies);
+				WebgunonrightclickprocedureProcedure.executeProcedure($_dependencies);
 			}
 			return ar;
 		}

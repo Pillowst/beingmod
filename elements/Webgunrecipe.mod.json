@@ -10,10 +10,19 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:KjaldarCrystalITEM"
+        "value": "CUSTOM:Webpotion"
       },
       {
-        "value": "CUSTOM:N48chunk"
+        "value": "CUSTOM:Indelicatetooth"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Indelicatetooth"
+      },
+      {
+        "value": "CUSTOM:Plasmacutter"
       },
       {
         "value": ""
@@ -22,25 +31,16 @@
         "value": "CUSTOM:N48chunk"
       },
       {
-        "value": "CUSTOM:Quantumbattery"
-      },
-      {
         "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:OrcaniteShard"
       },
       {
         "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Plasmacutter"
+      "value": "CUSTOM:Webgun"
     },
-    "name": "plasmacutterrecipe",
+    "name": "webgunrecipe",
     "namespace": "mod"
   }
 }

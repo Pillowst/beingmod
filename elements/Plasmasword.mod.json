@@ -21,7 +21,7 @@
     "hasGlow": true,
     "repairItems": [
       {
-        "value": "CUSTOM:ForceFieldGenITEM"
+        "value": "CUSTOM:Quantumbattery"
       }
     ],
     "stayInGridWhenCrafting": false,

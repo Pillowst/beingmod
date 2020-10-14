@@ -46,7 +46,7 @@ public class PlasmaswordItem extends BeingmodModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(ForceFieldGenITEMItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(QuantumbatteryItem.block, (int) (1)));
 			}
 		}, 3, 0f, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override

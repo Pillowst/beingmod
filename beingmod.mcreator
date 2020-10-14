@@ -1414,6 +1414,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "force_field_gen_item"
+    },
+    {
+      "name": "Ffgenrecipe",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ffgenrecipe"
     }
   ],
   "variable_elements": [],

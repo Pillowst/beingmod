@@ -1,0 +1,24 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:n_48chunk"
+    },
+    "1": {
+      "item": "beingmod:kjaldar_crystal_item"
+    },
+    "2": {
+      "item": "beingmod:n_48chunk"
+    }
+  },
+  "result": {
+    "item": "beingmod:force_field_gen_item",
+    "count": 1
+  }
+}

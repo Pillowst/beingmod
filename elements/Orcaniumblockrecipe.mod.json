@@ -10,13 +10,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Nerium"
+        "value": "CUSTOM:N48chunk"
       },
       {
         "value": "CUSTOM:Nerium"
       },
       {
-        "value": "CUSTOM:Nerium"
+        "value": "CUSTOM:N48chunk"
       },
       {
         "value": "CUSTOM:Nerium"
@@ -28,13 +28,13 @@
         "value": "CUSTOM:Nerium"
       },
       {
-        "value": "CUSTOM:Nerium"
+        "value": "CUSTOM:N48chunk"
       },
       {
         "value": "CUSTOM:Nerium"
       },
       {
-        "value": "CUSTOM:Nerium"
+        "value": "CUSTOM:N48chunk"
       }
     ],
     "recipeReturnStack": {

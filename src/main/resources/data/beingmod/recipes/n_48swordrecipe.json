@@ -1,0 +1,24 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:n_48chunk"
+    },
+    "1": {
+      "item": "beingmod:n_48chunk"
+    },
+    "2": {
+      "item": "beingmod:orcanite_shard"
+    }
+  },
+  "result": {
+    "item": "beingmod:n_48sword",
+    "count": 1
+  }
+}

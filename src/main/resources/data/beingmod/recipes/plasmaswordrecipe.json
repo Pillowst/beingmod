@@ -1,0 +1,24 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:kjaldar_crystal_item"
+    },
+    "1": {
+      "item": "beingmod:n_48sword"
+    },
+    "2": {
+      "item": "beingmod:force_field_gen_item"
+    }
+  },
+  "result": {
+    "item": "beingmod:plasmasword",
+    "count": 1
+  }
+}

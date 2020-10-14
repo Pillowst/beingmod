@@ -1443,6 +1443,42 @@
           }
         ]
       }
+    },
+    {
+      "name": "N48sword",
+      "type": "tool",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "n_48sword"
+    },
+    {
+      "name": "Plasmasword",
+      "type": "tool",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plasmasword"
+    },
+    {
+      "name": "N48swordrecipe",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "n_48swordrecipe"
+    },
+    {
+      "name": "Plasmaswordrecipe",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plasmaswordrecipe"
     }
   ],
   "variable_elements": [],
@@ -1466,6 +1502,7 @@
       "block.beingmod.neriumore": "nerium ore",
       "block.beingmod.block_being": "Being",
       "item.beingmod.kjaldarshard": "Kjaldar shard",
+      "item.beingmod.n_48sword": "N 4 8sword",
       "block.beingmod.beingrootsbot": "Being Stalactite End",
       "entity.beingmod.indelicate": "Indelicate",
       "block.beingmod.n_48_alloy": "N 4 8 Alloy",
@@ -1499,6 +1536,7 @@
       "block.beingmod.beingcoal": "Being coal ore",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "block.beingmod.beingstalk": "Beingstalk",
+      "item.beingmod.plasmasword": "Plasmasword",
       "block.beingmod.beingdiamond": "Being diamond ore",
       "block.beingmod.dessicatedstalk": "Beingstalk",
       "block.beingmod.beingredstone": "Being redstone ore",

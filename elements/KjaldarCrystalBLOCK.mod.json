@@ -11,7 +11,7 @@
     "renderType": 12,
     "customModelName": "Cross model",
     "rotationMode": 0,
-    "emissiveRendering": false,
+    "emissiveRendering": true,
     "itemTexture": "",
     "hasTransparency": true,
     "connectedSides": false,
@@ -46,7 +46,7 @@
       "value": "ROCK"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
@@ -63,7 +63,7 @@
     "soundOnStep": {
       "value": "GLASS"
     },
-    "luminance": 0.0,
+    "luminance": 1.0,
     "unbreakable": false,
     "breakHarvestLevel": 3,
     "spawnParticles": false,
@@ -90,6 +90,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "KjaldarCrystaldestroyifair"
+    },
     "spawnWorldTypes": [
       "Surface"
     ],
@@ -105,9 +108,9 @@
         "value": "Blocks.CAVE_AIR"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyPerChunks": 1,
+    "frequencyOnChunk": 1,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 30
+    "maxGenerateHeight": 10
   }
 }

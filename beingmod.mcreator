@@ -1423,6 +1423,35 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ffgenrecipe"
+    },
+    {
+      "name": "KjaldarCrystaldestroyifair",
+      "type": "procedure",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kjaldar_crystaldestroyifair",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

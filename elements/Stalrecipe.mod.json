@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Beingstaltop"
+      "value": "CUSTOM:Beingstalbot"
     },
     "name": "stalrecipe",
     "namespace": "mod"

@@ -13,7 +13,7 @@
         "value": "Items.IRON_INGOT"
       },
       {
-        "value": "CUSTOM:Forcefieldgenerator"
+        "value": "CUSTOM:ForceFieldGenITEM"
       },
       {
         "value": "Items.IRON_INGOT"
@@ -22,7 +22,7 @@
         "value": "Blocks.SMOOTH_STONE"
       },
       {
-        "value": "CUSTOM:Nerium"
+        "value": "CUSTOM:QuantumReactorBlock"
       },
       {
         "value": "Blocks.SMOOTH_STONE"
@@ -31,7 +31,7 @@
         "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "CUSTOM:Forcefieldgenerator"
+        "value": "CUSTOM:ForceFieldGenITEM"
       },
       {
         "value": "Blocks.IRON_BLOCK"

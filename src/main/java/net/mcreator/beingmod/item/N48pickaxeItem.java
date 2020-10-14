@@ -24,7 +24,7 @@ public class N48pickaxeItem extends BeingmodModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new PickaxeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 250;
+				return 2500;
 			}
 
 			public float getEfficiency() {

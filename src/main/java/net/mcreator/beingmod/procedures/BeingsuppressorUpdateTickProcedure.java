@@ -94,9 +94,12 @@ public class BeingsuppressorUpdateTickProcedure extends BeingmodModElements.ModE
 				}
 				BX = (double) ((BX) + 1);
 			}
-		}
-		if (world instanceof ServerWorld) {
-			((ServerWorld) world).spawnParticle(ParticleTypes.END_ROD, x, y, z, (int) 5, 6, 6, 6, 0);
+			if (world instanceof ServerWorld) {
+				((ServerWorld) world).spawnParticle(ParticleTypes.END_ROD, x, y, z, (int) 5, 6, 6, 6, 0);
+			}
+			if (world instanceof ServerWorld) {
+				((ServerWorld) world).spawnParticle(ParticleTypes.END_ROD, x, (y + 1), z, (int) 1, 0, 0.5, 0, 0);
+			}
 		}
 	}
 }

@@ -51,7 +51,7 @@ public class DessicatedbeingBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(-1, 3600000).lightValue(0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(2f, 2f).lightValue(0));
 			setRegistryName("dessicatedbeing");
 		}
 

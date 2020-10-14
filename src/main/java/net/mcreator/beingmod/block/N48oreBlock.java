@@ -69,7 +69,7 @@ public class N48oreBlock extends BeingmodModElements.ModElement {
 				public boolean place(IWorld world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					DimensionType dimensionType = world.getDimension().getType();
 					boolean dimensionCriteria = false;
-					if (dimensionType == DimensionType.OVERWORLD)
+					if (dimensionType == DimensionType.THE_END)
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
@@ -77,10 +77,10 @@ public class N48oreBlock extends BeingmodModElements.ModElement {
 				}
 			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("n_48ore", "n_48ore", blockAt -> {
 				boolean blockCriteria = false;
-				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
+				if (blockAt.getBlock() == Blocks.END_STONE.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 3)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(4, 0, 0, 50))));
+			}), block.getDefaultState(), 3)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(4, 0, 0, 128))));
 		}
 	}
 }

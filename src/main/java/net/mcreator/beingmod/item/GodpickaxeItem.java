@@ -26,7 +26,7 @@ public class GodpickaxeItem extends BeingmodModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new PickaxeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 300;
+				return 3000;
 			}
 
 			public float getEfficiency() {

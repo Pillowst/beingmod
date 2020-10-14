@@ -64,7 +64,7 @@
       "value": "STONE"
     },
     "luminance": 0.16999999999999998,
-    "unbreakable": true,
+    "unbreakable": false,
     "breakHarvestLevel": 4,
     "spawnParticles": false,
     "particleToSpawn": {

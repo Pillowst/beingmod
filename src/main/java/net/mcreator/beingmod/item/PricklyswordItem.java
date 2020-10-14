@@ -50,7 +50,7 @@ public class PricklyswordItem extends BeingmodModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(ItemBeingItem.block, (int) (1)));
+				return Ingredient.EMPTY;
 			}
 		}, 3, -3f, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override

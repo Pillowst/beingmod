@@ -19,11 +19,7 @@
     "usageCount": 90,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [
-      {
-        "value": "CUSTOM:ItemBeing"
-      }
-    ],
+    "repairItems": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {

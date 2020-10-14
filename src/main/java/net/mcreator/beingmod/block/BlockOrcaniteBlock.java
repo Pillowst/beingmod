@@ -57,7 +57,7 @@ public class BlockOrcaniteBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(-1, 3600000).lightValue(0).harvestLevel(5)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(3f, 3f).lightValue(0).harvestLevel(5)
 					.harvestTool(ToolType.PICKAXE));
 			setRegistryName("block_orcanite");
 		}

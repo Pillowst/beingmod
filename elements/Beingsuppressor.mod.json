@@ -83,7 +83,7 @@
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": true,
-    "energyInitial": 400000,
+    "energyInitial": 0,
     "energyCapacity": 400000,
     "energyMaxReceive": 1000,
     "energyMaxExtract": 0,

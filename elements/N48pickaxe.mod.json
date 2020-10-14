@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "npickaxe",
     "customModelName": "Normal",
-    "name": "Alloy N48 Pickaxe",
+    "name": "Alloy N-48 Pickaxe",
     "specialInfo": [],
     "creativeTab": {
       "value": "TOOLS"
@@ -16,7 +16,7 @@
     "attackSpeed": 1.0,
     "enchantability": 18,
     "damageVsEntity": 4.0,
-    "usageCount": 250,
+    "usageCount": 2500,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [

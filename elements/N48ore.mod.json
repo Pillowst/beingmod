@@ -8,8 +8,8 @@
     "textureFront": "n-48block",
     "textureRight": "n-48block",
     "textureBack": "n-48block",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "itemTexture": "",
@@ -22,7 +22,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "N48 Ore",
+    "name": "Unknown Ore",
     "specialInfo": [],
     "hardness": 3.0,
     "resistance": 10.0,
@@ -91,17 +91,17 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "spawnWorldTypes": [
-      "Surface"
+      "End"
     ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE#0"
+        "value": "Blocks.END_STONE"
       }
     ],
     "frequencyPerChunks": 4,
     "frequencyOnChunk": 3,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 50
+    "maxGenerateHeight": 128
   }
 }

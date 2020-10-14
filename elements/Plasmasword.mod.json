@@ -25,9 +25,6 @@
       }
     ],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntityHitWith": {
-      "name": "PlasmaDamageToEntity"
-    }
+    "damageOnCrafting": false
   }
 }

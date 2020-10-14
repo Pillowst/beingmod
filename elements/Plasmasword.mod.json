@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "plasma_sword",
+    "texture": "ps1",
     "customModelName": "Normal",
     "name": "Plasmasword",
     "specialInfo": [],

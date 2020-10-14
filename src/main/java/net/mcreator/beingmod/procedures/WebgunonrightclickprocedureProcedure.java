@@ -101,7 +101,7 @@ public class WebgunonrightclickprocedureProcedure extends BeingmodModElements.Mo
 		}
 		if (entity instanceof PlayerEntity)
 			((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 10);
-		if ((world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) + 0))).isSolid())) {
+		if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) + 0))).isSolid()))) {
 			{
 				BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) + 0));
 				BlockState _bs = Blocks.COBWEB.getDefaultState();
@@ -114,7 +114,7 @@ public class WebgunonrightclickprocedureProcedure extends BeingmodModElements.Mo
 				world.setBlockState(_bp, _bs, 3);
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) ((X2) + 1), (int) ((Y2) + 0), (int) ((Z2) + 0))).isSolid())) {
+		if ((!(world.getBlockState(new BlockPos((int) ((X2) + 1), (int) ((Y2) + 0), (int) ((Z2) + 0))).isSolid()))) {
 			{
 				BlockPos _bp = new BlockPos((int) ((X2) + 1), (int) ((Y2) + 0), (int) ((Z2) + 0));
 				BlockState _bs = Blocks.COBWEB.getDefaultState();
@@ -127,7 +127,7 @@ public class WebgunonrightclickprocedureProcedure extends BeingmodModElements.Mo
 				world.setBlockState(_bp, _bs, 3);
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) ((X2) - 1), (int) ((Y2) + 0), (int) ((Z2) + 0))).isSolid())) {
+		if ((!(world.getBlockState(new BlockPos((int) ((X2) - 1), (int) ((Y2) + 0), (int) ((Z2) + 0))).isSolid()))) {
 			{
 				BlockPos _bp = new BlockPos((int) ((X2) - 1), (int) ((Y2) + 0), (int) ((Z2) + 0));
 				BlockState _bs = Blocks.COBWEB.getDefaultState();
@@ -140,7 +140,7 @@ public class WebgunonrightclickprocedureProcedure extends BeingmodModElements.Mo
 				world.setBlockState(_bp, _bs, 3);
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 1), (int) ((Z2) + 0))).isSolid())) {
+		if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 1), (int) ((Z2) + 0))).isSolid()))) {
 			{
 				BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) + 1), (int) ((Z2) + 0));
 				BlockState _bs = Blocks.COBWEB.getDefaultState();
@@ -153,7 +153,7 @@ public class WebgunonrightclickprocedureProcedure extends BeingmodModElements.Mo
 				world.setBlockState(_bp, _bs, 3);
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) - 1), (int) ((Z2) + 0))).isSolid())) {
+		if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) - 1), (int) ((Z2) + 0))).isSolid()))) {
 			{
 				BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) - 1), (int) ((Z2) + 0));
 				BlockState _bs = Blocks.COBWEB.getDefaultState();
@@ -166,7 +166,7 @@ public class WebgunonrightclickprocedureProcedure extends BeingmodModElements.Mo
 				world.setBlockState(_bp, _bs, 3);
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) + 1))).isSolid())) {
+		if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) + 1))).isSolid()))) {
 			{
 				BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) + 1));
 				BlockState _bs = Blocks.COBWEB.getDefaultState();
@@ -179,7 +179,7 @@ public class WebgunonrightclickprocedureProcedure extends BeingmodModElements.Mo
 				world.setBlockState(_bp, _bs, 3);
 			}
 		}
-		if ((world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) - 1))).isSolid())) {
+		if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) - 1))).isSolid()))) {
 			{
 				BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) - 1));
 				BlockState _bs = Blocks.COBWEB.getDefaultState();

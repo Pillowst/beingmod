@@ -69,10 +69,10 @@
     "immuneToCactus": false,
     "immuneToDrowning": true,
     "immuneToLightning": false,
-    "immuneToPotions": false,
+    "immuneToPotions": true,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:Indelicatetooth"
     },
     "livingSound": {
       "value": ""

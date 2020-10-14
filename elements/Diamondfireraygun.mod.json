@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "particle_rifle",
+    "texture": "particle_cannon",
     "customModelName": "Normal",
-    "name": "Diamondfire raygun",
+    "name": "Particle Cannon",
     "rarity": "RARE",
     "creativeTab": {
       "value": "COMBAT"

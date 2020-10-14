@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "beingmod:items/particle_rifle"
+    "layer0": "beingmod:items/particle_cannon"
   }
 }

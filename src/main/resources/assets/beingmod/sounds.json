@@ -1,1 +1,12 @@
-{}
+{
+  "abandonedentry": {
+    "category": "ambient",
+    "subtitle": "subtitles.abandonedentry",
+    "sounds": [
+      {
+        "name": "beingmod:145422__soughtaftersounds__haunted-organ-2",
+        "stream": false
+      }
+    ]
+  }
+}

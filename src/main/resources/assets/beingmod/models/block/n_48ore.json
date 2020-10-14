@@ -1,7 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "beingmod:blocks/n-48block",
+    "down": "beingmod:blocks/n-48block",
+    "up": "beingmod:blocks/n-48block",
+    "north": "beingmod:blocks/n-48block",
+    "east": "beingmod:blocks/n-48block",
+    "south": "beingmod:blocks/n-48block",
+    "west": "beingmod:blocks/n-48block",
     "particle": "beingmod:blocks/n-48block"
   }
 }

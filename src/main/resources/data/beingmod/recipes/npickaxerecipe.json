@@ -2,24 +2,21 @@
   "group": "beingmod",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "012",
+    "0  ",
     " 4 ",
-    " 7 "
+    "6 8"
   ],
   "key": {
     "0": {
-      "item": "beingmod:n_48_alloy"
-    },
-    "1": {
-      "item": "beingmod:n_48_alloy"
-    },
-    "2": {
-      "item": "beingmod:n_48_alloy"
+      "item": "beingmod:kjaldar_crystal_item"
     },
     "4": {
+      "item": "beingmod:n_48_alloy"
+    },
+    "6": {
       "item": "beingmod:n_48chunk"
     },
-    "7": {
+    "8": {
       "item": "beingmod:n_48chunk"
     }
   },

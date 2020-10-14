@@ -10,10 +10,16 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:N48Alloy"
+        "value": "CUSTOM:KjaldarCrystalITEM"
       },
       {
-        "value": "CUSTOM:N48Alloy"
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": "CUSTOM:N48Alloy"
@@ -28,13 +34,7 @@
         "value": ""
       },
       {
-        "value": ""
-      },
-      {
         "value": "CUSTOM:N48chunk"
-      },
-      {
-        "value": ""
       }
     ],
     "recipeReturnStack": {

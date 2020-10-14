@@ -3,9 +3,9 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "npickaxe",
+    "texture": "kjaldar_drill",
     "customModelName": "Normal",
-    "name": "Alloy N-48 Pickaxe",
+    "name": "kjaldar drill",
     "specialInfo": [],
     "creativeTab": {
       "value": "TOOLS"

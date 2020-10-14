@@ -45,7 +45,7 @@ public class NeriumoreBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.WET_GRASS).hardnessAndResistance(-1, 3600000).lightValue(8).tickRandomly());
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.WET_GRASS).hardnessAndResistance(3f, 3f).lightValue(8).tickRandomly());
 			setRegistryName("neriumore");
 		}
 

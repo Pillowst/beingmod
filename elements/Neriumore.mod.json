@@ -64,8 +64,8 @@
       "value": "WET_GRASS"
     },
     "luminance": 0.55,
-    "unbreakable": true,
-    "breakHarvestLevel": 1,
+    "unbreakable": false,
+    "breakHarvestLevel": 4,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

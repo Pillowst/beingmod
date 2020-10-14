@@ -1503,6 +1503,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "batteryrecipe"
+    },
+    {
+      "name": "Orcaniumblockrecipe",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "orcaniumblockrecipe"
     }
   ],
   "variable_elements": [],

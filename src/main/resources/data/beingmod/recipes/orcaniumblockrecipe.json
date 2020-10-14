@@ -1,0 +1,42 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:nerium"
+    },
+    "1": {
+      "item": "beingmod:nerium"
+    },
+    "2": {
+      "item": "beingmod:nerium"
+    },
+    "3": {
+      "item": "beingmod:nerium"
+    },
+    "4": {
+      "item": "beingmod:orcnaite_armored"
+    },
+    "5": {
+      "item": "beingmod:nerium"
+    },
+    "6": {
+      "item": "beingmod:nerium"
+    },
+    "7": {
+      "item": "beingmod:nerium"
+    },
+    "8": {
+      "item": "beingmod:nerium"
+    }
+  },
+  "result": {
+    "item": "beingmod:orcaniumblock",
+    "count": 1
+  }
+}

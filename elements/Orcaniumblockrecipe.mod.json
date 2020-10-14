@@ -1,0 +1,46 @@
+{
+  "_fv": 12,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Nerium"
+      },
+      {
+        "value": "CUSTOM:Nerium"
+      },
+      {
+        "value": "CUSTOM:Nerium"
+      },
+      {
+        "value": "CUSTOM:Nerium"
+      },
+      {
+        "value": "CUSTOM:OrcnaiteArmored"
+      },
+      {
+        "value": "CUSTOM:Nerium"
+      },
+      {
+        "value": "CUSTOM:Nerium"
+      },
+      {
+        "value": "CUSTOM:Nerium"
+      },
+      {
+        "value": "CUSTOM:Nerium"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Orcaniumblock"
+    },
+    "name": "orcaniumblockrecipe",
+    "namespace": "mod"
+  }
+}

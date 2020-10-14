@@ -46,7 +46,7 @@ public class QuantumReactorBlockUpdateTickProcedure extends BeingmodModElements.
 		IWorld world = (IWorld) dependencies.get("world");
 		{
 			TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-			int _amount = (int) 50;
+			int _amount = (int) 500;
 			if (_ent != null)
 				_ent.getCapability(CapabilityEnergy.ENERGY, (new Object() {
 					public Direction getDirection(BlockPos pos) {

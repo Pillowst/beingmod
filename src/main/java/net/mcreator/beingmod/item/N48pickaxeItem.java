@@ -44,7 +44,7 @@ public class N48pickaxeItem extends BeingmodModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(QuantumbatteryItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(N48chunkItem.block, (int) (1)));
 			}
 		}, 1, -3f, new Item.Properties().group(ItemGroup.TOOLS)) {
 		}.setRegistryName("n_48pickaxe"));

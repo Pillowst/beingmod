@@ -10,31 +10,31 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:N48chunk"
       },
       {
-        "value": ""
+        "value": "CUSTOM:N48chunk"
       },
       {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:KjaldarCrystalITEM"
-      },
-      {
-        "value": "CUSTOM:N48Alloy"
+        "value": "CUSTOM:N48chunk"
       },
       {
         "value": "CUSTOM:KjaldarCrystalITEM"
       },
       {
-        "value": ""
+        "value": "Items.DIAMOND"
       },
       {
-        "value": ""
+        "value": "CUSTOM:KjaldarCrystalITEM"
       },
       {
-        "value": ""
+        "value": "CUSTOM:N48chunk"
+      },
+      {
+        "value": "CUSTOM:N48chunk"
+      },
+      {
+        "value": "CUSTOM:N48chunk"
       }
     ],
     "recipeReturnStack": {

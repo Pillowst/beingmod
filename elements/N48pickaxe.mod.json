@@ -21,7 +21,7 @@
     "hasGlow": false,
     "repairItems": [
       {
-        "value": "CUSTOM:N48chunk"
+        "value": "CUSTOM:Quantumbattery"
       }
     ],
     "stayInGridWhenCrafting": false,

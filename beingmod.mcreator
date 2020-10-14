@@ -1549,6 +1549,107 @@
           }
         ]
       }
+    },
+    {
+      "name": "Diamondfireraygunrightclickonairprocedure",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondfireraygunrightclickonairprocedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Diamondfireraygun",
+      "type": "item",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondfireraygun"
+    },
+    {
+      "name": "Diamondfireraygunrecipe",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondfireraygunrecipe"
+    },
+    {
+      "name": "Webgun",
+      "type": "item",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "webgun"
+    },
+    {
+      "name": "Webgunonrightclickprocedure",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "webgunonrightclickprocedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1583,6 +1684,7 @@
       "block.beingmod.neriumore": "nerium ore",
       "block.beingmod.block_being": "Being",
       "item.beingmod.kjaldarshard": "Kjaldar shard",
+      "item.beingmod.webgun": "Diamondfire raygun",
       "item.beingmod.n_48sword": "N48 Alloy Sword",
       "block.beingmod.beingrootsbot": "Being Stalactite End",
       "entity.beingmod.indelicate": "Indelicate",
@@ -1617,6 +1719,7 @@
       "block.beingmod.beingcoal": "Being coal ore",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "block.beingmod.beingstalk": "Beingstalk",
+      "item.beingmod.diamondfireraygun": "Diamondfire raygun",
       "item.beingmod.plasmasword": "Plasmasword",
       "block.beingmod.beingdiamond": "Being diamond ore",
       "block.beingmod.dessicatedstalk": "Beingstalk",

@@ -73,7 +73,7 @@ public class PlasmacutterRightClickedInAirProcedure extends BeingmodModElements.
 		double Y3 = 0;
 		double Z3 = 0;
 		X1 = (double) x;
-		Y1 = (double) (y + 1.5);
+		Y1 = (double) (y + 1.4);
 		Z1 = (double) z;
 		X2 = (double) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 				entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),

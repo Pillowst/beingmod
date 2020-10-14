@@ -1,0 +1,33 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "34 ",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond_block"
+    },
+    "1": {
+      "item": "beingmod:n_48chunk"
+    },
+    "3": {
+      "item": "beingmod:n_48chunk"
+    },
+    "4": {
+      "item": "beingmod:plasmacutter"
+    },
+    "6": {
+      "item": "beingmod:force_field_gen_item"
+    },
+    "8": {
+      "item": "beingmod:quantumbattery"
+    }
+  },
+  "result": {
+    "item": "beingmod:diamondfireraygun",
+    "count": 1
+  }
+}

@@ -76,18 +76,18 @@ public class PlasmacutterRightClickedInAirProcedure extends BeingmodModElements.
 		Z2 = (double) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 				entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 				RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ());
-		DIST = (double) Math.max(0, Math.sqrt((Math.pow(((X1) - (X2)), 2) * (Math.pow(((Y1) - (Y2)), 2) * Math.pow(((Z1) - (Z2)), 2)))));
+		DIST = (double) Math.sqrt((Math.pow(((X1) - (X2)), 2) * (Math.pow(((Y1) - (Y2)), 2) * Math.pow(((Z1) - (Z2)), 2))));
 		AMOUNT = (double) Math.round(((DIST) * 100));
-		P = (double) Math.min(Math.max((entity.rotationPitch), 0), Math.PI);
-		O = (double) Math.min(Math.max((entity.rotationYaw), 0), (Math.PI * 2));
+		P = (double) (entity.rotationYaw);
+		O = (double) (entity.rotationPitch);
 		AMOUNTPART = (double) ((DIST) / (AMOUNT));
 		AMOUNTLOG = (double) (AMOUNTPART);
 		for (int index0 = 0; index0 < (int) ((AMOUNT)); index0++) {
-			AMOUNTLOG = (double) ((AMOUNTLOG) + (AMOUNTPART));
 			X3 = (double) ((AMOUNTLOG) * (Math.sin((O)) * Math.cos((P))));
 			Y3 = (double) ((AMOUNTLOG) * (Math.sin((O)) * Math.sin((P))));
-			Z3 = (double) ((AMOUNTLOG) * Math.sin((O)));
-			world.addParticle(ParticleTypes.FLAME, ((X3) + (X1)), ((Y3) + (X1)), ((Z3) + (Z1)), 0, 0, 0);
+			Z3 = (double) ((AMOUNTLOG) * Math.cos((O)));
+			world.addParticle(ParticleTypes.FLAME, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);
+			AMOUNTLOG = (double) ((AMOUNTLOG) + (AMOUNTPART));
 		}
 		Block.spawnDrops(world.getBlockState(new BlockPos((int) (X2), (int) (Y2), (int) (Z2))), world.getWorld(),
 				new BlockPos((int) (X2), (int) (Y2), (int) (Z2)));

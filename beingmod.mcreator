@@ -1378,6 +1378,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "KjaldarCrystalBLOCK",
+      "type": "block",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kjaldar_crystal_block"
     }
   ],
   "variable_elements": [],
@@ -1393,11 +1402,12 @@
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
       "block.beingmod.warmedfollicles": "Warmedfollicles",
       "block.beingmod.kjaldarcrystal": "Kjaldar_crystal",
+      "block.beingmod.kjaldar_crystal_block": "Kjaldar Crystal",
       "block.beingmod.dessicatedbeing": "dessicated being",
       "block.beingmod.stalstop": "Being Stalactite End",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",
-      "block.beingmod.neriumore": "nerium ore",
       "block.beingmod.orcnaite_armored": "Armored Orcanite",
+      "block.beingmod.neriumore": "nerium ore",
       "block.beingmod.block_being": "Being",
       "item.beingmod.kjaldarshard": "Kjaldar shard",
       "block.beingmod.beingrootsbot": "Being Stalactite End",

@@ -1396,6 +1396,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "kjaldar_crystal_item"
+    },
+    {
+      "name": "QuantumRecipe",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quantum_recipe"
+    },
+    {
+      "name": "ForceFieldGenITEM",
+      "type": "item",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "force_field_gen_item"
     }
   ],
   "variable_elements": [],
@@ -1449,6 +1467,7 @@
       "block.beingmod.beingsuppressor": "Beingsuppressor",
       "block.beingmod.dismalgland_1": "Dismal gland ",
       "item.beingmod.particle_rifle": "Particle Rifle",
+      "item.beingmod.force_field_gen_item": "ForceField Generator Mark III",
       "block.beingmod.beingcoal": "Being coal ore",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "block.beingmod.beingstalk": "Beingstalk",

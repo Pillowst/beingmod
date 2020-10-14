@@ -1,0 +1,42 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:smooth_stone"
+    },
+    "1": {
+      "item": "beingmod:n_48_alloy"
+    },
+    "2": {
+      "item": "minecraft:smooth_stone"
+    },
+    "3": {
+      "item": "beingmod:force_field_gen_item"
+    },
+    "4": {
+      "item": "beingmod:kjaldar_crystal_item"
+    },
+    "5": {
+      "item": "beingmod:force_field_gen_item"
+    },
+    "6": {
+      "item": "minecraft:smooth_stone"
+    },
+    "7": {
+      "item": "beingmod:n_48_alloy"
+    },
+    "8": {
+      "item": "minecraft:smooth_stone"
+    }
+  },
+  "result": {
+    "item": "beingmod:quantum_reactor_block",
+    "count": 1
+  }
+}

@@ -115,7 +115,7 @@ public class KjaldarCrystalBLOCKBlock extends BeingmodModElements.ModElement {
 						if (blockAt.getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock())
 							blockCriteria = true;
 						return blockCriteria;
-					}), block.getDefaultState(), 1)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(20, 0, 0, 16))));
+					}), block.getDefaultState(), 1)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(20, 10, 10, 20))));
 		}
 	}
 }

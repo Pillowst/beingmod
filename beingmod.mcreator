@@ -1468,6 +1468,23 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "plasmacutterrecipe"
+    },
+    {
+      "name": "PlasmaDamageToEntity",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plasma_damage_to_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

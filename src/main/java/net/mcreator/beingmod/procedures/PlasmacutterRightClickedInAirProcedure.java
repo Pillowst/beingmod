@@ -76,10 +76,10 @@ public class PlasmacutterRightClickedInAirProcedure extends BeingmodModElements.
 		Z2 = (double) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 				entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 				RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ());
-		DIST = (double) Math.sqrt((Math.pow(((X1) - (X2)), 2) * (Math.pow(((Y1) - (Y2)), 2) * Math.pow(((Z1) - (Z2)), 2))));
+		DIST = (double) Math.max(0, Math.sqrt((Math.pow(((X1) - (X2)), 2) * (Math.pow(((Y1) - (Y2)), 2) * Math.pow(((Z1) - (Z2)), 2)))));
 		AMOUNT = (double) Math.round(((DIST) * 100));
-		P = (double) (entity.rotationYaw);
-		O = (double) (entity.rotationPitch);
+		P = (double) Math.min(Math.max((entity.rotationPitch), 0), Math.PI);
+		O = (double) Math.min(Math.max((entity.rotationYaw), 0), (Math.PI * 2));
 		AMOUNTPART = (double) ((DIST) / (AMOUNT));
 		AMOUNTLOG = (double) (AMOUNTPART);
 		for (int index0 = 0; index0 < (int) ((AMOUNT)); index0++) {

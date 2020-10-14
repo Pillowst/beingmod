@@ -12,9 +12,9 @@
     },
     "stackSize": 8,
     "ammoItem": {
-      "value": ""
+      "value": "CUSTOM:Noxiouspotion"
     },
-    "shootConstantly": true,
+    "shootConstantly": false,
     "usageCount": 0,
     "actionSound": {
       "value": ""

@@ -12,7 +12,7 @@
     },
     "stackSize": 8,
     "ammoItem": {
-      "value": ""
+      "value": "CUSTOM:Webpotion"
     },
     "shootConstantly": false,
     "usageCount": 0,

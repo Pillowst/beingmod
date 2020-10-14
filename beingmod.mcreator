@@ -253,15 +253,6 @@
       }
     },
     {
-      "name": "ParticleRifle",
-      "type": "item",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "particle_rifle"
-    },
-    {
       "name": "NoxiousbloomerUpdateTick",
       "type": "procedure",
       "sortid": 26,
@@ -1504,7 +1495,6 @@
       "block.beingmod.block_orcanite": "Raw Orcanite Block",
       "block.beingmod.beingsuppressor": "Beingsuppressor",
       "block.beingmod.dismalgland_1": "Dismal gland ",
-      "item.beingmod.particle_rifle": "Particle Rifle",
       "item.beingmod.force_field_gen_item": "ForceField Generator Mark III",
       "block.beingmod.beingcoal": "Being coal ore",
       "block.beingmod.beingstaltop": "Being Stalactite",

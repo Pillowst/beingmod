@@ -1479,6 +1479,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "plasmaswordrecipe"
+    },
+    {
+      "name": "Plasmacutter",
+      "type": "tool",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plasmacutter"
+    },
+    {
+      "name": "Plasmacutterrecipe",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plasmacutterrecipe"
     }
   ],
   "variable_elements": [],
@@ -1490,6 +1508,7 @@
       "block.beingmod.crystal_being": "Being Crystal",
       "item.beingmod.forcefieldgenerator": "Force field generator",
       "block.beingmod.reversestalk": "Dripping roots",
+      "item.beingmod.plasmacutter": "Plasmacutter",
       "item.beingmod.godpickaxe": "Being Infused Pickaxe",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
       "block.beingmod.warmedfollicles": "Warmedfollicles",

@@ -1,0 +1,30 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "beingmod:kjaldar_crystal_item"
+    },
+    "4": {
+      "item": "beingmod:force_field_gen_item"
+    },
+    "5": {
+      "item": "beingmod:n_48chunk"
+    },
+    "6": {
+      "item": "beingmod:n_48chunk"
+    },
+    "7": {
+      "item": "beingmod:orcanite_shard"
+    }
+  },
+  "result": {
+    "item": "beingmod:plasmacutter",
+    "count": 1
+  }
+}

@@ -1485,6 +1485,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "Quantumbattery",
+      "type": "item",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quantumbattery"
+    },
+    {
+      "name": "Batteryrecipe",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "batteryrecipe"
     }
   ],
   "variable_elements": [],
@@ -1556,6 +1574,7 @@
       "item.beingmod.plasmasword": "Plasmasword",
       "block.beingmod.beingdiamond": "Being diamond ore",
       "block.beingmod.dessicatedstalk": "Beingstalk",
+      "item.beingmod.quantumbattery": "Quantum Power Cell",
       "block.beingmod.beingredstone": "Being redstone ore",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
       "block.beingmod.beinglapis": "Being lapis ore"

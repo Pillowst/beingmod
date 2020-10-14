@@ -2,23 +2,21 @@
   "group": "beingmod",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "0",
-    "1",
-    "2"
+    "012"
   ],
   "key": {
     "0": {
       "item": "beingmod:kjaldar_crystal_item"
     },
     "1": {
-      "item": "beingmod:n_48sword"
+      "item": "beingmod:n_48_alloy"
     },
     "2": {
-      "item": "beingmod:quantumbattery"
+      "item": "beingmod:kjaldar_crystal_item"
     }
   },
   "result": {
-    "item": "beingmod:plasmasword",
+    "item": "beingmod:quantumbattery",
     "count": 1
   }
 }

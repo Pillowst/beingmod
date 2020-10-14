@@ -108,7 +108,7 @@
         "value": "Blocks.CAVE_AIR"
       }
     ],
-    "frequencyPerChunks": 1,
+    "frequencyPerChunks": 6,
     "frequencyOnChunk": 1,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 16

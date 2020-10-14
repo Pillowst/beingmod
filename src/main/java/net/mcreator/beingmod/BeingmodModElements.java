@@ -47,8 +47,6 @@ public class BeingmodModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public BeingmodModElements() {
-		sounds.put(new ResourceLocation("beingmod", "abandonedentry"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("beingmod", "abandonedentry")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("beingmod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

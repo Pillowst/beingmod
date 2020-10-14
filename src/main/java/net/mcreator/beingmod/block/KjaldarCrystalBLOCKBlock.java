@@ -33,6 +33,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.beingmod.item.KjaldarCrystalITEMItem;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Random;
@@ -81,7 +82,7 @@ public class KjaldarCrystalBLOCKBlock extends BeingmodModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(KjaldarCrystalITEMItem.block, (int) (1)));
 		}
 	}
 	@Override

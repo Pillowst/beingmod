@@ -1387,6 +1387,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "kjaldar_crystal_block"
+    },
+    {
+      "name": "KjaldarCrystalITEM",
+      "type": "item",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kjaldar_crystal_item"
     }
   ],
   "variable_elements": [],
@@ -1429,6 +1438,7 @@
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.quantum_reactor_block": "Quantum Reactor Block",
       "block.beingmod.beinggold": "Being gold ore",
+      "item.beingmod.kjaldar_crystal_item": "Kjaldar Crystal Shard",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "item.beingmod.nerium": "Nerium",
       "block.beingmod.n_48ore": "Unknown Ore",

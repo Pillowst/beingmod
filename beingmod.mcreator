@@ -1600,7 +1600,7 @@
       "name": "Webgun",
       "type": "item",
       "sortid": 116,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "ids": {},
       "registry_name": "webgun"
@@ -1944,8 +1944,8 @@
       "advancements.beingget.title": "Obtain Being",
       "item.beingmod.pricklysword": "Pricklysword",
       "block.beingmod.crystal_being": "Being Crystal",
-      "item.beingmod.diamondbolt": "Diamond Bolt",
       "advancements.getnpick.title": "obtain an N-48 drill",
+      "item.beingmod.diamondbolt": "Diamond Bolt",
       "subtitles.abandonedentry": "Ambience",
       "item.beingmod.forcefieldgenerator": "Force field generator",
       "block.beingmod.reversestalk": "Dripping roots",

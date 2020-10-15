@@ -1,51 +1,7 @@
 {
-  "multipart": [
-    {
-      "when": {
-        "up": "true"
-      },
-      "apply": {
-        "model": "beingmod:block/precursordirt_post"
-      }
-    },
-    {
-      "when": {
-        "north": "true"
-      },
-      "apply": {
-        "model": "beingmod:block/precursordirt",
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "south": "true"
-      },
-      "apply": {
-        "model": "beingmod:block/precursordirt",
-        "y": 180,
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "west": "true"
-      },
-      "apply": {
-        "model": "beingmod:block/precursordirt",
-        "y": 270,
-        "uvlock": true
-      }
-    },
-    {
-      "when": {
-        "east": "true"
-      },
-      "apply": {
-        "model": "beingmod:block/precursordirt",
-        "y": 90,
-        "uvlock": true
-      }
+  "variants": {
+    "": {
+      "model": "beingmod:block/precursordirt"
     }
-  ]
+  }
 }

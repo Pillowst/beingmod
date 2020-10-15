@@ -38,7 +38,7 @@ public class GodpickaxeItem extends BeingmodModElements.ModElement {
 			}
 
 			public int getHarvestLevel() {
-				return 4;
+				return 5;
 			}
 
 			public int getEnchantability() {

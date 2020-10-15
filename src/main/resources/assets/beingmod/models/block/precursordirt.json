@@ -1,7 +1,7 @@
 {
-  "parent": "block/template_wall_side",
+  "parent": "block/cube_all",
   "textures": {
-    "wall": "beingmod:blocks/precursorcobble",
+    "all": "beingmod:blocks/precursorcobble",
     "particle": "beingmod:blocks/precursorcobble"
   }
 }

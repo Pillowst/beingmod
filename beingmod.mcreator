@@ -1874,6 +1874,39 @@
           }
         ]
       }
+    },
+    {
+      "name": "PrecursorbrickstairsBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorbrickstairs_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1893,8 +1926,8 @@
       "advancements.beingget.title": "Obtain Being",
       "item.beingmod.pricklysword": "Pricklysword",
       "block.beingmod.crystal_being": "Being Crystal",
-      "item.beingmod.diamondbolt": "Diamond Bolt",
       "advancements.getnpick.title": "obtain an N-48 drill",
+      "item.beingmod.diamondbolt": "Diamond Bolt",
       "subtitles.abandonedentry": "Ambience",
       "item.beingmod.forcefieldgenerator": "Force field generator",
       "block.beingmod.reversestalk": "Dripping roots",

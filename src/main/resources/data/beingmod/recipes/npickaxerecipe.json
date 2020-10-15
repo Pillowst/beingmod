@@ -4,7 +4,7 @@
   "pattern": [
     "0  ",
     " 4 ",
-    "6 8"
+    "678"
   ],
   "key": {
     "0": {
@@ -15,6 +15,9 @@
     },
     "6": {
       "item": "beingmod:n_48chunk"
+    },
+    "7": {
+      "item": "beingmod:quantumbattery"
     },
     "8": {
       "item": "beingmod:n_48chunk"

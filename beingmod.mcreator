@@ -1600,7 +1600,7 @@
       "name": "Webgun",
       "type": "item",
       "sortid": 116,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "ids": {},
       "registry_name": "webgun"
@@ -2010,7 +2010,7 @@
       "block.beingmod.beingcoal": "Being coal ore",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "block.beingmod.beingstalk": "Beingstalk",
-      "item.beingmod.diamondfireraygun": "Particle Cannon",
+      "item.beingmod.diamondfireraygun": "Diamondfire railgun",
       "item.beingmod.plasmasword": "Plasmasword",
       "block.beingmod.precursordirt": "Precursor rubble",
       "block.beingmod.beingdiamond": "Being diamond ore",

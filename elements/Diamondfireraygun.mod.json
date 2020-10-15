@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "particle_cannon",
+    "texture": "particle_rifle",
     "customModelName": "Normal",
-    "name": "Particle Cannon",
+    "name": "Diamondfire railgun",
     "rarity": "RARE",
     "creativeTab": {
       "value": "COMBAT"

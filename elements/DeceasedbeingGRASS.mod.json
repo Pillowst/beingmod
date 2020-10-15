@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "dead_being_grass",
+    "texture": "dessicated_bloom",
     "textureBottom": "",
     "customModelName": "Cross model",
     "plantType": "normal",
@@ -40,7 +40,7 @@
     "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
-    "frequencyOnChunks": 7,
+    "frequencyOnChunks": 3,
     "spawnWorldTypes": [
       "Surface"
     ],

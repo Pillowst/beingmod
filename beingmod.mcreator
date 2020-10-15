@@ -1600,7 +1600,7 @@
       "name": "Webgun",
       "type": "item",
       "sortid": 116,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "ids": {},
       "registry_name": "webgun"
@@ -1925,6 +1925,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "dead_crystal"
+    },
+    {
+      "name": "Indelicatetable",
+      "type": "loottable",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "indelicatetable"
     }
   ],
   "variable_elements": [],

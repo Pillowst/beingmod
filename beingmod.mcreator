@@ -1659,6 +1659,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "webgunrecipe"
+    },
+    {
+      "name": "Lapisbolt",
+      "type": "item",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lapisbolt"
+    },
+    {
+      "name": "Diamondbolt",
+      "type": "item",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondbolt"
     }
   ],
   "variable_elements": [],
@@ -1677,6 +1695,7 @@
       "advancements.beingget.title": "Obtain Being",
       "item.beingmod.pricklysword": "Pricklysword",
       "block.beingmod.crystal_being": "Being Crystal",
+      "item.beingmod.diamondbolt": "Diamond Bolt",
       "subtitles.abandonedentry": "Ambience",
       "item.beingmod.forcefieldgenerator": "Force field generator",
       "block.beingmod.reversestalk": "Dripping roots",
@@ -1734,6 +1753,7 @@
       "block.beingmod.dessicatedstalk": "Beingstalk",
       "item.beingmod.quantumbattery": "Quantum Power Cell",
       "block.beingmod.beingredstone": "Being redstone ore",
+      "item.beingmod.lapisbolt": "Lapis Bolt",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
       "block.beingmod.beinglapis": "Being lapis ore"
     }

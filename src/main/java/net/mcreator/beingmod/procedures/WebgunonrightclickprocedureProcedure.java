@@ -93,7 +93,7 @@ public class WebgunonrightclickprocedureProcedure extends BeingmodModElements.Mo
 		AMOUNTPART = (double) ((DIST) / (AMOUNT));
 		AMOUNTLOG = (double) (AMOUNTPART);
 		for (int index0 = 0; index0 < (int) ((AMOUNT)); index0++) {
-			X3 = (double) ((AMOUNTLOG) * (Math.sin((O)) * Math.cos((P))));
+			X3 = (double) ((AMOUNTLOG) * Math.sin((O)));
 			Y3 = (double) ((AMOUNTLOG) * Math.sin((P)));
 			Z3 = (double) ((AMOUNTLOG) * Math.cos((O)));
 			world.addParticle(ParticleTypes.FIREWORK, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);

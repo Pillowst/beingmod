@@ -101,14 +101,14 @@ public class DiamondfireraygunrightclickonairprocedureProcedure extends Beingmod
 			AMOUNTPART = (double) ((DIST) / (AMOUNT));
 			AMOUNTLOG = (double) (AMOUNTPART);
 			for (int index0 = 0; index0 < (int) ((AMOUNT)); index0++) {
-				X3 = (double) ((AMOUNTLOG) * (Math.sin((O)) * Math.cos((P))));
+				X3 = (double) ((AMOUNTLOG) * Math.sin((O)));
 				Y3 = (double) ((AMOUNTLOG) * Math.sin((P)));
 				Z3 = (double) ((AMOUNTLOG) * Math.cos((O)));
 				world.addParticle(ParticleTypes.ENCHANTED_HIT, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);
 				AMOUNTLOG = (double) ((AMOUNTLOG) + (AMOUNTPART));
 			}
 			if (world instanceof World && !world.getWorld().isRemote) {
-				world.getWorld().createExplosion(null, (int) (X2), (int) (Y2), (int) (Z2), (float) 6, Explosion.Mode.BREAK);
+				world.getWorld().createExplosion(null, (int) (X2), (int) (Y2), (int) (Z2), (float) 8, Explosion.Mode.BREAK);
 			}
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 160);

@@ -59,6 +59,7 @@ public class CollapsedesseforestBiome extends BeingmodModElements.ModElement {
 			DefaultBiomeFeatures.addStructures(this);
 			DefaultBiomeFeatures.addOres(this);
 			DefaultBiomeFeatures.addFossils(this);
+			DefaultBiomeFeatures.addDeadBushes(this);
 			this.addStructure(Feature.MINESHAFT.withConfiguration(new MineshaftConfig(0.004D, MineshaftStructure.Type.NORMAL)));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 					Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.BROWN_MUSHROOM_CONFIG)
@@ -69,12 +70,7 @@ public class CollapsedesseforestBiome extends BeingmodModElements.ModElement {
 					Feature.DISK
 							.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), 7, 2,
 									Lists.newArrayList(DessicatedbeingBlock.block.getDefaultState(), DessicatedbeingBlock.block.getDefaultState())))
-							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(8))));
-			addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
-					Feature.DISK
-							.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), 6, 2,
-									Lists.newArrayList(DessicatedbeingBlock.block.getDefaultState(), DessicatedbeingBlock.block.getDefaultState())))
-							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(2))));
+							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(5))));
 			this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(IndelicateEntity.entity, 40, 1, 4));
 			this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.HUSK, 10, 1, 4));
 			this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.SKELETON, 40, 1, 4));
@@ -83,7 +79,7 @@ public class CollapsedesseforestBiome extends BeingmodModElements.ModElement {
 		@OnlyIn(Dist.CLIENT)
 		@Override
 		public int getGrassColor(double posX, double posZ) {
-			return -13421824;
+			return -14145511;
 		}
 
 		@OnlyIn(Dist.CLIENT)

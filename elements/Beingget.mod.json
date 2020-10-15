@@ -5,7 +5,7 @@
     "achievementName": "Obtain Being",
     "achievementDescription": "Do not spill it or expect your base to be a huge chunk of rock!",
     "achievementIcon": {
-      "value": "CUSTOM:CrystalBeing"
+      "value": "CUSTOM:BlockBeing"
     },
     "background": "Default",
     "disableDisplay": false,

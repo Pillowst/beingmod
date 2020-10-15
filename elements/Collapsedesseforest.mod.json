@@ -30,7 +30,7 @@
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -13421824,
+      "value": -14145511,
       "falpha": 0.0
     },
     "foliageColor": {
@@ -51,8 +51,8 @@
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 2,
     "bigMushroomsChunk": 0,
-    "sandPathcesPerChunk": 8,
-    "gravelPatchesPerChunk": 2,
+    "sandPathcesPerChunk": 5,
+    "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
     "rainingPossibility": 0.0,
@@ -83,7 +83,8 @@
       "MonsterRooms",
       "Structures",
       "Ores",
-      "Fossils"
+      "Fossils",
+      "DeadBushes"
     ],
     "spawnEntries": [
       {

@@ -1707,6 +1707,51 @@
           }
         ]
       }
+    },
+    {
+      "name": "Precursorbricks",
+      "type": "block",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorbricks"
+    },
+    {
+      "name": "Getgod",
+      "type": "achievement",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "getgod"
+    },
+    {
+      "name": "GetN48",
+      "type": "achievement",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "get_n_48"
+    },
+    {
+      "name": "Unknownchunk",
+      "type": "item",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unknownchunk"
+    },
+    {
+      "name": "N48recipe",
+      "type": "recipe",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "n_48recipe"
     }
   ],
   "variable_elements": [],
@@ -1735,7 +1780,9 @@
       "block.beingmod.warmedfollicles": "Warmedfollicles",
       "block.beingmod.kjaldarcrystal": "Being Crystal",
       "block.beingmod.dessicatedbeing": "dessicated being",
+      "advancements.get_n_48.descr": "Get a chunk of mysterious metal, its useless right now, but perhaps it can be combined with something",
       "block.beingmod.stalstop": "Being Stalactite End",
+      "advancements.get_n_48.title": "whats this?",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",
       "block.beingmod.orcnaite_armored": "Armored Orcanite",
       "block.beingmod.neriumore": "nerium ore",
@@ -1753,6 +1800,7 @@
       "block.beingmod.beingrootstop": "Being Stalactite",
       "block.beingmod.drippingleaves": "Dripping roots",
       "item.beingmod.webpotion": "Web potion",
+      "advancements.getgod.title": "pioneer of the precursors",
       "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
       "item.beingmod.n_48chunk": "N 4 8chunk",
       "block.beingmod.orcaniumblock": "Block of Orcanium",
@@ -1761,6 +1809,7 @@
       "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.quantum_reactor_block": "Quantum Reactor Block",
+      "advancements.getgod.descr": "Get an orcanium pickaxe, now you can explore the precursor ruins like a true pioneer!",
       "block.beingmod.beinggold": "Being gold ore",
       "item.beingmod.kjaldar_crystal_item": "Kjaldar Crystal Shard",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
@@ -1770,6 +1819,7 @@
       "block.beingmod.beingstalbot": "Being Stalactite End",
       "block.beingmod.infusingtable": "Infusing table",
       "block.beingmod.block_orcanite": "Raw Orcanite Block",
+      "item.beingmod.unknownchunk": "Unknown chunk",
       "block.beingmod.beingsuppressor": "Beingsuppressor",
       "block.beingmod.dismalgland_1": "Dismal gland ",
       "item.beingmod.force_field_gen_item": "ForceField Generator Mark III",
@@ -1784,7 +1834,8 @@
       "block.beingmod.beingredstone": "Being redstone ore",
       "item.beingmod.lapisbolt": "Lapis Bolt",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
-      "block.beingmod.beinglapis": "Being lapis ore"
+      "block.beingmod.beinglapis": "Being lapis ore",
+      "block.beingmod.precursorbricks": "Precursorbricks"
     }
   },
   "workspaceSettings": {

@@ -1,0 +1,42 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:unknownchunk"
+    },
+    "1": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    "2": {
+      "item": "beingmod:unknownchunk"
+    },
+    "3": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    "4": {
+      "item": "minecraft:lava_bucket"
+    },
+    "5": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    "6": {
+      "item": "beingmod:unknownchunk"
+    },
+    "7": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    "8": {
+      "item": "beingmod:unknownchunk"
+    }
+  },
+  "result": {
+    "item": "beingmod:n_48chunk",
+    "count": 2
+  }
+}

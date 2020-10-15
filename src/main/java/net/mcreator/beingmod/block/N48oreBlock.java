@@ -26,7 +26,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.beingmod.item.N48chunkItem;
+import net.mcreator.beingmod.item.UnknownchunkItem;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Random;
@@ -49,7 +49,7 @@ public class N48oreBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(3f, 10f).lightValue(0).tickRandomly());
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(2f, 10f).lightValue(0).tickRandomly());
 			setRegistryName("n_48ore");
 		}
 
@@ -58,7 +58,7 @@ public class N48oreBlock extends BeingmodModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(N48chunkItem.block, (int) (2)));
+			return Collections.singletonList(new ItemStack(UnknownchunkItem.block, (int) (4)));
 		}
 	}
 	@Override

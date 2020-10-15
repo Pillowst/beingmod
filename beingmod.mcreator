@@ -1371,15 +1371,6 @@
       }
     },
     {
-      "name": "KjaldarCrystalBLOCK",
-      "type": "block",
-      "sortid": 98,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "kjaldar_crystal_block"
-    },
-    {
       "name": "KjaldarCrystalITEM",
       "type": "item",
       "sortid": 99,
@@ -1679,14 +1670,24 @@
       "registry_name": "diamondbolt"
     },
     {
-      "name": "KjaldarCrystalBLOCKUpdateTick",
-      "type": "procedure",
+      "name": "Kjaldarcrystal",
+      "type": "plant",
       "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "kjaldar_crystal_block_update_tick",
+      "registry_name": "kjaldarcrystal"
+    },
+    {
+      "name": "KjaldarcrystalAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kjaldarcrystal_additional_generation_condition",
       "metadata": {
+        "return_type": "LOGIC",
         "dependencies": [
           {
             "name": "x",
@@ -1732,8 +1733,7 @@
       "item.beingmod.godpickaxe": "Being Infused Pickaxe",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
       "block.beingmod.warmedfollicles": "Warmedfollicles",
-      "block.beingmod.kjaldarcrystal": "Kjaldar_crystal",
-      "block.beingmod.kjaldar_crystal_block": "Kjaldar Crystal",
+      "block.beingmod.kjaldarcrystal": "Being Crystal",
       "block.beingmod.dessicatedbeing": "dessicated being",
       "block.beingmod.stalstop": "Being Stalactite End",
       "block.beingmod.noxiousbloomer": "Noxious bloomer",

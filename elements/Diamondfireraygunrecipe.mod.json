@@ -10,7 +10,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.DIAMOND_BLOCK"
+        "value": "CUSTOM:KjaldarCrystalITEM"
       },
       {
         "value": "CUSTOM:N48chunk"

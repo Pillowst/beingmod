@@ -90,6 +90,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "KjaldarCrystalBLOCKUpdateTick"
+    },
     "spawnWorldTypes": [
       "Surface"
     ],
@@ -105,9 +108,9 @@
         "value": "Blocks.CAVE_AIR"
       }
     ],
-    "frequencyPerChunks": 20,
-    "frequencyOnChunk": 1,
-    "minGenerateHeight": 10,
+    "frequencyPerChunks": 1,
+    "frequencyOnChunk": 5,
+    "minGenerateHeight": 1,
     "maxGenerateHeight": 20
   }
 }

@@ -1677,6 +1677,35 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "diamondbolt"
+    },
+    {
+      "name": "KjaldarCrystalBLOCKUpdateTick",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kjaldar_crystal_block_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

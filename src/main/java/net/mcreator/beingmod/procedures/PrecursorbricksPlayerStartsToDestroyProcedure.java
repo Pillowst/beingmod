@@ -2,11 +2,15 @@ package net.mcreator.beingmod.procedures;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Hand;
 import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
 
 import net.mcreator.beingmod.BeingmodModElements;
 
@@ -51,8 +55,21 @@ public class PrecursorbricksPlayerStartsToDestroyProcedure extends BeingmodModEl
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((!(((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()
 				.canHarvestBlock((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))))))) {
+			if (!world.getWorld().isRemote) {
+				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), (entity.getPosX()), (entity.getPosY()), (entity.getPosZ()),
+						((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY));
+				entityToSpawn.setPickupDelay(10);
+				world.addEntity(entityToSpawn);
+			}
+			if (entity instanceof LivingEntity) {
+				ItemStack _setstack = new ItemStack(Blocks.AIR, (int) (1));
+				_setstack.setCount((int) 1);
+				((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
+				if (entity instanceof ServerPlayerEntity)
+					((ServerPlayerEntity) entity).inventory.markDirty();
+			}
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.MINING_FATIGUE, (int) 60, (int) 10));
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.POISON, (int) 60, (int) 2));
 		}
 	}
 }

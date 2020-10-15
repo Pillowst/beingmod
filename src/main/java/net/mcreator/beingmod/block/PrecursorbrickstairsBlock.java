@@ -44,8 +44,8 @@ public class PrecursorbrickstairsBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
-			super(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(6f, 10f)).getDefaultState(),
-					Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(6f, 10f).lightValue(0).harvestLevel(6)
+			super(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(12f, 10f)).getDefaultState(),
+					Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(12f, 10f).lightValue(0).harvestLevel(6)
 							.harvestTool(ToolType.PICKAXE));
 			setRegistryName("precursorbrickstairs");
 		}

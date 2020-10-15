@@ -45,7 +45,7 @@ public class PrecursorbrickslabBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends SlabBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(6f, 10f).lightValue(0).harvestLevel(6)
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(12f, 10f).lightValue(0).harvestLevel(6)
 					.harvestTool(ToolType.PICKAXE));
 			setRegistryName("precursorbrickslab");
 		}

@@ -50,7 +50,7 @@ public class PrecursorwallBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends WallBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(6f, 10f).lightValue(0).harvestLevel(6)
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(12f, 10f).lightValue(0).harvestLevel(6)
 					.harvestTool(ToolType.PICKAXE));
 			setRegistryName("precursorwall");
 		}

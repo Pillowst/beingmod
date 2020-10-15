@@ -69,14 +69,17 @@ public class KjaldarCrystalBLOCKUpdateTickProcedure extends BeingmodModElements.
 				world.setBlockState(_bp, _bs, 3);
 			}
 		}
-		if ((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.WATER.getDefaultState().getBlock())
-				|| ((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.WATER.getDefaultState().getBlock())
-						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.BUBBLE_COLUMN.getDefaultState()
-								.getBlock()))
-						|| (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.LAVA.getDefaultState()
+		if ((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == KjaldarCrystalBLOCKBlock.block.getDefaultState()
+				.getBlock())
+				|| (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.WATER.getDefaultState().getBlock())
+						|| ((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.WATER.getDefaultState()
 								.getBlock())
-								|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.LAVA.getDefaultState()
-										.getBlock()))))) {
+								|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.BUBBLE_COLUMN
+										.getDefaultState().getBlock()))
+								|| (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.LAVA.getDefaultState()
+										.getBlock())
+										|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.LAVA
+												.getDefaultState().getBlock())))))) {
 			world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
 		}
 	}

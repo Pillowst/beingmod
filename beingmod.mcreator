@@ -1752,6 +1752,128 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "n_48recipe"
+    },
+    {
+      "name": "Getn48chunk",
+      "type": "achievement",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "getn_48chunk"
+    },
+    {
+      "name": "Getnpick",
+      "type": "achievement",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "getnpick"
+    },
+    {
+      "name": "PrecursorbricksPlayerStartsToDestroy",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorbricks_player_starts_to_destroy",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Precursorbrickstairs",
+      "type": "block",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorbrickstairs"
+    },
+    {
+      "name": "Precursorbrickslab",
+      "type": "block",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorbrickslab"
+    },
+    {
+      "name": "Precursorrubble",
+      "type": "block",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorrubble"
+    },
+    {
+      "name": "Precursorwall",
+      "type": "block",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorwall"
+    },
+    {
+      "name": "Precursordirt",
+      "type": "block",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursordirt"
+    },
+    {
+      "name": "Precursordungeonin",
+      "type": "achievement",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursordungeonin"
+    },
+    {
+      "name": "PrecursordirtBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursordirt_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1767,16 +1889,19 @@
   ],
   "language_map": {
     "en_us": {
+      "advancements.precursordungeonin.title": "Explorin\u0027 time",
       "advancements.beingget.title": "Obtain Being",
       "item.beingmod.pricklysword": "Pricklysword",
       "block.beingmod.crystal_being": "Being Crystal",
       "item.beingmod.diamondbolt": "Diamond Bolt",
+      "advancements.getnpick.title": "obtain an N-48 drill",
       "subtitles.abandonedentry": "Ambience",
       "item.beingmod.forcefieldgenerator": "Force field generator",
       "block.beingmod.reversestalk": "Dripping roots",
       "item.beingmod.plasmacutter": "Plasmacutter",
       "item.beingmod.godpickaxe": "Being Infused Pickaxe",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
+      "advancements.precursordungeonin.descr": "Visit the graves of an unknown anchient civillisation, you know what to do.",
       "block.beingmod.warmedfollicles": "Warmedfollicles",
       "block.beingmod.kjaldarcrystal": "Being Crystal",
       "block.beingmod.dessicatedbeing": "dessicated being",
@@ -1792,6 +1917,7 @@
       "item.beingmod.n_48sword": "N48 Alloy Sword",
       "block.beingmod.beingrootsbot": "Being Stalactite End",
       "entity.beingmod.indelicate": "Indelicate",
+      "block.beingmod.precursorwall": "Precursor wall",
       "block.beingmod.n_48_alloy": "N48Alloy Block",
       "item.beingmod.noxiouspotion": "Noxious potion",
       "item.beingmod.n_48pickaxe": "Crystalized N48 Drill",
@@ -1807,13 +1933,17 @@
       "item.beingmod.shard": "Being Shards",
       "item.beingmod.item_being": "Being",
       "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
+      "block.beingmod.precursorbrickstairs": "Precursor bricks stair",
+      "advancements.getn_48chunk.title": "discover alloy N-48",
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.quantum_reactor_block": "Quantum Reactor Block",
       "advancements.getgod.descr": "Get an orcanium pickaxe, now you can explore the precursor ruins like a true pioneer!",
       "block.beingmod.beinggold": "Being gold ore",
       "item.beingmod.kjaldar_crystal_item": "Kjaldar Crystal Shard",
+      "advancements.getn_48chunk.descr": "Well done!, what took scientists decades to produce and discover, you did in days, now this supermaterial is yours to use",
       "item.beingmod.orcanite_shard": "Orcanite Shards",
       "item.beingmod.nerium": "Nerium",
+      "block.beingmod.precursorrubble": "Precursor rubbled bricks",
       "block.beingmod.n_48ore": "Unknown Ore",
       "item.beingmod.indelicatetooth": "Indelicate tooth",
       "block.beingmod.beingstalbot": "Being Stalactite End",
@@ -1823,19 +1953,22 @@
       "block.beingmod.beingsuppressor": "Beingsuppressor",
       "block.beingmod.dismalgland_1": "Dismal gland ",
       "item.beingmod.force_field_gen_item": "ForceField Generator Mark III",
+      "advancements.getnpick.descr": "this drill could be used to finally get a sample of that strange material beneath the sunken esse forest",
       "block.beingmod.beingcoal": "Being coal ore",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "block.beingmod.beingstalk": "Beingstalk",
       "item.beingmod.diamondfireraygun": "Particle Cannon",
       "item.beingmod.plasmasword": "Plasmasword",
+      "block.beingmod.precursordirt": "Precursor rubble",
       "block.beingmod.beingdiamond": "Being diamond ore",
       "block.beingmod.dessicatedstalk": "Beingstalk",
       "item.beingmod.quantumbattery": "Quantum Power Cell",
+      "block.beingmod.precursorbrickslab": "Precursor bricks slab",
       "block.beingmod.beingredstone": "Being redstone ore",
       "item.beingmod.lapisbolt": "Lapis Bolt",
       "advancements.beingget.descr": "Do not spill it or expect your base to be a huge chunk of rock!",
       "block.beingmod.beinglapis": "Being lapis ore",
-      "block.beingmod.precursorbricks": "Precursorbricks"
+      "block.beingmod.precursorbricks": "Precursor bricks"
     }
   },
   "workspaceSettings": {

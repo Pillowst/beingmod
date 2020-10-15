@@ -61,7 +61,7 @@ public class PoisonwaterinbiomeprocedureProcedure extends BeingmodModElements.Mo
 			if ((ForgeRegistries.BIOMES.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 					.equals(new ResourceLocation("beingmod:collapsedesseforest")))) {
 				if (entity instanceof LivingEntity)
-					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.POISON, (int) 5, (int) 1, (true), (true)));
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.POISON, (int) 30, (int) 1, (true), (true)));
 			}
 		}
 	}

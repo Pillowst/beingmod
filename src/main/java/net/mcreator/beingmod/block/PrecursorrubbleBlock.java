@@ -26,11 +26,11 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @BeingmodModElements.ModElement.Tag
-public class PrecursorbricksBlock extends BeingmodModElements.ModElement {
-	@ObjectHolder("beingmod:precursorbricks")
+public class PrecursorrubbleBlock extends BeingmodModElements.ModElement {
+	@ObjectHolder("beingmod:precursorrubble")
 	public static final Block block = null;
-	public PrecursorbricksBlock(BeingmodModElements instance) {
-		super(instance, 123);
+	public PrecursorrubbleBlock(BeingmodModElements instance) {
+		super(instance, 133);
 	}
 
 	@Override
@@ -43,7 +43,7 @@ public class PrecursorbricksBlock extends BeingmodModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(6f, 10f).lightValue(0).harvestLevel(6)
 					.harvestTool(ToolType.PICKAXE));
-			setRegistryName("precursorbricks");
+			setRegistryName("precursorrubble");
 		}
 
 		@Override

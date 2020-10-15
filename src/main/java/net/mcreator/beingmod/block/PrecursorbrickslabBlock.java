@@ -7,6 +7,7 @@ import net.minecraftforge.common.ToolType;
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.state.properties.SlabType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -14,6 +15,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -26,11 +28,11 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @BeingmodModElements.ModElement.Tag
-public class PrecursorbricksBlock extends BeingmodModElements.ModElement {
-	@ObjectHolder("beingmod:precursorbricks")
+public class PrecursorbrickslabBlock extends BeingmodModElements.ModElement {
+	@ObjectHolder("beingmod:precursorbrickslab")
 	public static final Block block = null;
-	public PrecursorbricksBlock(BeingmodModElements instance) {
-		super(instance, 123);
+	public PrecursorbrickslabBlock(BeingmodModElements instance) {
+		super(instance, 132);
 	}
 
 	@Override
@@ -39,11 +41,11 @@ public class PrecursorbricksBlock extends BeingmodModElements.ModElement {
 		elements.items
 				.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(block.getRegistryName()));
 	}
-	public static class CustomBlock extends Block {
+	public static class CustomBlock extends SlabBlock {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(6f, 10f).lightValue(0).harvestLevel(6)
 					.harvestTool(ToolType.PICKAXE));
-			setRegistryName("precursorbricks");
+			setRegistryName("precursorbrickslab");
 		}
 
 		@Override
@@ -51,7 +53,7 @@ public class PrecursorbricksBlock extends BeingmodModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(this, state.get(TYPE) == SlabType.DOUBLE ? 2 : 1));
 		}
 
 		@Override

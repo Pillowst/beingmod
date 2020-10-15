@@ -2,10 +2,10 @@
   "_fv": 12,
   "_type": "block",
   "definition": {
-    "texture": "precursorbricks",
-    "textureTop": "",
+    "texture": "precursorcobble",
+    "textureTop": "precursorbricks",
     "textureLeft": "",
-    "textureFront": "",
+    "textureFront": "precursorbricks",
     "textureRight": "",
     "textureBack": "",
     "renderType": 11,
@@ -13,6 +13,7 @@
     "rotationMode": 0,
     "emissiveRendering": false,
     "itemTexture": "",
+    "blockBase": "Wall",
     "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
@@ -22,7 +23,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Precursor bricks",
+    "name": "Precursor rubble",
     "specialInfo": [],
     "hardness": 6.0,
     "resistance": 10.0,
@@ -61,11 +62,11 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "STONE"
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 6,
+    "breakHarvestLevel": 5,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -90,6 +91,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onDestroyedByPlayer": {
+      "name": "PrecursordirtBlockDestroyedByPlayer"
+    },
     "onStartToDestroy": {
       "name": "PrecursorbricksPlayerStartsToDestroy"
     },

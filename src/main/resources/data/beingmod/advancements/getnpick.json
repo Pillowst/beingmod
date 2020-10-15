@@ -1,26 +1,26 @@
 {
   "display": {
     "icon": {
-      "item": "beingmod:block_being"
+      "item": "beingmod:n_48pickaxe"
     },
     "title": {
-      "translate": "advancements.beingget.title"
+      "translate": "advancements.getnpick.title"
     },
     "description": {
-      "translate": "advancements.beingget.descr"
+      "translate": "advancements.getnpick.descr"
     },
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
-    "hidden": true
+    "hidden": false
   },
   "criteria": {
-    "beingget": {
+    "getnpick": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "beingmod:block_being",
+            "item": "beingmod:n_48pickaxe",
             "count": {
               "min": 1,
               "max": 1
@@ -31,7 +31,7 @@
     }
   },
   "rewards": {
-    "experience": 100
+    "experience": 1
   },
-  "parent": "beingmod:getnpick"
+  "parent": "beingmod:get_n_48"
 }

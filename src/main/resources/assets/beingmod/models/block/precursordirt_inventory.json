@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "beingmod:blocks/precursorcobble",
+    "particle": "beingmod:blocks/precursorcobble"
+  }
+}

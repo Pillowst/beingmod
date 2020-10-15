@@ -1,0 +1,25 @@
+{
+  "_fv": 12,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Explorin' time",
+    "achievementDescription": "Visit the graves of an unknown anchient civillisation, you know what to do.",
+    "achievementIcon": {
+      "value": "CUSTOM:Precursordirt"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:Getgod"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"60\" y=\"134\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

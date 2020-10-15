@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "beingmod:block/precursorbrickslab"
+    },
+    "type=top": {
+      "model": "beingmod:block/precursorbrickslab_top"
+    },
+    "type=double": {
+      "model": "beingmod:block/precursorbrickslab_full"
+    }
+  }
+}

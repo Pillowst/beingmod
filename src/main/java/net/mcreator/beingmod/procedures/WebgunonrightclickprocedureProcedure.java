@@ -101,95 +101,84 @@ public class WebgunonrightclickprocedureProcedure extends BeingmodModElements.Mo
 		}
 		if (entity instanceof PlayerEntity)
 			((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 10);
-		if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) + 0))).isSolid()))) {
-			{
-				BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) + 0));
-				BlockState _bs = Blocks.COBWEB.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
+		if ((world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) + 0))).isSolid())) {
+			if ((!(world.getBlockState(new BlockPos((int) ((X2) + 1), (int) ((Y2) + 0), (int) ((Z2) + 0))).isSolid()))) {
+				{
+					BlockPos _bp = new BlockPos((int) ((X2) + 1), (int) ((Y2) + 0), (int) ((Z2) + 0));
+					BlockState _bs = Blocks.COBWEB.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_bs.has(_property))
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+					}
+					world.setBlockState(_bp, _bs, 3);
 				}
-				world.setBlockState(_bp, _bs, 3);
 			}
-		}
-		if ((!(world.getBlockState(new BlockPos((int) ((X2) + 1), (int) ((Y2) + 0), (int) ((Z2) + 0))).isSolid()))) {
-			{
-				BlockPos _bp = new BlockPos((int) ((X2) + 1), (int) ((Y2) + 0), (int) ((Z2) + 0));
-				BlockState _bs = Blocks.COBWEB.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
+			if ((!(world.getBlockState(new BlockPos((int) ((X2) - 1), (int) ((Y2) + 0), (int) ((Z2) + 0))).isSolid()))) {
+				{
+					BlockPos _bp = new BlockPos((int) ((X2) - 1), (int) ((Y2) + 0), (int) ((Z2) + 0));
+					BlockState _bs = Blocks.COBWEB.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_bs.has(_property))
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+					}
+					world.setBlockState(_bp, _bs, 3);
 				}
-				world.setBlockState(_bp, _bs, 3);
 			}
-		}
-		if ((!(world.getBlockState(new BlockPos((int) ((X2) - 1), (int) ((Y2) + 0), (int) ((Z2) + 0))).isSolid()))) {
-			{
-				BlockPos _bp = new BlockPos((int) ((X2) - 1), (int) ((Y2) + 0), (int) ((Z2) + 0));
-				BlockState _bs = Blocks.COBWEB.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
+			if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 1), (int) ((Z2) + 0))).isSolid()))) {
+				{
+					BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) + 1), (int) ((Z2) + 0));
+					BlockState _bs = Blocks.COBWEB.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_bs.has(_property))
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+					}
+					world.setBlockState(_bp, _bs, 3);
 				}
-				world.setBlockState(_bp, _bs, 3);
 			}
-		}
-		if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 1), (int) ((Z2) + 0))).isSolid()))) {
-			{
-				BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) + 1), (int) ((Z2) + 0));
-				BlockState _bs = Blocks.COBWEB.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
+			if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) - 1), (int) ((Z2) + 0))).isSolid()))) {
+				{
+					BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) - 1), (int) ((Z2) + 0));
+					BlockState _bs = Blocks.COBWEB.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_bs.has(_property))
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+					}
+					world.setBlockState(_bp, _bs, 3);
 				}
-				world.setBlockState(_bp, _bs, 3);
 			}
-		}
-		if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) - 1), (int) ((Z2) + 0))).isSolid()))) {
-			{
-				BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) - 1), (int) ((Z2) + 0));
-				BlockState _bs = Blocks.COBWEB.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
+			if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) + 1))).isSolid()))) {
+				{
+					BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) + 1));
+					BlockState _bs = Blocks.COBWEB.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_bs.has(_property))
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+					}
+					world.setBlockState(_bp, _bs, 3);
 				}
-				world.setBlockState(_bp, _bs, 3);
 			}
-		}
-		if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) + 1))).isSolid()))) {
-			{
-				BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) + 1));
-				BlockState _bs = Blocks.COBWEB.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
+			if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) - 1))).isSolid()))) {
+				{
+					BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) - 1));
+					BlockState _bs = Blocks.COBWEB.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_bs.has(_property))
+							_bs = _bs.with(_property, (Comparable) entry.getValue());
+					}
+					world.setBlockState(_bp, _bs, 3);
 				}
-				world.setBlockState(_bp, _bs, 3);
-			}
-		}
-		if ((!(world.getBlockState(new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) - 1))).isSolid()))) {
-			{
-				BlockPos _bp = new BlockPos((int) ((X2) + 0), (int) ((Y2) + 0), (int) ((Z2) - 1));
-				BlockState _bs = Blocks.COBWEB.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<IProperty<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					IProperty _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_bs.has(_property))
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
-				}
-				world.setBlockState(_bp, _bs, 3);
 			}
 		}
 	}

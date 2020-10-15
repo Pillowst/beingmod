@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "beingmod:precursordirt"
+    },
+    "title": {
+      "translate": "advancements.precursordungeonin.title"
+    },
+    "description": {
+      "translate": "advancements.precursordungeonin.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "precursordungeonin": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "beingmod:getgod"
+}

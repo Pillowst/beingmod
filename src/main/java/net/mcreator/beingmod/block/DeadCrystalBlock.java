@@ -45,11 +45,11 @@ import java.util.List;
 import java.util.Collections;
 
 @BeingmodModElements.ModElement.Tag
-public class DeceasedbeingGRASSBlock extends BeingmodModElements.ModElement {
-	@ObjectHolder("beingmod:deceasedbeing_grass")
+public class DeadCrystalBlock extends BeingmodModElements.ModElement {
+	@ObjectHolder("beingmod:dead_crystal")
 	public static final Block block = null;
-	public DeceasedbeingGRASSBlock(BeingmodModElements instance) {
-		super(instance, 139);
+	public DeadCrystalBlock(BeingmodModElements instance) {
+		super(instance, 140);
 	}
 
 	@Override
@@ -93,14 +93,14 @@ public class DeceasedbeingGRASSBlock extends BeingmodModElements.ModElement {
 					feature.withConfiguration(
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
 									.tries(64).build())
-							.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(7))));
+							.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(3))));
 		}
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.field_226947_m_)
+			super(Effects.SATURATION, 0, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.GLASS)
 					.hardnessAndResistance(0f, 0f).lightValue(0));
-			setRegistryName("deceasedbeing_grass");
+			setRegistryName("dead_crystal");
 		}
 
 		@Override

@@ -1916,6 +1916,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "deceasedbeing_grass"
+    },
+    {
+      "name": "DeadCrystal",
+      "type": "plant",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dead_crystal"
     }
   ],
   "variable_elements": [],
@@ -1935,8 +1944,8 @@
       "advancements.beingget.title": "Obtain Being",
       "item.beingmod.pricklysword": "Pricklysword",
       "block.beingmod.crystal_being": "Being Crystal",
-      "advancements.getnpick.title": "obtain an N-48 drill",
       "item.beingmod.diamondbolt": "Diamond Bolt",
+      "advancements.getnpick.title": "obtain an N-48 drill",
       "subtitles.abandonedentry": "Ambience",
       "item.beingmod.forcefieldgenerator": "Force field generator",
       "block.beingmod.reversestalk": "Dripping roots",
@@ -1946,6 +1955,7 @@
       "advancements.precursordungeonin.descr": "Visit the graves of an unknown anchient civillisation, you know what to do.",
       "block.beingmod.warmedfollicles": "Warmedfollicles",
       "block.beingmod.kjaldarcrystal": "Being Crystal",
+      "block.beingmod.dead_crystal": "Deceased Being Crystal",
       "block.beingmod.dessicatedbeing": "dessicated being",
       "advancements.get_n_48.descr": "Get a chunk of mysterious metal, its useless right now, but perhaps it can be combined with something",
       "block.beingmod.stalstop": "Being Stalactite End",

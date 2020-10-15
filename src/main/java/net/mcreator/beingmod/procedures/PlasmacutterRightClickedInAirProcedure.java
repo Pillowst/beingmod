@@ -93,9 +93,13 @@ public class PlasmacutterRightClickedInAirProcedure extends BeingmodModElements.
 			AMOUNTPART = (double) ((DIST) / (AMOUNT));
 			AMOUNTLOG = (double) (AMOUNTPART);
 			for (int index0 = 0; index0 < (int) ((AMOUNT)); index0++) {
-				X3 = (double) ((AMOUNTLOG) * (Math.sin((O)) * Math.cos((P))));
-				Y3 = (double) ((AMOUNTLOG) * Math.sin((P)));
+				X3 = (double) ((AMOUNTLOG) * Math.sin((O)));
 				Z3 = (double) ((AMOUNTLOG) * Math.cos((O)));
+				if (((P) >= 0)) {
+					Y3 = (double) ((AMOUNTLOG) * Math.sin((P)));
+				} else {
+					Y3 = (double) ((AMOUNTLOG) * (Math.sin(((Math.PI * 2) - (P))) * (-1)));
+				}
 				world.addParticle(ParticleTypes.FLAME, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);
 				AMOUNTLOG = (double) ((AMOUNTLOG) + (AMOUNTPART));
 			}

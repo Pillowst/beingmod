@@ -1,0 +1,8 @@
+{
+  "parent": "beingmod:custom/ammo_manufactory",
+  "textures": {
+    "all": "beingmod:blocks/manufactory_text",
+    "particle": "beingmod:blocks/manufactory_text",
+    "1": "beingmod:blocks/manufactory_text"
+  }
+}

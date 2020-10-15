@@ -1934,6 +1934,138 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "indelicatetable"
+    },
+    {
+      "name": "Frameblock",
+      "type": "block",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frameblock"
+    },
+    {
+      "name": "ManufactoryUI",
+      "type": "block",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manufactory_ui"
+    },
+    {
+      "name": "Manufactoryitemsin",
+      "type": "block",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manufactoryitemsin"
+    },
+    {
+      "name": "Manufactoryenergy",
+      "type": "block",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manufactoryenergy"
+    },
+    {
+      "name": "FrameblockNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frameblock_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ManufactoryUIBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manufactory_ui_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Frameblockemptyspace",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frameblockemptyspace",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Manufactorygeneric",
+      "type": "block",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manufactorygeneric"
     }
   ],
   "variable_elements": [],
@@ -1952,6 +2084,7 @@
       "advancements.precursordungeonin.title": "Explorin\u0027 time",
       "advancements.beingget.title": "Obtain Being",
       "item.beingmod.pricklysword": "Pricklysword",
+      "block.beingmod.manufactoryenergy": "Manufactory UI",
       "block.beingmod.crystal_being": "Being Crystal",
       "advancements.getnpick.title": "obtain an N-48 drill",
       "item.beingmod.diamondbolt": "Diamond Bolt",
@@ -1962,10 +2095,12 @@
       "item.beingmod.godpickaxe": "Being Infused Pickaxe",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
       "advancements.precursordungeonin.descr": "Visit the graves of an unknown anchient civillisation, you know what to do.",
+      "block.beingmod.manufactory_ui": "Manufactory UI",
       "block.beingmod.warmedfollicles": "Warmedfollicles",
       "block.beingmod.kjaldarcrystal": "Being Crystal",
       "block.beingmod.dead_crystal": "Dessicated Being Crystal",
       "block.beingmod.dessicatedbeing": "dessicated being",
+      "block.beingmod.manufactorygeneric": "Manufactory UI",
       "advancements.get_n_48.descr": "Get a chunk of mysterious metal, its useless right now, but perhaps it can be combined with something",
       "block.beingmod.stalstop": "Being Stalactite End",
       "advancements.get_n_48.title": "whats this?",
@@ -1992,11 +2127,13 @@
       "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
       "item.beingmod.n_48chunk": "N 4 8chunk",
       "block.beingmod.orcaniumblock": "Block of Orcanium",
+      "block.beingmod.frameblock": "Frameblock",
       "item.beingmod.shard": "Being Shards",
       "item.beingmod.item_being": "Being",
       "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
       "block.beingmod.precursorbrickstairs": "Precursor bricks stair",
       "advancements.getn_48chunk.title": "discover alloy N-48",
+      "block.beingmod.manufactoryitemsin": "Manufactory UI",
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.quantum_reactor_block": "Quantum Reactor Block",
       "advancements.getgod.descr": "Get an orcanium pickaxe, now you can explore the precursor ruins like a true pioneer!",

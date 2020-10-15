@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "manufactory_text"
+      },
+      "name": "default"
+    }
+  }
+}

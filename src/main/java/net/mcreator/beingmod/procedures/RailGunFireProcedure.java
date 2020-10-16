@@ -105,7 +105,7 @@ public class RailGunFireProcedure extends BeingmodModElements.ModElement {
 			}
 			entity.attackEntityFrom(DamageSource.GENERIC, (float) 10);
 			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 30);
+				((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 45);
 		}
 	}
 }

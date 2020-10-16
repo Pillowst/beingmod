@@ -416,6 +416,6 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 					.findFirst().orElse(null)).attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 10);
 		}
 		if (entity instanceof PlayerEntity)
-			((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 60);
+			((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 180);
 	}
 }

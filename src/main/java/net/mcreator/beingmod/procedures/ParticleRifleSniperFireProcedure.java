@@ -88,9 +88,12 @@ public class ParticleRifleSniperFireProcedure extends BeingmodModElements.ModEle
 		Z2 = (double) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 				entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 				RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ());
-		if (((entity instanceof PlayerEntity)
+		if ((((entity instanceof PlayerEntity)
 				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(ParticleRifleItem.block, (int) (1)))
-				: false)) {
+				: false)
+				|| ((entity instanceof PlayerEntity)
+						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(ParticleRifleItem.block, (int) (1)))
+						: false))) {
 			DIST = (double) Math.sqrt((Math.pow(((X1) - (X2)), 2) * (Math.pow(((Y1) - (Y2)), 2) * Math.pow(((Z1) - (Z2)), 2))));
 			AMOUNT = (double) Math.round(((DIST) * 100));
 			P = (double) (((entity.rotationPitch) * 0.01745329252) * (-1));
@@ -105,7 +108,7 @@ public class ParticleRifleSniperFireProcedure extends BeingmodModElements.ModEle
 				} else {
 					Y3 = (double) ((AMOUNTLOG) * (Math.sin(((Math.PI * 2) - (P))) * (-1)));
 				}
-				world.addParticle(ParticleTypes.FALLING_LAVA, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);
+				world.addParticle(ParticleTypes.BUBBLE, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);
 				AMOUNTLOG = (double) ((AMOUNTLOG) + (AMOUNTPART));
 			}
 			if (((world

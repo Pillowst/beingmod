@@ -2,7 +2,7 @@
   "_fv": 12,
   "_type": "block",
   "definition": {
-    "texture": "manufactory_text_better",
+    "texture": "manufactory_text",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -13,7 +13,7 @@
     "rotationMode": 0,
     "emissiveRendering": false,
     "itemTexture": "",
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "CUTOUT",
     "mx": 0.0,

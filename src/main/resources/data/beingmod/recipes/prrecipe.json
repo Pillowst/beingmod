@@ -8,22 +8,22 @@
   ],
   "key": {
     "0": {
-      "item": "beingmod:kjaldar_crystal_item"
+      "item": "minecraft:diamond"
     },
     "3": {
-      "item": "beingmod:n_48chunk"
+      "item": "minecraft:iron_nugget"
     },
     "4": {
-      "item": "beingmod:kjaldar_crystal_item"
+      "item": "beingmod:rail_gun"
     },
     "6": {
       "item": "beingmod:indelicatetooth"
     },
     "7": {
-      "item": "beingmod:n_48chunk"
+      "item": "minecraft:iron_ingot"
     },
     "8": {
-      "item": "beingmod:force_field_gen_item"
+      "item": "minecraft:iron_ingot"
     }
   },
   "result": {

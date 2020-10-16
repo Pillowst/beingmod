@@ -3,24 +3,27 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "0  ",
-    " 45",
+    "345",
     " 78"
   ],
   "key": {
     "0": {
-      "item": "beingmod:n_48chunk"
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "beingmod:rail_gun"
     },
     "4": {
-      "item": "beingmod:kjaldar_crystal_item"
+      "item": "minecraft:diamond"
     },
     "5": {
-      "item": "minecraft:glass_pane"
+      "item": "minecraft:glass_bottle"
     },
     "7": {
-      "item": "beingmod:n_48chunk"
+      "item": "minecraft:iron_ingot"
     },
     "8": {
-      "item": "beingmod:force_field_gen_item"
+      "item": "minecraft:iron_nugget"
     }
   },
   "result": {

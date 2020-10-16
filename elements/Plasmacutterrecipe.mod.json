@@ -10,7 +10,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:KjaldarCrystalITEM"
+        "value": "Blocks.EMERALD_BLOCK"
       },
       {
         "value": "CUSTOM:N48chunk"

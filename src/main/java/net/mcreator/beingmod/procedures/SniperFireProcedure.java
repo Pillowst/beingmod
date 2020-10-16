@@ -106,28 +106,437 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 		}
 		if (((world
 				.getEntitiesWithinAABB(MonsterEntity.class,
-						new AxisAlignedBB(x - (2 / 2d), y - (2 / 2d), z - (2 / 2d), x + (2 / 2d), y + (2 / 2d), z + (2 / 2d)), null)
-				.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)) != null)) {
+						new AxisAlignedBB(
+								(entity.world.rayTraceBlocks(
+										new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+														entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getX()) - (2 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+														entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getY())
+										- (2 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+														entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getZ()) - (2 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f)
+														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getX()) + (2 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f)
+														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getY()) + (2 / 2d),
+								(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+										entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+												entity.getLook(1f).z * 30),
+										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (2 / 2d)),
+						null)
+				.stream().sorted(
+						Comparator
+								.comparing(
+										_entcnd -> _entcnd
+												.getDistanceSq(
+														(entity.world.rayTraceBlocks(new RayTraceContext(
+																entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																		entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+																.getX()),
+														(entity.world
+																.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																		entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																				entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																		RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+																.getPos().getY()),
+														(entity.world
+																.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																		entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																				entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																		RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+																.getPos().getZ()))))
+				.findFirst().orElse(null)) != null)) {
 			(world.getEntitiesWithinAABB(MonsterEntity.class,
-					new AxisAlignedBB(x - (2 / 2d), y - (2 / 2d), z - (2 / 2d), x + (2 / 2d), y + (2 / 2d), z + (2 / 2d)), null).stream()
-					.sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
-							.attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 5);
+					new AxisAlignedBB(
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (2 / 2d)),
+					null).stream().sorted(
+							Comparator
+									.comparing(
+											_entcnd -> _entcnd.getDistanceSq(
+													(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+															entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																	entity.getLook(1f).z * 30),
+															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+															.getX()),
+													(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+															entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																	entity.getLook(1f).z * 30),
+															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+															.getY()),
+													(entity.world
+															.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																	entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																			entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+															.getPos().getZ()))))
+					.findFirst().orElse(null)).attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 5);
+			(world.getEntitiesWithinAABB(MonsterEntity.class,
+					new AxisAlignedBB(
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (2 / 2d)),
+					null).stream().sorted(
+							Comparator
+									.comparing(
+											_entcnd -> _entcnd.getDistanceSq(
+													(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+															entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																	entity.getLook(1f).z * 30),
+															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+															.getX()),
+													(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+															entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																	entity.getLook(1f).z * 30),
+															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+															.getY()),
+													(entity.world
+															.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																	entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																			entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+															.getPos().getZ()))))
+					.findFirst().orElse(null)).setFire((int) 15);
 		} else if (((world
 				.getEntitiesWithinAABB(PlayerEntity.class,
-						new AxisAlignedBB(x - (2 / 2d), y - (2 / 2d), z - (2 / 2d), x + (2 / 2d), y + (2 / 2d), z + (2 / 2d)), null)
-				.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)) != null)) {
+						new AxisAlignedBB(
+								(entity.world.rayTraceBlocks(
+										new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+														entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getX()) - (2 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+														entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getY())
+										- (2 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+														entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getZ()) - (2 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f)
+														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getX()) + (2 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f)
+														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getY()) + (2 / 2d),
+								(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+										entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+												entity.getLook(1f).z * 30),
+										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (2 / 2d)),
+						null)
+				.stream().sorted(
+						Comparator
+								.comparing(
+										_entcnd -> _entcnd
+												.getDistanceSq(
+														(entity.world.rayTraceBlocks(new RayTraceContext(
+																entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																		entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+																.getX()),
+														(entity.world
+																.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																		entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																				entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																		RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+																.getPos().getY()),
+														(entity.world
+																.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																		entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																				entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																		RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+																.getPos().getZ()))))
+				.findFirst().orElse(null)) != null)) {
 			(world.getEntitiesWithinAABB(PlayerEntity.class,
-					new AxisAlignedBB(x - (2 / 2d), y - (2 / 2d), z - (2 / 2d), x + (2 / 2d), y + (2 / 2d), z + (2 / 2d)), null).stream()
-					.sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
-							.attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 5);
+					new AxisAlignedBB(
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (2 / 2d)),
+					null).stream().sorted(
+							Comparator
+									.comparing(
+											_entcnd -> _entcnd.getDistanceSq(
+													(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+															entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																	entity.getLook(1f).z * 30),
+															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+															.getX()),
+													(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+															entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																	entity.getLook(1f).z * 30),
+															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+															.getY()),
+													(entity.world
+															.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																	entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																			entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+															.getPos().getZ()))))
+					.findFirst().orElse(null)).attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 5);
+			(world.getEntitiesWithinAABB(PlayerEntity.class,
+					new AxisAlignedBB(
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (2 / 2d)),
+					null).stream().sorted(
+							Comparator
+									.comparing(
+											_entcnd -> _entcnd.getDistanceSq(
+													(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+															entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																	entity.getLook(1f).z * 30),
+															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+															.getX()),
+													(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+															entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																	entity.getLook(1f).z * 30),
+															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+															.getY()),
+													(entity.world
+															.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																	entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																			entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+															.getPos().getZ()))))
+					.findFirst().orElse(null)).setFire((int) 15);
 		} else if (((world
 				.getEntitiesWithinAABB(AnimalEntity.class,
-						new AxisAlignedBB(x - (2 / 2d), y - (2 / 2d), z - (2 / 2d), x + (2 / 2d), y + (2 / 2d), z + (2 / 2d)), null)
-				.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)) != null)) {
+						new AxisAlignedBB(
+								(entity.world.rayTraceBlocks(
+										new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+														entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getX()) - (2 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+														entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getY())
+										- (2 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+														entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getZ()) - (2 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f)
+														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getX()) + (2 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f)
+														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getY()) + (2 / 2d),
+								(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+										entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+												entity.getLook(1f).z * 30),
+										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (2 / 2d)),
+						null)
+				.stream().sorted(
+						Comparator
+								.comparing(
+										_entcnd -> _entcnd
+												.getDistanceSq(
+														(entity.world.rayTraceBlocks(new RayTraceContext(
+																entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																		entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+																.getX()),
+														(entity.world
+																.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																		entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																				entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																		RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+																.getPos().getY()),
+														(entity.world
+																.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																		entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																				entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																		RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+																.getPos().getZ()))))
+				.findFirst().orElse(null)) != null)) {
 			(world.getEntitiesWithinAABB(AnimalEntity.class,
-					new AxisAlignedBB(x - (2 / 2d), y - (2 / 2d), z - (2 / 2d), x + (2 / 2d), y + (2 / 2d), z + (2 / 2d)), null).stream()
-					.sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
-							.attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 5);
+					new AxisAlignedBB(
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (2 / 2d)),
+					null).stream().sorted(
+							Comparator
+									.comparing(
+											_entcnd -> _entcnd.getDistanceSq(
+													(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+															entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																	entity.getLook(1f).z * 30),
+															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+															.getX()),
+													(entity.world
+															.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																	entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																			entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+															.getPos().getY()),
+													(entity.world
+															.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																	entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																			entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+															.getPos().getZ()))))
+					.findFirst().orElse(null)).attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 5);
+			(world.getEntitiesWithinAABB(AnimalEntity.class,
+					new AxisAlignedBB(
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (2 / 2d),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (2 / 2d)),
+					null).stream().sorted(
+							Comparator
+									.comparing(
+											_entcnd -> _entcnd.getDistanceSq(
+													(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+															entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																	entity.getLook(1f).z * 30),
+															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+															.getX()),
+													(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+															entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																	entity.getLook(1f).z * 30),
+															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+															.getY()),
+													(entity.world
+															.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																	entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																			entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+															.getPos().getZ()))))
+					.findFirst().orElse(null)).setFire((int) 15);
 		}
 		if (entity instanceof PlayerEntity)
 			((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 60);

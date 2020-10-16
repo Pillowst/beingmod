@@ -101,7 +101,7 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 			} else {
 				Y3 = (double) ((AMOUNTLOG) * (Math.sin(((Math.PI * 2) - (P))) * (-1)));
 			}
-			world.addParticle(ParticleTypes.BUBBLE, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);
+			world.addParticle(ParticleTypes.LANDING_LAVA, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);
 			AMOUNTLOG = (double) ((AMOUNTLOG) + (AMOUNTPART));
 		}
 		if (((world

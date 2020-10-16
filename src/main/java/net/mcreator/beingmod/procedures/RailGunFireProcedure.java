@@ -2,7 +2,6 @@ package net.mcreator.beingmod.procedures;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.RayTraceContext;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.DamageSource;
 import net.minecraft.particles.ParticleTypes;
@@ -11,6 +10,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.beingmod.item.LapisboltItem;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
@@ -87,8 +87,9 @@ public class RailGunFireProcedure extends BeingmodModElements.ModElement {
 		Z2 = (double) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 				entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 				RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ());
-		if (((world.getBlockState(new BlockPos((int) (X2), (int) (Y2), (int) (Z2))).getBlock()
-				.getHarvestLevel(world.getBlockState(new BlockPos((int) (X2), (int) (Y2), (int) (Z2))))) <= 4)) {
+		if (((entity instanceof PlayerEntity)
+				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(LapisboltItem.block, (int) (1)))
+				: false)) {
 			DIST = (double) Math.sqrt((Math.pow(((X1) - (X2)), 2) * (Math.pow(((Y1) - (Y2)), 2) * Math.pow(((Z1) - (Z2)), 2))));
 			AMOUNT = (double) Math.round(((DIST) * 100));
 			P = (double) (((entity.rotationPitch) * 0.01745329252) * (-1));
@@ -117,6 +118,9 @@ public class RailGunFireProcedure extends BeingmodModElements.ModElement {
 			}
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 30);
+			if (entity instanceof PlayerEntity)
+				((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(LapisboltItem.block, (int) (1)).getItem() == p.getItem(),
+						(int) 1);
 		}
 	}
 }

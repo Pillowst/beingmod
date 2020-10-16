@@ -2123,43 +2123,6 @@
       "registry_name": "particle_rifle"
     },
     {
-      "name": "ParticleRifleSniperFire",
-      "type": "procedure",
-      "sortid": 152,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "particle_rifle_sniper_fire",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "ParticleSniper",
       "type": "tool",
       "sortid": 153,
@@ -2276,6 +2239,43 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "psrecipe"
+    },
+    {
+      "name": "PRfire",
+      "type": "procedure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "p_rfire",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

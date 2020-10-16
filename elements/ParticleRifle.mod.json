@@ -27,7 +27,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedInAir": {
-      "name": "ParticleRifleSniperFire"
+      "name": "PRfire"
     }
   }
 }

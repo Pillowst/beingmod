@@ -14,7 +14,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.entity.player.PlayerEntity;
 
-import net.mcreator.beingmod.procedures.ParticleRifleSniperFireProcedure;
+import net.mcreator.beingmod.procedures.PRfireProcedure;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
@@ -70,7 +70,7 @@ public class ParticleRifleItem extends BeingmodModElements.ModElement {
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
-					ParticleRifleSniperFireProcedure.executeProcedure($_dependencies);
+					PRfireProcedure.executeProcedure($_dependencies);
 				}
 				return retval;
 			}

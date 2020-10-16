@@ -8,6 +8,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.ActionResult;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -52,7 +53,7 @@ public class RailGunItem extends BeingmodModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(ForceFieldGenITEMItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(Items.DIAMOND, (int) (1)));
 			}
 		}, 1, -2f, new Item.Properties().group(ItemGroup.TOOLS)) {
 			@Override

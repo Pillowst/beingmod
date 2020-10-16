@@ -32,7 +32,7 @@ public class ParticleSniperItem extends BeingmodModElements.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new PickaxeItem(new IItemTier() {
 			public int getMaxUses() {
-				return 200;
+				return 10;
 			}
 
 			public float getEfficiency() {
@@ -52,7 +52,7 @@ public class ParticleSniperItem extends BeingmodModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(ForceFieldGenITEMItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(QuantumbatteryItem.block, (int) (1)));
 			}
 		}, 1, -2f, new Item.Properties().group(ItemGroup.TOOLS)) {
 			@Override

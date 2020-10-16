@@ -1,0 +1,30 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    " 45",
+    " 78"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:n_48chunk"
+    },
+    "4": {
+      "item": "beingmod:kjaldar_crystal_item"
+    },
+    "5": {
+      "item": "minecraft:glass_pane"
+    },
+    "7": {
+      "item": "beingmod:n_48chunk"
+    },
+    "8": {
+      "item": "beingmod:force_field_gen_item"
+    }
+  },
+  "result": {
+    "item": "beingmod:particle_sniper",
+    "count": 1
+  }
+}

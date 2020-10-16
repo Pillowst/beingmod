@@ -1,0 +1,33 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:kjaldar_crystal_item"
+    },
+    "3": {
+      "item": "beingmod:n_48chunk"
+    },
+    "4": {
+      "item": "beingmod:kjaldar_crystal_item"
+    },
+    "6": {
+      "item": "beingmod:indelicatetooth"
+    },
+    "7": {
+      "item": "beingmod:n_48chunk"
+    },
+    "8": {
+      "item": "beingmod:force_field_gen_item"
+    }
+  },
+  "result": {
+    "item": "beingmod:particle_rifle",
+    "count": 1
+  }
+}

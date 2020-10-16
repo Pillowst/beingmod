@@ -1,0 +1,46 @@
+{
+  "_fv": 12,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:N48chunk"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:KjaldarCrystalITEM"
+      },
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:N48chunk"
+      },
+      {
+        "value": "CUSTOM:ForceFieldGenITEM"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ParticleSniper"
+    },
+    "name": "psrecipe",
+    "namespace": "mod"
+  }
+}

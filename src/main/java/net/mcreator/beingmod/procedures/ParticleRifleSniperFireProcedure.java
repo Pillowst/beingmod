@@ -1,11 +1,26 @@
 package net.mcreator.beingmod.procedures;
 
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.RayTraceContext;
+import net.minecraft.util.math.AxisAlignedBB;
+import net.minecraft.util.DamageSource;
+import net.minecraft.particles.ParticleTypes;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.passive.AnimalEntity;
+import net.minecraft.entity.monster.MonsterEntity;
+import net.minecraft.entity.Entity;
+
+import net.mcreator.beingmod.item.ParticleRifleItem;
+import net.mcreator.beingmod.BeingmodModElements;
+
+import java.util.Map;
+import java.util.Comparator;
+
 @BeingmodModElements.ModElement.Tag
 public class ParticleRifleSniperFireProcedure extends BeingmodModElements.ModElement {
-
 	public ParticleRifleSniperFireProcedure(BeingmodModElements instance) {
 		super(instance, 152);
-
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -39,14 +54,12 @@ public class ParticleRifleSniperFireProcedure extends BeingmodModElements.ModEle
 				System.err.println("Failed to load dependency world for procedure ParticleRifleSniperFire!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		double DIST = 0;
 		double X1 = 0;
 		double X2 = 0;
@@ -75,12 +88,9 @@ public class ParticleRifleSniperFireProcedure extends BeingmodModElements.ModEle
 		Z2 = (double) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 				entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 				RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ());
-		if ((((entity instanceof PlayerEntity)
+		if (((entity instanceof PlayerEntity)
 				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(ParticleRifleItem.block, (int) (1)))
-				: false)
-				|| ((entity instanceof PlayerEntity)
-						? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(ParticleRifleItem.block, (int) (1)))
-						: false))) {
+				: false)) {
 			DIST = (double) Math.sqrt((Math.pow(((X1) - (X2)), 2) * (Math.pow(((Y1) - (Y2)), 2) * Math.pow(((Z1) - (Z2)), 2))));
 			AMOUNT = (double) Math.round(((DIST) * 100));
 			P = (double) (((entity.rotationPitch) * 0.01745329252) * (-1));
@@ -95,7 +105,7 @@ public class ParticleRifleSniperFireProcedure extends BeingmodModElements.ModEle
 				} else {
 					Y3 = (double) ((AMOUNTLOG) * (Math.sin(((Math.PI * 2) - (P))) * (-1)));
 				}
-				world.addParticle(ParticleTypes.BUBBLE, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);
+				world.addParticle(ParticleTypes.FALLING_LAVA, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);
 				AMOUNTLOG = (double) ((AMOUNTLOG) + (AMOUNTPART));
 			}
 			if (((world
@@ -126,7 +136,5 @@ public class ParticleRifleSniperFireProcedure extends BeingmodModElements.ModEle
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 10);
 		}
-
 	}
-
 }

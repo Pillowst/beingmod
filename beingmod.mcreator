@@ -2249,6 +2249,33 @@
           }
         ]
       }
+    },
+    {
+      "name": "Recipeforrailgun",
+      "type": "recipe",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipeforrailgun"
+    },
+    {
+      "name": "Prrecipe",
+      "type": "recipe",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "prrecipe"
+    },
+    {
+      "name": "Psrecipe",
+      "type": "recipe",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "psrecipe"
     }
   ],
   "variable_elements": [],
@@ -2291,7 +2318,7 @@
       "block.beingmod.orcnaite_armored": "Armored Orcanite",
       "block.beingmod.neriumore": "nerium ore",
       "block.beingmod.block_being": "Being",
-      "item.beingmod.particle_sniper": "Rail Gun",
+      "item.beingmod.particle_sniper": "Particle Sniper",
       "item.beingmod.kjaldarshard": "Kjaldar shard",
       "item.beingmod.webgun": "web gun",
       "item.beingmod.n_48sword": "N48 Alloy Sword",
@@ -2336,7 +2363,7 @@
       "item.beingmod.unknownchunk": "Unknown chunk",
       "block.beingmod.beingsuppressor": "Beingsuppressor",
       "block.beingmod.dismalgland_1": "Dismal gland ",
-      "item.beingmod.particle_rifle": "Rail Gun",
+      "item.beingmod.particle_rifle": "Particle Rifle",
       "item.beingmod.force_field_gen_item": "ForceField Generator Mark III",
       "advancements.getnpick.descr": "this drill could be used to finally get a sample of that strange material beneath the sunken esse forest",
       "block.beingmod.beingcoal": "Being coal ore",

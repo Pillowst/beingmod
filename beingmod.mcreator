@@ -2204,6 +2204,51 @@
           }
         ]
       }
+    },
+    {
+      "name": "Toplayermovement2d",
+      "type": "procedure",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "toplayermovement_2d",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Toplayermovement3d",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "toplayermovement_3d",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2224,8 +2269,8 @@
       "item.beingmod.pricklysword": "Pricklysword",
       "block.beingmod.manufactoryenergy": "Manufactory UI",
       "block.beingmod.crystal_being": "Being Crystal",
-      "advancements.getnpick.title": "obtain an N-48 drill",
       "item.beingmod.diamondbolt": "Diamond Bolt",
+      "advancements.getnpick.title": "obtain an N-48 drill",
       "subtitles.abandonedentry": "Ambience",
       "item.beingmod.forcefieldgenerator": "Force field generator",
       "block.beingmod.reversestalk": "Dripping roots",

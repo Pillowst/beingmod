@@ -1,26 +1,11 @@
 package net.mcreator.beingmod.procedures;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.RayTraceContext;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.DamageSource;
-import net.minecraft.particles.ParticleTypes;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.beingmod.item.ParticleSniperItem;
-import net.mcreator.beingmod.BeingmodModElements;
-
-import java.util.Map;
-import java.util.Comparator;
-
 @BeingmodModElements.ModElement.Tag
 public class SniperFireProcedure extends BeingmodModElements.ModElement {
+
 	public SniperFireProcedure(BeingmodModElements instance) {
 		super(instance, 154);
+
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -54,12 +39,14 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 				System.err.println("Failed to load dependency world for procedure SniperFire!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		double DIST = 0;
 		double X1 = 0;
 		double X2 = 0;
@@ -136,5 +123,7 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 60);
 		}
+
 	}
+
 }

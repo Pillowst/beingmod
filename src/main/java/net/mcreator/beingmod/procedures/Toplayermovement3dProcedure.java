@@ -1,19 +1,11 @@
 package net.mcreator.beingmod.procedures;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.beingmod.BeingmodModElements;
-
-import java.util.Map;
-import java.util.Comparator;
-
 @BeingmodModElements.ModElement.Tag
 public class Toplayermovement3dProcedure extends BeingmodModElements.ModElement {
+
 	public Toplayermovement3dProcedure(BeingmodModElements instance) {
 		super(instance, 152);
+
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -42,11 +34,13 @@ public class Toplayermovement3dProcedure extends BeingmodModElements.ModElement 
 				System.err.println("Failed to load dependency world for procedure Toplayermovement3d!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+
 		double AX = 0;
 		double AY = 0;
 		double AZ = 0;
@@ -109,5 +103,7 @@ public class Toplayermovement3dProcedure extends BeingmodModElements.ModElement 
 			entity.getPersistentData().putDouble("timer", 0);
 		}
 		entity.getPersistentData().putDouble("timer", ((entity.getPersistentData().getDouble("timer")) + 1));
+
 	}
+
 }

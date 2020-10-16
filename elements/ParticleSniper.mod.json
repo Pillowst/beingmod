@@ -1,0 +1,33 @@
+{
+  "_fv": 12,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "plasmacutter2",
+    "customModelName": "Normal",
+    "name": "Rail Gun",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 3,
+    "efficiency": 6.0,
+    "attackSpeed": 2.0,
+    "enchantability": 4,
+    "damageVsEntity": 3.0,
+    "usageCount": 200,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:ForceFieldGenITEM"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "SniperFire"
+    }
+  }
+}

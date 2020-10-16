@@ -2114,6 +2114,98 @@
       }
     },
     {
+      "name": "ParticleRifle",
+      "type": "tool",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_rifle"
+    },
+    {
+      "name": "ParticleRifleSniperFire",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_rifle_sniper_fire",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ParticleSniper",
+      "type": "tool",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "particle_sniper"
+    },
+    {
+      "name": "SniperFire",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sniper_fire",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
       "name": "Toplayermovement2d",
       "type": "procedure",
       "sortid": 151,
@@ -2199,6 +2291,7 @@
       "block.beingmod.orcnaite_armored": "Armored Orcanite",
       "block.beingmod.neriumore": "nerium ore",
       "block.beingmod.block_being": "Being",
+      "item.beingmod.particle_sniper": "Rail Gun",
       "item.beingmod.kjaldarshard": "Kjaldar shard",
       "item.beingmod.webgun": "web gun",
       "item.beingmod.n_48sword": "N48 Alloy Sword",
@@ -2243,6 +2336,7 @@
       "item.beingmod.unknownchunk": "Unknown chunk",
       "block.beingmod.beingsuppressor": "Beingsuppressor",
       "block.beingmod.dismalgland_1": "Dismal gland ",
+      "item.beingmod.particle_rifle": "Rail Gun",
       "item.beingmod.force_field_gen_item": "ForceField Generator Mark III",
       "advancements.getnpick.descr": "this drill could be used to finally get a sample of that strange material beneath the sunken esse forest",
       "block.beingmod.beingcoal": "Being coal ore",

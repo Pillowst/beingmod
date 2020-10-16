@@ -1,0 +1,46 @@
+{
+  "_fv": 12,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:KjaldarCrystalITEM"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:N48chunk"
+      },
+      {
+        "value": "CUSTOM:KjaldarCrystalITEM"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Indelicatetooth"
+      },
+      {
+        "value": "CUSTOM:N48chunk"
+      },
+      {
+        "value": "CUSTOM:ForceFieldGenITEM"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ParticleRifle"
+    },
+    "name": "prrecipe",
+    "namespace": "mod"
+  }
+}

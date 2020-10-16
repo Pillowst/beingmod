@@ -21,7 +21,7 @@
     "hasGlow": false,
     "repairItems": [
       {
-        "value": "CUSTOM:ForceFieldGenITEM"
+        "value": "Items.DIAMOND"
       }
     ],
     "stayInGridWhenCrafting": false,

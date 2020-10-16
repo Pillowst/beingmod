@@ -3,18 +3,15 @@ package net.mcreator.beingmod.procedures;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.RayTraceContext;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.DamageSource;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
-import java.util.Comparator;
 
 @BeingmodModElements.ModElement.Tag
 public class RailGunFireProcedure extends BeingmodModElements.ModElement {
@@ -106,17 +103,9 @@ public class RailGunFireProcedure extends BeingmodModElements.ModElement {
 				world.addParticle(ParticleTypes.BUBBLE, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);
 				AMOUNTLOG = (double) ((AMOUNTLOG) + (AMOUNTPART));
 			}
-			if (((world
-					.getEntitiesWithinAABB(MonsterEntity.class,
-							new AxisAlignedBB(x - (2 / 2d), y - (2 / 2d), z - (2 / 2d), x + (2 / 2d), y + (2 / 2d), z + (2 / 2d)), null)
-					.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null)) != null)) {
-				(world.getEntitiesWithinAABB(MonsterEntity.class,
-						new AxisAlignedBB(x - (2 / 2d), y - (2 / 2d), z - (2 / 2d), x + (2 / 2d), y + (2 / 2d), z + (2 / 2d)), null).stream()
-						.sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq(x, y, z))).findFirst().orElse(null))
-								.attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 10);
-			}
+			entity.attackEntityFrom(DamageSource.GENERIC, (float) 10);
 			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 30);
+				((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 45);
 		}
 	}
 }

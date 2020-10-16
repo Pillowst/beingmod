@@ -2066,6 +2066,52 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "manufactorygeneric"
+    },
+    {
+      "name": "RailGun",
+      "type": "tool",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rail_gun"
+    },
+    {
+      "name": "RailGunFire",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rail_gun_fire",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2086,8 +2132,8 @@
       "item.beingmod.pricklysword": "Pricklysword",
       "block.beingmod.manufactoryenergy": "Manufactory UI",
       "block.beingmod.crystal_being": "Being Crystal",
-      "advancements.getnpick.title": "obtain an N-48 drill",
       "item.beingmod.diamondbolt": "Diamond Bolt",
+      "advancements.getnpick.title": "obtain an N-48 drill",
       "subtitles.abandonedentry": "Ambience",
       "item.beingmod.forcefieldgenerator": "Force field generator",
       "block.beingmod.reversestalk": "Dripping roots",
@@ -2137,6 +2183,7 @@
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.quantum_reactor_block": "Quantum Reactor Block",
       "advancements.getgod.descr": "Get an orcanium pickaxe, now you can explore the precursor ruins like a true pioneer!",
+      "item.beingmod.rail_gun": "Plasmacutter",
       "block.beingmod.beinggold": "Being gold ore",
       "item.beingmod.kjaldar_crystal_item": "Kjaldar Crystal Shard",
       "advancements.getn_48chunk.descr": "Well done!, what took scientists decades to produce and discover, you did in days, now this supermaterial is yours to use",

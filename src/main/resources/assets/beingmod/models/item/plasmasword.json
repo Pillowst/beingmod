@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "beingmod:items/ps1"
+    "layer0": "beingmod:items/dd"
   }
 }

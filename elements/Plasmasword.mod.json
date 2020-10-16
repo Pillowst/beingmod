@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "ps1",
+    "texture": "dd",
     "customModelName": "Normal",
     "name": "Plasmasword",
     "specialInfo": [],

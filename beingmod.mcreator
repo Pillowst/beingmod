@@ -2085,32 +2085,7 @@
       "ids": {},
       "registry_name": "rail_gun_fire",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     }
   ],
@@ -2132,8 +2107,8 @@
       "item.beingmod.pricklysword": "Pricklysword",
       "block.beingmod.manufactoryenergy": "Manufactory UI",
       "block.beingmod.crystal_being": "Being Crystal",
-      "advancements.getnpick.title": "obtain an N-48 drill",
       "item.beingmod.diamondbolt": "Diamond Bolt",
+      "advancements.getnpick.title": "obtain an N-48 drill",
       "subtitles.abandonedentry": "Ambience",
       "item.beingmod.forcefieldgenerator": "Force field generator",
       "block.beingmod.reversestalk": "Dripping roots",

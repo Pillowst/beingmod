@@ -1,12 +1,17 @@
 package net.mcreator.beingmod.procedures;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IWorld;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.math.RayTraceContext;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.command.ICommandSource;
+import net.minecraft.command.CommandSource;
 import net.minecraft.block.Block;
 
 import net.mcreator.beingmod.BeingmodModElements;
@@ -100,7 +105,13 @@ public class PlasmacutterRightClickedInAirProcedure extends BeingmodModElements.
 				} else {
 					Y3 = (double) ((AMOUNTLOG) * (Math.sin(((Math.PI * 2) - (P))) * (-1)));
 				}
-				world.addParticle(ParticleTypes.FLAME, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);
+				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+					world.getWorld().getServer().getCommandManager()
+							.handleCommand(new CommandSource(ICommandSource.DUMMY, new Vec3d(((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1))), Vec2f.ZERO,
+									(ServerWorld) world, 4, "", new StringTextComponent(""), world.getWorld().getServer(), null)
+											.withFeedbackDisabled(),
+									"particle reddust ~ ~ ~ 0 1 0 1");
+				}
 				AMOUNTLOG = (double) ((AMOUNTLOG) + (AMOUNTPART));
 			}
 			Block.spawnDrops(world.getBlockState(new BlockPos((int) (X2), (int) (Y2), (int) (Z2))), world.getWorld(),

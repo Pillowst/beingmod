@@ -2,25 +2,28 @@
   "group": "beingmod",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "0  ",
-    " 4 ",
-    "678"
+    "01 ",
+    "34 ",
+    " 78"
   ],
   "key": {
     "0": {
-      "item": "beingmod:kjaldar_crystal_item"
+      "item": "minecraft:diamond"
+    },
+    "1": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "3": {
+      "item": "minecraft:iron_nugget"
     },
     "4": {
       "item": "beingmod:rail_gun"
     },
-    "6": {
+    "7": {
       "item": "beingmod:indelicatetooth"
     },
-    "7": {
-      "item": "beingmod:n_48chunk"
-    },
     "8": {
-      "item": "beingmod:n_48chunk"
+      "item": "minecraft:iron_ingot"
     }
   },
   "result": {

@@ -15,7 +15,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
-import net.mcreator.beingmod.item.QuantumbatteryItem;
+import net.mcreator.beingmod.item.DiamondboltItem;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
@@ -80,7 +80,7 @@ public class DiamondfireraygunrightclickonairprocedureProcedure extends Beingmod
 		double Y3 = 0;
 		double Z3 = 0;
 		if (((entity instanceof PlayerEntity)
-				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(QuantumbatteryItem.block, (int) (1)))
+				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(DiamondboltItem.block, (int) (1)))
 				: false)) {
 			X1 = (double) x;
 			Y1 = (double) (y + 1.4);
@@ -119,7 +119,7 @@ public class DiamondfireraygunrightclickonairprocedureProcedure extends Beingmod
 						"/summon firework_rocket ~ ~ ~ {NoGravity:1b,Life:0,LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Explosions:[{Type:2,Flicker:1b,Trail:1b,Colors:[I;61183],FadeColors:[I;14417663]},{Type:1,Flicker:1b,Colors:[I;14942198],FadeColors:[I;1638655]}]}}}}");
 			}
 			if (entity instanceof PlayerEntity)
-				((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(QuantumbatteryItem.block, (int) (1)).getItem() == p.getItem(),
+				((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(DiamondboltItem.block, (int) (1)).getItem() == p.getItem(),
 						(int) 1);
 		}
 	}

@@ -1,5 +1,6 @@
 package net.mcreator.beingmod.procedures;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.RayTraceContext;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -112,36 +113,36 @@ public class PRfireProcedure extends BeingmodModElements.ModElement {
 												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 														entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getX()) - (3 / 2d),
+										.getPos().getX()) - (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 														entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
 										.getPos().getY())
-										- (3 / 2d),
+										- (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 														entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getZ()) - (3 / 2d),
+										.getPos().getZ()) - (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 												entity.getEyePosition(1f)
 														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getX()) + (3 / 2d),
+										.getPos().getX()) + (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 												entity.getEyePosition(1f)
 														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getY()) + (3 / 2d),
+										.getPos().getY()) + (5 / 2d),
 								(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 										entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 												entity.getLook(1f).z * 30),
-										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (3 / 2d)),
+										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
 						null)
 				.stream().sorted(
 						Comparator
@@ -170,22 +171,22 @@ public class PRfireProcedure extends BeingmodModElements.ModElement {
 					new AxisAlignedBB(
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (3 / 2d)),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
 					null).stream().sorted(
 							Comparator
 									.comparing(
@@ -211,22 +212,22 @@ public class PRfireProcedure extends BeingmodModElements.ModElement {
 					new AxisAlignedBB(
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (3 / 2d)),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
 					null).stream().sorted(
 							Comparator
 									.comparing(
@@ -256,36 +257,36 @@ public class PRfireProcedure extends BeingmodModElements.ModElement {
 												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 														entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getX()) - (3 / 2d),
+										.getPos().getX()) - (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 														entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
 										.getPos().getY())
-										- (3 / 2d),
+										- (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 														entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getZ()) - (3 / 2d),
+										.getPos().getZ()) - (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 												entity.getEyePosition(1f)
 														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getX()) + (3 / 2d),
+										.getPos().getX()) + (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 												entity.getEyePosition(1f)
 														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getY()) + (3 / 2d),
+										.getPos().getY()) + (5 / 2d),
 								(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 										entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 												entity.getLook(1f).z * 30),
-										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (3 / 2d)),
+										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
 						null)
 				.stream().sorted(
 						Comparator
@@ -314,22 +315,22 @@ public class PRfireProcedure extends BeingmodModElements.ModElement {
 					new AxisAlignedBB(
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (3 / 2d)),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
 					null).stream().sorted(
 							Comparator
 									.comparing(
@@ -355,22 +356,22 @@ public class PRfireProcedure extends BeingmodModElements.ModElement {
 					new AxisAlignedBB(
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (3 / 2d)),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
 					null).stream().sorted(
 							Comparator
 									.comparing(
@@ -400,36 +401,36 @@ public class PRfireProcedure extends BeingmodModElements.ModElement {
 												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 														entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getX()) - (3 / 2d),
+										.getPos().getX()) - (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 														entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
 										.getPos().getY())
-										- (3 / 2d),
+										- (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 														entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getZ()) - (3 / 2d),
+										.getPos().getZ()) - (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 												entity.getEyePosition(1f)
 														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getX()) + (3 / 2d),
+										.getPos().getX()) + (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 												entity.getEyePosition(1f)
 														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getY()) + (3 / 2d),
+										.getPos().getY()) + (5 / 2d),
 								(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 										entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 												entity.getLook(1f).z * 30),
-										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (3 / 2d)),
+										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
 						null)
 				.stream().sorted(
 						Comparator
@@ -458,22 +459,22 @@ public class PRfireProcedure extends BeingmodModElements.ModElement {
 					new AxisAlignedBB(
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (3 / 2d)),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
 					null).stream().sorted(
 							Comparator
 									.comparing(
@@ -500,22 +501,22 @@ public class PRfireProcedure extends BeingmodModElements.ModElement {
 					new AxisAlignedBB(
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (3 / 2d),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (5 / 2d),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (3 / 2d)),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
 					null).stream().sorted(
 							Comparator
 									.comparing(
@@ -537,6 +538,19 @@ public class PRfireProcedure extends BeingmodModElements.ModElement {
 																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
 															.getPos().getZ()))))
 					.findFirst().orElse(null)).setFire((int) 15);
+		}
+		if (world instanceof ServerWorld) {
+			((ServerWorld) world).spawnParticle(ParticleTypes.FLAME,
+					(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+							entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+							RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()),
+					(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+							entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+							RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()),
+					(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+							entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+							RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()),
+					(int) 9, 1, 1, 1, 1);
 		}
 		if (entity instanceof PlayerEntity)
 			((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 5);

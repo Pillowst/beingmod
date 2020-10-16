@@ -10,16 +10,16 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:KjaldarCrystalITEM"
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.FLINT_AND_STEEL"
       },
       {
         "value": ""
       },
       {
-        "value": ""
-      },
-      {
-        "value": ""
+        "value": "Items.IRON_NUGGET"
       },
       {
         "value": "CUSTOM:RailGun"
@@ -28,13 +28,13 @@
         "value": ""
       },
       {
+        "value": ""
+      },
+      {
         "value": "CUSTOM:Indelicatetooth"
       },
       {
-        "value": "CUSTOM:N48chunk"
-      },
-      {
-        "value": "CUSTOM:N48chunk"
+        "value": "Items.IRON_INGOT"
       }
     ],
     "recipeReturnStack": {

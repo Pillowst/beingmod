@@ -8,7 +8,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.ActionResult;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.BlockState;
@@ -18,6 +17,7 @@ import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
 import java.util.HashMap;
+import net.minecraft.item.ItemGroup;
 
 @BeingmodModElements.ModElement.Tag
 public class WebgunItem extends BeingmodModElements.ModElement {

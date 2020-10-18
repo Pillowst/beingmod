@@ -46,7 +46,7 @@ public class GodpickaxeItem extends BeingmodModElements.ModElement {
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.fromStacks(new ItemStack(ItemBeingItem.block, (int) (1)));
+				return Ingredient.fromStacks(new ItemStack(ShardItem.block, (int) (1)));
 			}
 		}, 1, -2f, new Item.Properties().group(ItemGroup.TOOLS)) {
 			@Override

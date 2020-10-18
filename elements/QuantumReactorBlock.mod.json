@@ -5,9 +5,9 @@
     "texture": "quantum_reactor_top",
     "textureTop": "quantum_reactor_top",
     "textureLeft": "quantum_reactor_side1",
-    "textureFront": "quantum_reactor_side2",
+    "textureFront": "quantum_reactor_side1",
     "textureRight": "quantum_reactor_side1",
-    "textureBack": "quantum_reactor_side1",
+    "textureBack": "quantum_reactor_side2",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 4,
@@ -45,7 +45,7 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 10,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",

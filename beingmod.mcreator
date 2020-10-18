@@ -2,15 +2,6 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "ItemBeing",
-      "type": "item",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "item_being"
-    },
-    {
       "name": "BlockOrcanite",
       "type": "block",
       "sortid": 2,
@@ -74,15 +65,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "shard"
-    },
-    {
-      "name": "Blockrecipe",
-      "type": "recipe",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "blockrecipe"
     },
     {
       "name": "Crystalrecipe",
@@ -222,35 +204,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "beingget"
-    },
-    {
-      "name": "Crystaldecay",
-      "type": "procedure",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "crystaldecay",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "NoxiousbloomerUpdateTick",
@@ -2278,6 +2231,24 @@
       }
     },
     {
+      "name": "Leggingrecipe",
+      "type": "recipe",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leggingrecipe"
+    },
+    {
+      "name": "Helmetrecipe",
+      "type": "recipe",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "helmetrecipe"
+    },
+    {
       "name": "ShockArmor",
       "type": "armor",
       "sortid": 159,
@@ -2293,13 +2264,13 @@
       }
     },
     {
-      "name": "Helmetrecipe",
+      "name": "Bootrecipe",
       "type": "recipe",
-      "sortid": 160,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "helmetrecipe"
+      "registry_name": "bootrecipe"
     },
     {
       "name": "Chestrecipe",
@@ -2311,22 +2282,13 @@
       "registry_name": "chestrecipe"
     },
     {
-      "name": "Leggingrecipe",
-      "type": "recipe",
-      "sortid": 162,
+      "name": "Anomalousmaterials",
+      "type": "tab",
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "leggingrecipe"
-    },
-    {
-      "name": "Bootrecipe",
-      "type": "recipe",
-      "sortid": 163,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bootrecipe"
+      "registry_name": "anomalousmaterials"
     }
   ],
   "variable_elements": [],
@@ -2370,7 +2332,6 @@
       "block.beingmod.neriumore": "nerium ore",
       "block.beingmod.block_being": "Being",
       "item.beingmod.particle_sniper": "Particle Sniper",
-      "item.beingmod.shock_armor_chestplate": "Shock Trooper Armor Body",
       "item.beingmod.kjaldarshard": "Kjaldar shard",
       "item.beingmod.webgun": "web gun",
       "item.beingmod.n_48sword": "N48 Alloy Sword",
@@ -2385,10 +2346,8 @@
       "block.beingmod.deceasedbeing_grass": "dessicated noxious bloom",
       "block.beingmod.beingrootstop": "Being Stalactite",
       "block.beingmod.drippingleaves": "Dripping roots",
-      "item.beingmod.shock_armor_helmet": "Shock Trooper Armor Helmet",
       "item.beingmod.webpotion": "Web potion",
       "advancements.getgod.title": "pioneer of the precursors",
-      "item.beingmod.shock_armor_leggings": "Shock Trooper Armor Leggings",
       "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
       "item.beingmod.n_48chunk": "N 4 8chunk",
       "block.beingmod.orcaniumblock": "Block of Orcanium",
@@ -2423,7 +2382,6 @@
       "block.beingmod.beingcoal": "Being coal ore",
       "block.beingmod.beingstaltop": "Being Stalactite",
       "block.beingmod.beingstalk": "Beingstalk",
-      "item.beingmod.shock_armor_boots": "Shock Trooper Armor Boots",
       "item.beingmod.diamondfireraygun": "Diamondfire railgun",
       "item.beingmod.plasmasword": "Plasma Sword",
       "block.beingmod.precursordirt": "Precursor rubble",

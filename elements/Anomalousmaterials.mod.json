@@ -1,0 +1,11 @@
+{
+  "_fv": 12,
+  "_type": "tab",
+  "definition": {
+    "name": "Anomalous materials",
+    "icon": {
+      "value": "CUSTOM:BlockBeing"
+    },
+    "showSearch": false
+  }
+}

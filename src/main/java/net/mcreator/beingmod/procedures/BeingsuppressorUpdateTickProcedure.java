@@ -51,6 +51,7 @@ public class BeingsuppressorUpdateTickProcedure extends BeingmodModElements.ModE
 		double BX = 0;
 		double BY = 0;
 		double BZ = 0;
+		boolean T = false;
 		if (((new Object() {
 			public int getEnergyStored(BlockPos pos) {
 				AtomicInteger _retval = new AtomicInteger(0);
@@ -59,8 +60,9 @@ public class BeingsuppressorUpdateTickProcedure extends BeingmodModElements.ModE
 					_ent.getCapability(CapabilityEnergy.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 				return _retval.get();
 			}
-		}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) >= 1000)) {
+		}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) >= 100)) {
 			BX = (double) (-3);
+			T = (boolean) (false);
 			for (int index0 = 0; index0 < (int) (6); index0++) {
 				BY = (double) (-3);
 				for (int index1 = 0; index1 < (int) (6); index1++) {
@@ -70,7 +72,7 @@ public class BeingsuppressorUpdateTickProcedure extends BeingmodModElements.ModE
 								.getBlock() == BlockBeingBlock.block.getDefaultState().getBlock())) {
 							{
 								TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
-								int _amount = (int) 1000;
+								int _amount = (int) 100;
 								if (_ent != null)
 									_ent.getCapability(CapabilityEnergy.ENERGY, null)
 											.ifPresent(capability -> capability.extractEnergy(_amount, false));
@@ -86,11 +88,18 @@ public class BeingsuppressorUpdateTickProcedure extends BeingmodModElements.ModE
 								}
 								world.setBlockState(_bp, _bs, 3);
 							}
+							T = (boolean) (true);
 							break;
 						}
 						BZ = (double) ((BZ) + 1);
 					}
+					if ((T)) {
+						break;
+					}
 					BY = (double) ((BY) + 1);
+				}
+				if ((T)) {
+					break;
 				}
 				BX = (double) ((BX) + 1);
 			}

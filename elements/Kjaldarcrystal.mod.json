@@ -47,6 +47,9 @@
     "restrictionBiomes": [],
     "generateCondition": {
       "name": "KjaldarcrystalAdditionalGenerationCondition"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "KjaldarcrystalNeighbourBlockChanges"
     }
   }
 }

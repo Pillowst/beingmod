@@ -2324,6 +2324,93 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "chestrecipe"
+    },
+    {
+      "name": "KjaldarcrystalNeighbourBlockChanges",
+      "type": "procedure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kjaldarcrystal_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PrecursorspikesRedstoneOn",
+      "type": "procedure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorspikes_redstone_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PrecursorspikesRedstoneOff",
+      "type": "procedure",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorspikes_redstone_off",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2356,30 +2443,30 @@
       "block.beingmod.reversestalk": "Dripping roots",
       "item.beingmod.plasmacutter": "Plasma Cutter",
       "item.beingmod.godpickaxe": "Being Infused Pickaxe",
-      "block.beingmod.manufactory_ui": "Manufactory UI",
       "advancements.precursordungeonin.descr": "Visit the graves of an unknown anchient civillisation, you know what to do.",
-      "block.beingmod.dead_crystal": "Dessicated Being Crystal",
+      "block.beingmod.manufactory_ui": "Manufactory UI",
       "block.beingmod.kjaldarcrystal": "Being Crystal",
+      "block.beingmod.dead_crystal": "Dessicated Being Crystal",
       "block.beingmod.manufactorygeneric": "Manufactory UI",
       "advancements.get_n_48.descr": "Get a chunk of mysterious metal, its useless right now, but perhaps it can be combined with something",
-      "block.beingmod.precursorwall": "Precursor wall",
       "block.beingmod.beingrootsbot": "Being Stalactite End",
+      "block.beingmod.precursorwall": "Precursor wall",
       "item.beingmod.noxiouspotion": "Noxious potion",
       "item.beingmod.n_48pickaxe": "Crystalized N48 Drill",
       "block.beingmod.precursorspikes": "Precursorspikes",
       "block.beingmod.beingiron": "Being iron ore",
       "block.beingmod.deceasedbeing_grass": "dessicated noxious bloom",
-      "item.beingmod.shock_armor_helmet": "Shock Trooper Armor Helmet",
       "block.beingmod.drippingleaves": "Dripping roots",
+      "item.beingmod.shock_armor_helmet": "Shock Trooper Armor Helmet",
       "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
       "item.beingmod.n_48chunk": "N 4 8chunk",
       "block.beingmod.orcaniumblock": "Block of Orcanium",
       "block.beingmod.precursorspikestop": "Precursorspikestop",
       "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
       "block.beingmod.manufactoryitemsin": "Manufactory UI",
-      "block.beingmod.darkgland": "dark gland ",
-      "advancements.getgod.descr": "Get an orcanium pickaxe, now you can explore the precursor ruins like a true pioneer!",
       "item.beingmod.rail_gun": "Rail Gun",
+      "advancements.getgod.descr": "Get an orcanium pickaxe, now you can explore the precursor ruins like a true pioneer!",
+      "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.precursorrubble": "Precursor rubbled bricks",
       "item.beingmod.indelicatetooth": "Indelicate tooth",
       "block.beingmod.block_orcanite": "Raw Orcanite Block",
@@ -2391,8 +2478,8 @@
       "block.beingmod.beingstalk": "Beingstalk",
       "item.beingmod.shock_armor_boots": "Shock Trooper Armor Boots",
       "item.beingmod.plasmasword": "Plasma Sword",
-      "block.beingmod.precursorbrickslab": "Precursor bricks slab",
       "block.beingmod.dessicatedstalk": "Beingstalk",
+      "block.beingmod.precursorbrickslab": "Precursor bricks slab",
       "item.beingmod.lapisbolt": "Lapis Bolt",
       "block.beingmod.beinglapis": "Being lapis ore",
       "advancements.precursordungeonin.title": "Explorin\u0027 time",

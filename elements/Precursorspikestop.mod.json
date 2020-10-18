@@ -20,7 +20,7 @@
     "my": 0.0,
     "mz": 0.0,
     "Mx": 1.0,
-    "My": 5.0,
+    "My": 0.5,
     "Mz": 1.0,
     "name": "Precursorspikestop",
     "specialInfo": [],
@@ -29,7 +29,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Anomalousmaterials"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -43,7 +43,7 @@
     "canProvidePower": false,
     "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -61,10 +61,10 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": true,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "STONE"
     },
     "luminance": 0.0,
-    "unbreakable": false,
+    "unbreakable": true,
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
@@ -90,6 +90,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "KjaldarcrystalNeighbourBlockChanges"
+    },
     "onEntityCollides": {
       "name": "PrecursorspikestopEntityCollidesInTheBlock"
     },

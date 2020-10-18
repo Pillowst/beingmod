@@ -26,7 +26,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.beingmod.procedures.PrecursorspikestopEntityCollidesInTheBlockProcedure;
-import net.mcreator.beingmod.itemgroup.AnomalousmaterialsItemGroup;
+import net.mcreator.beingmod.procedures.KjaldarcrystalNeighbourBlockChangesProcedure;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
@@ -45,8 +45,7 @@ public class PrecursorspikestopBlock extends BeingmodModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(
-				() -> new BlockItem(block, new Item.Properties().group(AnomalousmaterialsItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(null)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
@@ -56,8 +55,8 @@ public class PrecursorspikestopBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0).doesNotBlockMovement()
-					.notSolid());
+			super(Block.Properties.create(Material.IRON).sound(SoundType.STONE).hardnessAndResistance(-1, 3600000).lightValue(0)
+					.doesNotBlockMovement().notSolid());
 			setRegistryName("precursorspikestop");
 		}
 
@@ -74,7 +73,7 @@ public class PrecursorspikestopBlock extends BeingmodModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vec3d offset = state.getOffset(world, pos);
-			return VoxelShapes.create(0D, 0D, 0D, 1D, 5D, 1D).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.create(0D, 0D, 0D, 1D, 0.5D, 1D).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override
@@ -83,6 +82,25 @@ public class PrecursorspikestopBlock extends BeingmodModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
+		}
+
+		@Override
+		public void neighborChanged(BlockState state, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+			super.neighborChanged(state, world, pos, neighborBlock, fromPos, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
+			} else {
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				KjaldarcrystalNeighbourBlockChangesProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

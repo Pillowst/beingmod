@@ -40,7 +40,7 @@
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canProvidePower": false,
+    "canProvidePower": true,
     "lightOpacity": 255,
     "material": {
       "value": "ROCK"
@@ -61,7 +61,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "STONE"
     },
     "luminance": 0.0,
     "unbreakable": false,
@@ -90,6 +90,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRedstoneOn": {
+      "name": "PrecursorspikesRedstoneOn"
+    },
+    "onRedstoneOff": {
+      "name": "PrecursorspikesRedstoneOff"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

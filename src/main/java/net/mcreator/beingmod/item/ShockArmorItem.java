@@ -36,23 +36,23 @@ public class ShockArmorItem extends BeingmodModElements.ModElement {
 	public void initElements() {
 		IArmorMaterial armormaterial = new IArmorMaterial() {
 			public int getDurability(EquipmentSlotType slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 25;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 40;
 			}
 
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{2, 5, 6, 2}[slot.getIndex()];
+				return new int[]{4, 10, 12, 4}[slot.getIndex()];
 			}
 
 			public int getEnchantability() {
-				return 9;
+				return 12;
 			}
 
 			public net.minecraft.util.SoundEvent getSoundEvent() {
-				return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+				return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("beingmod:equip"));
 			}
 
 			public Ingredient getRepairMaterial() {
-				return Ingredient.EMPTY;
+				return Ingredient.fromStacks(new ItemStack(QuantumbatteryItem.block, (int) (1)), new ItemStack(N48chunkItem.block, (int) (1)));
 			}
 
 			@OnlyIn(Dist.CLIENT)
@@ -61,7 +61,7 @@ public class ShockArmorItem extends BeingmodModElements.ModElement {
 			}
 
 			public float getToughness() {
-				return 0f;
+				return 3f;
 			}
 		};
 		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT)) {

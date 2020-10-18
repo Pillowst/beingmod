@@ -18,4 +18,14 @@ authors="Pillow"
 
 
 
+[[dependencies.beingmod]]
+    modId="just_enough_items"
+    mandatory=false
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.beingmod]]
+    modId="geckolib"
+    mandatory=false
+    ordering="NONE"
+    side="BOTH"
 

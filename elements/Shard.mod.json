@@ -6,9 +6,9 @@
     "texture": "being_shards",
     "customModelName": "Normal",
     "name": "Being Shards",
-    "rarity": "COMMON",
+    "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "stackSize": 64,
     "enchantability": 0,

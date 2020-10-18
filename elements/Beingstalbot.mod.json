@@ -35,7 +35,7 @@
     "customDrop": {
       "value": "CUSTOM:Shard"
     },
-    "dropAmount": 1,
+    "dropAmount": 0,
     "useLootTableForDrops": false,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,

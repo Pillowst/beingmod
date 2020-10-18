@@ -21,7 +21,7 @@
     "hasGlow": true,
     "repairItems": [
       {
-        "value": "CUSTOM:ItemBeing"
+        "value": "CUSTOM:Shard"
       }
     ],
     "stayInGridWhenCrafting": false,

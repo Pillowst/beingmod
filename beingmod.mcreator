@@ -2,15 +2,6 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "ItemBeing",
-      "type": "item",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "item_being"
-    },
-    {
       "name": "BlockOrcanite",
       "type": "block",
       "sortid": 2,
@@ -74,15 +65,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "shard"
-    },
-    {
-      "name": "Blockrecipe",
-      "type": "recipe",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "blockrecipe"
     },
     {
       "name": "Crystalrecipe",
@@ -222,35 +204,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "beingget"
-    },
-    {
-      "name": "Crystaldecay",
-      "type": "procedure",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "crystaldecay",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "NoxiousbloomerUpdateTick",
@@ -2276,6 +2229,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Anomalousmaterials",
+      "type": "tab",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "anomalousmaterials"
     }
   ],
   "variable_elements": [],
@@ -2340,7 +2302,6 @@
       "block.beingmod.orcaniumblock": "Block of Orcanium",
       "block.beingmod.frameblock": "Frameblock",
       "item.beingmod.shard": "Being Shards",
-      "item.beingmod.item_being": "Being",
       "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
       "block.beingmod.precursorbrickstairs": "Precursor bricks stair",
       "advancements.getn_48chunk.title": "discover alloy N-48",
@@ -2363,6 +2324,7 @@
       "item.beingmod.unknownchunk": "Unknown chunk",
       "block.beingmod.beingsuppressor": "Beingsuppressor",
       "block.beingmod.dismalgland_1": "Dismal gland ",
+      "itemGroup.tabanomalousmaterials": "Anomalous materials",
       "item.beingmod.particle_rifle": "Incendiary Rifle",
       "item.beingmod.force_field_gen_item": "ForceField Generator Mark III",
       "advancements.getnpick.descr": "this drill could be used to finally get a sample of that strange material beneath the sunken esse forest",

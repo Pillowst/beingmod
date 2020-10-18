@@ -54,39 +54,10 @@ public class QuantumReactorBlockUpdateTickProcedure extends BeingmodModElements.
 					return Direction.NORTH;
 				}
 			}
-		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.UP)) {
-			{
-				TileEntity _ent = world.getTileEntity(new BlockPos((int) (x + 0), (int) (y + 1), (int) (z + 0)));
-				int _amount = (int) 500;
-				if (_ent != null)
-					_ent.getCapability(CapabilityEnergy.ENERGY, ((new Object() {
-						public Direction getDirection(BlockPos pos) {
-							try {
-								BlockState _bs = world.getBlockState(pos);
-								DirectionProperty property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
-								return _bs.get(property);
-							} catch (Exception e) {
-								return Direction.NORTH;
-							}
-						}
-					}.getDirection(new BlockPos((int) x, (int) y, (int) z))).getOpposite()))
-							.ifPresent(capability -> capability.receiveEnergy(_amount, false));
-			}
-		}
-		if (((new Object() {
-			public Direction getDirection(BlockPos pos) {
-				try {
-					BlockState _bs = world.getBlockState(pos);
-					DirectionProperty property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
-					return _bs.get(property);
-				} catch (Exception e) {
-					return Direction.NORTH;
-				}
-			}
 		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.DOWN)) {
 			{
-				TileEntity _ent = world.getTileEntity(new BlockPos((int) (x + 0), (int) (y - 1), (int) (z + 0)));
-				int _amount = (int) 500;
+				TileEntity _ent = world.getTileEntity(new BlockPos((int) (x + 0), (int) (y + 1), (int) (z + 0)));
+				int _amount = (int) 5;
 				if (_ent != null)
 					_ent.getCapability(CapabilityEnergy.ENERGY, ((new Object() {
 						public Direction getDirection(BlockPos pos) {
@@ -112,10 +83,10 @@ public class QuantumReactorBlockUpdateTickProcedure extends BeingmodModElements.
 					return Direction.NORTH;
 				}
 			}
-		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.NORTH)) {
+		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.UP)) {
 			{
-				TileEntity _ent = world.getTileEntity(new BlockPos((int) (x + 0), (int) (y - 0), (int) (z - 1)));
-				int _amount = (int) 500;
+				TileEntity _ent = world.getTileEntity(new BlockPos((int) (x + 0), (int) (y - 1), (int) (z + 0)));
+				int _amount = (int) 5;
 				if (_ent != null)
 					_ent.getCapability(CapabilityEnergy.ENERGY, ((new Object() {
 						public Direction getDirection(BlockPos pos) {
@@ -143,8 +114,8 @@ public class QuantumReactorBlockUpdateTickProcedure extends BeingmodModElements.
 			}
 		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.SOUTH)) {
 			{
-				TileEntity _ent = world.getTileEntity(new BlockPos((int) (x + 0), (int) (y - 0), (int) (z + 1)));
-				int _amount = (int) 500;
+				TileEntity _ent = world.getTileEntity(new BlockPos((int) (x + 0), (int) (y - 0), (int) (z - 1)));
+				int _amount = (int) 5;
 				if (_ent != null)
 					_ent.getCapability(CapabilityEnergy.ENERGY, ((new Object() {
 						public Direction getDirection(BlockPos pos) {
@@ -170,10 +141,10 @@ public class QuantumReactorBlockUpdateTickProcedure extends BeingmodModElements.
 					return Direction.NORTH;
 				}
 			}
-		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.EAST)) {
+		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.NORTH)) {
 			{
-				TileEntity _ent = world.getTileEntity(new BlockPos((int) (x + 1), (int) (y - 0), (int) (z + 0)));
-				int _amount = (int) 500;
+				TileEntity _ent = world.getTileEntity(new BlockPos((int) (x + 0), (int) (y - 0), (int) (z + 1)));
+				int _amount = (int) 5;
 				if (_ent != null)
 					_ent.getCapability(CapabilityEnergy.ENERGY, ((new Object() {
 						public Direction getDirection(BlockPos pos) {
@@ -201,8 +172,37 @@ public class QuantumReactorBlockUpdateTickProcedure extends BeingmodModElements.
 			}
 		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.WEST)) {
 			{
+				TileEntity _ent = world.getTileEntity(new BlockPos((int) (x + 1), (int) (y - 0), (int) (z + 0)));
+				int _amount = (int) 5;
+				if (_ent != null)
+					_ent.getCapability(CapabilityEnergy.ENERGY, ((new Object() {
+						public Direction getDirection(BlockPos pos) {
+							try {
+								BlockState _bs = world.getBlockState(pos);
+								DirectionProperty property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
+								return _bs.get(property);
+							} catch (Exception e) {
+								return Direction.NORTH;
+							}
+						}
+					}.getDirection(new BlockPos((int) x, (int) y, (int) z))).getOpposite()))
+							.ifPresent(capability -> capability.receiveEnergy(_amount, false));
+			}
+		}
+		if (((new Object() {
+			public Direction getDirection(BlockPos pos) {
+				try {
+					BlockState _bs = world.getBlockState(pos);
+					DirectionProperty property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
+					return _bs.get(property);
+				} catch (Exception e) {
+					return Direction.NORTH;
+				}
+			}
+		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.EAST)) {
+			{
 				TileEntity _ent = world.getTileEntity(new BlockPos((int) (x - 1), (int) (y - 0), (int) (z + 0)));
-				int _amount = (int) 500;
+				int _amount = (int) 5;
 				if (_ent != null)
 					_ent.getCapability(CapabilityEnergy.ENERGY, ((new Object() {
 						public Direction getDirection(BlockPos pos) {

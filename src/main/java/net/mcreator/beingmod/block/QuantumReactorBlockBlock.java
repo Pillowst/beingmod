@@ -7,6 +7,7 @@ import net.minecraftforge.common.ToolType;
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
+import net.minecraft.world.IWorldReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.Mirror;
@@ -54,6 +55,11 @@ public class QuantumReactorBlockBlock extends BeingmodModElements.ModElement {
 					.harvestTool(ToolType.PICKAXE));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("quantum_reactor_block");
+		}
+
+		@Override
+		public int tickRate(IWorldReader world) {
+			return 1;
 		}
 
 		@Override

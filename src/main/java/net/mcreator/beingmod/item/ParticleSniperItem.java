@@ -54,7 +54,7 @@ public class ParticleSniperItem extends BeingmodModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(QuantumbatteryItem.block, (int) (1)));
 			}
-		}, 1, -2f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 1, -2f, new Item.Properties().group(ItemGroup.COMBAT)) {
 			@Override
 			public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 				ActionResult<ItemStack> retval = super.onItemRightClick(world, entity, hand);

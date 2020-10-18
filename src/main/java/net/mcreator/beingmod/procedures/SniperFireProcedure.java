@@ -11,6 +11,7 @@ import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.beingmod.item.LapisboltItem;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
@@ -87,106 +88,67 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 		Z2 = (double) (entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 				entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 				RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ());
-		DIST = (double) Math.sqrt((Math.pow(((X1) - (X2)), 2) * (Math.pow(((Y1) - (Y2)), 2) * Math.pow(((Z1) - (Z2)), 2))));
-		AMOUNT = (double) Math.round(((DIST) * 100));
-		P = (double) (((entity.rotationPitch) * 0.01745329252) * (-1));
-		O = (double) (((entity.rotationYaw) * 0.01745329252) * (-1));
-		AMOUNTPART = (double) ((DIST) / (AMOUNT));
-		AMOUNTLOG = (double) (AMOUNTPART);
-		for (int index0 = 0; index0 < (int) ((AMOUNT)); index0++) {
-			X3 = (double) ((AMOUNTLOG) * Math.sin((O)));
-			Z3 = (double) ((AMOUNTLOG) * Math.cos((O)));
-			if (((P) >= 0)) {
-				Y3 = (double) ((AMOUNTLOG) * Math.sin((P)));
-			} else {
-				Y3 = (double) ((AMOUNTLOG) * (Math.sin(((Math.PI * 2) - (P))) * (-1)));
+		if (((entity instanceof PlayerEntity)
+				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(LapisboltItem.block, (int) (1)))
+				: false)) {
+			DIST = (double) Math.sqrt((Math.pow(((X1) - (X2)), 2) * (Math.pow(((Y1) - (Y2)), 2) * Math.pow(((Z1) - (Z2)), 2))));
+			AMOUNT = (double) Math.round(((DIST) * 100));
+			P = (double) (((entity.rotationPitch) * 0.01745329252) * (-1));
+			O = (double) (((entity.rotationYaw) * 0.01745329252) * (-1));
+			AMOUNTPART = (double) ((DIST) / (AMOUNT));
+			AMOUNTLOG = (double) (AMOUNTPART);
+			for (int index0 = 0; index0 < (int) ((AMOUNT)); index0++) {
+				X3 = (double) ((AMOUNTLOG) * Math.sin((O)));
+				Z3 = (double) ((AMOUNTLOG) * Math.cos((O)));
+				if (((P) >= 0)) {
+					Y3 = (double) ((AMOUNTLOG) * Math.sin((P)));
+				} else {
+					Y3 = (double) ((AMOUNTLOG) * (Math.sin(((Math.PI * 2) - (P))) * (-1)));
+				}
+				world.addParticle(ParticleTypes.BUBBLE, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);
+				AMOUNTLOG = (double) ((AMOUNTLOG) + (AMOUNTPART));
 			}
-			world.addParticle(ParticleTypes.BUBBLE, ((X3) + (X1)), ((Y3) + (Y1)), ((Z3) + (Z1)), 0, 0, 0);
-			AMOUNTLOG = (double) ((AMOUNTLOG) + (AMOUNTPART));
-		}
-		if (((world
-				.getEntitiesWithinAABB(MonsterEntity.class,
-						new AxisAlignedBB(
-								(entity.world.rayTraceBlocks(
-										new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
-														entity.getLook(1f).z * 30),
-												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getX()) - (5 / 2d),
-								(entity.world
-										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
-														entity.getLook(1f).z * 30),
-												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getY())
-										- (5 / 2d),
-								(entity.world
-										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
-														entity.getLook(1f).z * 30),
-												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getZ()) - (5 / 2d),
-								(entity.world
-										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f)
-														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getX()) + (5 / 2d),
-								(entity.world
-										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f)
-														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getY()) + (5 / 2d),
-								(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-										entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
-												entity.getLook(1f).z * 30),
-										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
-						null)
-				.stream().sorted(
-						Comparator
-								.comparing(
-										_entcnd -> _entcnd
-												.getDistanceSq(
-														(entity.world.rayTraceBlocks(new RayTraceContext(
-																entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
-																		entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-																RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
-																.getX()),
-														(entity.world
-																.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-																		entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
-																				entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-																		RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-																.getPos().getY()),
-														(entity.world
-																.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-																		entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
-																				entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-																		RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-																.getPos().getZ()))))
-				.findFirst().orElse(null)) != null)) {
-			(world.getEntitiesWithinAABB(MonsterEntity.class,
-					new AxisAlignedBB(
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
-					null).stream().sorted(
+			if (((world
+					.getEntitiesWithinAABB(MonsterEntity.class,
+							new AxisAlignedBB(
+									(entity.world.rayTraceBlocks(
+											new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+															entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getX()) - (5 / 2d),
+									(entity.world
+											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f)
+															.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getY())
+											- (5 / 2d),
+									(entity.world
+											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f)
+															.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getZ())
+											- (5 / 2d),
+									(entity.world
+											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f)
+															.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getX()) + (5 / 2d),
+									(entity.world
+											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f)
+															.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getY()) + (5 / 2d),
+									(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+											entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+													entity.getLook(1f).z * 30),
+											RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
+							null)
+					.stream().sorted(
 							Comparator
 									.comparing(
 											_entcnd -> _entcnd.getDistanceSq(
@@ -206,9 +168,8 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 																			entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
 															.getPos().getZ()))))
-					.findFirst().orElse(null)).attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 10);
-		} else if (((world
-				.getEntitiesWithinAABB(PlayerEntity.class,
+					.findFirst().orElse(null)) != null)) {
+				(world.getEntitiesWithinAABB(MonsterEntity.class,
 						new AxisAlignedBB(
 								(entity.world.rayTraceBlocks(
 										new RayTraceContext(entity.getEyePosition(1f),
@@ -218,15 +179,14 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 										.getPos().getX()) - (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
-														entity.getLook(1f).z * 30),
+												entity.getEyePosition(1f)
+														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getY())
-										- (5 / 2d),
+										.getPos().getY()) - (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
-														entity.getLook(1f).z * 30),
+												entity.getEyePosition(1f)
+														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
 										.getPos().getZ()) - (5 / 2d),
 								(entity.world
@@ -235,25 +195,21 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
 										.getPos().getX()) + (5 / 2d),
-								(entity.world
-										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f)
-														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getY()) + (5 / 2d),
+								(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+										entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+												entity.getLook(1f).z * 30),
+										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (5 / 2d),
 								(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 										entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 												entity.getLook(1f).z * 30),
 										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
-						null)
-				.stream().sorted(
-						Comparator
-								.comparing(
-										_entcnd -> _entcnd
-												.getDistanceSq(
-														(entity.world.rayTraceBlocks(new RayTraceContext(
-																entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
-																		entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+						null).stream().sorted(
+								Comparator
+										.comparing(
+												_entcnd -> _entcnd.getDistanceSq(
+														(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																		entity.getLook(1f).z * 30),
 																RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
 																.getX()),
 														(entity.world
@@ -268,28 +224,48 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 																				entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 																		RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
 																.getPos().getZ()))))
-				.findFirst().orElse(null)) != null)) {
-			(world.getEntitiesWithinAABB(PlayerEntity.class,
-					new AxisAlignedBB(
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
-					null).stream().sorted(
+						.findFirst().orElse(null)).attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 10);
+			} else if (((world
+					.getEntitiesWithinAABB(PlayerEntity.class,
+							new AxisAlignedBB(
+									(entity.world.rayTraceBlocks(
+											new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+															entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getX()) - (5 / 2d),
+									(entity.world
+											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f)
+															.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getY())
+											- (5 / 2d),
+									(entity.world
+											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f)
+															.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getZ())
+											- (5 / 2d),
+									(entity.world
+											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f)
+															.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getX()) + (5 / 2d),
+									(entity.world
+											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f)
+															.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getY()) + (5 / 2d),
+									(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+											entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+													entity.getLook(1f).z * 30),
+											RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
+							null)
+					.stream().sorted(
 							Comparator
 									.comparing(
 											_entcnd -> _entcnd.getDistanceSq(
@@ -309,9 +285,8 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 																			entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
 															.getPos().getZ()))))
-					.findFirst().orElse(null)).attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 10);
-		} else if (((world
-				.getEntitiesWithinAABB(AnimalEntity.class,
+					.findFirst().orElse(null)) != null)) {
+				(world.getEntitiesWithinAABB(PlayerEntity.class,
 						new AxisAlignedBB(
 								(entity.world.rayTraceBlocks(
 										new RayTraceContext(entity.getEyePosition(1f),
@@ -321,15 +296,14 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 										.getPos().getX()) - (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
-														entity.getLook(1f).z * 30),
+												entity.getEyePosition(1f)
+														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getY())
-										- (5 / 2d),
+										.getPos().getY()) - (5 / 2d),
 								(entity.world
 										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
-														entity.getLook(1f).z * 30),
+												entity.getEyePosition(1f)
+														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
 										.getPos().getZ()) - (5 / 2d),
 								(entity.world
@@ -338,25 +312,21 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
 										.getPos().getX()) + (5 / 2d),
-								(entity.world
-										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-												entity.getEyePosition(1f)
-														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-										.getPos().getY()) + (5 / 2d),
+								(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+										entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+												entity.getLook(1f).z * 30),
+										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (5 / 2d),
 								(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 										entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
 												entity.getLook(1f).z * 30),
 										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
-						null)
-				.stream().sorted(
-						Comparator
-								.comparing(
-										_entcnd -> _entcnd
-												.getDistanceSq(
-														(entity.world.rayTraceBlocks(new RayTraceContext(
-																entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
-																		entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+						null).stream().sorted(
+								Comparator
+										.comparing(
+												_entcnd -> _entcnd.getDistanceSq(
+														(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																		entity.getLook(1f).z * 30),
 																RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
 																.getX()),
 														(entity.world
@@ -371,28 +341,48 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 																				entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 																		RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
 																.getPos().getZ()))))
-				.findFirst().orElse(null)) != null)) {
-			(world.getEntitiesWithinAABB(AnimalEntity.class,
-					new AxisAlignedBB(
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) - (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) - (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) - (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()) + (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (5 / 2d),
-							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-									entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
-					null).stream().sorted(
+						.findFirst().orElse(null)).attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 10);
+			} else if (((world
+					.getEntitiesWithinAABB(AnimalEntity.class,
+							new AxisAlignedBB(
+									(entity.world.rayTraceBlocks(
+											new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+															entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getX()) - (5 / 2d),
+									(entity.world
+											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f)
+															.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getY())
+											- (5 / 2d),
+									(entity.world
+											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f)
+															.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getZ())
+											- (5 / 2d),
+									(entity.world
+											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f)
+															.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getX()) + (5 / 2d),
+									(entity.world
+											.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+													entity.getEyePosition(1f)
+															.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+													RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+											.getPos().getY()) + (5 / 2d),
+									(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+											entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+													entity.getLook(1f).z * 30),
+											RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
+							null)
+					.stream().sorted(
 							Comparator
 									.comparing(
 											_entcnd -> _entcnd.getDistanceSq(
@@ -401,21 +391,80 @@ public class SniperFireProcedure extends BeingmodModElements.ModElement {
 																	entity.getLook(1f).z * 30),
 															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
 															.getX()),
-													(entity.world
-															.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-																	entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
-																			entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
-																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
-															.getPos().getY()),
+													(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+															entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																	entity.getLook(1f).z * 30),
+															RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+															.getY()),
 													(entity.world
 															.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
 																	entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
 																			entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
 																	RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
 															.getPos().getZ()))))
-					.findFirst().orElse(null)).attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 10);
+					.findFirst().orElse(null)) != null)) {
+				(world.getEntitiesWithinAABB(AnimalEntity.class,
+						new AxisAlignedBB(
+								(entity.world.rayTraceBlocks(
+										new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+														entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getX()) - (5 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f)
+														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getY()) - (5 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f)
+														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getZ()) - (5 / 2d),
+								(entity.world
+										.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f)
+														.add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+										.getPos().getX()) + (5 / 2d),
+								(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+										entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+												entity.getLook(1f).z * 30),
+										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getY()) + (5 / 2d),
+								(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+										entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+												entity.getLook(1f).z * 30),
+										RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()) + (5 / 2d)),
+						null).stream().sorted(
+								Comparator
+										.comparing(
+												_entcnd -> _entcnd.getDistanceSq(
+														(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																entity.getEyePosition(1f).add(entity.getLook(1f).x * 30, entity.getLook(1f).y * 30,
+																		entity.getLook(1f).z * 30),
+																RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos()
+																.getX()),
+														(entity.world
+																.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																		entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																				entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																		RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+																.getPos().getY()),
+														(entity.world
+																.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+																		entity.getEyePosition(1f).add(entity.getLook(1f).x * 30,
+																				entity.getLook(1f).y * 30, entity.getLook(1f).z * 30),
+																		RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+																.getPos().getZ()))))
+						.findFirst().orElse(null)).attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 10);
+			}
+			if (entity instanceof PlayerEntity)
+				((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 180);
+			if (entity instanceof PlayerEntity)
+				((PlayerEntity) entity).inventory.clearMatchingItems(p -> new ItemStack(LapisboltItem.block, (int) (1)).getItem() == p.getItem(),
+						(int) 1);
 		}
-		if (entity instanceof PlayerEntity)
-			((PlayerEntity) entity).getCooldownTracker().setCooldown(((itemstack)).getItem(), (int) 180);
 	}
 }

@@ -10,7 +10,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
+        "value": "CUSTOM:N48chunk"
+      },
+      {
         "value": "CUSTOM:OrcaniteShard"
+      },
+      {
+        "value": "CUSTOM:N48chunk"
       },
       {
         "value": "CUSTOM:OrcaniteShard"
@@ -22,19 +28,13 @@
         "value": "CUSTOM:OrcaniteShard"
       },
       {
-        "value": "CUSTOM:OrcaniteShard"
+        "value": "CUSTOM:N48chunk"
       },
       {
         "value": "CUSTOM:OrcaniteShard"
       },
       {
-        "value": "CUSTOM:OrcaniteShard"
-      },
-      {
-        "value": "CUSTOM:OrcaniteShard"
-      },
-      {
-        "value": "CUSTOM:OrcaniteShard"
+        "value": "CUSTOM:N48chunk"
       }
     ],
     "recipeReturnStack": {

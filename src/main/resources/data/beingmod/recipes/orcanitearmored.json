@@ -8,13 +8,13 @@
   ],
   "key": {
     "0": {
-      "item": "beingmod:orcanite_shard"
+      "item": "beingmod:n_48chunk"
     },
     "1": {
       "item": "beingmod:orcanite_shard"
     },
     "2": {
-      "item": "beingmod:orcanite_shard"
+      "item": "beingmod:n_48chunk"
     },
     "3": {
       "item": "beingmod:orcanite_shard"
@@ -26,13 +26,13 @@
       "item": "beingmod:orcanite_shard"
     },
     "6": {
-      "item": "beingmod:orcanite_shard"
+      "item": "beingmod:n_48chunk"
     },
     "7": {
       "item": "beingmod:orcanite_shard"
     },
     "8": {
-      "item": "beingmod:orcanite_shard"
+      "item": "beingmod:n_48chunk"
     }
   },
   "result": {

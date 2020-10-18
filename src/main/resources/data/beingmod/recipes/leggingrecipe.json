@@ -1,0 +1,36 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:n_48chunk"
+    },
+    "1": {
+      "item": "beingmod:n_48chunk"
+    },
+    "2": {
+      "item": "beingmod:n_48chunk"
+    },
+    "3": {
+      "item": "beingmod:n_48chunk"
+    },
+    "5": {
+      "item": "beingmod:n_48chunk"
+    },
+    "6": {
+      "item": "beingmod:n_48chunk"
+    },
+    "8": {
+      "item": "beingmod:n_48chunk"
+    }
+  },
+  "result": {
+    "item": "beingmod:shock_armor_leggings",
+    "count": 1
+  }
+}

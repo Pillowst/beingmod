@@ -1,0 +1,42 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "beingmod:kjaldar_crystal_item"
+    },
+    "2": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "beingmod:n_48chunk"
+    },
+    "4": {
+      "item": "minecraft:green_dye"
+    },
+    "5": {
+      "item": "beingmod:n_48chunk"
+    },
+    "6": {
+      "item": "beingmod:n_48chunk"
+    },
+    "7": {
+      "item": "beingmod:force_field_gen_item"
+    },
+    "8": {
+      "item": "beingmod:n_48chunk"
+    }
+  },
+  "result": {
+    "item": "beingmod:shock_armor_chestplate",
+    "count": 1
+  }
+}

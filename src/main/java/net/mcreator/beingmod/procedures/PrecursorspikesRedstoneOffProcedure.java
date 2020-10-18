@@ -1,7 +1,11 @@
 package net.mcreator.beingmod.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.beingmod.block.PrecursorspikestopBlock;
@@ -43,6 +47,15 @@ public class PrecursorspikesRedstoneOffProcedure extends BeingmodModElements.Mod
 		if (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == PrecursorspikestopBlock.block.getDefaultState()
 				.getBlock())) {
 			world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), Blocks.AIR.getDefaultState(), 3);
+			if (!world.getWorld().isRemote) {
+				world.playSound(null, new BlockPos((int) x, (int) y, (int) z),
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("beingmod:spiketrapoff")),
+						SoundCategory.NEUTRAL, (float) 0.8, (float) 1);
+			} else {
+				world.getWorld().playSound(x, y, z,
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("beingmod:spiketrapoff")),
+						SoundCategory.NEUTRAL, (float) 0.8, (float) 1, false);
+			}
 		}
 	}
 }

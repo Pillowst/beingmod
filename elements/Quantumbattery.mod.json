@@ -8,7 +8,7 @@
     "name": "Quantum Power Cell",
     "rarity": "EPIC",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "stackSize": 16,
     "enchantability": 0,

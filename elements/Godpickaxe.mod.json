@@ -8,7 +8,7 @@
     "name": "Being Infused Pickaxe",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 5,

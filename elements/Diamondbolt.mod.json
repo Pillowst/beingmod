@@ -6,9 +6,9 @@
     "texture": "diamond_bolt",
     "customModelName": "Normal",
     "name": "Diamond Bolt",
-    "rarity": "COMMON",
+    "rarity": "RARE",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "stackSize": 64,
     "enchantability": 0,

@@ -11,10 +11,10 @@
     "growapableSpawnType": "Cave",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
-    "name": "Being Crystal",
+    "name": "kjaldar Crystal",
     "specialInfo": [],
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "hardness": 3.0,
     "resistance": 3.0,
@@ -50,6 +50,9 @@
     },
     "onNeighbourBlockChanges": {
       "name": "KjaldarcrystalNeighbourBlockChanges"
+    },
+    "onStartToDestroy": {
+      "name": "KjaldarcrystalStartToDestroy"
     }
   }
 }

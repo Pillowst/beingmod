@@ -11,6 +11,7 @@ import net.minecraft.util.Direction;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
@@ -18,6 +19,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.beingmod.procedures.PrecursorspikesRedstoneOnProcedure;
 import net.mcreator.beingmod.procedures.PrecursorspikesRedstoneOffProcedure;
+import net.mcreator.beingmod.procedures.PrecursorbricksPlayerStartsToDestroyProcedure;
 import net.mcreator.beingmod.itemgroup.AnomalousmaterialsItemGroup;
 import net.mcreator.beingmod.BeingmodModElements;
 
@@ -83,6 +85,23 @@ public class PrecursorspikesBlock extends BeingmodModElements.ModElement {
 					$_dependencies.put("world", world);
 					PrecursorspikesRedstoneOffProcedure.executeProcedure($_dependencies);
 				}
+			}
+		}
+
+		@Override
+		public void onBlockClicked(BlockState state, World world, BlockPos pos, PlayerEntity entity) {
+			super.onBlockClicked(state, world, pos, entity);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				PrecursorbricksPlayerStartsToDestroyProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

@@ -11,10 +11,10 @@
     "growapableSpawnType": "Cave",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
-    "name": "Warmedfollicles",
+    "name": "Warmed follicles",
     "specialInfo": [],
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "hardness": 0.0,
     "resistance": 0.0,

@@ -1,5 +1,5 @@
 {
-  "parent": "beingmod:block/infusingtable",
+  "parent": "beingmod:block/precursorspikesbotanalog",
   "display": {
     "thirdperson": {
       "rotation": [

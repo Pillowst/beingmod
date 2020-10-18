@@ -22,14 +22,14 @@
     "Mx": 1.0,
     "My": 2.0,
     "Mz": 1.0,
-    "name": "Beingsuppressor",
+    "name": "Being suppressor",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "destroyTool": "pickaxe",
     "customDrop": {

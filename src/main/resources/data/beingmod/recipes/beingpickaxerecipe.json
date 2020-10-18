@@ -1,23 +1,28 @@
 {
   "group": "beingmod",
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
       "item": "beingmod:block_orcanite"
     },
-    {
+    "1": {
       "item": "beingmod:nerium"
     },
-    {
+    "2": {
       "item": "beingmod:block_orcanite"
     },
-    {
+    "4": {
       "item": "minecraft:diamond_pickaxe"
     },
-    {
+    "7": {
       "item": "beingmod:kjaldar_crystal_item"
     }
-  ],
+  },
   "result": {
     "item": "beingmod:godpickaxe",
     "count": 1

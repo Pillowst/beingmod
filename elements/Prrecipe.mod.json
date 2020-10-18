@@ -10,22 +10,22 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Items.DIAMOND"
-      },
-      {
-        "value": "Items.FLINT_AND_STEEL"
+        "value": "CUSTOM:KjaldarCrystalITEM"
       },
       {
         "value": ""
       },
       {
-        "value": "Items.IRON_NUGGET"
+        "value": ""
+      },
+      {
+        "value": ""
       },
       {
         "value": "CUSTOM:RailGun"
       },
       {
-        "value": ""
+        "value": "Blocks.GLASS_PANE"
       },
       {
         "value": ""
@@ -34,7 +34,7 @@
         "value": "CUSTOM:Indelicatetooth"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:N48chunk"
       }
     ],
     "recipeReturnStack": {

@@ -2238,6 +2238,41 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "anomalousmaterials"
+    },
+    {
+      "name": "Precursorspikes",
+      "type": "block",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorspikes"
+    },
+    {
+      "name": "PrecursorspikestopEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorspikestop_entity_collides_in_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Precursorspikestop",
+      "type": "block",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorspikestop"
     }
   ],
   "variable_elements": [],
@@ -2291,6 +2326,7 @@
       "item.beingmod.noxiouspotion": "Noxious potion",
       "item.beingmod.n_48pickaxe": "Crystalized N48 Drill",
       "block.beingmod.beingemerald": "Being emerald ore",
+      "block.beingmod.precursorspikes": "Precursorspikes",
       "block.beingmod.beingiron": "Being iron ore",
       "block.beingmod.deceasedbeing_grass": "dessicated noxious bloom",
       "block.beingmod.beingrootstop": "Being Stalactite",
@@ -2302,6 +2338,7 @@
       "block.beingmod.orcaniumblock": "Block of Orcanium",
       "block.beingmod.frameblock": "Frameblock",
       "item.beingmod.shard": "Being Shards",
+      "block.beingmod.precursorspikestop": "Precursorspikestop",
       "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
       "block.beingmod.precursorbrickstairs": "Precursor bricks stair",
       "advancements.getn_48chunk.title": "discover alloy N-48",

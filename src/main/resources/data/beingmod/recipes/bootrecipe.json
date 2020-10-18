@@ -1,0 +1,26 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:n_48chunk"
+    },
+    "2": {
+      "item": "beingmod:n_48chunk"
+    },
+    "3": {
+      "item": "minecraft:black_dye"
+    },
+    "5": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "item": "beingmod:shock_armor_boots",
+    "count": 1
+  }
+}

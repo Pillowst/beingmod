@@ -2240,6 +2240,15 @@
       "registry_name": "anomalousmaterials"
     },
     {
+      "name": "Precursorspikestop",
+      "type": "block",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorspikestop"
+    },
+    {
       "name": "Precursorspikes",
       "type": "block",
       "sortid": 160,
@@ -2266,13 +2275,55 @@
       }
     },
     {
-      "name": "Precursorspikestop",
-      "type": "block",
+      "name": "Leggingrecipe",
+      "type": "recipe",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leggingrecipe"
+    },
+    {
+      "name": "Helmetrecipe",
+      "type": "recipe",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "helmetrecipe"
+    },
+    {
+      "name": "ShockArmor",
+      "type": "armor",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shock_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Bootrecipe",
+      "type": "recipe",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bootrecipe"
+    },
+    {
+      "name": "Chestrecipe",
+      "type": "recipe",
       "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "precursorspikestop"
+      "registry_name": "chestrecipe"
     }
   ],
   "variable_elements": [],
@@ -2284,6 +2335,14 @@
       ],
       "category": "ambient",
       "subtitle": "Ambience"
+    },
+    {
+      "name": "equip",
+      "files": [
+        "equip"
+      ],
+      "category": "master",
+      "subtitle": "Equipping Armor"
     }
   ],
   "language_map": {
@@ -2326,7 +2385,6 @@
       "item.beingmod.noxiouspotion": "Noxious potion",
       "item.beingmod.n_48pickaxe": "Crystalized N48 Drill",
       "block.beingmod.beingemerald": "Being emerald ore",
-      "block.beingmod.precursorspikes": "Precursorspikes",
       "block.beingmod.beingiron": "Being iron ore",
       "block.beingmod.deceasedbeing_grass": "dessicated noxious bloom",
       "block.beingmod.beingrootstop": "Being Stalactite",
@@ -2339,6 +2397,7 @@
       "block.beingmod.frameblock": "Frameblock",
       "item.beingmod.shard": "Being Shards",
       "block.beingmod.precursorspikestop": "Precursorspikestop",
+      "item.beingmod.item_being": "Being",
       "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
       "block.beingmod.precursorbrickstairs": "Precursor bricks stair",
       "advancements.getn_48chunk.title": "discover alloy N-48",
@@ -2347,6 +2406,7 @@
       "block.beingmod.quantum_reactor_block": "Quantum Reactor Block",
       "advancements.getgod.descr": "Get an orcanium pickaxe, now you can explore the precursor ruins like a true pioneer!",
       "item.beingmod.rail_gun": "Rail Gun",
+      "subtitles.equip": "Equipping Armor",
       "block.beingmod.beinggold": "Being gold ore",
       "item.beingmod.kjaldar_crystal_item": "Kjaldar Crystal Shard",
       "advancements.getn_48chunk.descr": "Well done!, what took scientists decades to produce and discover, you did in days, now this supermaterial is yours to use",

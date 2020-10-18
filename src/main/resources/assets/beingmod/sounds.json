@@ -8,5 +8,15 @@
         "stream": false
       }
     ]
+  },
+  "equip": {
+    "category": "master",
+    "subtitle": "subtitles.equip",
+    "sounds": [
+      {
+        "name": "beingmod:equip",
+        "stream": false
+      }
+    ]
   }
 }

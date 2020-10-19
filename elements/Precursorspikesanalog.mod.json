@@ -50,7 +50,7 @@
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:Precursorspikesbotanalog"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

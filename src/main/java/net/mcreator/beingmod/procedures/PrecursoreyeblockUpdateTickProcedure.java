@@ -8,6 +8,7 @@ import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.Direction;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.state.IProperty;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.entity.player.PlayerEntity;
@@ -54,7 +55,14 @@ public class PrecursoreyeblockUpdateTickProcedure extends BeingmodModElements.Mo
 		IWorld world = (IWorld) dependencies.get("world");
 		double L = 0;
 		double ML = 0;
-		L = (double) 1;
+		if (!world.getWorld().isRemote) {
+			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+			TileEntity _tileEntity = world.getTileEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_tileEntity != null)
+				_tileEntity.getTileData().putDouble("L", 1);
+			world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
+		}
 		if (((new Object() {
 			public Direction getDirection(BlockPos pos) {
 				try {
@@ -66,14 +74,45 @@ public class PrecursoreyeblockUpdateTickProcedure extends BeingmodModElements.Mo
 				}
 			}
 		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.NORTH)) {
-			while ((((L) > 20) || (!(world.getBlockState(new BlockPos((int) (x - 0), (int) y, (int) (z - (L)))).isSolid())))) {
-				if (((world
-						.getEntitiesWithinAABB(PlayerEntity.class,
-								new AxisAlignedBB((x - 0) - (1 / 2d), y - (1 / 2d), (z - (L)) - (1 / 2d), (x - 0) + (1 / 2d), y + (1 / 2d),
-										(z - (L)) + (1 / 2d)),
-								null)
-						.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq((x - 0), y, (z - (L))))).findFirst()
-						.orElse(null)) != null)) {
+			while ((((new Object() {
+				public double getValue(BlockPos pos, String tag) {
+					TileEntity tileEntity = world.getTileEntity(pos);
+					if (tileEntity != null)
+						return tileEntity.getTileData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "L")) > 20)
+					|| (!(world.getBlockState(new BlockPos((int) (x - 0), (int) y, (int) (z - (new Object() {
+						public double getValue(BlockPos pos, String tag) {
+							TileEntity tileEntity = world.getTileEntity(pos);
+							if (tileEntity != null)
+								return tileEntity.getTileData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))))).isSolid())))) {
+				if (((world.getEntitiesWithinAABB(PlayerEntity.class, new AxisAlignedBB((x - 0) - (1 / 2d), y - (1 / 2d), (z - (new Object() {
+					public double getValue(BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))) - (1 / 2d), (x - 0) + (1 / 2d), y + (1 / 2d), (z - (new Object() {
+					public double getValue(BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))) + (1 / 2d)), null).stream()
+						.sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq((x - 0), y, (z - (new Object() {
+							public double getValue(BlockPos pos, String tag) {
+								TileEntity tileEntity = world.getTileEntity(pos);
+								if (tileEntity != null)
+									return tileEntity.getTileData().getDouble(tag);
+								return -1;
+							}
+						}.getValue(new BlockPos((int) x, (int) y, (int) z), "L")))))).findFirst().orElse(null)) != null)) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 						BlockState _bs = PrecursoreyeblockdullBlock.block.getDefaultState();
@@ -86,17 +125,22 @@ public class PrecursoreyeblockUpdateTickProcedure extends BeingmodModElements.Mo
 						world.setBlockState(_bp, _bs, 3);
 					}
 					ML = (double) 1;
-					for (int index1 = 0; index1 < (int) ((L)); index1++) {
-						if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-							world.getWorld().getServer().getCommandManager().handleCommand(
-									new CommandSource(ICommandSource.DUMMY, new Vec3d((x - 0), y, (z - (ML))), Vec2f.ZERO, (ServerWorld) world, 4, "",
-											new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-									"/particle minecraft:dust 1 0.7 0 1 ~ ~ ~");
-						}
-						ML = (double) (1 + (ML));
-					}
 				} else {
-					L = (double) (1 + (L));
+					if (!world.getWorld().isRemote) {
+						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+						TileEntity _tileEntity = world.getTileEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_tileEntity != null)
+							_tileEntity.getTileData().putDouble("L", (1 + (new Object() {
+								public double getValue(BlockPos pos, String tag) {
+									TileEntity tileEntity = world.getTileEntity(pos);
+									if (tileEntity != null)
+										return tileEntity.getTileData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))));
+						world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
+					}
 				}
 			}
 		}
@@ -111,14 +155,45 @@ public class PrecursoreyeblockUpdateTickProcedure extends BeingmodModElements.Mo
 				}
 			}
 		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.SOUTH)) {
-			while ((((L) > 20) || (!(world.getBlockState(new BlockPos((int) (x - 0), (int) y, (int) (z + (L)))).isSolid())))) {
-				if (((world
-						.getEntitiesWithinAABB(PlayerEntity.class,
-								new AxisAlignedBB((x - 0) - (1 / 2d), y - (1 / 2d), (z + (L)) - (1 / 2d), (x - 0) + (1 / 2d), y + (1 / 2d),
-										(z + (L)) + (1 / 2d)),
-								null)
-						.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq((x - 0), y, (z + (L))))).findFirst()
-						.orElse(null)) != null)) {
+			while ((((new Object() {
+				public double getValue(BlockPos pos, String tag) {
+					TileEntity tileEntity = world.getTileEntity(pos);
+					if (tileEntity != null)
+						return tileEntity.getTileData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "L")) > 20)
+					|| (!(world.getBlockState(new BlockPos((int) (x - 0), (int) y, (int) (z + (new Object() {
+						public double getValue(BlockPos pos, String tag) {
+							TileEntity tileEntity = world.getTileEntity(pos);
+							if (tileEntity != null)
+								return tileEntity.getTileData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))))).isSolid())))) {
+				if (((world.getEntitiesWithinAABB(PlayerEntity.class, new AxisAlignedBB((x - 0) - (1 / 2d), y - (1 / 2d), (z + (new Object() {
+					public double getValue(BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))) - (1 / 2d), (x - 0) + (1 / 2d), y + (1 / 2d), (z + (new Object() {
+					public double getValue(BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))) + (1 / 2d)), null).stream()
+						.sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq((x - 0), y, (z + (new Object() {
+							public double getValue(BlockPos pos, String tag) {
+								TileEntity tileEntity = world.getTileEntity(pos);
+								if (tileEntity != null)
+									return tileEntity.getTileData().getDouble(tag);
+								return -1;
+							}
+						}.getValue(new BlockPos((int) x, (int) y, (int) z), "L")))))).findFirst().orElse(null)) != null)) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 						BlockState _bs = PrecursoreyeblockdullBlock.block.getDefaultState();
@@ -131,7 +206,14 @@ public class PrecursoreyeblockUpdateTickProcedure extends BeingmodModElements.Mo
 						world.setBlockState(_bp, _bs, 3);
 					}
 					ML = (double) 1;
-					for (int index3 = 0; index3 < (int) ((L)); index3++) {
+					for (int index2 = 0; index2 < (int) ((new Object() {
+						public double getValue(BlockPos pos, String tag) {
+							TileEntity tileEntity = world.getTileEntity(pos);
+							if (tileEntity != null)
+								return tileEntity.getTileData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))); index2++) {
 						if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 							world.getWorld().getServer().getCommandManager().handleCommand(
 									new CommandSource(ICommandSource.DUMMY, new Vec3d((x - 0), y, (z + (ML))), Vec2f.ZERO, (ServerWorld) world, 4, "",
@@ -141,7 +223,21 @@ public class PrecursoreyeblockUpdateTickProcedure extends BeingmodModElements.Mo
 						ML = (double) (1 + (ML));
 					}
 				} else {
-					L = (double) (1 + (L));
+					if (!world.getWorld().isRemote) {
+						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+						TileEntity _tileEntity = world.getTileEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_tileEntity != null)
+							_tileEntity.getTileData().putDouble("L", (1 + (new Object() {
+								public double getValue(BlockPos pos, String tag) {
+									TileEntity tileEntity = world.getTileEntity(pos);
+									if (tileEntity != null)
+										return tileEntity.getTileData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))));
+						world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
+					}
 				}
 			}
 		}
@@ -176,7 +272,7 @@ public class PrecursoreyeblockUpdateTickProcedure extends BeingmodModElements.Mo
 						world.setBlockState(_bp, _bs, 3);
 					}
 					ML = (double) 1;
-					for (int index5 = 0; index5 < (int) ((L)); index5++) {
+					for (int index4 = 0; index4 < (int) ((L)); index4++) {
 						if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 							world.getWorld().getServer().getCommandManager().handleCommand(
 									new CommandSource(ICommandSource.DUMMY, new Vec3d((x - (ML)), y, (z + 0)), Vec2f.ZERO, (ServerWorld) world, 4, "",
@@ -186,7 +282,21 @@ public class PrecursoreyeblockUpdateTickProcedure extends BeingmodModElements.Mo
 						ML = (double) (1 + (ML));
 					}
 				} else {
-					L = (double) (1 + (L));
+					if (!world.getWorld().isRemote) {
+						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+						TileEntity _tileEntity = world.getTileEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_tileEntity != null)
+							_tileEntity.getTileData().putDouble("L", (1 + (new Object() {
+								public double getValue(BlockPos pos, String tag) {
+									TileEntity tileEntity = world.getTileEntity(pos);
+									if (tileEntity != null)
+										return tileEntity.getTileData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))));
+						world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
+					}
 				}
 			}
 		}
@@ -201,14 +311,44 @@ public class PrecursoreyeblockUpdateTickProcedure extends BeingmodModElements.Mo
 				}
 			}
 		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.EAST)) {
-			while ((((L) > 20) || (!(world.getBlockState(new BlockPos((int) (x + (L)), (int) y, (int) (z + 0))).isSolid())))) {
-				if (((world
-						.getEntitiesWithinAABB(PlayerEntity.class,
-								new AxisAlignedBB((x + (L)) - (1 / 2d), y - (1 / 2d), (z + 0) - (1 / 2d), (x + (L)) + (1 / 2d), y + (1 / 2d),
-										(z + 0) + (1 / 2d)),
-								null)
-						.stream().sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq((x + (L)), y, (z + 0)))).findFirst()
-						.orElse(null)) != null)) {
+			while ((((new Object() {
+				public double getValue(BlockPos pos, String tag) {
+					TileEntity tileEntity = world.getTileEntity(pos);
+					if (tileEntity != null)
+						return tileEntity.getTileData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "L")) > 20) || (!(world.getBlockState(new BlockPos((int) (x + (new Object() {
+				public double getValue(BlockPos pos, String tag) {
+					TileEntity tileEntity = world.getTileEntity(pos);
+					if (tileEntity != null)
+						return tileEntity.getTileData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))), (int) y, (int) (z + 0))).isSolid())))) {
+				if (((world.getEntitiesWithinAABB(PlayerEntity.class, new AxisAlignedBB((x + (new Object() {
+					public double getValue(BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))) - (1 / 2d), y - (1 / 2d), (z + 0) - (1 / 2d), (x + (new Object() {
+					public double getValue(BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))) + (1 / 2d), y + (1 / 2d), (z + 0) + (1 / 2d)), null).stream()
+						.sorted(Comparator.comparing(_entcnd -> _entcnd.getDistanceSq((x + (new Object() {
+							public double getValue(BlockPos pos, String tag) {
+								TileEntity tileEntity = world.getTileEntity(pos);
+								if (tileEntity != null)
+									return tileEntity.getTileData().getDouble(tag);
+								return -1;
+							}
+						}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))), y, (z + 0)))).findFirst().orElse(null)) != null)) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 						BlockState _bs = PrecursoreyeblockdullBlock.block.getDefaultState();
@@ -221,7 +361,14 @@ public class PrecursoreyeblockUpdateTickProcedure extends BeingmodModElements.Mo
 						world.setBlockState(_bp, _bs, 3);
 					}
 					ML = (double) 1;
-					for (int index7 = 0; index7 < (int) ((L)); index7++) {
+					for (int index6 = 0; index6 < (int) ((new Object() {
+						public double getValue(BlockPos pos, String tag) {
+							TileEntity tileEntity = world.getTileEntity(pos);
+							if (tileEntity != null)
+								return tileEntity.getTileData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))); index6++) {
 						if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 							world.getWorld().getServer().getCommandManager().handleCommand(
 									new CommandSource(ICommandSource.DUMMY, new Vec3d((x + (ML)), y, (z + 0)), Vec2f.ZERO, (ServerWorld) world, 4, "",
@@ -231,7 +378,21 @@ public class PrecursoreyeblockUpdateTickProcedure extends BeingmodModElements.Mo
 						ML = (double) (1 + (ML));
 					}
 				} else {
-					L = (double) (1 + (L));
+					if (!world.getWorld().isRemote) {
+						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+						TileEntity _tileEntity = world.getTileEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_tileEntity != null)
+							_tileEntity.getTileData().putDouble("L", (1 + (new Object() {
+								public double getValue(BlockPos pos, String tag) {
+									TileEntity tileEntity = world.getTileEntity(pos);
+									if (tileEntity != null)
+										return tileEntity.getTileData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(new BlockPos((int) x, (int) y, (int) z), "L"))));
+						world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
+					}
 				}
 			}
 		}

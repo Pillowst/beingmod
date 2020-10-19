@@ -44,7 +44,7 @@ public class PrecursorspikesRedstoneOnProcedure extends BeingmodModElements.ModE
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((!(world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z)).isSolid()))) {
-			if ((!((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PrecursorspikestopBlock.block.getDefaultState()
+			if ((!((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == PrecursorspikestopBlock.block.getDefaultState()
 					.getBlock()))) {
 				world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), PrecursorspikestopBlock.block.getDefaultState(), 3);
 				if (!world.getWorld().isRemote) {

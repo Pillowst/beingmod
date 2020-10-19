@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "itemTexture": "",
     "blockBase": "Slab",
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
@@ -91,9 +91,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onDestroyedByPlayer": {
-      "name": "PrecursorbrickstairsBlockDestroyedByPlayer"
-    },
     "onStartToDestroy": {
       "name": "PrecursorbricksPlayerStartsToDestroy"
     },

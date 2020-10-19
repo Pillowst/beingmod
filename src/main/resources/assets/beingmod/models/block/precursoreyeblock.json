@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "beingmod:blocks/precursorbricks",
+    "up": "beingmod:blocks/precursorbricks",
+    "north": "beingmod:blocks/precursoreyeorange",
+    "east": "beingmod:blocks/precursorbricks",
+    "south": "beingmod:blocks/precursorbricks",
+    "west": "beingmod:blocks/precursorbricks",
+    "particle": "beingmod:blocks/precursorbricks"
+  }
+}

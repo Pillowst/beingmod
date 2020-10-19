@@ -10,7 +10,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
-import net.minecraft.fluid.IFluidState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.StairsBlock;
@@ -18,7 +17,6 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.beingmod.procedures.PrecursorbrickstairsBlockDestroyedByPlayerProcedure;
 import net.mcreator.beingmod.procedures.PrecursorbricksPlayerStartsToDestroyProcedure;
 import net.mcreator.beingmod.itemgroup.AnomalousmaterialsItemGroup;
 import net.mcreator.beingmod.BeingmodModElements;
@@ -56,24 +54,6 @@ public class PrecursorbrickstairsBlock extends BeingmodModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
-		}
-
-		@Override
-		public boolean removedByPlayer(BlockState state, World world, BlockPos pos, PlayerEntity entity, boolean willHarvest, IFluidState fluid) {
-			boolean retval = super.removedByPlayer(state, world, pos, entity, willHarvest, fluid);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				PrecursorbrickstairsBlockDestroyedByPlayerProcedure.executeProcedure($_dependencies);
-			}
-			return retval;
 		}
 
 		@Override

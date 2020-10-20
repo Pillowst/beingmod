@@ -79,7 +79,7 @@ public class LoessBlock extends BeingmodModElements.ModElement {
 				if (blockAt.getBlock() == Blocks.DIRT.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 16)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 64))));
+			}), block.getDefaultState(), 32)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(20, 0, 0, 128))));
 		}
 	}
 }

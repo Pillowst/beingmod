@@ -2273,6 +2273,87 @@
           }
         ]
       }
+    },
+    {
+      "name": "Peraawdadaswpolishedr",
+      "type": "recipe",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "peraawdadaswpolishedr"
+    },
+    {
+      "name": "PolishedPeridotite",
+      "type": "block",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_peridotite"
+    },
+    {
+      "name": "PolishedSyenite",
+      "type": "block",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_syenite"
+    },
+    {
+      "name": "Gabropolishedr",
+      "type": "recipe",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gabropolishedr"
+    },
+    {
+      "name": "Peridotite",
+      "type": "block",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "peridotite"
+    },
+    {
+      "name": "Syenite",
+      "type": "block",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "syenite"
+    },
+    {
+      "name": "Gabbro",
+      "type": "block",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gabbro"
+    },
+    {
+      "name": "Sycpolishedr",
+      "type": "recipe",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sycpolishedr"
+    },
+    {
+      "name": "PolishedGabbro",
+      "type": "block",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_gabbro"
     }
   ],
   "variable_elements": [],
@@ -2315,6 +2396,7 @@
       "advancements.beingget.title": "Obtain Being",
       "item.beingmod.pricklysword": "Prickly sword",
       "subtitles.spiketrapoff": "spike trap deactivated",
+      "block.beingmod.manufactoryenergy": "Manufactory UI",
       "advancements.getnpick.title": "obtain an N-48 drill",
       "item.beingmod.diamondbolt": "Diamond Bolt",
       "subtitles.abandonedentry": "Ambience",
@@ -2322,8 +2404,10 @@
       "item.beingmod.plasmacutter": "Plasma Cutter",
       "item.beingmod.godpickaxe": "Being Infused Pickaxe",
       "advancements.precursordungeonin.descr": "Visit the graves of an unknown anchient civillisation, you know what to do.",
+      "block.beingmod.manufactory_ui": "Manufactory UI",
       "block.beingmod.kjaldarcrystal": "kjaldar Crystal",
       "block.beingmod.dead_crystal": "Dessicated Being Crystal",
+      "block.beingmod.manufactorygeneric": "Manufactory UI",
       "advancements.get_n_48.descr": "Get a chunk of mysterious metal, its useless right now, but perhaps it can be combined with something",
       "block.beingmod.precursoreyeblockdull": "Orange Precursor eye block",
       "block.beingmod.precursorwall": "Precursor brick wall",
@@ -2341,6 +2425,7 @@
       "block.beingmod.precursorspikestop": "Precursorspikestop",
       "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
       "block.beingmod.precursorspikesanalog": "Precursorspikestop",
+      "block.beingmod.manufactoryitemsin": "Manufactory UI",
       "item.beingmod.rail_gun": "Rail Gun",
       "advancements.getgod.descr": "Get an orcanium pickaxe, now you can explore the precursor ruins like a true pioneer!",
       "block.beingmod.darkgland": "dark gland ",
@@ -2383,6 +2468,7 @@
       "item.beingmod.webpotion": "Web potion",
       "advancements.getgod.title": "pioneer of the precursors",
       "item.beingmod.shock_armor_leggings": "Shock Trooper Armor Leggings",
+      "block.beingmod.frameblock": "Frameblock",
       "item.beingmod.shard": "Being Shards",
       "item.beingmod.item_being": "Being",
       "block.beingmod.precursorbrickstairs": "Precursor brick stairs",
@@ -2399,6 +2485,7 @@
       "block.beingmod.precursoreyeblock": "Orange Precursor eye block",
       "block.beingmod.n_48ore": "Unknown Ore",
       "block.beingmod.beingstalbot": "Being Stalactite End",
+      "block.beingmod.infusingtable": "Infusing table",
       "item.beingmod.unknownchunk": "Unknown chunk",
       "itemGroup.tabanomalousmaterials": "Anomalous materials",
       "item.beingmod.force_field_gen_item": "Forcefield Generator",

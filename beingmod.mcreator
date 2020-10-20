@@ -2289,6 +2289,60 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "anomalousmaterials"
+    },
+    {
+      "name": "Syenite",
+      "type": "block",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "syenite"
+    },
+    {
+      "name": "Peridotite",
+      "type": "block",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "peridotite"
+    },
+    {
+      "name": "Gabbro",
+      "type": "block",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gabbro"
+    },
+    {
+      "name": "PolishedSyenite",
+      "type": "block",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_syenite"
+    },
+    {
+      "name": "PolishedPeridotite",
+      "type": "block",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_peridotite"
+    },
+    {
+      "name": "PolishedGabbro",
+      "type": "block",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_gabbro"
     }
   ],
   "variable_elements": [],
@@ -2327,6 +2381,8 @@
       "block.beingmod.dead_crystal": "Dessicated Being Crystal",
       "block.beingmod.manufactorygeneric": "Manufactory UI",
       "advancements.get_n_48.descr": "Get a chunk of mysterious metal, its useless right now, but perhaps it can be combined with something",
+      "block.beingmod.gabbro": "Gabbro Block",
+      "block.beingmod.polished_gabbro": "Polished Gabbro Block",
       "block.beingmod.beingrootsbot": "Being Stalactite End",
       "block.beingmod.precursorwall": "Precursor wall",
       "item.beingmod.noxiouspotion": "Noxious potion",
@@ -2345,7 +2401,9 @@
       "block.beingmod.darkgland": "dark gland ",
       "block.beingmod.precursorrubble": "Precursor rubbled bricks",
       "item.beingmod.indelicatetooth": "Indelicate tooth",
+      "block.beingmod.syenite": "Syenite Block",
       "block.beingmod.block_orcanite": "Raw Orcanite Block",
+      "block.beingmod.polished_syenite": "Polished Syenite Block",
       "block.beingmod.beingsuppressor": "Beingsuppressor",
       "block.beingmod.dismalgland_1": "Dismal gland ",
       "item.beingmod.particle_rifle": "Incendiary Rifle",
@@ -2387,6 +2445,7 @@
       "item.beingmod.item_being": "Being",
       "block.beingmod.precursorbrickstairs": "Precursor bricks stair",
       "advancements.getn_48chunk.title": "discover alloy N-48",
+      "block.beingmod.polished_peridotite": "Polished Peridotite Block",
       "block.beingmod.quantum_reactor_block": "Quantum Reactor Block",
       "subtitles.equip": "Equipping Armor",
       "block.beingmod.beinggold": "Being gold ore",
@@ -2402,6 +2461,7 @@
       "item.beingmod.force_field_gen_item": "ForceField Generator Mark III",
       "block.beingmod.beingcoal": "Being coal ore",
       "item.beingmod.diamondfireraygun": "Diamondfire railgun",
+      "block.beingmod.peridotite": "Peridotite Block",
       "block.beingmod.precursordirt": "Precursor rubble",
       "block.beingmod.beingdiamond": "Being diamond ore",
       "item.beingmod.quantumbattery": "Quantum Power Cell",

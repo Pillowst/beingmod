@@ -40,9 +40,15 @@
     "aiPathNodeType": "STICKY_HONEY",
     "flammability": 0,
     "fireSpreadSpeed": 0,
-    "frequencyOnChunks": 5,
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
+    "frequencyOnChunks": 3,
+    "spawnWorldTypes": [
+      "CUSTOM:Otherside"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Beingplains"
+      }
+    ],
     "onEntityCollides": {
       "name": "PeriwinkecilliaMobplayerCollidesWithPlant"
     }

@@ -93,15 +93,17 @@
     "onTickUpdate": {
       "name": "BeingSpread"
     },
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "CUSTOM:Otherside"
+    ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "CUSTOM:BlockOrcanite"
       }
     ],
     "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
+    "frequencyOnChunk": 1,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64
   }

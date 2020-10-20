@@ -96,13 +96,15 @@
     "onTickUpdate": {
       "name": "DarkglandUpdateTick"
     },
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "blocksToReplace": [
+    "spawnWorldTypes": [
+      "CUSTOM:Otherside"
+    ],
+    "restrictionBiomes": [
       {
-        "value": "Blocks.STONE"
+        "value": "CUSTOM:Beingplains"
       }
     ],
+    "blocksToReplace": [],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,

@@ -37,6 +37,7 @@ import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.beingmod.world.dimension.OthersideDimension;
 import net.mcreator.beingmod.itemgroup.AnomalousmaterialsItemGroup;
 import net.mcreator.beingmod.BeingmodModElements;
 
@@ -78,6 +79,8 @@ public class DeadCrystalBlock extends BeingmodModElements.ModElement {
 				DimensionType dimensionType = world.getDimension().getType();
 				boolean dimensionCriteria = false;
 				if (dimensionType == DimensionType.OVERWORLD)
+					dimensionCriteria = true;
+				if (dimensionType == OthersideDimension.type)
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;

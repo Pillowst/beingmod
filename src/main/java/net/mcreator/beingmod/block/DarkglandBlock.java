@@ -2,17 +2,29 @@
 package net.mcreator.beingmod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.CountRangeConfig;
+import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.feature.OreFeature;
+import net.minecraft.world.gen.GenerationStage;
+import net.minecraft.world.gen.ChunkGenerator;
+import net.minecraft.world.dimension.DimensionType;
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
+import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
@@ -25,6 +37,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.beingmod.world.dimension.OthersideDimension;
 import net.mcreator.beingmod.procedures.DarkglandUpdateTickProcedure;
 import net.mcreator.beingmod.procedures.DarkglandNeighbourBlockChangesProcedure;
 import net.mcreator.beingmod.itemgroup.AnomalousmaterialsItemGroup;
@@ -129,6 +142,31 @@ public class DarkglandBlock extends BeingmodModElements.ModElement {
 				$_dependencies.put("world", world);
 				DarkglandUpdateTickProcedure.executeProcedure($_dependencies);
 			}
+		}
+	}
+	@Override
+	public void init(FMLCommonSetupEvent event) {
+		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
+			boolean biomeCriteria = false;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("beingmod:beingplains")))
+				biomeCriteria = true;
+			if (!biomeCriteria)
+				continue;
+			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, new OreFeature(OreFeatureConfig::deserialize) {
+				@Override
+				public boolean place(IWorld world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
+					DimensionType dimensionType = world.getDimension().getType();
+					boolean dimensionCriteria = false;
+					if (dimensionType == OthersideDimension.type)
+						dimensionCriteria = true;
+					if (!dimensionCriteria)
+						return false;
+					return super.place(world, generator, rand, pos, config);
+				}
+			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("darkgland", "darkgland", blockAt -> {
+				boolean blockCriteria = false;
+				return blockCriteria;
+			}), block.getDefaultState(), 16)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 64))));
 		}
 	}
 }

@@ -91,12 +91,12 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "spawnWorldTypes": [
-      "Surface"
+      "CUSTOM:Otherside"
     ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "CUSTOM:Slate"
       }
     ],
     "frequencyPerChunks": 10,

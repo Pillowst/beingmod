@@ -100,20 +100,27 @@
       "name": "BeingstalbotClientDisplayRandomTick"
     },
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "CUSTOM:Otherside"
     ],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Collapsedesseforest"
+      },
+      {
+        "value": "CUSTOM:Beingplains"
       }
     ],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
+      },
+      {
+        "value": "CUSTOM:BlockOrcanite"
       }
     ],
     "frequencyPerChunks": 64,
-    "frequencyOnChunk": 8,
+    "frequencyOnChunk": 4,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 50
   }

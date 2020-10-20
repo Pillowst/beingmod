@@ -40,8 +40,14 @@
     "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
-    "frequencyOnChunks": 5,
-    "spawnWorldTypes": [],
-    "restrictionBiomes": []
+    "frequencyOnChunks": 20,
+    "spawnWorldTypes": [
+      "CUSTOM:Otherside"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Beingplains"
+      }
+    ]
   }
 }

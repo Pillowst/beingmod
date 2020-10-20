@@ -27,6 +27,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.beingmod.item.LoessdustItem;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Random;
@@ -49,7 +50,7 @@ public class LoessBlock extends BeingmodModElements.ModElement {
 	}
 	public static class CustomBlock extends FallingBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
+			super(Block.Properties.create(Material.EARTH).sound(SoundType.SAND).hardnessAndResistance(1f, 10f).lightValue(0));
 			setRegistryName("loess");
 		}
 
@@ -58,7 +59,7 @@ public class LoessBlock extends BeingmodModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(LoessdustItem.block, (int) (3)));
 		}
 	}
 	@Override

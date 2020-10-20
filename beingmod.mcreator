@@ -2490,6 +2490,15 @@
       "registry_name": "pink_sandstone"
     },
     {
+      "name": "Pinksandghost",
+      "type": "block",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pinksandghost"
+    },
+    {
       "name": "ReddishSandstoneRedstoneOn",
       "type": "procedure",
       "sortid": 190,
@@ -2497,6 +2506,35 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "reddish_sandstone_redstone_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PinkSandstoneRedstoneOn",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pink_sandstone_redstone_on",
       "metadata": {
         "dependencies": [
           {
@@ -2548,42 +2586,13 @@
       }
     },
     {
-      "name": "Pinksandghost",
-      "type": "block",
-      "sortid": 191,
+      "name": "Loessdust",
+      "type": "item",
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "pinksandghost"
-    },
-    {
-      "name": "PinkSandstoneRedstoneOn",
-      "type": "procedure",
-      "sortid": 192,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "pink_sandstone_redstone_on",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
+      "registry_name": "loessdust"
     }
   ],
   "variable_elements": [],
@@ -2666,7 +2675,7 @@
       "item.beingmod.rail_gun": "Rail Gun",
       "block.beingmod.precursorrubble": "Precursor ruined bricks",
       "item.beingmod.indelicatetooth": "Indelicate tooth",
-      "block.beingmod.reddish_sandstone": "Ripplesand block",
+      "block.beingmod.reddish_sandstone": "Reddish Sandstone Block",
       "block.beingmod.syenite": "Syenite Block",
       "block.beingmod.slate": "Slate Block",
       "block.beingmod.block_orcanite": "Raw Orcanite Block",
@@ -2702,7 +2711,7 @@
       "item.beingmod.webgun": "web gun",
       "item.beingmod.n_48sword": "N48 Alloy Sword",
       "entity.beingmod.indelicate": "Indelicate",
-      "block.beingmod.pink_sandstone": "Ripplesandstone Block",
+      "block.beingmod.pink_sandstone": "Orange Sandstone Block",
       "block.beingmod.n_48_alloy": "N-48 Block",
       "block.beingmod.beingemerald": "Being emerald ore",
       "item.beingmod.otherside": "Otherside Portal Igniter",

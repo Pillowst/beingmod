@@ -25,6 +25,14 @@
     "treeFruits": {
       "value": ""
     },
+    "waterColor": {
+      "value": -14791154,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -14791154,
+      "falpha": 0.0
+    },
     "treesPerChunk": 0,
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,

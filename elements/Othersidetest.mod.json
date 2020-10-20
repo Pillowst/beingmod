@@ -1,0 +1,11 @@
+{
+  "_fv": 12,
+  "_type": "command",
+  "definition": {
+    "commandName": "/otherside",
+    "permissionLevel": 2,
+    "onCommandExecuted": {
+      "name": "OthersidetestCommandExecuted"
+    }
+  }
+}

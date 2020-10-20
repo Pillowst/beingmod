@@ -2,42 +2,16 @@
   "_fv": 12,
   "_type": "recipe",
   "definition": {
-    "recipeType": "Crafting",
+    "recipeType": "Stone cutting",
     "xpReward": 0.0,
     "cookingTime": 200,
     "recipeRetstackSize": 1,
     "group": "",
     "recipeShapeless": false,
-    "recipeSlots": [
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Peridotite"
-      },
-      {
-        "value": "CUSTOM:Peridotite"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "CUSTOM:Peridotite"
-      },
-      {
-        "value": "CUSTOM:Peridotite"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": ""
-      }
-    ],
-    "recipeReturnStack": {
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:Peridotite"
+    },
+    "stoneCuttingReturnStack": {
       "value": "CUSTOM:PolishedPeridotite"
     },
     "name": "peraawdadaswpolishedr",

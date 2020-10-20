@@ -18,4 +18,9 @@ authors="Pillow"
 
 
 
+[[dependencies.beingmod]]
+    modId="geckolib"
+    mandatory=false
+    ordering="NONE"
+    side="BOTH"
 

@@ -1982,6 +1982,50 @@
       }
     },
     {
+      "name": "Anomalousmaterials",
+      "type": "tab",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "anomalousmaterials"
+    },
+    {
+      "name": "Precursorspikestop",
+      "type": "block",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorspikestop"
+    },
+    {
+      "name": "Precursorspikes",
+      "type": "block",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorspikes"
+    },
+    {
+      "name": "PrecursorspikestopEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursorspikestop_entity_collides_in_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
       "name": "Leggingrecipe",
       "type": "recipe",
       "sortid": 162,
@@ -2033,76 +2077,33 @@
       "registry_name": "chestrecipe"
     },
     {
-      "name": "Anomalousmaterials",
-      "type": "tab",
-      "sortid": 159,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "anomalousmaterials"
-    },
-    {
-      "name": "PolishedPeridotite",
-      "type": "block",
-      "sortid": 168,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "polished_peridotite"
-    },
-    {
-      "name": "PolishedSyenite",
-      "type": "block",
-      "sortid": 167,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "polished_syenite"
-    },
-    {
-      "name": "Peridotite",
-      "type": "block",
-      "sortid": 165,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "peridotite"
-    },
-    {
-      "name": "Syenite",
-      "type": "block",
+      "name": "KjaldarcrystalNeighbourBlockChanges",
+      "type": "procedure",
       "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "syenite"
-    },
-    {
-      "name": "Gabbro",
-      "type": "block",
-      "sortid": 166,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "gabbro"
-    },
-    {
-      "name": "PolishedGabbro",
-      "type": "block",
-      "sortid": 169,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "polished_gabbro"
-    },
-    {
-      "name": "Precursorspikestop",
-      "type": "block",
-      "sortid": 161,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "precursorspikestop"
+      "registry_name": "kjaldarcrystal_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     },
     {
       "name": "PrecursorspikesRedstoneOn",
@@ -2112,90 +2113,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "precursorspikes_redstone_on",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Precursorspikesbotanalog",
-      "type": "block",
-      "sortid": 170,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "precursorspikesbotanalog"
-    },
-    {
-      "name": "PrecursoreyeblockUpdateTick",
-      "type": "procedure",
-      "sortid": 173,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "precursoreyeblock_update_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "KjaldarcrystalStartToDestroy",
-      "type": "procedure",
-      "sortid": 171,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "kjaldarcrystal_start_to_destroy",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "KjaldarcrystalNeighbourBlockChanges",
-      "type": "procedure",
-      "sortid": 164,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "kjaldarcrystal_neighbour_block_changes",
       "metadata": {
         "dependencies": [
           {
@@ -2247,15 +2164,6 @@
       }
     },
     {
-      "name": "Precursoreyeblock",
-      "type": "block",
-      "sortid": 172,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "precursoreyeblock"
-    },
-    {
       "name": "Precursorspikesanalog",
       "type": "block",
       "sortid": 169,
@@ -2265,13 +2173,48 @@
       "registry_name": "precursorspikesanalog"
     },
     {
-      "name": "Precursorspikes",
+      "name": "Precursorspikesbotanalog",
       "type": "block",
-      "sortid": 160,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "precursorspikes"
+      "registry_name": "precursorspikesbotanalog"
+    },
+    {
+      "name": "KjaldarcrystalStartToDestroy",
+      "type": "procedure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kjaldarcrystal_start_to_destroy",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Precursoreyeblock",
+      "type": "block",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursoreyeblock"
+    },
+    {
+      "name": "Precursoreyeblockdull",
+      "type": "block",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "precursoreyeblockdull"
     },
     {
       "name": "PrecursoreyeblockdullUpdateTick",
@@ -2303,48 +2246,33 @@
       }
     },
     {
-      "name": "PrecursorspikestopEntityCollidesInTheBlock",
+      "name": "PrecursoreyeblockUpdateTick",
       "type": "procedure",
-      "sortid": 161,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "precursorspikestop_entity_collides_in_the_block",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Precursoreyeblockdull",
-      "type": "block",
       "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "precursoreyeblockdull"
-    },
-    {
-      "name": "Gabropolishedr",
-      "type": "recipe",
-      "sortid": 175,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "gabropolishedr"
-    },
-    {
-      "name": "Sycpolishedr",
-      "type": "recipe",
-      "sortid": 176,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sycpolishedr"
+      "registry_name": "precursoreyeblock_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     },
     {
       "name": "Peraawdadaswpolishedr",
@@ -2356,6 +2284,87 @@
       "registry_name": "peraawdadaswpolishedr"
     },
     {
+      "name": "PolishedPeridotite",
+      "type": "block",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_peridotite"
+    },
+    {
+      "name": "PolishedSyenite",
+      "type": "block",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_syenite"
+    },
+    {
+      "name": "Gabropolishedr",
+      "type": "recipe",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gabropolishedr"
+    },
+    {
+      "name": "Peridotite",
+      "type": "block",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "peridotite"
+    },
+    {
+      "name": "Syenite",
+      "type": "block",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "syenite"
+    },
+    {
+      "name": "Gabbro",
+      "type": "block",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gabbro"
+    },
+    {
+      "name": "Sycpolishedr",
+      "type": "recipe",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sycpolishedr"
+    },
+    {
+      "name": "PolishedGabbro",
+      "type": "block",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "polished_gabbro"
+    },
+    {
+      "name": "Beingplains",
+      "type": "biome",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beingplains"
+    },
+    {
       "name": "Slate",
       "type": "block",
       "sortid": 178,
@@ -2363,6 +2372,41 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "slate"
+    },
+    {
+      "name": "Otherside",
+      "type": "dimension",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "otherside"
+    },
+    {
+      "name": "OthersidetestCommandExecuted",
+      "type": "procedure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "othersidetest_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Othersidetest",
+      "type": "command",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "othersidetest"
     }
   ],
   "variable_elements": [],
@@ -2403,35 +2447,35 @@
   "language_map": {
     "en_us": {
       "advancements.beingget.title": "Obtain Being",
-      "item.beingmod.pricklysword": "Pricklysword",
+      "item.beingmod.pricklysword": "Prickly sword",
       "subtitles.spiketrapoff": "spike trap deactivated",
       "block.beingmod.manufactoryenergy": "Manufactory UI",
       "advancements.getnpick.title": "obtain an N-48 drill",
       "item.beingmod.diamondbolt": "Diamond Bolt",
       "subtitles.abandonedentry": "Ambience",
-      "block.beingmod.reversestalk": "Dripping roots",
+      "block.beingmod.reversestalk": "reverse stalk",
       "item.beingmod.plasmacutter": "Plasma Cutter",
       "item.beingmod.godpickaxe": "Being Infused Pickaxe",
-      "advancements.precursordungeonin.descr": "Visit the graves of an unknown anchient civillisation, you know what to do.",
       "block.beingmod.manufactory_ui": "Manufactory UI",
+      "advancements.precursordungeonin.descr": "Visit the graves of an unknown anchient civillisation, you know what to do.",
       "block.beingmod.dead_crystal": "Dessicated Being Crystal",
-      "block.beingmod.kjaldarcrystal": "Being Crystal",
+      "block.beingmod.kjaldarcrystal": "kjaldar Crystal",
       "block.beingmod.manufactorygeneric": "Manufactory UI",
       "advancements.get_n_48.descr": "Get a chunk of mysterious metal, its useless right now, but perhaps it can be combined with something",
       "block.beingmod.gabbro": "Gabbro Block",
       "block.beingmod.precursoreyeblockdull": "Orange Precursor eye block",
       "block.beingmod.polished_gabbro": "Polished Gabbro Block",
-      "block.beingmod.precursorwall": "Precursor wall",
       "block.beingmod.beingrootsbot": "Being Stalactite End",
+      "block.beingmod.precursorwall": "Precursor brick wall",
       "item.beingmod.noxiouspotion": "Noxious potion",
-      "item.beingmod.n_48pickaxe": "Crystalized N48 Drill",
+      "item.beingmod.n_48pickaxe": "Kjaldar drill",
       "block.beingmod.precursorspikes": "Precursor spikes",
       "block.beingmod.beingiron": "Being iron ore",
       "block.beingmod.deceasedbeing_grass": "dessicated noxious bloom",
       "item.beingmod.shock_armor_helmet": "Shock Trooper Armor Helmet",
       "block.beingmod.drippingleaves": "Dripping roots",
       "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
-      "item.beingmod.n_48chunk": "N 4 8chunk",
+      "item.beingmod.n_48chunk": "N-48 chunk",
       "block.beingmod.orcaniumblock": "Block of Orcanium",
       "block.beingmod.precursorspikestop": "Precursorspikestop",
       "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
@@ -2440,29 +2484,29 @@
       "block.beingmod.darkgland": "dark gland ",
       "advancements.getgod.descr": "Get an orcanium pickaxe, now you can explore the precursor ruins like a true pioneer!",
       "item.beingmod.rail_gun": "Rail Gun",
-      "block.beingmod.precursorrubble": "Precursor rubbled bricks",
+      "block.beingmod.precursorrubble": "Precursor ruined bricks",
       "item.beingmod.indelicatetooth": "Indelicate tooth",
       "block.beingmod.syenite": "Syenite Block",
       "block.beingmod.slate": "Slate Block",
       "block.beingmod.block_orcanite": "Raw Orcanite Block",
       "block.beingmod.polished_syenite": "Polished Syenite Block",
-      "block.beingmod.beingsuppressor": "Beingsuppressor",
+      "block.beingmod.beingsuppressor": "Being suppressor",
       "block.beingmod.dismalgland_1": "Dismal gland ",
       "item.beingmod.particle_rifle": "Incendiary Rifle",
       "advancements.getnpick.descr": "this drill could be used to finally get a sample of that strange material beneath the sunken esse forest",
       "block.beingmod.beingstaltop": "Being Stalactite",
-      "block.beingmod.beingstalk": "Beingstalk",
+      "block.beingmod.beingstalk": "Being stalk",
       "item.beingmod.shock_armor_boots": "Shock Trooper Armor Boots",
       "item.beingmod.plasmasword": "Plasma Sword",
-      "block.beingmod.precursorbrickslab": "Precursor bricks slab",
-      "block.beingmod.dessicatedstalk": "Beingstalk",
+      "block.beingmod.precursorbrickslab": "Precursor brick slabs",
+      "block.beingmod.dessicatedstalk": "dessicated being stalk",
       "item.beingmod.lapisbolt": "Lapis Bolt",
       "block.beingmod.beinglapis": "Being lapis ore",
       "advancements.precursordungeonin.title": "Explorin\u0027 time",
       "block.beingmod.crystal_being": "Being Crystal",
       "item.beingmod.forcefieldgenerator": "Force field generator",
       "block.beingmod.periwinkecillia": "Periwinkle cillia",
-      "block.beingmod.warmedfollicles": "Warmedfollicles",
+      "block.beingmod.warmedfollicles": "Warmed follicles",
       "block.beingmod.dessicatedbeing": "dessicated being",
       "block.beingmod.stalstop": "Being Stalactite End",
       "advancements.get_n_48.title": "whats this?",
@@ -2476,8 +2520,9 @@
       "item.beingmod.webgun": "web gun",
       "item.beingmod.n_48sword": "N48 Alloy Sword",
       "entity.beingmod.indelicate": "Indelicate",
-      "block.beingmod.n_48_alloy": "N48Alloy Block",
+      "block.beingmod.n_48_alloy": "N-48 Block",
       "block.beingmod.beingemerald": "Being emerald ore",
+      "item.beingmod.otherside": "Otherside Portal Igniter",
       "block.beingmod.beingrootstop": "Being Stalactite",
       "item.beingmod.webpotion": "Web potion",
       "advancements.getgod.title": "pioneer of the precursors",
@@ -2485,8 +2530,9 @@
       "block.beingmod.frameblock": "Frameblock",
       "item.beingmod.shard": "Being Shards",
       "item.beingmod.item_being": "Being",
-      "block.beingmod.precursorbrickstairs": "Precursor bricks stair",
+      "block.beingmod.precursorbrickstairs": "Precursor brick stairs",
       "advancements.getn_48chunk.title": "discover alloy N-48",
+      "biome.beingmod.beingplains": "Being plains",
       "block.beingmod.polished_peridotite": "Polished Peridotite Block",
       "block.beingmod.quantum_reactor_block": "Quantum Reactor Block",
       "subtitles.equip": "Equipping Armor",
@@ -2503,7 +2549,7 @@
       "block.beingmod.infusingtable": "Infusing table",
       "item.beingmod.unknownchunk": "Unknown chunk",
       "itemGroup.tabanomalousmaterials": "Anomalous materials",
-      "item.beingmod.force_field_gen_item": "ForceField Generator Mark III",
+      "item.beingmod.force_field_gen_item": "Forcefield Generator",
       "block.beingmod.beingcoal": "Being coal ore",
       "item.beingmod.diamondfireraygun": "Diamondfire railgun",
       "block.beingmod.peridotite": "Peridotite Block",
@@ -2526,7 +2572,10 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "just_enough_items",
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.15.2",
     "credits": "Pillow",
     "modElementsPackage": "net.mcreator.beingmod",

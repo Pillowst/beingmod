@@ -14,6 +14,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.beingmod.world.dimension.OthersideDimension;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
@@ -60,6 +61,12 @@ public class PoisonwaterinbiomeprocedureProcedure extends BeingmodModElements.Mo
 		if ((entity.isInWater())) {
 			if ((ForgeRegistries.BIOMES.getKey(world.getBiome(new BlockPos((int) x, (int) y, (int) z)))
 					.equals(new ResourceLocation("beingmod:collapsedesseforest")))) {
+				if (entity instanceof LivingEntity)
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.POISON, (int) 30, (int) 1, (true), (true)));
+			}
+		}
+		if ((entity.isInWater())) {
+			if (((entity.dimension.getId()) == (OthersideDimension.type.getId()))) {
 				if (entity instanceof LivingEntity)
 					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.POISON, (int) 30, (int) 1, (true), (true)));
 			}

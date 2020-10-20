@@ -1,26 +1,9 @@
 {
   "group": "beingmod",
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "01",
-    "23"
-  ],
-  "key": {
-    "0": {
-      "item": "beingmod:unknown_element"
-    },
-    "1": {
-      "item": "beingmod:unknown_element"
-    },
-    "2": {
-      "item": "beingmod:unknown_element"
-    },
-    "3": {
-      "item": "beingmod:unknown_element"
-    }
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "beingmod:gabbro"
   },
-  "result": {
-    "item": "beingmod:unknown_element",
-    "count": 1
-  }
+  "result": "beingmod:polished_gabbro"
 }

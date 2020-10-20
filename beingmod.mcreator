@@ -2488,6 +2488,102 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pink_sandstone"
+    },
+    {
+      "name": "ReddishSandstoneRedstoneOn",
+      "type": "procedure",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reddish_sandstone_redstone_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PinksandghostUpdateTick",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pinksandghost_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pinksandghost",
+      "type": "block",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pinksandghost"
+    },
+    {
+      "name": "PinkSandstoneRedstoneOn",
+      "type": "procedure",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pink_sandstone_redstone_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2537,26 +2633,26 @@
       "block.beingmod.reversestalk": "reverse stalk",
       "item.beingmod.plasmacutter": "Plasma Cutter",
       "item.beingmod.godpickaxe": "Being Infused Pickaxe",
-      "advancements.precursordungeonin.descr": "Visit the graves of an unknown anchient civillisation, you know what to do.",
       "block.beingmod.manufactory_ui": "Manufactory UI",
-      "block.beingmod.kjaldarcrystal": "kjaldar Crystal",
-      "block.beingmod.dead_crystal": "Dessicated Being Crystal",
+      "advancements.precursordungeonin.descr": "Visit the graves of an unknown anchient civillisation, you know what to do.",
       "block.beingmod.loess": "Loess Block",
+      "block.beingmod.dead_crystal": "Dessicated Being Crystal",
+      "block.beingmod.kjaldarcrystal": "kjaldar Crystal",
       "block.beingmod.manufactorygeneric": "Manufactory UI",
       "advancements.get_n_48.descr": "Get a chunk of mysterious metal, its useless right now, but perhaps it can be combined with something",
       "block.beingmod.gabbro": "Gabbro Block",
       "block.beingmod.precursoreyeblockdull": "Orange Precursor eye block",
       "block.beingmod.riolite": "Riolite Block",
       "block.beingmod.polished_gabbro": "Polished Gabbro Block",
-      "block.beingmod.precursorwall": "Precursor brick wall",
       "block.beingmod.beingrootsbot": "Being Stalactite End",
+      "block.beingmod.precursorwall": "Precursor brick wall",
       "item.beingmod.noxiouspotion": "Noxious potion",
       "item.beingmod.n_48pickaxe": "Kjaldar drill",
       "block.beingmod.precursorspikes": "Precursor spikes",
       "block.beingmod.beingiron": "Being iron ore",
       "block.beingmod.deceasedbeing_grass": "dessicated noxious bloom",
-      "block.beingmod.drippingleaves": "Dripping roots",
       "item.beingmod.shock_armor_helmet": "Shock Trooper Armor Helmet",
+      "block.beingmod.drippingleaves": "Dripping roots",
       "item.beingmod.indelicate_spawn_egg": "Indelicate Spawn Egg",
       "item.beingmod.n_48chunk": "N-48 chunk",
       "block.beingmod.orcaniumblock": "Block of Orcanium",
@@ -2565,12 +2661,12 @@
       "biome.beingmod.collapsedesseforest": "Collapsed esse forest",
       "block.beingmod.precursorspikesanalog": "Precursorspikestop",
       "block.beingmod.manufactoryitemsin": "Manufactory UI",
-      "item.beingmod.rail_gun": "Rail Gun",
-      "advancements.getgod.descr": "Get an orcanium pickaxe, now you can explore the precursor ruins like a true pioneer!",
       "block.beingmod.darkgland": "dark gland ",
+      "advancements.getgod.descr": "Get an orcanium pickaxe, now you can explore the precursor ruins like a true pioneer!",
+      "item.beingmod.rail_gun": "Rail Gun",
       "block.beingmod.precursorrubble": "Precursor ruined bricks",
       "item.beingmod.indelicatetooth": "Indelicate tooth",
-      "block.beingmod.reddish_sandstone": "Reddish Sandstone Block",
+      "block.beingmod.reddish_sandstone": "Ripplesand block",
       "block.beingmod.syenite": "Syenite Block",
       "block.beingmod.slate": "Slate Block",
       "block.beingmod.block_orcanite": "Raw Orcanite Block",
@@ -2606,11 +2702,12 @@
       "item.beingmod.webgun": "web gun",
       "item.beingmod.n_48sword": "N48 Alloy Sword",
       "entity.beingmod.indelicate": "Indelicate",
-      "block.beingmod.pink_sandstone": "Orange Sandstone Block",
+      "block.beingmod.pink_sandstone": "Ripplesandstone Block",
       "block.beingmod.n_48_alloy": "N-48 Block",
       "block.beingmod.beingemerald": "Being emerald ore",
       "item.beingmod.otherside": "Otherside Portal Igniter",
       "block.beingmod.beingrootstop": "Being Stalactite",
+      "block.beingmod.pinksandghost": "Pinksandghost",
       "item.beingmod.webpotion": "Web potion",
       "advancements.getgod.title": "pioneer of the precursors",
       "item.beingmod.shock_armor_leggings": "Shock Trooper Armor Leggings",

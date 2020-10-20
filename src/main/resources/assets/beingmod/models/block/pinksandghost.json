@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "beingmod:blocks/orangesmol",
+    "particle": "beingmod:blocks/orangesmol"
+  }
+}

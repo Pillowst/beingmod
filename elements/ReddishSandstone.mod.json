@@ -22,7 +22,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Reddish Sandstone Block",
+    "name": "Ripplesand block",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -90,6 +90,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRedstoneOn": {
+      "name": "ReddishSandstoneRedstoneOn"
+    },
     "spawnWorldTypes": [
       "Surface"
     ],

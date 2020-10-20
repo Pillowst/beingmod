@@ -10,7 +10,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:N48chunk"
+        "value": "Items.DIAMOND"
       },
       {
         "value": ""
@@ -22,16 +22,16 @@
         "value": "CUSTOM:RailGun"
       },
       {
-        "value": "CUSTOM:KjaldarCrystalITEM"
+        "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "Blocks.GLASS_PANE"
+        "value": "Items.GLASS_BOTTLE"
       },
       {
         "value": ""
       },
       {
-        "value": "CUSTOM:N48chunk"
+        "value": "Items.IRON_INGOT"
       },
       {
         "value": "CUSTOM:Indelicatetooth"

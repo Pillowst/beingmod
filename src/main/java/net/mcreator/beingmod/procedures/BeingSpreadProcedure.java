@@ -189,7 +189,7 @@ public class BeingSpreadProcedure extends BeingmodModElements.ModElement {
 							.getBlock())
 							|| ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState()
 									.getBlock())))) {
-				if (((y > 35) && (Math.random() < 0.2))) {
+				if (((y > 35) && (Math.random() < 0.05))) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
 						BlockState _bs = CrystalBeingBlock.block.getDefaultState();

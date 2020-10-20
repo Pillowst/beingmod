@@ -22,10 +22,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.beingmod.world.dimension.OthersideDimension;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Random;
@@ -68,7 +68,7 @@ public class PeridotiteBlock extends BeingmodModElements.ModElement {
 				public boolean place(IWorld world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					DimensionType dimensionType = world.getDimension().getType();
 					boolean dimensionCriteria = false;
-					if (dimensionType == DimensionType.OVERWORLD)
+					if (dimensionType == OthersideDimension.type)
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
@@ -76,7 +76,7 @@ public class PeridotiteBlock extends BeingmodModElements.ModElement {
 				}
 			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("peridotite", "peridotite", blockAt -> {
 				boolean blockCriteria = false;
-				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
+				if (blockAt.getBlock() == SlateBlock.block.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
 			}), block.getDefaultState(), 16)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 64))));

@@ -4,7 +4,7 @@
   "definition": {
     "name": "Being plains",
     "groundBlock": {
-      "value": "CUSTOM:BlockBeing"
+      "value": "CUSTOM:BlockOrcanite"
     },
     "undergroundBlock": {
       "value": "CUSTOM:BlockOrcanite"
@@ -24,6 +24,18 @@
     },
     "treeFruits": {
       "value": ""
+    },
+    "airColor": {
+      "value": -10092442,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -13434829,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -13434829,
+      "falpha": 0.0
     },
     "waterColor": {
       "value": -14791154,

@@ -3,6 +3,8 @@ package net.mcreator.beingmod.world.biome;
 
 import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
@@ -10,7 +12,6 @@ import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.Biome;
 
 import net.mcreator.beingmod.block.BlockOrcaniteBlock;
-import net.mcreator.beingmod.block.BlockBeingBlock;
 import net.mcreator.beingmod.BeingmodModElements;
 
 @BeingmodModElements.ModElement.Tag
@@ -33,12 +34,30 @@ public class BeingplainsBiome extends BeingmodModElements.ModElement {
 		public CustomBiome() {
 			super(new Biome.Builder().downfall(0.5f).depth(0.1f).scale(0.2f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
 					.category(Biome.Category.NONE).waterColor(-14791154).waterFogColor(-14791154)
-					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(BlockBeingBlock.block.getDefaultState(),
+					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(BlockOrcaniteBlock.block.getDefaultState(),
 							BlockOrcaniteBlock.block.getDefaultState(), BlockOrcaniteBlock.block.getDefaultState())));
 			setRegistryName("beingplains");
 			DefaultBiomeFeatures.addCarvers(this);
 			DefaultBiomeFeatures.addStructures(this);
 			DefaultBiomeFeatures.addOres(this);
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public int getGrassColor(double posX, double posZ) {
+			return -13434829;
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public int getFoliageColor() {
+			return -13434829;
+		}
+
+		@OnlyIn(Dist.CLIENT)
+		@Override
+		public int getSkyColor() {
+			return -10092442;
 		}
 	}
 }

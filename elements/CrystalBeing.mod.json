@@ -41,7 +41,13 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "frequencyOnChunks": 0,
-    "spawnWorldTypes": [],
-    "restrictionBiomes": []
+    "spawnWorldTypes": [
+      "CUSTOM:Otherside"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Beingplains"
+      }
+    ]
   }
 }

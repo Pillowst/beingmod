@@ -35,6 +35,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.beingmod.world.dimension.OthersideDimension;
 import net.mcreator.beingmod.procedures.BlockBeingNeighbourBlockChangesProcedure;
 import net.mcreator.beingmod.procedures.BeingstalbotClientDisplayRandomTickProcedure;
 import net.mcreator.beingmod.procedures.BeingSpreadProcedure;
@@ -146,6 +147,8 @@ public class BlockBeingBlock extends BeingmodModElements.ModElement {
 			boolean biomeCriteria = false;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("beingmod:collapsedesseforest")))
 				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("beingmod:beingplains")))
+				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
 			biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, new OreFeature(OreFeatureConfig::deserialize) {
@@ -155,6 +158,8 @@ public class BlockBeingBlock extends BeingmodModElements.ModElement {
 					boolean dimensionCriteria = false;
 					if (dimensionType == DimensionType.OVERWORLD)
 						dimensionCriteria = true;
+					if (dimensionType == OthersideDimension.type)
+						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
 					return super.place(world, generator, rand, pos, config);
@@ -163,8 +168,10 @@ public class BlockBeingBlock extends BeingmodModElements.ModElement {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
+				if (blockAt.getBlock() == BlockOrcaniteBlock.block.getDefaultState().getBlock())
+					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(64, 0, 0, 50))));
+			}), block.getDefaultState(), 4)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(64, 0, 0, 50))));
 		}
 	}
 }

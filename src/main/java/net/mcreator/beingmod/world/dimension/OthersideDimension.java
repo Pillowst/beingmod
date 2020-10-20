@@ -14,28 +14,23 @@ import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.gen.layer.traits.IC0Transformer;
 import net.minecraft.world.gen.layer.ZoomLayer;
 import net.minecraft.world.gen.layer.Layer;
 import net.minecraft.world.gen.layer.IslandLayer;
-import net.minecraft.world.gen.feature.ProbabilityConfig;
-import net.minecraft.world.gen.carver.CaveWorldCarver;
 import net.minecraft.world.gen.area.LazyArea;
 import net.minecraft.world.gen.area.IAreaFactory;
-import net.minecraft.world.gen.OverworldGenSettings;
-import net.minecraft.world.gen.OverworldChunkGenerator;
+import net.minecraft.world.gen.NetherGenSettings;
+import net.minecraft.world.gen.NetherChunkGenerator;
 import net.minecraft.world.gen.LazyAreaLayerContext;
 import net.minecraft.world.gen.INoiseRandom;
 import net.minecraft.world.gen.IExtendedNoiseRandom;
-import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.dimension.Dimension;
 import net.minecraft.world.biome.provider.BiomeProvider;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
-import net.minecraft.world.IWorld;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.MathHelper;
@@ -43,6 +38,7 @@ import net.minecraft.util.math.ChunkPos;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
@@ -53,10 +49,9 @@ import javax.annotation.Nullable;
 
 import java.util.function.LongFunction;
 import java.util.function.BiFunction;
+import java.util.List;
 import java.util.HashSet;
 import java.util.Arrays;
-
-import com.google.common.collect.ImmutableSet;
 
 @BeingmodModElements.ModElement.Tag
 public class OthersideDimension extends BeingmodModElements.ModElement {
@@ -98,8 +93,8 @@ public class OthersideDimension extends BeingmodModElements.ModElement {
 	public static class CustomDimension extends Dimension {
 		private BiomeProviderCustom biomeProviderCustom = null;
 		public CustomDimension(World world, DimensionType type) {
-			super(world, type, 0.5f);
-			this.nether = false;
+			super(world, type, 0);
+			this.nether = true;
 		}
 
 		@Override
@@ -118,7 +113,7 @@ public class OthersideDimension extends BeingmodModElements.ModElement {
 
 		@Override
 		public boolean isSurfaceWorld() {
-			return false;
+			return true;
 		}
 
 		@Override
@@ -129,7 +124,7 @@ public class OthersideDimension extends BeingmodModElements.ModElement {
 		@OnlyIn(Dist.CLIENT)
 		@Override
 		public boolean doesXZShowFog(int x, int z) {
-			return false;
+			return true;
 		}
 
 		@Override
@@ -163,9 +158,9 @@ public class OthersideDimension extends BeingmodModElements.ModElement {
 		}
 	}
 
-	public static class ChunkProviderModded extends OverworldChunkGenerator {
-		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
-			super(world, provider, new OverworldGenSettings() {
+	public static class ChunkProviderModded extends NetherChunkGenerator {
+		public ChunkProviderModded(World world, BiomeProvider provider) {
+			super(world, provider, new NetherGenSettings() {
 				public BlockState getDefaultBlock() {
 					return SlateBlock.block.getDefaultState();
 				}
@@ -174,11 +169,12 @@ public class OthersideDimension extends BeingmodModElements.ModElement {
 					return Blocks.WATER.getDefaultState();
 				}
 			});
-			this.randomSeed.skip(5349);
+			this.randomSeed.skip(9716);
 		}
 
 		@Override
-		public void spawnMobs(ServerWorld worldIn, boolean spawnHostileMobs, boolean spawnPeacefulMobs) {
+		public List<Biome.SpawnListEntry> getPossibleCreatures(EntityClassification creatureType, BlockPos pos) {
+			return this.world.getBiome(pos).getSpawns(creatureType);
 		}
 	}
 
@@ -191,22 +187,9 @@ public class OthersideDimension extends BeingmodModElements.ModElement {
 
 	public static class BiomeProviderCustom extends BiomeProvider {
 		private Layer genBiomes;
-		private static boolean biomesPatched = false;
 		public BiomeProviderCustom(World world) {
 			super(new HashSet<Biome>(Arrays.asList(dimensionBiomes)));
 			this.genBiomes = getBiomeLayer(world.getSeed());
-			if (!biomesPatched) {
-				for (Biome biome : this.biomes) {
-					biome.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new CaveWorldCarver(ProbabilityConfig::deserialize, 256) {
-						{
-							carvableBlocks = ImmutableSet.of(SlateBlock.block.getDefaultState().getBlock(),
-									biome.getSurfaceBuilder().getConfig().getTop().getBlock(),
-									biome.getSurfaceBuilder().getConfig().getUnder().getBlock());
-						}
-					}, new ProbabilityConfig(0.14285715f)));
-				}
-				biomesPatched = true;
-			}
 		}
 
 		public Biome getNoiseBiome(int x, int y, int z) {

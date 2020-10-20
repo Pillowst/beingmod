@@ -42,7 +42,8 @@
     "fireSpreadSpeed": 0,
     "frequencyOnChunks": 6,
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "CUSTOM:Otherside"
     ],
     "restrictionBiomes": [
       {

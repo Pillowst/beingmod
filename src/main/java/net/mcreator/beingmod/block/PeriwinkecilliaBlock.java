@@ -2,6 +2,8 @@
 package net.mcreator.beingmod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.common.PlantType;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -9,9 +11,21 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.gen.placement.Placement;
+import net.minecraft.world.gen.placement.FrequencyConfig;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
+import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
+import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
+import net.minecraft.world.gen.GenerationStage;
+import net.minecraft.world.gen.ChunkGenerator;
+import net.minecraft.world.dimension.DimensionType;
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -26,6 +40,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.beingmod.world.dimension.OthersideDimension;
 import net.mcreator.beingmod.procedures.PeriwinkecilliaMobplayerCollidesWithPlantProcedure;
 import net.mcreator.beingmod.itemgroup.AnomalousmaterialsItemGroup;
 import net.mcreator.beingmod.BeingmodModElements;
@@ -55,6 +70,49 @@ public class PeriwinkecilliaBlock extends BeingmodModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
+	}
+
+	@Override
+	public void init(FMLCommonSetupEvent event) {
+		Feature<BlockClusterFeatureConfig> feature = new Feature<BlockClusterFeatureConfig>(BlockClusterFeatureConfig::deserialize) {
+			@Override
+			public boolean place(IWorld world, ChunkGenerator generator, Random random, BlockPos pos, BlockClusterFeatureConfig config) {
+				DimensionType dimensionType = world.getDimension().getType();
+				boolean dimensionCriteria = false;
+				if (dimensionType == OthersideDimension.type)
+					dimensionCriteria = true;
+				if (!dimensionCriteria)
+					return false;
+				int generated = 0;
+				for (int j = 0; j < 3; ++j) {
+					BlockPos blockpos = pos.add(random.nextInt(4) - random.nextInt(4), 0, random.nextInt(4) - random.nextInt(4));
+					if (world.isAirBlock(blockpos)) {
+						BlockPos blockpos1 = blockpos.down();
+						int k = 1 + random.nextInt(random.nextInt(4) + 1);
+						k = Math.min(4, k);
+						for (int l = 0; l < k; ++l) {
+							if (block.getDefaultState().isValidPosition(world, blockpos)) {
+								world.setBlockState(blockpos.up(l), block.getDefaultState(), 2);
+								generated++;
+							}
+						}
+					}
+				}
+				return generated > 0;
+			}
+		};
+		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
+			boolean biomeCriteria = false;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("beingmod:beingplains")))
+				biomeCriteria = true;
+			if (!biomeCriteria)
+				continue;
+			biome.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
+					feature.withConfiguration(
+							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
+									.tries(64).build())
+							.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(3))));
+		}
 	}
 	public static class BlockCustomFlower extends SugarCaneBlock {
 		public BlockCustomFlower() {

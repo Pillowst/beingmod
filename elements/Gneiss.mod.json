@@ -2,7 +2,7 @@
   "_fv": 12,
   "_type": "block",
   "definition": {
-    "texture": "slate",
+    "texture": "gneiss",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -22,7 +22,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Slate Block",
+    "name": "Gneiss Block",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,

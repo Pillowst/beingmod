@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "beingmod:blocks/polished_marble",
+    "particle": "beingmod:blocks/polished_marble"
+  }
+}

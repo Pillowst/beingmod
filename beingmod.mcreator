@@ -2363,6 +2363,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "beingplains"
+    },
+    {
+      "name": "Slate",
+      "type": "block",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "slate"
     }
   ],
   "variable_elements": [],

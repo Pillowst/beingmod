@@ -91,15 +91,20 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "CUSTOM:Otherside"
     ],
-    "restrictionBiomes": [],
-    "blocksToReplace": [
+    "restrictionBiomes": [
       {
-        "value": "Blocks.DIRT#0"
+        "value": "CUSTOM:Collapsedesseforest"
       }
     ],
-    "frequencyPerChunks": 20,
+    "blocksToReplace": [
+      {
+        "value": "CUSTOM:Loess"
+      }
+    ],
+    "frequencyPerChunks": 3,
     "frequencyOnChunk": 32,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 128

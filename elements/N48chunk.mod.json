@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "n48chunk",
     "customModelName": "Normal",
-    "name": "N 4 8chunk",
-    "rarity": "COMMON",
+    "name": "N-48 chunk",
+    "rarity": "RARE",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "stackSize": 64,
     "enchantability": 0,

@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "kjaldar_drill",
     "customModelName": "Normal",
-    "name": "Crystalized N48 Drill",
+    "name": "Kjaldar drill",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 4,

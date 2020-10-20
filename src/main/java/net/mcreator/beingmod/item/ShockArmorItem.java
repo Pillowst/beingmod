@@ -36,15 +36,15 @@ public class ShockArmorItem extends BeingmodModElements.ModElement {
 	public void initElements() {
 		IArmorMaterial armormaterial = new IArmorMaterial() {
 			public int getDurability(EquipmentSlotType slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 40;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 35;
 			}
 
 			public int getDamageReductionAmount(EquipmentSlotType slot) {
-				return new int[]{4, 10, 12, 4}[slot.getIndex()];
+				return new int[]{4, 6, 9, 3}[slot.getIndex()];
 			}
 
 			public int getEnchantability() {
-				return 12;
+				return 9;
 			}
 
 			public net.minecraft.util.SoundEvent getSoundEvent() {

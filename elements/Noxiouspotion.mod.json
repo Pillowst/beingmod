@@ -8,7 +8,7 @@
     "name": "Noxious potion",
     "specialInfo": [],
     "creativeTab": {
-      "value": "BREWING"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "stackSize": 8,
     "ammoItem": {

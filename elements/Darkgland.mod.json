@@ -29,7 +29,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "destroyTool": "Not specified",
     "customDrop": {

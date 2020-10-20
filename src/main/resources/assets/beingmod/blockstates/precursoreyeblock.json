@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "beingmod:block/precursoreyeblock"
+    },
+    "facing=east": {
+      "model": "beingmod:block/precursoreyeblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "beingmod:block/precursoreyeblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "beingmod:block/precursoreyeblock",
+      "y": 270
+    }
+  }
+}

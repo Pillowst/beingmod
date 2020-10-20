@@ -18,5 +18,25 @@
         "stream": false
       }
     ]
+  },
+  "spiketrapon": {
+    "category": "block",
+    "subtitle": "subtitles.spiketrapon",
+    "sounds": [
+      {
+        "name": "beingmod:trap_go",
+        "stream": false
+      }
+    ]
+  },
+  "spiketrapoff": {
+    "category": "block",
+    "subtitle": "subtitles.spiketrapoff",
+    "sounds": [
+      {
+        "name": "beingmod:trap_sheath",
+        "stream": false
+      }
+    ]
   }
 }

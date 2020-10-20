@@ -14,7 +14,6 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.entity.MobEntity;
@@ -28,6 +27,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.beingmod.procedures.PeriwinkecilliaMobplayerCollidesWithPlantProcedure;
+import net.mcreator.beingmod.itemgroup.AnomalousmaterialsItemGroup;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Random;
@@ -47,7 +47,8 @@ public class PeriwinkecilliaBlock extends BeingmodModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new BlockCustomFlower());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(
+				() -> new BlockItem(block, new Item.Properties().group(AnomalousmaterialsItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override

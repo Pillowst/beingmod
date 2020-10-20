@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "ffgen",
     "customModelName": "Normal",
-    "name": "ForceField Generator Mark III",
-    "rarity": "COMMON",
+    "name": "Forcefield Generator",
+    "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "stackSize": 1,
     "enchantability": 0,

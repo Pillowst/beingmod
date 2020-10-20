@@ -8,7 +8,7 @@
     "name": "Plasma Cutter",
     "specialInfo": [],
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 3,

@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "beingmod:blocks/spikes",
+    "particle": "beingmod:blocks/spikes"
+  }
+}

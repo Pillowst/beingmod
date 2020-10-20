@@ -12,12 +12,12 @@
     "customModelName": "infuser:dripping_roots",
     "rotationMode": 0,
     "emissiveRendering": false,
-    "itemTexture": "",
+    "itemTexture": "driptexture2",
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
-    "my": 0.0,
+    "my": 5.0,
     "mz": 0.0,
     "Mx": 1.0,
     "My": 1.0,
@@ -29,7 +29,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "destroyTool": "Not specified",
     "customDrop": {

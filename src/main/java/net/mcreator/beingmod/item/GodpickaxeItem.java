@@ -8,10 +8,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 
+import net.mcreator.beingmod.itemgroup.AnomalousmaterialsItemGroup;
 import net.mcreator.beingmod.BeingmodModElements;
 
 @BeingmodModElements.ModElement.Tag
@@ -48,7 +48,7 @@ public class GodpickaxeItem extends BeingmodModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(ShardItem.block, (int) (1)));
 			}
-		}, 1, -2f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 1, -2f, new Item.Properties().group(AnomalousmaterialsItemGroup.tab)) {
 			@Override
 			@OnlyIn(Dist.CLIENT)
 			public boolean hasEffect(ItemStack itemstack) {

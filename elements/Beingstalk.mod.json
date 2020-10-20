@@ -11,10 +11,10 @@
     "growapableSpawnType": "Cave",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
-    "name": "Beingstalk",
+    "name": "Being stalk",
     "specialInfo": [],
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "hardness": 0.0,
     "resistance": 0.0,
@@ -27,7 +27,7 @@
     "customDrop": {
       "value": ""
     },
-    "dropAmount": 1,
+    "dropAmount": 0,
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,

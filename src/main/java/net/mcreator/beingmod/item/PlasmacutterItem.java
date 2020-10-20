@@ -9,12 +9,12 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
 import net.minecraft.entity.player.PlayerEntity;
 
 import net.mcreator.beingmod.procedures.PlasmacutterRightClickedInAirProcedure;
+import net.mcreator.beingmod.itemgroup.AnomalousmaterialsItemGroup;
 import net.mcreator.beingmod.BeingmodModElements;
 
 import java.util.Map;
@@ -54,7 +54,7 @@ public class PlasmacutterItem extends BeingmodModElements.ModElement {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks(new ItemStack(ForceFieldGenITEMItem.block, (int) (1)));
 			}
-		}, 1, -2f, new Item.Properties().group(ItemGroup.TOOLS)) {
+		}, 1, -2f, new Item.Properties().group(AnomalousmaterialsItemGroup.tab)) {
 			@Override
 			public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 				ActionResult<ItemStack> retval = super.onItemRightClick(world, entity, hand);

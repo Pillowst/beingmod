@@ -22,14 +22,14 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Precursor rubbled bricks",
+    "name": "Precursor ruined bricks",
     "specialInfo": [],
     "hardness": 12.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -90,9 +90,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onDestroyedByPlayer": {
-      "name": "PrecursorbrickstairsBlockDestroyedByPlayer"
-    },
     "onStartToDestroy": {
       "name": "PrecursorbricksPlayerStartsToDestroy"
     },

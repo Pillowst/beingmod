@@ -8,7 +8,7 @@
     "name": "Indelicate tooth",
     "rarity": "UNCOMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "stackSize": 64,
     "enchantability": 0,

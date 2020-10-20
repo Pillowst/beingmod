@@ -50,6 +50,10 @@ public class BeingmodModElements {
 		sounds.put(new ResourceLocation("beingmod", "abandonedentry"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("beingmod", "abandonedentry")));
 		sounds.put(new ResourceLocation("beingmod", "equip"), new net.minecraft.util.SoundEvent(new ResourceLocation("beingmod", "equip")));
+		sounds.put(new ResourceLocation("beingmod", "spiketrapon"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("beingmod", "spiketrapon")));
+		sounds.put(new ResourceLocation("beingmod", "spiketrapoff"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("beingmod", "spiketrapoff")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("beingmod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

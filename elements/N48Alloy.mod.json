@@ -22,14 +22,14 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "N48Alloy Block",
+    "name": "N-48 Block",
     "specialInfo": [],
-    "hardness": 1.0,
+    "hardness": 4.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "destroyTool": "Not specified",
     "customDrop": {

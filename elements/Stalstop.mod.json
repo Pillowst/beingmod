@@ -29,11 +29,11 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Shard"
+      "value": "CUSTOM:Beingstalbot"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,

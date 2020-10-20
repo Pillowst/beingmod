@@ -8,7 +8,7 @@
     "name": "Lapis Bolt",
     "rarity": "EPIC",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "stackSize": 64,
     "enchantability": 0,

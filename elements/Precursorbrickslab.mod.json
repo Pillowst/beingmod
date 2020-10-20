@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "itemTexture": "",
     "blockBase": "Slab",
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "mx": 0.0,
@@ -23,14 +23,14 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Precursor bricks slab",
+    "name": "Precursor brick slabs",
     "specialInfo": [],
     "hardness": 12.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Anomalousmaterials"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -91,9 +91,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onDestroyedByPlayer": {
-      "name": "PrecursorbrickstairsBlockDestroyedByPlayer"
-    },
     "onStartToDestroy": {
       "name": "PrecursorbricksPlayerStartsToDestroy"
     },

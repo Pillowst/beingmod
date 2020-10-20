@@ -5,10 +5,10 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.beingmod.itemgroup.AnomalousmaterialsItemGroup;
 import net.mcreator.beingmod.BeingmodModElements;
 
 @BeingmodModElements.ModElement.Tag
@@ -25,7 +25,7 @@ public class NeriumItem extends BeingmodModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.RARE));
+			super(new Item.Properties().group(AnomalousmaterialsItemGroup.tab).maxStackSize(64).rarity(Rarity.RARE));
 			setRegistryName("nerium");
 		}
 

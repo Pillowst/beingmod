@@ -10,7 +10,7 @@
     "creativeTab": {
       "value": "COMBAT"
     },
-    "toolType": "Pickaxe",
+    "toolType": "Special",
     "harvestLevel": 3,
     "efficiency": 6.0,
     "attackSpeed": 2.0,
@@ -21,7 +21,7 @@
     "hasGlow": false,
     "repairItems": [
       {
-        "value": "CUSTOM:ForceFieldGenITEM"
+        "value": "Items.IRON_INGOT"
       }
     ],
     "stayInGridWhenCrafting": false,

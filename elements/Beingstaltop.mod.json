@@ -33,7 +33,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Shard"
+      "value": "CUSTOM:Beingstalbot"
     },
     "dropAmount": 0,
     "useLootTableForDrops": false,
@@ -50,7 +50,7 @@
     "isReplaceable": false,
     "colorOnMap": "OBSIDIAN",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:Beingstalbot"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

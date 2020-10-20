@@ -8,19 +8,19 @@
   ],
   "key": {
     "0": {
-      "item": "beingmod:kjaldar_crystal_item"
+      "item": "minecraft:diamond"
     },
     "4": {
       "item": "beingmod:rail_gun"
     },
     "5": {
-      "item": "minecraft:glass_pane"
+      "item": "minecraft:lava_bucket"
     },
     "7": {
       "item": "beingmod:indelicatetooth"
     },
     "8": {
-      "item": "beingmod:n_48chunk"
+      "item": "minecraft:iron_ingot"
     }
   },
   "result": {

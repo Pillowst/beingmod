@@ -7,20 +7,20 @@
   ],
   "key": {
     "0": {
-      "item": "beingmod:gabbro"
+      "item": "beingmod:unknown_element"
     },
     "1": {
-      "item": "beingmod:gabbro"
+      "item": "beingmod:unknown_element"
     },
     "2": {
-      "item": "beingmod:gabbro"
+      "item": "beingmod:unknown_element"
     },
     "3": {
-      "item": "beingmod:gabbro"
+      "item": "beingmod:unknown_element"
     }
   },
   "result": {
-    "item": "beingmod:polished_gabbro",
+    "item": "beingmod:unknown_element",
     "count": 1
   }
 }

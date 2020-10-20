@@ -2287,7 +2287,7 @@
       "name": "PolishedPeridotite",
       "type": "block",
       "sortid": 168,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "polished_peridotite"
@@ -2296,7 +2296,7 @@
       "name": "PolishedSyenite",
       "type": "block",
       "sortid": 167,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "polished_syenite"
@@ -2314,7 +2314,7 @@
       "name": "Peridotite",
       "type": "block",
       "sortid": 165,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "peridotite"
@@ -2323,7 +2323,7 @@
       "name": "Syenite",
       "type": "block",
       "sortid": 164,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "syenite"
@@ -2332,7 +2332,7 @@
       "name": "Gabbro",
       "type": "block",
       "sortid": 166,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "gabbro"
@@ -2350,7 +2350,7 @@
       "name": "PolishedGabbro",
       "type": "block",
       "sortid": 169,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "polished_gabbro"

@@ -33,11 +33,11 @@ import java.util.List;
 import java.util.Collections;
 
 @BeingmodModElements.ModElement.Tag
-public class SlateBlock extends BeingmodModElements.ModElement {
-	@ObjectHolder("beingmod:slate")
+public class LoessBlock extends BeingmodModElements.ModElement {
+	@ObjectHolder("beingmod:loess")
 	public static final Block block = null;
-	public SlateBlock(BeingmodModElements instance) {
-		super(instance, 178);
+	public LoessBlock(BeingmodModElements instance) {
+		super(instance, 185);
 	}
 
 	@Override
@@ -49,7 +49,7 @@ public class SlateBlock extends BeingmodModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("slate");
+			setRegistryName("loess");
 		}
 
 		@Override
@@ -74,9 +74,9 @@ public class SlateBlock extends BeingmodModElements.ModElement {
 						return false;
 					return super.place(world, generator, rand, pos, config);
 				}
-			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("slate", "slate", blockAt -> {
+			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("loess", "loess", blockAt -> {
 				boolean blockCriteria = false;
-				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
+				if (blockAt.getBlock() == Blocks.DIRT.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
 			}), block.getDefaultState(), 16)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 64))));

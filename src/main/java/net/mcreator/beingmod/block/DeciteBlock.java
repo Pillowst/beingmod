@@ -33,11 +33,11 @@ import java.util.List;
 import java.util.Collections;
 
 @BeingmodModElements.ModElement.Tag
-public class SlateBlock extends BeingmodModElements.ModElement {
-	@ObjectHolder("beingmod:slate")
+public class DeciteBlock extends BeingmodModElements.ModElement {
+	@ObjectHolder("beingmod:decite")
 	public static final Block block = null;
-	public SlateBlock(BeingmodModElements instance) {
-		super(instance, 178);
+	public DeciteBlock(BeingmodModElements instance) {
+		super(instance, 182);
 	}
 
 	@Override
@@ -49,7 +49,7 @@ public class SlateBlock extends BeingmodModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("slate");
+			setRegistryName("decite");
 		}
 
 		@Override
@@ -74,7 +74,7 @@ public class SlateBlock extends BeingmodModElements.ModElement {
 						return false;
 					return super.place(world, generator, rand, pos, config);
 				}
-			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("slate", "slate", blockAt -> {
+			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("decite", "decite", blockAt -> {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;

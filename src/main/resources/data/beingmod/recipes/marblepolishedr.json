@@ -1,0 +1,26 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:marble"
+    },
+    "1": {
+      "item": "beingmod:marble"
+    },
+    "2": {
+      "item": "beingmod:marble"
+    },
+    "3": {
+      "item": "beingmod:marble"
+    }
+  },
+  "result": {
+    "item": "beingmod:polished_marble",
+    "count": 1
+  }
+}

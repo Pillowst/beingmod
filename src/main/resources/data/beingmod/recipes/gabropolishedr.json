@@ -1,0 +1,26 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:gabbro"
+    },
+    "1": {
+      "item": "beingmod:gabbro"
+    },
+    "2": {
+      "item": "beingmod:gabbro"
+    },
+    "3": {
+      "item": "beingmod:gabbro"
+    }
+  },
+  "result": {
+    "item": "beingmod:polished_gabbro",
+    "count": 1
+  }
+}

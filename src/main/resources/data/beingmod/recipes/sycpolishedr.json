@@ -1,0 +1,26 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:syenite"
+    },
+    "1": {
+      "item": "beingmod:syenite"
+    },
+    "2": {
+      "item": "beingmod:syenite"
+    },
+    "3": {
+      "item": "beingmod:syenite"
+    }
+  },
+  "result": {
+    "item": "beingmod:polished_syenite",
+    "count": 1
+  }
+}

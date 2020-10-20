@@ -1,0 +1,26 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:peridotite"
+    },
+    "1": {
+      "item": "beingmod:peridotite"
+    },
+    "2": {
+      "item": "beingmod:peridotite"
+    },
+    "3": {
+      "item": "beingmod:peridotite"
+    }
+  },
+  "result": {
+    "item": "beingmod:polished_peridotite",
+    "count": 1
+  }
+}

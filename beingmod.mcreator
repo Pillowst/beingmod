@@ -2622,6 +2622,228 @@
           }
         ]
       }
+    },
+    {
+      "name": "Amber",
+      "type": "block",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amber"
+    },
+    {
+      "name": "Amberleggingsrecipe",
+      "type": "recipe",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberleggingsrecipe"
+    },
+    {
+      "name": "Amberhoe",
+      "type": "tool",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberhoe"
+    },
+    {
+      "name": "Amberchestplaterecipe",
+      "type": "recipe",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberchestplaterecipe"
+    },
+    {
+      "name": "Amberpickaxerecipe",
+      "type": "recipe",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberpickaxerecipe"
+    },
+    {
+      "name": "Amberblockrecipe",
+      "type": "recipe",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberblockrecipe"
+    },
+    {
+      "name": "AmberItem",
+      "type": "item",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amber_item"
+    },
+    {
+      "name": "Amberpick",
+      "type": "tool",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberpick"
+    },
+    {
+      "name": "RedRock",
+      "type": "block",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_rock"
+    },
+    {
+      "name": "Ambershovel",
+      "type": "tool",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ambershovel"
+    },
+    {
+      "name": "Amberhelmetrecipe",
+      "type": "recipe",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberhelmetrecipe"
+    },
+    {
+      "name": "Amberaxe",
+      "type": "tool",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberaxe"
+    },
+    {
+      "name": "Ambershovelrecipe",
+      "type": "recipe",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ambershovelrecipe"
+    },
+    {
+      "name": "Antrachite",
+      "type": "block",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "antrachite"
+    },
+    {
+      "name": "Amberaxerecipe",
+      "type": "recipe",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberaxerecipe"
+    },
+    {
+      "name": "Amberswordrecipe",
+      "type": "recipe",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberswordrecipe"
+    },
+    {
+      "name": "Amberbootsrecipe",
+      "type": "recipe",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberbootsrecipe"
+    },
+    {
+      "name": "Redlogblock",
+      "type": "block",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redlogblock"
+    },
+    {
+      "name": "Amberarmor",
+      "type": "armor",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberarmor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Amberblockdecraft",
+      "type": "recipe",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberblockdecraft"
+    },
+    {
+      "name": "Ambersword",
+      "type": "tool",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ambersword"
+    },
+    {
+      "name": "Amberhoerecipe",
+      "type": "recipe",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "amberhoerecipe"
+    },
+    {
+      "name": "RedRockGrass",
+      "type": "block",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_rock_grass"
+    },
+    {
+      "name": "RedRockMesa",
+      "type": "biome",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_rock_mesa"
     }
   ],
   "variable_elements": [],
@@ -2705,7 +2927,7 @@
       "item.beingmod.rail_gun": "Rail Gun",
       "block.beingmod.precursorrubble": "Precursor ruined bricks",
       "item.beingmod.indelicatetooth": "Indelicate tooth",
-      "block.beingmod.reddish_sandstone": "Ripplesand block",
+      "block.beingmod.reddish_sandstone": "Reddish Sandstone Block",
       "block.beingmod.syenite": "Syenite Block",
       "block.beingmod.slate": "Slate Block",
       "block.beingmod.block_orcanite": "Raw Orcanite Block",

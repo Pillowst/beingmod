@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "beingmod:blocks/amber",
+    "particle": "beingmod:blocks/amber"
+  }
+}

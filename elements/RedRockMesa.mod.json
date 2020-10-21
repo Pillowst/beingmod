@@ -1,0 +1,87 @@
+{
+  "_fv": 12,
+  "_type": "biome",
+  "definition": {
+    "name": "Red Rock Mesa",
+    "groundBlock": {
+      "value": "CUSTOM:RedRockGrass"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:RedRock"
+    },
+    "treeType": 1,
+    "vanillaTreeType": "Default",
+    "minHeight": 1,
+    "spawnVines": false,
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeStem": {
+      "value": "CUSTOM:Redlogblock"
+    },
+    "treeBranch": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "airColor": {
+      "value": -26215,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -26215,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -39322,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -3342337,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -16751002,
+      "falpha": 0.0
+    },
+    "treesPerChunk": 2,
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPathcesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "rainingPossibility": 0.1,
+    "temperature": 1.3,
+    "baseHeight": 0.2,
+    "heightVariation": 0.4,
+    "spawnBiome": true,
+    "biomeWeight": 3,
+    "biomeType": "DESERT",
+    "biomeCategory": "MESA",
+    "parent": {
+      "value": "No parent"
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "biomeDictionaryTypes": [],
+    "defaultFeatures": [
+      "Caves",
+      "Structures"
+    ],
+    "spawnEntries": []
+  }
+}

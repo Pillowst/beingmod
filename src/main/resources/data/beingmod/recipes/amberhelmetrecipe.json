@@ -1,0 +1,29 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:amber_item"
+    },
+    "1": {
+      "item": "beingmod:amber_item"
+    },
+    "2": {
+      "item": "beingmod:amber_item"
+    },
+    "3": {
+      "item": "beingmod:amber_item"
+    },
+    "5": {
+      "item": "beingmod:amber_item"
+    }
+  },
+  "result": {
+    "item": "beingmod:unknown_element_helmet",
+    "count": 1
+  }
+}

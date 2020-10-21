@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "beingmod:block/redlogblock"
+    },
+    "facing=north": {
+      "model": "beingmod:block/redlogblock"
+    },
+    "facing=east": {
+      "model": "beingmod:block/redlogblock",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "beingmod:block/redlogblock",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "beingmod:block/redlogblock",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "beingmod:block/redlogblock",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

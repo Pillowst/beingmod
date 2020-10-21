@@ -10,11 +10,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.IPlacementConfig;
-import net.minecraft.world.gen.placement.FrequencyConfig;
 import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
-import net.minecraft.world.gen.feature.SeaGrassConfig;
-import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
 import net.minecraft.world.gen.feature.AbstractTreeFeature;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
@@ -57,30 +53,22 @@ public class RedRockMesaBiome extends BeingmodModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		BiomeManager.addSpawnBiome(biome);
-		BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(biome, 10));
+		BiomeManager.addBiome(BiomeManager.BiomeType.DESERT, new BiomeManager.BiomeEntry(biome, 3));
 	}
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
-			super(new Biome.Builder().downfall(0.5f).depth(0.1f).scale(0.2f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
-					.category(Biome.Category.NONE).waterColor(-3342337).waterFogColor(-16751002)
+			super(new Biome.Builder().downfall(0.1f).depth(0.2f).scale(0.4f).temperature(1.3f).precipitation(Biome.RainType.RAIN)
+					.category(Biome.Category.MESA).waterColor(-3342337).waterFogColor(-16751002)
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(RedRockGrassBlock.block.getDefaultState(),
 							RedRockBlock.block.getDefaultState(), RedRockBlock.block.getDefaultState())));
 			setRegistryName("red_rock_mesa");
 			DefaultBiomeFeatures.addCarvers(this);
-			DefaultBiomeFeatures.addMonsterRooms(this);
 			DefaultBiomeFeatures.addStructures(this);
-			DefaultBiomeFeatures.addOres(this);
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.FLOWER.withConfiguration(DefaultBiomeFeatures.DEFAULT_FLOWER_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_32.configure(new FrequencyConfig(4))));
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.GRASS_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(4))));
-			this.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.SEAGRASS.withConfiguration(new SeaGrassConfig(20, 0.3D))
-					.withPlacement(Placement.TOP_SOLID_HEIGHTMAP.configure(IPlacementConfig.NO_PLACEMENT_CONFIG)));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, new CustomTreeFeature()
 					.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(RedlogblockBlock.block.getDefaultState()),
 							new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()))).baseHeight(1)
 									.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
-					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 0.1F, 1))));
+					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
 		}
 
 		@OnlyIn(Dist.CLIENT)

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "beingmod:blocks/red_rock_log_top",
+    "up": "beingmod:blocks/red_rock_log_top",
+    "north": "beingmod:blocks/red_rock_log",
+    "east": "beingmod:blocks/red_rock_log",
+    "south": "beingmod:blocks/red_rock_log",
+    "west": "beingmod:blocks/red_rock_log",
+    "particle": "beingmod:blocks/red_rock_log_top"
+  }
+}

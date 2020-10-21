@@ -1,0 +1,13 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "beingmod:amber"
+    }
+  ],
+  "result": {
+    "item": "beingmod:amber_item",
+    "count": 9
+  }
+}

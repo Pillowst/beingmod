@@ -1,0 +1,42 @@
+{
+  "group": "beingmod",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "beingmod:amber_item"
+    },
+    "1": {
+      "item": "beingmod:amber_item"
+    },
+    "2": {
+      "item": "beingmod:amber_item"
+    },
+    "3": {
+      "item": "beingmod:amber_item"
+    },
+    "4": {
+      "item": "beingmod:amber_item"
+    },
+    "5": {
+      "item": "beingmod:amber_item"
+    },
+    "6": {
+      "item": "beingmod:amber_item"
+    },
+    "7": {
+      "item": "beingmod:amber_item"
+    },
+    "8": {
+      "item": "beingmod:amber_item"
+    }
+  },
+  "result": {
+    "item": "beingmod:amber",
+    "count": 1
+  }
+}

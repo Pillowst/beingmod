@@ -1,0 +1,57 @@
+{
+  "_fv": 12,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "amber_helmet",
+    "enableBody": true,
+    "textureBody": "amber_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "amber_leggings",
+    "enableBoots": true,
+    "textureBoots": "amber_boots",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "amber_",
+    "helmetName": "Amber Helmet",
+    "bodyName": "Amber Chestplate",
+    "leggingsName": "Amber Leggings",
+    "bootsName": "Amber Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "elementgui.armor.from_armor",
+    "maxDamage": 50,
+    "damageValueHelmet": 3,
+    "damageValueBody": 10,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 3,
+    "enchantability": 10,
+    "toughness": 2.3,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:AmberItem"
+      }
+    ]
+  }
+}

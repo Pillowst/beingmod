@@ -1,0 +1,30 @@
+{
+  "_fv": 12,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "amber_pickaxe",
+    "customModelName": "Normal",
+    "name": "Amber Pickaxe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 4,
+    "efficiency": 5.0,
+    "attackSpeed": 1.0,
+    "enchantability": 3,
+    "damageVsEntity": 5.0,
+    "usageCount": 250,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:AmberItem"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

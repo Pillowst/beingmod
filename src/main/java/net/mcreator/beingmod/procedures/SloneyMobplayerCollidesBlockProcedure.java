@@ -19,8 +19,10 @@ public class SloneyMobplayerCollidesBlockProcedure extends BeingmodModElements.M
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (((entity.getMotion().getY()) < 0.1)) {
-			entity.setMotion((entity.getMotion().getX()), ((entity.getMotion().getY()) * (-1.1)), (entity.getMotion().getZ()));
+		if ((!(entity.isSneaking()))) {
+			if (((entity.getMotion().getY()) < 0.1)) {
+				entity.setMotion((entity.getMotion().getX()), ((entity.getMotion().getY()) * (-1.1)), (entity.getMotion().getZ()));
+			}
 		}
 	}
 }

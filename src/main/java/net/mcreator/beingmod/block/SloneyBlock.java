@@ -64,8 +64,8 @@ public class SloneyBlock extends BeingmodModElements.ModElement {
 	@Override
 	public void initElements() {
 		fluidproperties = new ForgeFlowingFluid.Properties(() -> still, () -> flowing,
-				FluidAttributes.builder(new ResourceLocation("beingmod:blocks/sloneytop"), new ResourceLocation("beingmod:blocks/sloneyside"))
-						.luminosity(0).density(14).viscosity(0)).bucket(() -> bucket).block(() -> block);
+				FluidAttributes.builder(new ResourceLocation("beingmod:blocks/sloney"), new ResourceLocation("beingmod:blocks/sloney")).luminosity(1)
+						.density(1).viscosity(4)).bucket(() -> bucket).block(() -> block);
 		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("sloney");
 		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("sloney_flowing");
 		elements.blocks.add(() -> new FlowingFluidBlock(still, Block.Properties.create(Material.WATER)) {

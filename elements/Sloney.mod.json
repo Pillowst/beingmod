@@ -3,8 +3,8 @@
   "_type": "fluid",
   "definition": {
     "name": "Sloney",
-    "textureStill": "amber",
-    "textureFlowing": "amber",
+    "textureStill": "sloneytop",
+    "textureFlowing": "sloneyside",
     "luminosity": 0,
     "density": 14,
     "viscosity": 0,

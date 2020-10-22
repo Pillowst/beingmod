@@ -8,13 +8,13 @@
   ],
   "key": {
     "0": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "1": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "2": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "4": {
       "item": "minecraft:stick"
@@ -24,7 +24,7 @@
     }
   },
   "result": {
-    "item": "beingmod:unknown_element",
+    "item": "beingmod:amberpick",
     "count": 1
   }
 }

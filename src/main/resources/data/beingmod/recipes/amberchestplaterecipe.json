@@ -8,32 +8,32 @@
   ],
   "key": {
     "0": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "2": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "3": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "4": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "5": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "6": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "7": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "8": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     }
   },
   "result": {
-    "item": "beingmod:unknown_element_chestplate",
+    "item": "beingmod:amberarmor_chestplate",
     "count": 1
   }
 }

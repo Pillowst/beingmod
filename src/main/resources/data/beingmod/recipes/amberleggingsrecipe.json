@@ -8,29 +8,29 @@
   ],
   "key": {
     "0": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "1": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "2": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "3": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "5": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "6": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     },
     "8": {
-      "item": "beingmod:unknown_element"
+      "item": "beingmod:amber_item"
     }
   },
   "result": {
-    "item": "beingmod:unknown_element_leggings",
+    "item": "beingmod:amberarmor_leggings",
     "count": 1
   }
 }
